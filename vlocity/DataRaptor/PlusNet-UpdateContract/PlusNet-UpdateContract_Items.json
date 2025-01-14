@@ -1,0 +1,117 @@
+[
+    {
+        "GlobalKey": "PlusNet-UpdateContractCustom5733",
+        "InputFieldName": "ContractTerm",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-UpdateContract",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-UpdateContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-UpdateContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContractTerm",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-UpdateContractCustom5732",
+        "InputFieldName": "ContractId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "PlusNet-UpdateContract",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-UpdateContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-UpdateContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "PlusNet-UpdateContractCustom4508",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "PlusNet-UpdateContract",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-UpdateContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-UpdateContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-UpdateContractCustom7528",
+        "InputFieldName": "LatestCancellationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-UpdateContract",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-UpdateContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-UpdateContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PlusNet_Latest_Cancellation_Date__c",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-UpdateContractCustom1150",
+        "InputFieldName": "ActivationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-UpdateContract",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-UpdateContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-UpdateContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StartDate",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-UpdateContractCustom970",
+        "InputFieldName": "Status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-UpdateContract",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-UpdateContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-UpdateContract",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "Contract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,43 @@
+{
+    "Description": "Updating all the OLI.ServiceDate with the ActivationDate",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateOLIsFields",
+    "OmniProcessId": {
+        "Name": "ActivationFulfillmentHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ActivationFulfillmentHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ActivationDate": "%ActivationDate%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "UpdateOLIsServiceDate",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+            "RetCode": "NOK"
+        },
+        "label": "DataRaptorPostAction4",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "GetActivatedOLIRefIds",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ActivationFulfillmentHandler/Procedure/UpdateOLIsFields"
+}

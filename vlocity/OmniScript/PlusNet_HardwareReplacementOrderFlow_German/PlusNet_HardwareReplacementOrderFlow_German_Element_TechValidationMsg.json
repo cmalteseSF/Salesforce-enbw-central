@@ -1,0 +1,62 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TechValidationMsg",
+    "OmniProcessId": {
+        "Name": "Hardware Replacement Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/HardwareReplacementOrderFlow/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TechnicalDetailsBlock",
+        "OmniProcessId": {
+            "Name": "Hardware Replacement Order Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/HardwareReplacementOrderFlow/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/HardwareReplacementOrderFlow/German/TechnicalDetailsBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TechnicalDetailsBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "hideLabel": true,
+        "label": "",
+        "messages": [
+            {
+                "active": false,
+                "text": "",
+                "type": "Success",
+                "value": true
+            },
+            {
+                "active": true,
+                "text": "Bitte wählen Sie einen Kontakt ",
+                "type": "Warning",
+                "value": false
+            }
+        ],
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "TechnicalRecordSelected"
+                    }
+                ]
+            }
+        },
+        "validateExpression": null
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/HardwareReplacementOrderFlow/German/TechValidationMsg"
+}

@@ -1,0 +1,69 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetOrderDetails",
+    "OmniProcessId": {
+        "Name": "QuoteOrderCancellation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/QuoteAndOrderCancellation/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "bundle": "PlusNet-GetOrderCancellationDetails",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "ContextId",
+                "inputParam": "ContextId"
+            }
+        ],
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "ignoreCache": false,
+        "label": "",
+        "message": {
+        },
+        "postMessage": "Done",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Order",
+                        "field": "CancellationContext"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "DataRaptor Extract Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/QuoteAndOrderCancellation/Multi-Language/GetOrderDetails"
+}

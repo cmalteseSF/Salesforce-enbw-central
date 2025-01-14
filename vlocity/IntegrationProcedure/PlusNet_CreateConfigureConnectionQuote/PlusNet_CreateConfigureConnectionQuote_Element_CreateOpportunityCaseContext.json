@@ -1,0 +1,59 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateOpportunityCaseContext",
+    "OmniProcessId": {
+        "Name": "CreateConfigureConnectionQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TryCatchCreateOpportunityCaseContext",
+        "OmniProcessId": {
+            "Name": "CreateConfigureConnectionQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure/TryCatchCreateOpportunityCaseContext",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TryCatchCreateOpportunityCaseContext",
+    "ParentElementType": "Try Catch Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountId": "=IF(%isOwnerKnown% == \"false\" , %CreateAccountOwnerRecords:Account_1|1:Id% , %PremiseOwnerAccountDetails:AccountId%)",
+            "ContactId": "=IF(%isOwnerKnown% == \"false\" , %CreateAccountOwnerRecords:Contact_4|1:Id% , %PremiseOwnerAccountDetails:ContactId%)",
+            "Name": "=IF(%isOwnerKnown% == \"false\" , '%CreateAccountOwnerRecords:Account_1|1:Name% - Anbindung' , '%PremiseOwnerAccountDetails:PremiseOwnerAccountName% - Anbindung')",
+            "StageName": "Qualifikation",
+            "Type": "Connection"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRCreateOpportunity",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataMapperPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure/CreateOpportunityCaseContext"
+}

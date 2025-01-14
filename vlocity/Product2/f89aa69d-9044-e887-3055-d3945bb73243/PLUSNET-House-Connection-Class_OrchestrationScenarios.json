@@ -1,0 +1,26 @@
+[
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "6e96d298-6242-d775-e0ef-3f10d42f4657",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "E2E Master Plan - Connection",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/E2E Master Plan - Connection",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "f89aa69d-9044-e887-3055-d3945bb73243",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/f89aa69d-9044-e887-3055-d3945bb73243",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "f89aa69d-9044-e887-3055-d3945bb73243",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "Activate Hausanschluss",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/Activate Hausanschluss/6e96d298-6242-d775-e0ef-3f10d42f4657/Product2/f89aa69d-9044-e887-3055-d3945bb73243"
+    }
+]

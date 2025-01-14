@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetContractTerm",
+    "OmniProcessId": {
+        "Name": "CreateContractActivationQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateContractActivationQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "IsServiceQuote",
+        "OmniProcessId": {
+            "Name": "CreateContractActivationQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateContractActivationQuote/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateContractActivationQuote/Procedure/IsServiceQuote",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "IsServiceQuote",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "ContractTerm": "=SUBSTRING(%DeserializeContractTerm:DeserializedContractTerm:ATT-CNT-TRM%, 0, 2)"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateContractActivationQuote/Procedure/SetContractTerm"
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>x02_Quote_Status_Change</fullName>
+    <active>true</active>
+    <description>Ruled fired when a change of Status is made on a Quote status. If the Profile is System Administrator, the rule is skipped.</description>
+    <errorConditionFormula>ISCHANGED(Status)
+&amp;&amp; NOT($Permission.Bypass_Quote_Status_Change_Validation_Rule)
+&amp;&amp; (
+	(ISPICKVAL(PRIORVALUE(Status),&quot;Accepted&quot;)
+	&amp;&amp; (ISPICKVAL(Status, &quot;Draft&quot;)
+		|| ISPICKVAL(Status, &quot;Ready&quot;) 
+		|| ISPICKVAL(Status, &quot;Presented&quot;)))
+	||
+	(ISPICKVAL(PRIORVALUE(Status),&quot;Expired&quot;)
+		|| ISPICKVAL(PRIORVALUE(Status),&quot;Withdrawn&quot;)
+		|| ISPICKVAL(PRIORVALUE(Status),&quot;Denied&quot;))
+   )</errorConditionFormula>
+    <errorMessage>Ungültige Änderung des Status (Error x02).</errorMessage>
+</ValidationRule>

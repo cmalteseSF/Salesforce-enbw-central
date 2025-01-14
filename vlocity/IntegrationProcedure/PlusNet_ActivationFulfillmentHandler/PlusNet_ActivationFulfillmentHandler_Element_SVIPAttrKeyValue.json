@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SVIPAttrKeyValue",
+    "OmniProcessId": {
+        "Name": "ActivationFulfillmentHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ActivationFulfillmentHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "LoopBlock1",
+        "OmniProcessId": {
+            "Name": "ActivationFulfillmentHandler",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ActivationFulfillmentHandler/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ActivationFulfillmentHandler/Procedure/LoopBlock1",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "LoopBlock1",
+    "ParentElementType": "Loop Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "ATT-IP-NET-ADD": "=SVFetchAttrValues:attrNetworkAddress:value"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues8",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ActivationFulfillmentHandler/Procedure/SVIPAttrKeyValue"
+}

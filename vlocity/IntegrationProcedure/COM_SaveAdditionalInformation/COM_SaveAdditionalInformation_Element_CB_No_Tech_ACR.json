@@ -1,0 +1,36 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CB_No_Tech_ACR",
+    "OmniProcessId": {
+        "Name": "SaveAdditionalInformation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SaveAdditionalInformation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CB_Tech_Contact",
+        "OmniProcessId": {
+            "Name": "SaveAdditionalInformation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SaveAdditionalInformation/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SaveAdditionalInformation/Procedure/CB_Tech_Contact",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CB_Tech_Contact",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%DRGetACRFromTechId:isACRNull% == \"true\"",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock2",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SaveAdditionalInformation/Procedure/CB_No_Tech_ACR"
+}

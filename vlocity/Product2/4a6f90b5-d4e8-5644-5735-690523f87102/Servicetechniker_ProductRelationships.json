@@ -1,0 +1,39 @@
+[
+    {
+        "%vlocity_namespace%__ActionParameters__c": "",
+        "%vlocity_namespace%__AddMode__c": "asSibling",
+        "%vlocity_namespace%__AttributeModificationContext__c": "",
+        "%vlocity_namespace%__Context__c": "Bundle",
+        "%vlocity_namespace%__DefaultQuantity__c": 1,
+        "%vlocity_namespace%__Description__c": "To Add Servicetechniker, Add Hardware CPE first",
+        "%vlocity_namespace%__Family__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "e24a7d15-1a66-0aec-0b37-a30a3de6a616",
+        "%vlocity_namespace%__IsConditional__c": true,
+        "%vlocity_namespace%__MaxQuantity__c": 1,
+        "%vlocity_namespace%__MinQuantity__c": 1,
+        "%vlocity_namespace%__ObjectTypeId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "4a6f90b5-d4e8-5644-5735-690523f87102",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/4a6f90b5-d4e8-5644-5735-690523f87102",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "98de9c85-e13e-de46-7a69-aa23624b0c58",
+        "%vlocity_namespace%__RelatedObjectTypeId__c": "",
+        "%vlocity_namespace%__RelatedProductFilterId__c": "",
+        "%vlocity_namespace%__RelatedProductGroupKey__c": "0663d6a9-d7d2-8696-680e-485a931bf59a",
+        "%vlocity_namespace%__RelatedProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "8ccbf96a-e729-224a-9085-24bccb8b94b5",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/8ccbf96a-e729-224a-9085-24bccb8b94b5",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__RelationshipType__c": "Requires",
+        "%vlocity_namespace%__ReverseMaxQuantity__c": "",
+        "%vlocity_namespace%__ReverseMinQuantity__c": "",
+        "Name": "ProductRel-AddHardwareCPE-Servicetechniker",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductRelationship__c/e24a7d15-1a66-0aec-0b37-a30a3de6a616"
+    }
+]

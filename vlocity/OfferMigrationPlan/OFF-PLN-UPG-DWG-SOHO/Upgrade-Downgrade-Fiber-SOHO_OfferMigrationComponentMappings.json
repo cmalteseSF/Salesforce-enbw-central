@@ -1,0 +1,158 @@
+[
+    {
+        "%vlocity_namespace%__OfferMigrationPlanId__c": {
+            "%vlocity_namespace%__Code__c": "OFF-PLN-UPG-DWG-SOHO",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationPlan__c"
+        },
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "23303fe5-b496-dfaa-eedc-095059191b34",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/23303fe5-b496-dfaa-eedc-095059191b34",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__TargetProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "435add3f-d293-125d-e53e-1077e1029120",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/435add3f-d293-125d-e53e-1077e1029120",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__isActive__c": true,
+        "Name": "Downgrade from SOHO 1000 to SOHO 300",
+        "PlusNet_Is_Upgrade__c": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationComponentMapping__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OfferMigrationComponentMapping__c/Downgrade from SOHO 1000 to SOHO 300/%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO/Product2/23303fe5-b496-dfaa-eedc-095059191b34/Product2/435add3f-d293-125d-e53e-1077e1029120"
+    },
+    {
+        "%vlocity_namespace%__OfferMigrationPlanId__c": {
+            "%vlocity_namespace%__Code__c": "OFF-PLN-UPG-DWG-SOHO",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationPlan__c"
+        },
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "23303fe5-b496-dfaa-eedc-095059191b34",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/23303fe5-b496-dfaa-eedc-095059191b34",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__TargetProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "54d09b6f-b493-181c-2e13-ca3284669897",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/54d09b6f-b493-181c-2e13-ca3284669897",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__isActive__c": true,
+        "Name": "Downgrade from SOHO 1000 to SOHO 600",
+        "PlusNet_Is_Upgrade__c": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationComponentMapping__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OfferMigrationComponentMapping__c/Downgrade from SOHO 1000 to SOHO 600/%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO/Product2/23303fe5-b496-dfaa-eedc-095059191b34/Product2/54d09b6f-b493-181c-2e13-ca3284669897"
+    },
+    {
+        "%vlocity_namespace%__OfferMigrationPlanId__c": {
+            "%vlocity_namespace%__Code__c": "OFF-PLN-UPG-DWG-SOHO",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationPlan__c"
+        },
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "435add3f-d293-125d-e53e-1077e1029120",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/435add3f-d293-125d-e53e-1077e1029120",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__TargetProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "23303fe5-b496-dfaa-eedc-095059191b34",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/23303fe5-b496-dfaa-eedc-095059191b34",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__isActive__c": true,
+        "Name": "Upgrade from SOHO 300 to SOHO 1000",
+        "PlusNet_Is_Upgrade__c": true,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationComponentMapping__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OfferMigrationComponentMapping__c/Upgrade from SOHO 300 to SOHO 1000/%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO/Product2/435add3f-d293-125d-e53e-1077e1029120/Product2/23303fe5-b496-dfaa-eedc-095059191b34"
+    },
+    {
+        "%vlocity_namespace%__OfferMigrationPlanId__c": {
+            "%vlocity_namespace%__Code__c": "OFF-PLN-UPG-DWG-SOHO",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationPlan__c"
+        },
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "435add3f-d293-125d-e53e-1077e1029120",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/435add3f-d293-125d-e53e-1077e1029120",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__TargetProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "54d09b6f-b493-181c-2e13-ca3284669897",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/54d09b6f-b493-181c-2e13-ca3284669897",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__isActive__c": true,
+        "Name": "Upgrade from SOHO 300 to SOHO 600",
+        "PlusNet_Is_Upgrade__c": true,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationComponentMapping__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OfferMigrationComponentMapping__c/Upgrade from SOHO 300 to SOHO 600/%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO/Product2/435add3f-d293-125d-e53e-1077e1029120/Product2/54d09b6f-b493-181c-2e13-ca3284669897"
+    },
+    {
+        "%vlocity_namespace%__OfferMigrationPlanId__c": {
+            "%vlocity_namespace%__Code__c": "OFF-PLN-UPG-DWG-SOHO",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationPlan__c"
+        },
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "54d09b6f-b493-181c-2e13-ca3284669897",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/54d09b6f-b493-181c-2e13-ca3284669897",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__TargetProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "23303fe5-b496-dfaa-eedc-095059191b34",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/23303fe5-b496-dfaa-eedc-095059191b34",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__isActive__c": true,
+        "Name": "Upgrade from SOHO 600 to SOHO 1000",
+        "PlusNet_Is_Upgrade__c": true,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationComponentMapping__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OfferMigrationComponentMapping__c/Upgrade from SOHO 600 to SOHO 1000/%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO/Product2/54d09b6f-b493-181c-2e13-ca3284669897/Product2/23303fe5-b496-dfaa-eedc-095059191b34"
+    },
+    {
+        "%vlocity_namespace%__OfferMigrationPlanId__c": {
+            "%vlocity_namespace%__Code__c": "OFF-PLN-UPG-DWG-SOHO",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationPlan__c"
+        },
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "54d09b6f-b493-181c-2e13-ca3284669897",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/54d09b6f-b493-181c-2e13-ca3284669897",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__TargetProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "435add3f-d293-125d-e53e-1077e1029120",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/435add3f-d293-125d-e53e-1077e1029120",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__isActive__c": true,
+        "Name": "Downgrade from SOHO 600 to SOHO 300",
+        "PlusNet_Is_Upgrade__c": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationComponentMapping__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OfferMigrationComponentMapping__c/Downgrade from SOHO 600 to SOHO 300/%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO/Product2/54d09b6f-b493-181c-2e13-ca3284669897/Product2/435add3f-d293-125d-e53e-1077e1029120"
+    }
+]

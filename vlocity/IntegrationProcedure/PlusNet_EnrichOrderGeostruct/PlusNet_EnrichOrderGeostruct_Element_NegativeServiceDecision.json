@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NegativeServiceDecision",
+    "OmniProcessId": {
+        "Name": "EnrichOrderGeostruct",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%ServiceOrderDecision% == 'no' && %Order:SubType% == 'Service'",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock8",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure/NegativeServiceDecision"
+}

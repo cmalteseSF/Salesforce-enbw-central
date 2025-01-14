@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "PlusNet_CreateServiceOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Create Service Order",
+    "OmniProcessElement": [
+        "PlusNet_CreateServiceOrder_Element_GetOrderRecordTypeId.json",
+        "PlusNet_CreateServiceOrder_Element_CreateOrder.json",
+        "PlusNet_CreateServiceOrder_Element_UpdateCreatedOrderRecType.json",
+        "PlusNet_CreateServiceOrder_Element_UpdateServiceQuoteStatus.json",
+        "PlusNet_CreateServiceOrder_Element_ResponseCreateServiceOrder.json"
+    ],
+    "OmniProcessKey": "PlusNet_CreateServiceOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CreateServiceOrder_PropertySetConfig.json",
+    "SubType": "CreateServiceOrder",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CreateServiceOrder/Procedure"
+}

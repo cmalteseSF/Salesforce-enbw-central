@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SendEmailTerminationToVoiceTeam",
+    "OmniProcessId": {
+        "Name": "PlusNet SendTerminationEmailToVoiceTeam",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendTerminationEmailToVoiceTeam/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetNotificationData:Channel% == 'Email' AND %GetNotificationData:TemplateName% == 'Termination_Email_to_Voice_Team_1716466555725' AND %GetOrder:Account:PrimaryContactId% != ''",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock1",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendTerminationEmailToVoiceTeam/Procedure/SendEmailTerminationToVoiceTeam"
+}

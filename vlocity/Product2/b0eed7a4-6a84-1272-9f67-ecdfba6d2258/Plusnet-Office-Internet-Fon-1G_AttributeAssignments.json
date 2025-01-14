@@ -1,0 +1,326 @@
+[
+    {
+        "%vlocity_namespace%__AddDate__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentComments__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentUnits__c": "",
+        "%vlocity_namespace%__AttributeCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-INT-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-INT-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Download Geschwindigkeit",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "20",
+        "%vlocity_namespace%__AttributeId__c": {
+            "%vlocity_namespace%__Code__c": "ATT-DWN-SPD",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Attribute__c/ATT-DWN-SPD",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
+        },
+        "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-DWN-SPD",
+        "%vlocity_namespace%__AttributeName__c": "Download Geschwindigkeit",
+        "%vlocity_namespace%__ConfigurationDetail__c": "",
+        "%vlocity_namespace%__ConfigurationStages__c": "",
+        "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
+        "%vlocity_namespace%__Data__c": "",
+        "%vlocity_namespace%__DefaultPicklistEntryId__c": "",
+        "%vlocity_namespace%__DefaultPicklistValueId__c": "",
+        "%vlocity_namespace%__DisplaySequence__c": "50",
+        "%vlocity_namespace%__EndStory__c": "",
+        "%vlocity_namespace%__ExcludedPicklistEntryIds__c": "",
+        "%vlocity_namespace%__ExcludedPicklistValues__c": "",
+        "%vlocity_namespace%__FormatMask__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "6b43b57e-077e-5231-ba1c-a9b989877a19",
+        "%vlocity_namespace%__HasRule__c": false,
+        "%vlocity_namespace%__HelpText__c": "",
+        "%vlocity_namespace%__IsActiveAssignment__c": true,
+        "%vlocity_namespace%__IsConfigurable__c": true,
+        "%vlocity_namespace%__IsDynamic__c": false,
+        "%vlocity_namespace%__IsEncrypted__c": false,
+        "%vlocity_namespace%__IsHidden__c": false,
+        "%vlocity_namespace%__IsNotAssetizable__c": false,
+        "%vlocity_namespace%__IsNotTranslatable__c": false,
+        "%vlocity_namespace%__IsOverride__c": false,
+        "%vlocity_namespace%__IsQueryDriven__c": false,
+        "%vlocity_namespace%__IsReadOnly__c": true,
+        "%vlocity_namespace%__IsRequired__c": false,
+        "%vlocity_namespace%__LookupFilter__c": "",
+        "%vlocity_namespace%__LookupObjectId__c": "",
+        "%vlocity_namespace%__LookupObjectTypeId__c": "",
+        "%vlocity_namespace%__ObjectId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "b0eed7a4-6a84-1272-9f67-ecdfba6d2258",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/b0eed7a4-6a84-1272-9f67-ecdfba6d2258",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__ObjectType__c": "%vlocity_namespace%__ObjectClass__c",
+        "%vlocity_namespace%__OverrideContext__c": "",
+        "%vlocity_namespace%__PicklistId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "377fb180-f0e8-9fbe-e505-5ac1ef003e2f",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Picklist__c/377fb180-f0e8-9fbe-e505-5ac1ef003e2f",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Picklist__c"
+        },
+        "%vlocity_namespace%__QueryCode__c": "",
+        "%vlocity_namespace%__QueryLabel__c": "",
+        "%vlocity_namespace%__RemoveDate__c": "",
+        "%vlocity_namespace%__RemovedFlag__c": false,
+        "%vlocity_namespace%__RuleData__c": "",
+        "%vlocity_namespace%__RuleMessage__c": "",
+        "%vlocity_namespace%__StartStory__c": "",
+        "%vlocity_namespace%__StyleClass__c": "",
+        "%vlocity_namespace%__UIDisplayType__c": "Dropdown",
+        "%vlocity_namespace%__ValidValuesData__c": [
+            {
+                "displayText": "50 Mbps",
+                "id": "7886f9b2-7f3d-e24d-10ba-51312aa463c8",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 1,
+                "value": "50 Mbps"
+            },
+            {
+                "displayText": "100 Mbps",
+                "id": "50ecbbe4-3d15-9228-1399-26cc5966e310",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 2,
+                "value": "100 Mbps"
+            },
+            {
+                "displayText": "300 Mbps",
+                "id": "b6e70b67-af65-d43e-5a37-ad40618f7c1d",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 3,
+                "value": "300 Mbps"
+            },
+            {
+                "displayText": "150 Mbps",
+                "id": "cc4e23b2-9178-8a96-1607-2f4e96d2147b",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 3,
+                "value": "150 Mbps"
+            },
+            {
+                "displayText": "600 Mbps",
+                "id": "187fde3b-574c-02f4-b020-41832701ae17",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 4,
+                "value": "600 Mbps"
+            },
+            {
+                "displayText": "1000 Mbps",
+                "id": "8948c94f-d4ed-4fcd-395b-abddedb12b3e",
+                "isDefault": true,
+                "isEditable": false,
+                "sequence": 5,
+                "value": "1000 Mbps"
+            },
+            {
+                "displayText": "10000 Mbps",
+                "id": "e85f2109-d895-09ee-e04a-f3c27c103260",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 6,
+                "value": "10000 Mbps"
+            },
+            {
+                "displayText": "2000 Mbps",
+                "id": "03482bed-8dc9-0cb2-1009-c004cae25034",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 7,
+                "value": "2000 Mbps"
+            }
+        ],
+        "%vlocity_namespace%__ValueDataType__c": "Picklist",
+        "%vlocity_namespace%__ValueDecoder__c": "",
+        "%vlocity_namespace%__ValueDescription__c": "",
+        "%vlocity_namespace%__Value__c": "1000 Mbps",
+        "Name": "CLONED_01t9X00000CJFVtQAP_ATT-DWN-SPD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/6b43b57e-077e-5231-ba1c-a9b989877a19"
+    },
+    {
+        "%vlocity_namespace%__AddDate__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentComments__c": "",
+        "%vlocity_namespace%__AttributeAdjustmentUnits__c": "",
+        "%vlocity_namespace%__AttributeCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-INT-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-INT-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__AttributeDisplayNameOverride__c": "Upload Geschwindigkeit",
+        "%vlocity_namespace%__AttributeDisplaySequence__c": "30",
+        "%vlocity_namespace%__AttributeId__c": {
+            "%vlocity_namespace%__Code__c": "ATT-UPL-SPD",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Attribute__c/ATT-UPL-SPD",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Attribute__c"
+        },
+        "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-UPL-SPD",
+        "%vlocity_namespace%__AttributeName__c": "Upload Geschwindigkeit",
+        "%vlocity_namespace%__ConfigurationDetail__c": "",
+        "%vlocity_namespace%__ConfigurationStages__c": "",
+        "%vlocity_namespace%__CustomConfigUiTemplate__c": "",
+        "%vlocity_namespace%__Data__c": "",
+        "%vlocity_namespace%__DefaultPicklistEntryId__c": "",
+        "%vlocity_namespace%__DefaultPicklistValueId__c": "",
+        "%vlocity_namespace%__DisplaySequence__c": "50",
+        "%vlocity_namespace%__EndStory__c": "",
+        "%vlocity_namespace%__ExcludedPicklistEntryIds__c": "",
+        "%vlocity_namespace%__ExcludedPicklistValues__c": "",
+        "%vlocity_namespace%__FormatMask__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "cabe1c6e-3f2d-c085-957b-febf49d455b8",
+        "%vlocity_namespace%__HasRule__c": false,
+        "%vlocity_namespace%__HelpText__c": "",
+        "%vlocity_namespace%__IsActiveAssignment__c": true,
+        "%vlocity_namespace%__IsConfigurable__c": true,
+        "%vlocity_namespace%__IsDynamic__c": false,
+        "%vlocity_namespace%__IsEncrypted__c": false,
+        "%vlocity_namespace%__IsHidden__c": false,
+        "%vlocity_namespace%__IsNotAssetizable__c": false,
+        "%vlocity_namespace%__IsNotTranslatable__c": false,
+        "%vlocity_namespace%__IsOverride__c": false,
+        "%vlocity_namespace%__IsQueryDriven__c": false,
+        "%vlocity_namespace%__IsReadOnly__c": true,
+        "%vlocity_namespace%__IsRequired__c": false,
+        "%vlocity_namespace%__LookupFilter__c": "",
+        "%vlocity_namespace%__LookupObjectId__c": "",
+        "%vlocity_namespace%__LookupObjectTypeId__c": "",
+        "%vlocity_namespace%__ObjectId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "b0eed7a4-6a84-1272-9f67-ecdfba6d2258",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/b0eed7a4-6a84-1272-9f67-ecdfba6d2258",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__ObjectType__c": "%vlocity_namespace%__ObjectClass__c",
+        "%vlocity_namespace%__OverrideContext__c": "",
+        "%vlocity_namespace%__PicklistId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "1f988405-3b79-9ddd-7e8a-199c65d3eb3e",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Picklist__c/1f988405-3b79-9ddd-7e8a-199c65d3eb3e",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Picklist__c"
+        },
+        "%vlocity_namespace%__QueryCode__c": "",
+        "%vlocity_namespace%__QueryLabel__c": "",
+        "%vlocity_namespace%__RemoveDate__c": "",
+        "%vlocity_namespace%__RemovedFlag__c": false,
+        "%vlocity_namespace%__RuleData__c": "",
+        "%vlocity_namespace%__RuleMessage__c": "",
+        "%vlocity_namespace%__StartStory__c": "",
+        "%vlocity_namespace%__StyleClass__c": "",
+        "%vlocity_namespace%__UIDisplayType__c": "Dropdown",
+        "%vlocity_namespace%__ValidValuesData__c": [
+            {
+                "displayText": "20 Mbps",
+                "id": "49b18f0a-6c93-d842-269c-39550e0a04c3",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 1,
+                "value": "20 Mbps"
+            },
+            {
+                "displayText": "50 Mbps",
+                "id": "8d565f96-b1fe-72af-67a0-0b427c379085",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 2,
+                "value": "50 Mbps"
+            },
+            {
+                "displayText": "75 Mbps",
+                "id": "701045ee-d8c6-a909-653a-b659f935fc1b",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 3,
+                "value": "75 Mbps"
+            },
+            {
+                "displayText": "100 Mbps",
+                "id": "74ac573b-3f71-b05f-a7bf-c668f6b18fc6",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 4,
+                "value": "100 Mbps"
+            },
+            {
+                "displayText": "150 Mbps",
+                "id": "9319e9b1-ba6c-510a-996c-ae923b35f5dd",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 5,
+                "value": "150 Mbps"
+            },
+            {
+                "displayText": "200 Mbps",
+                "id": "6975b2b0-ed20-ee95-790a-7784f606e1de",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 6,
+                "value": "200 Mbps"
+            },
+            {
+                "displayText": "250 Mbps",
+                "id": "1c1ac9fb-cc99-4d89-a0d5-b8f0f09cbb43",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 7,
+                "value": "250 Mbps"
+            },
+            {
+                "displayText": "300 Mbps",
+                "id": "e9d1d371-f418-d97e-ae0f-5d524a4cbc73",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 8,
+                "value": "300 Mbps"
+            },
+            {
+                "displayText": "600 Mbps",
+                "id": "cf374b03-5201-07d3-dc65-2484211aa56d",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 9,
+                "value": "600 Mbps"
+            },
+            {
+                "displayText": "1000 Mbps",
+                "id": "54e5df4d-d114-3ca2-c412-a2e395346305",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 10,
+                "value": "1000 Mbps"
+            },
+            {
+                "displayText": "10000 Mbps",
+                "id": "d638e9f5-df2b-6645-fd8c-e755e82f38bb",
+                "isDefault": false,
+                "isEditable": false,
+                "sequence": 11,
+                "value": "10000 Mbps"
+            },
+            {
+                "displayText": "500 Mbps",
+                "id": "082915f7-e7aa-48c1-56be-133d5df83143",
+                "isDefault": true,
+                "isEditable": false,
+                "sequence": 12,
+                "value": "500 Mbps"
+            }
+        ],
+        "%vlocity_namespace%__ValueDataType__c": "Picklist",
+        "%vlocity_namespace%__ValueDecoder__c": "",
+        "%vlocity_namespace%__ValueDescription__c": "",
+        "%vlocity_namespace%__Value__c": "500 Mbps",
+        "Name": "CLONED_01t9X00000CJFVtQAP_ATT-UPL-SPD",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/cabe1c6e-3f2d-c085-957b-febf49d455b8"
+    }
+]

@@ -1,0 +1,35 @@
+{
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "LineBreak2",
+    "OmniProcessId": {
+        "Name": "EnrichPhoneNumbers",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichPhoneNumbers/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PhoneNumberMgmt",
+        "OmniProcessId": {
+            "Name": "EnrichPhoneNumbers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichPhoneNumbers/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichPhoneNumbers/German/PhoneNumberMgmt",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PhoneNumberMgmt",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "label": "LineBreak2",
+        "padding": 0,
+        "show": null
+    },
+    "Type": "Line Break",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichPhoneNumbers/German/LineBreak2"
+}

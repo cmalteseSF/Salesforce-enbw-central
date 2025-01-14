@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "EvaluateConnectionOrder",
+    "OmniProcessId": {
+        "Name": "Validate Order Submission",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ValidateOrderSubmission/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "IsConnectionOrder",
+        "OmniProcessId": {
+            "Name": "Validate Order Submission",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ValidateOrderSubmission/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ValidateOrderSubmission/Procedure/IsConnectionOrder",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "IsConnectionOrder",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "CheckConnectionOrder": "=IF(%InstallationStatus% = 'Ready','CONNECTION_OK','CONNECTION_NOK')"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ValidateOrderSubmission/Procedure/EvaluateConnectionOrder"
+}

@@ -1,0 +1,180 @@
+[
+    {
+        "FormulaExpression": "TODAY()",
+        "FormulaResultPath": "TodayDate",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRUpdateQuoteAndOpportunityByQuoteIdCustom4864",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateQuoteAndOpportunityByQuoteIdCustom9658",
+        "InputFieldName": "TodayDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmailSentDate__c",
+        "OutputObjectName": "Quote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateQuoteAndOpportunityByQuoteIdCustom7706",
+        "InputFieldName": "ExpirationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ExpirationDate",
+        "OutputObjectName": "Quote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateQuoteAndOpportunityByQuoteIdCustom1073",
+        "InputFieldName": "QuoteId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Quote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DRUpdateQuoteAndOpportunityByQuoteIdCustom7479",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Quote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateQuoteAndOpportunityByQuoteIdCustom4627",
+        "InputFieldName": "QuoteStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "Quote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DRUpdateQuoteAndOpportunityByQuoteIdCustom5869",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Opportunity",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DRUpdateQuoteAndOpportunityByQuoteIdCustom8583",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "LinkedFieldName": "OpportunityId",
+        "LinkedObjectSequence": 1,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Opportunity",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateQuoteAndOpportunityByQuoteIdCustom253",
+        "InputFieldName": "StageName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteAndOpportunityByQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 2,
+        "OutputFieldName": "StageName",
+        "OutputObjectName": "Opportunity",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

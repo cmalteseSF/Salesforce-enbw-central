@@ -1,0 +1,49 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ConfigureVoice",
+    "OmniProcessId": {
+        "Name": "ConfigureServiceQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ConfigureServiceQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "productCode": "PNET-SIP-ACC",
+            "qliId": "%GetPriceBookIdsFromQuote:qliVoiceAccount%",
+            "qliVoicePaket": "%GetPriceBookIdsFromQuote:qliVoicePaket%",
+            "quoteId": "%quoteId%",
+            "selectedQuantity": "%offerConfig:voice:voicePhoneAccount%",
+            "tariff": "%offerConfig:voice:tariff%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "%offerConfig:productType% == \"Office\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "PlusNet_ConfigureVoice",
+        "label": "IntegrationProcedureAction1",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ConfigureServiceQuote/Procedure/ConfigureVoice"
+}

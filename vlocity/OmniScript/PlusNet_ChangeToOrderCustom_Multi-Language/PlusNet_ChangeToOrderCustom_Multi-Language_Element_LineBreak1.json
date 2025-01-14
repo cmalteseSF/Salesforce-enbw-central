@@ -1,0 +1,35 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "LineBreak1",
+    "OmniProcessId": {
+        "Name": "Change to Order Custom",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ConfirmationOrder",
+        "OmniProcessId": {
+            "Name": "Change to Order Custom",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language/ConfirmationOrder",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ConfirmationOrder",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "label": "",
+        "padding": 10,
+        "show": null
+    },
+    "Type": "Line Break",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language/LineBreak1"
+}

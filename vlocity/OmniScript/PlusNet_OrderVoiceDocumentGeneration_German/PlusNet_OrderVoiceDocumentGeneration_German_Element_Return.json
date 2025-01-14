@@ -1,0 +1,55 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Return",
+    "OmniProcessId": {
+        "Name": "OrderVoiceDocumentGeneration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/OrderVoiceDocumentGeneration/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Step1",
+        "OmniProcessId": {
+            "Name": "OrderVoiceDocumentGeneration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/OrderVoiceDocumentGeneration/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/OrderVoiceDocumentGeneration/German/Step1",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Step1",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": "Return",
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": true,
+        "show": null,
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWCLayout": "lightning",
+        "targetType": "Record",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/OrderVoiceDocumentGeneration/German/Return"
+}

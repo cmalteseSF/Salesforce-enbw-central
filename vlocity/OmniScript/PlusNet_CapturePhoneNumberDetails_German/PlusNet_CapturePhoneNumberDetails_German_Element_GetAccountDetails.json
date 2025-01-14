@@ -1,0 +1,52 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetAccountDetails",
+    "OmniProcessId": {
+        "Name": "CapturePhoneNumberDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CapturePhoneNumberDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "bundle": "DRGetAccountDetailsFromQuoteId",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "ContextId",
+                "inputParam": "Id"
+            }
+        ],
+        "enableActionMessage": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "ignoreCache": false,
+        "inProgressMessage": "In Progress",
+        "label": "",
+        "message": {
+        },
+        "postMessage": "Done",
+        "pubsub": false,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "DataRaptor Turbo Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CapturePhoneNumberDetails/German/GetAccountDetails"
+}

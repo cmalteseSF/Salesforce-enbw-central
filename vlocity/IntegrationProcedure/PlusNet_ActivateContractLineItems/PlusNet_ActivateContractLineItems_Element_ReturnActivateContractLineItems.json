@@ -1,0 +1,36 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ReturnActivateContractLineItems",
+    "OmniProcessId": {
+        "Name": "Activate Contract Line Items",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ActivateContractLineItems/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "RetCode": "=IF(%UpdateContractHeader:Contract_1|1:UpsertSuccess% == 'true', IF(%UpdateCLIsAddOLIs:%vlocity_namespace%__ContractLineItem__c_1|1:UpsertSuccess% == 'true', 'OK'), 'NOK')"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ActivateContractLineItems/Procedure/ReturnActivateContractLineItems"
+}

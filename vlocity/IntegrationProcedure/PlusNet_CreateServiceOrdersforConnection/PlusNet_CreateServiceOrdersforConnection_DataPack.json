@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "PlusNet_CreateServiceOrdersforConnection_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Create Service Orders for Connection",
+    "OmniProcessElement": [
+        "PlusNet_CreateServiceOrdersforConnection_Element_GetConnectionReferenceId.json",
+        "PlusNet_CreateServiceOrdersforConnection_Element_GetOpenServiceQuotes.json",
+        "PlusNet_CreateServiceOrdersforConnection_Element_CreateServiceOrders.json",
+        "PlusNet_CreateServiceOrdersforConnection_Element_CreateServiceOrder.json",
+        "PlusNet_CreateServiceOrdersforConnection_Element_ResponseCreateServiceOrdersforConnection.json"
+    ],
+    "OmniProcessKey": "PlusNet_CreateServiceOrdersforConnection",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CreateServiceOrdersforConnection_PropertySetConfig.json",
+    "SubType": "CreateServiceOrdersforConnection",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CreateServiceOrdersforConnection/Procedure"
+}

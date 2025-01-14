@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "PlusNet_GetFiberOffersBandwidthBased_SampleInput.json",
+    "Description": "It leverages GetOffers DC API to fetch offers from the catalog, it filters and sorts based on max bandwidth Updates-changed the requestURL in GetOffers",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "GetFiberOffersBandwidthBased",
+    "OmniProcessElement": [
+        "PlusNet_GetFiberOffersBandwidthBased_Element_GetActiveCatalogs.json",
+        "PlusNet_GetFiberOffersBandwidthBased_Element_GetProductsByPriceBookEntry.json",
+        "PlusNet_GetFiberOffersBandwidthBased_Element_SetAPIContext.json",
+        "PlusNet_GetFiberOffersBandwidthBased_Element_GetOffers.json",
+        "PlusNet_GetFiberOffersBandwidthBased_Element_GetOffersPayloadTransform.json",
+        "PlusNet_GetFiberOffersBandwidthBased_Element_FilterOffersBasedOnBandwidth.json",
+        "PlusNet_GetFiberOffersBandwidthBased_Element_SortOffersBasedOnBandwidth.json",
+        "PlusNet_GetFiberOffersBandwidthBased_Element_ReturnGetFiberOffersBandwidthBased.json"
+    ],
+    "OmniProcessKey": "PlusNet_GetFiberOffersBandwidthBased",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_GetFiberOffersBandwidthBased_PropertySetConfig.json",
+    "SubType": "GetFiberOffersBandwidthBased",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/GetFiberOffersBandwidthBased/Procedure"
+}

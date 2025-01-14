@@ -1,0 +1,49 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetSPRI",
+    "OmniProcessId": {
+        "Name": "ValidateAddresses",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ValidateAddresses/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "AddressType": "=IF(%BusinessEqualServiceAddress% == true, 'Serviceadresse', %AddressType%)"
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Lead",
+                        "field": "Context"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "BusinessEqualServiceAddress"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ValidateAddresses/German/SetSPRI"
+}

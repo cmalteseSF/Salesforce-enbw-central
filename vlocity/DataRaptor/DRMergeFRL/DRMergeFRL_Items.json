@@ -1,0 +1,106 @@
+[
+    {
+        "FormulaExpression": "FILTER(LIST(%MergedFRLData1%), 'AttrValue != \"\"')",
+        "FormulaResultPath": "FilterIPFRLData",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRMergeFRLCustom3791",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRMergeFRL",
+        "OmniDataTransformationId": {
+            "Name": "DRMergeFRL",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRMergeFRL",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%MergedFRLData1%), 'SerialAttrValue != \"\"')",
+        "FormulaResultPath": "FilterSerialFRLData",
+        "FormulaSequence": 3,
+        "GlobalKey": "DRMergeFRLCustom1260",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRMergeFRL",
+        "OmniDataTransformationId": {
+            "Name": "DRMergeFRL",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRMergeFRL",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LISTMERGE(\"FRLId\", LIST(%FilterIPFRLData%), LIST(%FilterSerialFRLData%))",
+        "FormulaResultPath": "MergedFRLData",
+        "FormulaSequence": 4,
+        "GlobalKey": "DRMergeFRLCustom8563",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRMergeFRL",
+        "OmniDataTransformationId": {
+            "Name": "DRMergeFRL",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRMergeFRL",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LISTMERGEPRIMARY(\"FRLId\", LIST(%LoopBlock1:MergedOutput%), LIST(FRLJsonList))",
+        "FormulaResultPath": "MergedFRLData1",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRMergeFRLCustom0jI9M000000AhLRUA0Item0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRMergeFRL",
+        "OmniDataTransformationId": {
+            "Name": "DRMergeFRL",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRMergeFRL",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRMergeFRLCustom0jI9M000000AhLRUA0Item7",
+        "InputFieldName": "MergedFRLData",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRMergeFRL",
+        "OmniDataTransformationId": {
+            "Name": "DRMergeFRL",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRMergeFRL",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "MergedFRLData",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,42 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CloseComarchIntegrationTask",
+    "OmniProcessId": {
+        "Name": "Send Order To Comarch",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderToComarch/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "id": "=IF(ISBLANK(%CreateComarchIntegrationTask%), %GetComarchIntegrationTask:TaskList|1:Id%, %CreateComarchIntegrationTask:Task_1|1:Id%)",
+            "status": "Completed"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRUpdateTask",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "(ISNOTBLANK(%SendOrderActivation%) && %SendOrderActivation:message% == \"Success\") OR (ISNOTBLANK(%SendOrderTermination%) && %SendOrderTermination:message% == \"Success\")",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderToComarch/Procedure/CloseComarchIntegrationTask"
+}

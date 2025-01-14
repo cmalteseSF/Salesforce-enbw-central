@@ -1,0 +1,713 @@
+[
+    {
+        "%vlocity_namespace%__CompiledAttributeOverrideId__c": {
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-1154894817",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c"
+        },
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-GNR-ATT",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-GNR-ATT",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverriddenAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-OFF-CODE",
+            "%vlocity_namespace%__IsOverride__c": false,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "c4aeefc0-1ec4-c87b-35e1-fa9938c346fc",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/c4aeefc0-1ec4-c87b-35e1-fa9938c346fc",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": null,
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/27528cf1-9290-ea52-9967-4c86dcd4feb7",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Attribute",
+        "%vlocity_namespace%__OverridingAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-GNR-ATT",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-GNR-ATT",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverridingAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-OFF-CODE",
+            "%vlocity_namespace%__IsOverride__c": true,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "c4aeefc0-1ec4-c87b-35e1-fa9938c346fc",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/c4aeefc0-1ec4-c87b-35e1-fa9938c346fc",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": "994045421",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/fe223955-0984-286b-8d21-70e48d6cd2da",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<b664f7e6-2f17-528f-5f1c-0cb5d1943f6e<c4aeefc0-1ec4-c87b-35e1-fa9938c346fc",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<a628358a-09f5-a511-3723-8a8dd5af3a0a<794fe000-ecf4-e6a6-0a91-3a23c308c468",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01t9M000008duH4QAI<01t9M000008duIfQAI",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    },
+    {
+        "%vlocity_namespace%__CompiledAttributeOverrideId__c": {
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-1233688308",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c"
+        },
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-GNR-ATT",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-GNR-ATT",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverriddenAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-OFF-CODE",
+            "%vlocity_namespace%__IsOverride__c": false,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": null,
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/c3b5baaf-a179-7b0e-59de-572fba43f2d7",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Attribute",
+        "%vlocity_namespace%__OverridingAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-GNR-ATT",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-GNR-ATT",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverridingAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-OFF-CODE",
+            "%vlocity_namespace%__IsOverride__c": true,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": "637295506",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/8d9c7958-4369-1cdc-23e8-7beba880e901",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<38419df5-4332-9cb3-7af4-2c1f07145df4",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<5478a543-058a-6b0a-a273-f39badcacdce",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01t9M000008dnqrQAA",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    },
+    {
+        "%vlocity_namespace%__CompiledAttributeOverrideId__c": {
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-1233688308",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c"
+        },
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-INT-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-INT-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverriddenAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-DWN-SPD",
+            "%vlocity_namespace%__IsOverride__c": false,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": null,
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/135e802e-a9d2-118b-c94a-ea5f0812b2d9",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Attribute",
+        "%vlocity_namespace%__OverridingAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-INT-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-INT-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverridingAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-DWN-SPD",
+            "%vlocity_namespace%__IsOverride__c": true,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": "637295506",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/d2acdd19-e314-eb30-95a1-905319505026",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<38419df5-4332-9cb3-7af4-2c1f07145df4",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<5478a543-058a-6b0a-a273-f39badcacdce",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01t9M000008dnqrQAA",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    },
+    {
+        "%vlocity_namespace%__CompiledAttributeOverrideId__c": {
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-1233688308",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c"
+        },
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-INT-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-INT-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverriddenAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-UPL-SPD",
+            "%vlocity_namespace%__IsOverride__c": false,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": null,
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/fdffeba8-182e-c5f1-f961-1a59953414fb",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Attribute",
+        "%vlocity_namespace%__OverridingAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-INT-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-INT-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverridingAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-UPL-SPD",
+            "%vlocity_namespace%__IsOverride__c": true,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/38419df5-4332-9cb3-7af4-2c1f07145df4",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": "637295506",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/c4b91a2f-7c1b-e93e-7f37-2c157abde18f",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<38419df5-4332-9cb3-7af4-2c1f07145df4",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<5478a543-058a-6b0a-a273-f39badcacdce",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01t9M000008dnqrQAA",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    },
+    {
+        "%vlocity_namespace%__CompiledAttributeOverrideId__c": {
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-2067026086",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c"
+        },
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-GNR-ATT",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-GNR-ATT",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverriddenAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-OFF-CODE",
+            "%vlocity_namespace%__IsOverride__c": false,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "b34437aa-628c-b1d2-59f6-30be8219b8c2",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/b34437aa-628c-b1d2-59f6-30be8219b8c2",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": null,
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/d7363cde-f42e-bf6e-2d68-95c20d7d4ca8",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Attribute",
+        "%vlocity_namespace%__OverridingAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-GNR-ATT",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-GNR-ATT",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverridingAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-OFF-CODE",
+            "%vlocity_namespace%__IsOverride__c": true,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "b34437aa-628c-b1d2-59f6-30be8219b8c2",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/b34437aa-628c-b1d2-59f6-30be8219b8c2",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": "523075458",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/fff59476-5eec-9e1e-087d-457a0d578d2c",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<b34437aa-628c-b1d2-59f6-30be8219b8c2",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<64ea5f79-f973-0eb3-5731-2f8aab975aa0",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01t9M000008eGW5QAM",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    },
+    {
+        "%vlocity_namespace%__CompiledAttributeOverrideId__c": {
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-2128817593",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c"
+        },
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-GNR-ATT",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-GNR-ATT",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverriddenAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-OFF-CODE",
+            "%vlocity_namespace%__IsOverride__c": false,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": null,
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/9ff65f40-f0ab-a5e5-3436-2f2089d28b09",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Attribute",
+        "%vlocity_namespace%__OverridingAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-GNR-ATT",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-GNR-ATT",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverridingAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-OFF-CODE",
+            "%vlocity_namespace%__IsOverride__c": true,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": "1740488514",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/50ebd50b-d826-3f9f-d4ed-892bd65ce33a",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<8ccbf96a-e729-224a-9085-24bccb8b94b5",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<0663d6a9-d7d2-8696-680e-485a931bf59a",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01tMU000000lEfHYAU",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    },
+    {
+        "%vlocity_namespace%__CompiledAttributeOverrideId__c": {
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-2128817593",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c"
+        },
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-HRD-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-HRD-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverriddenAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-INT-TYP",
+            "%vlocity_namespace%__IsOverride__c": false,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": null,
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/73ca6a0a-45e2-58fa-986d-f2e44bd92ba2",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Attribute",
+        "%vlocity_namespace%__OverridingAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-HRD-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-HRD-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverridingAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-INT-TYP",
+            "%vlocity_namespace%__IsOverride__c": true,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": "1740488514",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/72e20235-d9bc-9e98-6a8d-2a18af4ad1ef",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<8ccbf96a-e729-224a-9085-24bccb8b94b5",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<0663d6a9-d7d2-8696-680e-485a931bf59a",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01tMU000000lEfHYAU",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    },
+    {
+        "%vlocity_namespace%__CompiledAttributeOverrideId__c": {
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-2128817593",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c"
+        },
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-HRD-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-HRD-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverriddenAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-ONT-ID",
+            "%vlocity_namespace%__IsOverride__c": false,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": null,
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/f52eeefc-01c1-c398-2159-78b9a9861841",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Attribute",
+        "%vlocity_namespace%__OverridingAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-HRD-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-HRD-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverridingAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-ONT-ID",
+            "%vlocity_namespace%__IsOverride__c": true,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": "1740488514",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/65566861-9a2d-64da-4b61-8d17d06f84fa",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<8ccbf96a-e729-224a-9085-24bccb8b94b5",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<0663d6a9-d7d2-8696-680e-485a931bf59a",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01tMU000000lEfHYAU",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    },
+    {
+        "%vlocity_namespace%__CompiledAttributeOverrideId__c": {
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated-2128817593",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c"
+        },
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-HRD-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-HRD-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverriddenAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-RTR-TYP",
+            "%vlocity_namespace%__IsOverride__c": false,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": null,
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/b0f35372-3a7a-0bc7-ef46-16c622bec670",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Attribute",
+        "%vlocity_namespace%__OverridingAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-HRD-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-HRD-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverridingAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-RTR-TYP",
+            "%vlocity_namespace%__IsOverride__c": true,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/8ccbf96a-e729-224a-9085-24bccb8b94b5",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": "1740488514",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/2242fef1-305e-0365-49a4-63b40180d4b9",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<8ccbf96a-e729-224a-9085-24bccb8b94b5",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<0663d6a9-d7d2-8696-680e-485a931bf59a",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01tMU000000lEfHYAU",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    },
+    {
+        "%vlocity_namespace%__CompiledAttributeOverrideId__c": {
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated1882380343",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c"
+        },
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-GNR-ATT",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-GNR-ATT",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverriddenAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-OFF-CODE",
+            "%vlocity_namespace%__IsOverride__c": false,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": null,
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/2924bb85-cbe6-8b03-0b7b-24e58dfb2d3c",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Attribute",
+        "%vlocity_namespace%__OverridingAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-GNR-ATT",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-GNR-ATT",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverridingAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-OFF-CODE",
+            "%vlocity_namespace%__IsOverride__c": true,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": "409022222",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/aec07ffa-11e7-4354-047a-8631af7c8f14",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<a628358a-09f5-a511-3723-8a8dd5af3a0a",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01t9M000008duH4QAI",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    },
+    {
+        "%vlocity_namespace%__CompiledAttributeOverrideId__c": {
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__CompiledAttributeOverride__c/Generated1882380343",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__CompiledAttributeOverride__c"
+        },
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-IP-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-IP-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverriddenAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-IP-TYP",
+            "%vlocity_namespace%__IsOverride__c": false,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": null,
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/79acef93-e75d-abb3-a253-6d5846c806c6",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Attribute",
+        "%vlocity_namespace%__OverridingAttributeAssignmentCategoryId__c": {
+            "%vlocity_namespace%__Code__c": "ATTCAT-B2B-IP-DTL",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeCategory__c/ATTCAT-B2B-IP-DTL",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeCategory__c"
+        },
+        "%vlocity_namespace%__OverridingAttributeAssignmentId__c": {
+            "%vlocity_namespace%__AttributeId__r.%vlocity_namespace%__Code__c": "ATT-IP-TYP",
+            "%vlocity_namespace%__IsOverride__c": true,
+            "%vlocity_namespace%__ObjectId__c": {
+                "%vlocity_namespace%__GlobalKey__c": "b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Product2/b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "%vlocity_namespace%__OverrideContext__c": "409022222",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__AttributeAssignment__c/bd668ea3-45ae-ca51-339d-e3476c088f1e",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__AttributeAssignment__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<a628358a-09f5-a511-3723-8a8dd5af3a0a",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01t9M000008duH4QAI",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    },
+    {
+        "%vlocity_namespace%__IsExclude__c": false,
+        "%vlocity_namespace%__OverriddenProductChildItemId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "390d3530-982b-4438-d994-1ef40a444a83",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ProductChildItem__c/390d3530-982b-4438-d994-1ef40a444a83",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ProductChildItem__c"
+        },
+        "%vlocity_namespace%__OverrideType__c": "Product Definition",
+        "%vlocity_namespace%__OverridingProductChildItemId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "4ccfe1a9-d664-35b0-1e48-5c3fb780a297",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ProductChildItem__c/4ccfe1a9-d664-35b0-1e48-5c3fb780a297",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__ProductChildItem__c"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408",
+        "%vlocity_namespace%__ProductHierarchyGlobalKeyPath__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014<b664f7e6-2f17-528f-5f1c-0cb5d1943f6e<c4aeefc0-1ec4-c87b-35e1-fa9938c346fc",
+        "%vlocity_namespace%__ProductHierarchyGroupKeyPath__c": "4863f0bd-a33a-278f-81f6-f09df2e3c408<a628358a-09f5-a511-3723-8a8dd5af3a0a<794fe000-ecf4-e6a6-0a91-3a23c308c468",
+        "%vlocity_namespace%__ProductHierarchyPath__c": "01t9M0000093FyGQAU<01t9M000008duH4QAI<01t9M000008duIfQAI",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "OverrideDefinition",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OverrideDefinition__c"
+    }
+]

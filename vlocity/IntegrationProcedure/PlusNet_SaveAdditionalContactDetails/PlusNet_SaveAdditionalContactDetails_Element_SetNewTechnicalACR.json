@@ -1,0 +1,60 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetNewTechnicalACR",
+    "OmniProcessId": {
+        "Name": "SaveAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "NewTechnicalContact",
+        "OmniProcessId": {
+            "Name": "SaveAdditionalContactDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure/NewTechnicalContact",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "NewTechnicalContact",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountId": "%Quote:ServiceAccountId%",
+            "ContactId": "=IF(%GetTechContactFromName:isContactNull% == \"false\", %GetTechContactFromName:Contact:Id%, %CreateNewTechContact:Contact_1|1:Id%)",
+            "Roles": "Technischer Ansprechpartner"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "PlusNet_SetAccountContactRelationship",
+        "label": "IntegrationProcedureAction6",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure/SetNewTechnicalACR"
+}

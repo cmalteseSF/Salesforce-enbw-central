@@ -1,0 +1,63 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "OrderCreationSuccessMessaging",
+    "OmniProcessId": {
+        "Name": "Change to Order Custom",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ConfirmationOrder",
+        "OmniProcessId": {
+            "Name": "Change to Order Custom",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language/ConfirmationOrder",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ConfirmationOrder",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "hideLabel": true,
+        "label": null,
+        "messages": [
+            {
+                "active": true,
+                "text": "OrderCreationSuccess",
+                "type": "Success",
+                "value": true
+            },
+            {
+                "active": false,
+                "type": "Requirement",
+                "value": false
+            }
+        ],
+        "messages|0:text": "CPQFDOFailedDisconnectedAssets",
+        "show": null,
+        "validateExpression": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "fdoId"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language/OrderCreationSuccessMessaging"
+}

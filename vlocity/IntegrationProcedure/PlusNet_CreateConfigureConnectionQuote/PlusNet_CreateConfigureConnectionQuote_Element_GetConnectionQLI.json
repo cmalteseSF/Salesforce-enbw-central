@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetConnectionQLI",
+    "OmniProcessId": {
+        "Name": "CreateConfigureConnectionQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "quoteId": "=IF(%Context% == 'Opportunity',%CreateQuote:Quote_1|1:Id%,%CreateQuoteCaseContext:Quote_1|1:Id%)"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "GetPriceBookIdsFromQuote",
+        "chainOnStep": false,
+        "dataRaptor Input Parameters": [
+        ],
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "ignoreCache": false,
+        "label": "DataMapperExtractAction4",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Extract Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure/GetConnectionQLI"
+}

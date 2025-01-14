@@ -1,0 +1,77 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetInitialValues",
+    "OmniProcessId": {
+        "Name": "AddAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/AddAdditionalContactDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "BillingSameBusinessAddress": "=IF(%BillingAddress:Id% == NULL, true, IF(%BillingAddress:Id% == %BusinessAddress:Id%, true, false))",
+            "ContactColumns": [
+                {
+                    "fieldName": "Salutation",
+                    "label": "Anrede",
+                    "sortable": true,
+                    "type": "text"
+                },
+                {
+                    "fieldName": "FirstName",
+                    "label": "Vorname",
+                    "sortable": true,
+                    "type": "text"
+                },
+                {
+                    "fieldName": "LastName",
+                    "label": "Nachname",
+                    "sortable": true,
+                    "type": "text"
+                },
+                {
+                    "fieldName": "Phone",
+                    "label": "Telefon",
+                    "sortable": true,
+                    "type": "text"
+                },
+                {
+                    "fieldName": "Email",
+                    "label": "E-Mail",
+                    "sortable": true,
+                    "type": "text"
+                }
+            ],
+            "IsBillingContact": "=IF(%PrimaryContact:Id% == %BillingContact:Id%, true, false)",
+            "IsTechnicalContact": "=IF(%PrimaryContact:Id% == %TechnicalContact:Id%, true, false)",
+            "ShippingSameServiceAddress": "=IF(%ShippingAddress:Id% == NULL, true, IF(%ShippingAddress:Id% == %ServiceAddress:Id%, true, false))",
+            "selectedBillingRow": [
+                "=%BillingContact:Id%"
+            ],
+            "selectedPrimaryRow": [
+                "=%PrimaryContact:Id%"
+            ],
+            "selectedTechRow": [
+                "=%TechnicalContact:Id%"
+            ]
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/AddAdditionalContactDetails/German/SetInitialValues"
+}

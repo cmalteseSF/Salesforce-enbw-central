@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meine_Kontakte_E_Mail_unzustellbar</fullName>
+    <columns>CONTACT.SALUTATION</columns>
+    <columns>FULL_NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CONTACT.TITLE</columns>
+    <columns>CONTACT.PHONE1</columns>
+    <columns>CONTACT.EMAIL</columns>
+    <columns>IS_EMAIL_ADDRESS_BOUNCED</columns>
+    <columns>CONTACT.LAST_ACTIVITY</columns>
+    <columns>CONTACT.LAST_UPDATE</columns>
+    <columns>CONTACT.CREATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>IS_EMAIL_ADDRESS_BOUNCED</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Meine Kontakte - E-Mail unzustellbar</label>
+</ListView>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>New</fullName>
+        <default>true</default>
+        <label>Neu</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Open</fullName>
+        <default>false</default>
+        <label>Open</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending</fullName>
+        <default>false</default>
+        <label>Pending</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Escalated</fullName>
+        <default>false</default>
+        <label>Eskaliert</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Pending Owner Identification</fullName>
+        <default>false</default>
+        <label>Ausstehende Identifizierung des Besitzers</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Owner Identified</fullName>
+        <default>false</default>
+        <label>Besitzer identifiziert</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Owner Not Identified</fullName>
+        <default>false</default>
+        <label>Besitzer nicht identifiziert</label>
+        <closed>false</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Geschlossen</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Resolved</fullName>
+        <default>false</default>
+        <label>Aufgelöst</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - No Owner Identified</fullName>
+        <default>false</default>
+        <label>Geschlossen - Besitzer nicht identifiziert</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Duplicate</fullName>
+        <default>false</default>
+        <label>Geschlossen - Duplikat</label>
+        <closed>true</closed>
+    </standardValue>
+    <standardValue>
+        <fullName>Closed - Not Valid</fullName>
+        <default>false</default>
+        <label>Geschlossen - Nicht gültig</label>
+        <closed>true</closed>
+    </standardValue>
+</StandardValueSet>

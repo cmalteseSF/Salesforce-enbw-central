@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Collect_Owner_Details</fullName>
+    <availability>online</availability>
+    <description>Starts a process to collect owner details and create a Quote with Hausanschluss in it</description>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Eigentümer Daten erfassen</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/lightning/cmp/vlocity_cmt__vlocityLWCOmniWrapper?c__target=c:PlusNetCreateConnectionQuoteGerman&amp;c__layout=lightning&amp;c__tabIcon=custom:custom18&amp;c__tabLabel=CollectOwnerDetails&amp;c__Context=Case&amp;c__ContextId={!Case.Id}&amp;c__accountId={!Case.AccountId}&amp;c__contactId={!Case.ContactId}&amp;c__premiseId={!Case.vlocity_cmt__PremisesIdId__c}&amp;c__marketingPhase={!Case.MarketingPhase__c}&amp;c__status={!Case.Status}&amp;c__premiseOwnerAccountId={!Case.PremiseOwnerAccountId__c}</url>
+</WebLink>

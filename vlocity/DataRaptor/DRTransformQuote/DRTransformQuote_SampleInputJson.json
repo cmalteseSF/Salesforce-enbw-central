@@ -1,0 +1,133 @@
+{
+    "AccountBusinessCity": "Fürth",
+    "AccountBusinessCountry": "DE",
+    "AccountBusinessHouseNo": "60",
+    "AccountBusinessName": "EVOline",
+    "AccountBusinessPostalCode": "90763",
+    "AccountBusinessStreet": "Höfener Str.",
+    "AccountServiceCity": "Fürth",
+    "AccountServiceHouseNo": "60",
+    "AccountServiceHouseNoExt": "A",
+    "AccountServicePostalCode": "90763",
+    "AccountServiceStreet": "Höfener Str.",
+    "ContractTerm": "12 Monate",
+    "FormattedDate": "13.03.2024",
+    "OneTimeTotal": 198,
+    "QLI": [
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 0,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 0,
+            "%vlocity_namespace%__OneTimeCharge__c": 0,
+            "%vlocity_namespace%__RecurringCharge__c": 0,
+            "LineNumber": "0001.0005.0001",
+            "ProductName__c": "IPfonie Basic Account",
+            "Quantity": 1
+        },
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 198,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 100,
+            "%vlocity_namespace%__OneTimeCharge__c": 0,
+            "%vlocity_namespace%__RecurringCharge__c": 0,
+            "LineNumber": "0001",
+            "ProductName__c": "Plusnet Glasfaser SOHO 300",
+            "Quantity": 1
+        },
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 0,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 0,
+            "%vlocity_namespace%__OneTimeCharge__c": 99,
+            "%vlocity_namespace%__RecurringCharge__c": 79,
+            "LineNumber": "0001.0001",
+            "ProductName__c": "Glasfaser Anschluss",
+            "Quantity": 1
+        },
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 0,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 0,
+            "%vlocity_namespace%__OneTimeCharge__c": 0,
+            "%vlocity_namespace%__RecurringCharge__c": 0,
+            "LineNumber": "0001.0002",
+            "ProductName__c": "IP Adresse",
+            "Quantity": 1
+        },
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 0,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 0,
+            "%vlocity_namespace%__OneTimeCharge__c": 0,
+            "%vlocity_namespace%__RecurringCharge__c": 5,
+            "LineNumber": "0001.0002.0001",
+            "ProductName__c": "IPv4 Adresse",
+            "Quantity": 1
+        },
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 0,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 0,
+            "%vlocity_namespace%__OneTimeCharge__c": 0,
+            "%vlocity_namespace%__RecurringCharge__c": 5,
+            "LineNumber": "0001.0002.0002",
+            "ProductName__c": "IPv6 Adresse",
+            "Quantity": 1
+        },
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 0,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 0,
+            "%vlocity_namespace%__OneTimeCharge__c": 0,
+            "%vlocity_namespace%__RecurringCharge__c": 5,
+            "LineNumber": "0001.0002.0003",
+            "ProductName__c": "IPv6 Netz",
+            "Quantity": 1
+        },
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 0,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 0,
+            "%vlocity_namespace%__OneTimeCharge__c": 0,
+            "%vlocity_namespace%__RecurringCharge__c": 6,
+            "LineNumber": "0001.0003",
+            "ProductName__c": "Hardware CPE",
+            "Quantity": 1
+        },
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 0,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 0,
+            "%vlocity_namespace%__OneTimeCharge__c": 99,
+            "%vlocity_namespace%__RecurringCharge__c": 0,
+            "LineNumber": "0001.0004",
+            "ProductName__c": "Service Techniker",
+            "Quantity": 1
+        },
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 0,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 0,
+            "%vlocity_namespace%__OneTimeCharge__c": 0,
+            "%vlocity_namespace%__RecurringCharge__c": 0,
+            "LineNumber": "0001.0005",
+            "ProductName__c": "IPfonie Basic Paket",
+            "Quantity": 1
+        },
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 0,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 0,
+            "%vlocity_namespace%__OneTimeCharge__c": 0,
+            "%vlocity_namespace%__RecurringCharge__c": 0,
+            "LineNumber": "0001.0005.0002",
+            "ProductName__c": "IPfonie Basic Account",
+            "Quantity": 1
+        },
+        {
+            "%vlocity_namespace%__EffectiveOneTimeTotal__c": 0,
+            "%vlocity_namespace%__EffectiveRecurringTotal__c": 0,
+            "%vlocity_namespace%__OneTimeCharge__c": 0,
+            "%vlocity_namespace%__RecurringCharge__c": 0,
+            "LineNumber": "0001.0005.0003",
+            "ProductName__c": "IPfonie Basic Account",
+            "Quantity": 1
+        }
+    ],
+    "Quote": {
+        "AccountId": "0019M00000K3d1JQAR",
+        "CreatedDate": "2024-03-05T14:31:40.000Z",
+        "SubType": "Service"
+    },
+    "QuoteNumber": "00001110",
+    "RecurringTotal": 100
+}

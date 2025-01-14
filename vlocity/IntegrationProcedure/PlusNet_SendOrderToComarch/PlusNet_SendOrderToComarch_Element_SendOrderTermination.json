@@ -1,0 +1,74 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SendOrderTermination",
+    "OmniProcessId": {
+        "Name": "Send Order To Comarch",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderToComarch/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TerminationOrder",
+        "OmniProcessId": {
+            "Name": "Send Order To Comarch",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderToComarch/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderToComarch/Procedure/TerminationOrder",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TerminationOrder",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "orderId": "%orderId%",
+            "orderType": "=IF(%GetOrderDetails:Order:OrderType% == 'Termination' , 'Termination' , 'Change')"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "HTTPAction1",
+        "namedCredential": "ComarchServiceOrder",
+        "postActionLogging": "",
+        "preActionLogging": "%endpoint%",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "restMethod": "PUT",
+        "restOptions": {
+            "clientCertificateName": "",
+            "headers": {
+                "Content-Type": "application/json; charset=UTF-8"
+            },
+            "isCompressed": false,
+            "params": {
+            },
+            "sendBody": true,
+            "timeout": 0,
+            "xmlEscapeResponse": false
+        },
+        "restPath": "",
+        "retryCount": 0,
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "type": "Integration",
+        "useFormulas": true
+    },
+    "Type": "Rest Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderToComarch/Procedure/SendOrderTermination"
+}

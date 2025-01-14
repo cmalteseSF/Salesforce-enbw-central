@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Change Contract Handler",
+    "OmniProcessElement": [
+        "PlusNet_ChangeContractHandler_Element_GetExistingAccessOLI.json",
+        "PlusNet_ChangeContractHandler_Element_UpdateContractHeader.json",
+        "PlusNet_ChangeContractHandler_Element_MaintainCLIs.json",
+        "PlusNet_ChangeContractHandler_Element_GetOLIRefIds.json",
+        "PlusNet_ChangeContractHandler_Element_UpdateCLIsExistingOLIs.json",
+        "PlusNet_ChangeContractHandler_Element_ReturnChangeContractHandler.json"
+    ],
+    "OmniProcessKey": "PlusNet_ChangeContractHandler",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ChangeContractHandler_PropertySetConfig.json",
+    "SubType": "ChangeContractHandler",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ChangeContractHandler/Procedure"
+}

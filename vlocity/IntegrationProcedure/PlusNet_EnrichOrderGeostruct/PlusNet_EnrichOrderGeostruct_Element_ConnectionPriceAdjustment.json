@@ -1,0 +1,61 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ConnectionPriceAdjustment",
+    "OmniProcessId": {
+        "Name": "EnrichOrderGeostruct",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "IFConnQuoteIsNotEmpty",
+        "OmniProcessId": {
+            "Name": "EnrichOrderGeostruct",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure/IFConnQuoteIsNotEmpty",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "IFConnQuoteIsNotEmpty",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AdjVal": "%SetAdjustmentsToDecimal:MarketingAdjValue%",
+            "ConnectionQuoteId": "%CreateNewConnectionQuote:Quote_1|1:Id%",
+            "QLIId": "%PostCartsItemsOfConnQuote:records|1:%vlocity_namespace%__QuoteGroupId__c:actions:availablesites:remote:params:id%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "%Order:MarketingPhase% != \"Betriebsphase\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "COM_IPApplyAdjustment",
+        "label": "IntegrationProcedureAction1",
+        "remoteOptions": {
+            "useFuture": true
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure/ConnectionPriceAdjustment"
+}

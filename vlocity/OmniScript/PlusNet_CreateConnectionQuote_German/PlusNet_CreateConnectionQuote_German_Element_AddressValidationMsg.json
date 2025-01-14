@@ -1,0 +1,95 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AddressValidationMsg",
+    "OmniProcessId": {
+        "Name": "CreateConnectionQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConnectionQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "OwnerDetailsBlock",
+        "OmniProcessId": {
+            "Name": "CreateConnectionQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConnectionQuote/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConnectionQuote/German/OwnerDetailsBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "OwnerDetailsBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "hideLabel": true,
+        "label": "",
+        "messages": [
+            {
+                "active": false,
+                "text": "",
+                "type": "Success",
+                "value": true
+            },
+            {
+                "active": true,
+                "text": "Die von Ihnen angegebene Adresse ist ungültig",
+                "type": "Warning",
+                "value": false
+            }
+        ],
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "",
+                        "field": "AddressCheck"
+                    },
+                    {
+                        "group": {
+                            "operator": "OR",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": "success",
+                                    "field": "AddressCheck:validationResult"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": null,
+                                    "field": "AddressCheck:AddressId"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "validateExpression": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "success",
+                        "field": "AddressCheck:validationResult"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "AddressCheck:AddressId"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConnectionQuote/German/AddressValidationMsg"
+}

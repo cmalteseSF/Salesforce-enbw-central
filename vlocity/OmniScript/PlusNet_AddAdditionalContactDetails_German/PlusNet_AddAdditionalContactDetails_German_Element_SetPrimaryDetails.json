@@ -1,0 +1,48 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetPrimaryDetails",
+    "OmniProcessId": {
+        "Name": "AddAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/AddAdditionalContactDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "ShippingCompany": "=IF(%ShippingAddress:Company% != NULL, %ShippingAddress:Company%, IF(%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Company% != NULL, %PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Company%, IF(%PrimaryContact:Company% !=NULL , %PrimaryContact:Company% , %Quote:BusinessAccountName%)))",
+            "ShippingEmail": "=IF(%ShippingAddress:Email% != NULL, %ShippingAddress:Email%, IF(%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Email% != NULL, %PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Email%, %PrimaryContact:Email%))",
+            "ShippingName": "=IF(%ShippingAddress:Name% != NULL, %ShippingAddress:Name%, IF(%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Name% != NULL, %PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Name%, %PrimaryContact:Name%))",
+            "selectedPrimaryContact": {
+                "Company": "=%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Company%",
+                "Email": "=%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Email%",
+                "FirstName": "=%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:FirstName%",
+                "Id": "=IF(%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1% == null && %selectedPrimaryRow|1% <> null, %selectedPrimaryRow|1%, %PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Id%)",
+                "LastName": "=%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:LastName%",
+                "Name": "=%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Name%",
+                "Phone": "=IF(%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Phone% == null, %TechincalContactPhoneNumber:PhoneNumber%, %PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Phone%)",
+                "Salutation": "=%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Salutation%"
+            },
+            "selectedPrimaryRow": [
+                "=IF(%PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1% == null && %selectedPrimaryRow|1% <> null, %selectedPrimaryRow|1%, %PrimaryContactDetails:PrimaryDetailsBlock:CustomLWC1|1:Id%)"
+            ]
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/AddAdditionalContactDetails/German/SetPrimaryDetails"
+}

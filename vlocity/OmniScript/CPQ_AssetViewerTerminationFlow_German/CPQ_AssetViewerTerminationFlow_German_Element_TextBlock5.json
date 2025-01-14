@@ -1,0 +1,50 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock5",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Termination Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerTerminationFlow/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TerminationOrderValidation",
+        "OmniProcessId": {
+            "Name": "Asset Viewer Termination Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerTerminationFlow/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerTerminationFlow/German/TerminationOrderValidation",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TerminationOrderValidation",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock1",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "1",
+                        "field": "SelectedAssetNumber"
+                    }
+                ]
+            }
+        },
+        "text": "<p><span style=\"color: #000000;\">Es scheint, dass Sie kein Asset oder mehr als ein Asset ausgew&auml;hlt haben. Bitte versuchen Sie erneut, nur ein Asset auszuw&auml;hlen.</span></p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerTerminationFlow/German/TextBlock5"
+}

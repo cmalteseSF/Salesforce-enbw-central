@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ExistACR",
+    "OmniProcessId": {
+        "Name": "SetBillingAccountACR",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SetBillingAccountACR/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetACRForBillingAccountAndBillingContact:isACRNull% == \"false\"",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock2",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SetBillingAccountACR/Procedure/ExistACR"
+}

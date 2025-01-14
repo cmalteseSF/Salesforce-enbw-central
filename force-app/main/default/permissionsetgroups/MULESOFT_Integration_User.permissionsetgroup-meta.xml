@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>PSG assigned to Mulesoft integration user</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>MULESOFT: Integration User</label>
+    <permissionSets>Account_Mulesoft</permissionSets>
+    <permissionSets>Apex_Custom_Classes</permissionSets>
+    <permissionSets>Apex_SFI_Classes</permissionSets>
+    <permissionSets>Contact_Mulesoft</permissionSets>
+    <permissionSets>ContractLineItem_Generic_CU</permissionSets>
+    <permissionSets>Contract_Mulesoft</permissionSets>
+    <permissionSets>CustomMetadata_Mulesoft</permissionSets>
+    <permissionSets>FulfilmentRequestLineDecompRelationship_Mulesoft</permissionSets>
+    <permissionSets>FulfilmentRequestLine_Mulesoft</permissionSets>
+    <permissionSets>FulfilmentRequest_Mulesoft</permissionSets>
+    <permissionSets>OM_User</permissionSets>
+    <permissionSets>OrderItem_Mulesoft</permissionSets>
+    <permissionSets>Order_Mulesoft</permissionSets>
+    <permissionSets>Platform_Events</permissionSets>
+    <permissionSets>Premise_Mulesoft</permissionSets>
+    <permissionSets>Pricebook2_Mulesoft</permissionSets>
+    <permissionSets>Product2_Mulesoft</permissionSets>
+    <permissionSets>QuoteApprovalForm_Mulesoft</permissionSets>
+    <permissionSets>QuoteLineItem_Mulesoft</permissionSets>
+    <permissionSets>Quote_Mulesoft</permissionSets>
+    <permissionSets>System_Permissions_Mulesoft</permissionSets>
+    <permissionSets>Task_Generic_CRUD</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

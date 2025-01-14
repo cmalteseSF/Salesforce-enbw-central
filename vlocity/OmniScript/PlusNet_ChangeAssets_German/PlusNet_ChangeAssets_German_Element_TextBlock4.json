@@ -1,0 +1,39 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock4",
+    "OmniProcessId": {
+        "Name": "ChangeAssets",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeAssets/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "HouseConnectionChange",
+        "OmniProcessId": {
+            "Name": "ChangeAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeAssets/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeAssets/German/HouseConnectionChange",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "HouseConnectionChange",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock4",
+        "sanitize": false,
+        "show": null,
+        "text": "<h2><span style=\"color: #e03e2d;\">Die Aktion ist ung&uuml;ltig f&uuml;r das Produkt Hausanschluss</span></h2>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeAssets/German/TextBlock4"
+}

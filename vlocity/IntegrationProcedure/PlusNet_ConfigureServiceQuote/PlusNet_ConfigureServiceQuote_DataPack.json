@@ -1,0 +1,33 @@
+{
+    "CustomJavaScript": "PlusNet_ConfigureServiceQuote_SampleInput.json",
+    "Description": "Manage the configuration of a Service Quote (Office, Business) Updates: updated ConfigureHardware process",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ConfigureServiceQuote",
+    "OmniProcessElement": [
+        "PlusNet_ConfigureServiceQuote_Element_TryPostCartsItems.json",
+        "PlusNet_ConfigureServiceQuote_Element_PostCartsItems.json",
+        "PlusNet_ConfigureServiceQuote_Element_GetPriceBookIdsFromQuote.json",
+        "PlusNet_ConfigureServiceQuote_Element_ConfigureAccess.json",
+        "PlusNet_ConfigureServiceQuote_Element_ConfigureIPNetwork.json",
+        "PlusNet_ConfigureServiceQuote_Element_ConfigureHardware.json",
+        "PlusNet_ConfigureServiceQuote_Element_ConfigureVoice.json",
+        "PlusNet_ConfigureServiceQuote_Element_GetCartsItems.json",
+        "PlusNet_ConfigureServiceQuote_Element_RunCartValidation.json",
+        "PlusNet_ConfigureServiceQuote_Element_SendCustomNotification.json",
+        "PlusNet_ConfigureServiceQuote_Element_ReturnConfigureServiceQuote.json"
+    ],
+    "OmniProcessKey": "PlusNet_ConfigureServiceQuote",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ConfigureServiceQuote_PropertySetConfig.json",
+    "SubType": "ConfigureServiceQuote",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ConfigureServiceQuote/Procedure"
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Business_Accounts</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ATPAccountId__c</columns>
+    <columns>BusinessAddress__c</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>ACCOUNT.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.vlocity_cmt__Business</value>
+    </filters>
+    <label>Business Accounts</label>
+</ListView>

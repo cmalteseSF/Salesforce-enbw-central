@@ -1,0 +1,60 @@
+[
+    {
+        "GlobalKey": "DRUpdateQLIAttrs2Custom0jIMU0000008Oxb2AEItem22",
+        "InputFieldName": "IPTyp",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateQLIAttrs2",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQLIAttrs2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQLIAttrs2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "@ATT-IP-TYP",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateQLIAttrs2Custom0jIMU0000008Oxb2AEItem19",
+        "InputFieldName": "DRExtractQLIInfo:QLIIPAddresseId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateQLIAttrs2",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQLIAttrs2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQLIAttrs2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DRUpdateQLIAttrs2Custom0jIMU0000008Oxb2AEItem21",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DRUpdateQLIAttrs2",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQLIAttrs2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQLIAttrs2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

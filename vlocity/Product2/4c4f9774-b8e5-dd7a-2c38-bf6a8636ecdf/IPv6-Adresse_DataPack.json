@@ -1,0 +1,409 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "IPv6-Adresse_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT-IP-ADD": null,
+        "ATT-IP-TYP": null,
+        "ATT-IP-VRS": "IPv6",
+        "ATT-SBN-MSK": "64",
+        "ATT-USG-TYP": "WANIP"
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATTCAT-B2B-IP-DTL",
+                "Name": "IP-Adressedetails",
+                "displaySequence": 60,
+                "id": "a0YMU000000EpLE2A0",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0ZMU0000009w4f2AA",
+                            "cloneable": true,
+                            "code": "ATT-USG-TYP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Usage Typ",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "8077f053-eb41-5785-466f-50aa36de579a",
+                                    "label": "WANIP",
+                                    "name": "8077f053-eb41-5785-466f-50aa36de579a",
+                                    "readonly": false,
+                                    "value": "WANIP"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "bf862043-6227-0211-2304-4951280af25a",
+                                    "label": "Routed",
+                                    "name": "bf862043-6227-0211-2304-4951280af25a",
+                                    "readonly": false,
+                                    "value": "Routed"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4e2AA",
+                            "cloneable": true,
+                            "code": "ATT-SBN-MSK",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Subnetzmaske",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "551b281b-2eb7-c71e-b1e6-774c556f5f2a",
+                                    "label": "/27",
+                                    "name": "551b281b-2eb7-c71e-b1e6-774c556f5f2a",
+                                    "readonly": false,
+                                    "value": "27"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "75cee991-a6c6-abaa-3344-7927e7d3b204",
+                                    "label": "/28",
+                                    "name": "75cee991-a6c6-abaa-3344-7927e7d3b204",
+                                    "readonly": false,
+                                    "value": "28"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 7,
+                                    "id": "906f1a45-39f5-8125-ef38-4b5d4915f2e6",
+                                    "label": "/56",
+                                    "name": "906f1a45-39f5-8125-ef38-4b5d4915f2e6",
+                                    "readonly": false,
+                                    "value": "56"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 6,
+                                    "id": "a6459fcd-c860-5c35-9898-98e95e164cde",
+                                    "label": "/48",
+                                    "name": "a6459fcd-c860-5c35-9898-98e95e164cde",
+                                    "readonly": false,
+                                    "value": "48"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 8,
+                                    "id": "b13e4229-abf3-3c58-ee06-87ae697bde02",
+                                    "label": "/64",
+                                    "name": "b13e4229-abf3-3c58-ee06-87ae697bde02",
+                                    "readonly": false,
+                                    "value": "64"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 3,
+                                    "id": "b6f89f8e-f24c-f4a8-a2c1-2f7bf2acdaea",
+                                    "label": "/29",
+                                    "name": "b6f89f8e-f24c-f4a8-a2c1-2f7bf2acdaea",
+                                    "readonly": false,
+                                    "value": "29"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 5,
+                                    "id": "d1eb1820-cb7a-b6b4-0abe-7c786fc939d4",
+                                    "label": "/32",
+                                    "name": "d1eb1820-cb7a-b6b4-0abe-7c786fc939d4",
+                                    "readonly": false,
+                                    "value": "32"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 4,
+                                    "id": "d607d619-c690-732b-04d6-46c88839f14b",
+                                    "label": "/30",
+                                    "name": "d607d619-c690-732b-04d6-46c88839f14b",
+                                    "readonly": false,
+                                    "value": "30"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4c2AA",
+                            "cloneable": true,
+                            "code": "ATT-IP-TYP",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 30,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "IP Typ",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "998eb87c-d5e9-5cb4-64b5-8de39132b789",
+                                    "label": "Statisch",
+                                    "name": "998eb87c-d5e9-5cb4-64b5-8de39132b789",
+                                    "readonly": true,
+                                    "value": "Static"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "af679e63-9d90-49cb-1394-c268ab7e146c",
+                                    "label": "Dynamische",
+                                    "name": "af679e63-9d90-49cb-1394-c268ab7e146c",
+                                    "readonly": true,
+                                    "value": "Dynamic"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4d2AA",
+                            "cloneable": true,
+                            "code": "ATT-IP-VRS",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 40,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "IP Version",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "570d1478-e1a0-4ca5-1d20-dfe2b95df741",
+                                    "label": "IPv6",
+                                    "name": "570d1478-e1a0-4ca5-1d20-dfe2b95df741",
+                                    "readonly": true,
+                                    "value": "IPv6"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "9d5b4dd5-9ae6-e69f-6e25-1f17277eca5a",
+                                    "label": "IPv4",
+                                    "name": "9d5b4dd5-9ae6-e69f-6e25-1f17277eca5a",
+                                    "readonly": true,
+                                    "value": "IPv4"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4W2AQ",
+                            "cloneable": true,
+                            "code": "ATT-IP-ADD",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 45,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "IP Netzwerkadresse",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 5
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-09-11",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-10T22:00:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "29bcab98-7f22-da9f-0b31-5699a73cd2da",
+    "%vlocity_namespace%__GlobalKey__c": "4c4f9774-b8e5-dd7a-2c38-bf6a8636ecdf",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "IPv6-Adresse_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "IPv6-Adresse_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "IPv6-Adresse_ProductChildItems.json",
+    "%vlocity_namespace%__ProductSpecId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "2ad413d6-a9f8-191e-214f-fbe65b2d4d1b",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "Product2/2ad413d6-a9f8-191e-214f-fbe65b2d4d1b",
+        "VlocityRecordSObjectType": "Product2"
+    },
+    "%vlocity_namespace%__ProductSpecName__c": "IP Adresse PS",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-10T22:00:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "Simple",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "IP",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "V1",
+    "%vlocity_namespace%__VersionStartDateTime__c": "2023-09-10T22:00:00.000Z",
+    "BillingType__c": "ADD_ON",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Internet",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "IPv6 Adresse",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PlusNet_Period_Of_Notice__c": 1,
+    "PricebookEntry": "IPv6-Adresse_PricebookEntries.json",
+    "ProductCode": "PNET-IPV6",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "SAPMaterialNumber__c": "S8",
+    "SelectedDownBandWidth__c": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "IPv6 Adresse",
+            "Pricebook2.Name": "Standardmäßiges Preisbuch",
+            "Pricebook2Id": {
+                "Name": "Standardmäßiges Preisbuch",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standardmäßiges Preisbuch",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "4c4f9774-b8e5-dd7a-2c38-bf6a8636ecdf",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "4c4f9774-b8e5-dd7a-2c38-bf6a8636ecdf",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/4c4f9774-b8e5-dd7a-2c38-bf6a8636ecdf",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "PNET-IPV6",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standardmäßiges Preisbuch/Product2/4c4f9774-b8e5-dd7a-2c38-bf6a8636ecdf"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "SyncBilling__c": true,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/4c4f9774-b8e5-dd7a-2c38-bf6a8636ecdf"
+}

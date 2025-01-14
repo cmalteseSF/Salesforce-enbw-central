@@ -1,0 +1,55 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TerminateCLIs",
+    "OmniProcessId": {
+        "Name": "Terminate Contract Line Items",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/TerminateContractLineItems/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TerminateContract",
+        "OmniProcessId": {
+            "Name": "Terminate Contract Line Items",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/TerminateContractLineItems/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/TerminateContractLineItems/Procedure/TerminateContract",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TerminateContract",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "TerminationDate": "%GetDisconnectedOLIRefIds:Order:TerminationDate%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "PlusNet-TerminateCLIs",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "GetDisconnectedOLIRefIds",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/TerminateContractLineItems/Procedure/TerminateCLIs"
+}

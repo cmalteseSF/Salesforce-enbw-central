@@ -1,0 +1,107 @@
+<!--
+  @description       : 
+  @author            : Sudhir Kumar Thanna
+  @group             : 
+  @last modified on  : 01-04-2024
+  @last modified by  : Sudhir Kumar Thanna
+-->
+<template>
+    
+    <div class="tableCss">
+        <lightning-datatable 
+            columns={columns} 
+            data={rows}
+            key-field="id"
+            max-row-selection={maxRowSelection}
+            hide-checkbox-column={hideCheckboxColumn}
+            selected-rows={selectedRows}
+            show-row-number-column={showRowNumberColumn}     
+            sorted-by={sortedBy}
+            sorted-direction={sortedDirection}
+            onsort={handleSort}             
+            onrowselection={handleRowSelection}>
+        </lightning-datatable>
+    </div>
+
+
+        
+    <br/>
+    <br/>
+    <br/>
+
+    <template if:true={selectedARow}>
+   <!--  <lightning-input type="checkbox" label="Portierung" checked={portingValue} onchange={handlePortingChange}></lightning-input> -->
+        <template if:true={areDetailsVisible}>
+
+            <span style="display: inline-block;width: 50%;">
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="tel" label="Rufnummer" placeholder="221 1111 1111" value={phonenumber} onchange={handlePhoneChange} readonly></lightning-input>
+            </div>
+            </span>
+
+            <span style="display: inline-block;width: 50%;">
+            <!--     <div class="slds-p-around_medium lgc-bg">
+                    <lightning-input type="text" label="CarrierName" value={carriername} onchange={handleCarrierNameChange} readonly></lightning-input>
+                </div> -->
+
+                <lightning-combobox
+                        name="Anbietername"
+                        label="Anbietername"
+                        value={carriername}
+                        options={carrierOptions}
+                        onchange={handleCarrierNameChange} readonly>
+                </lightning-combobox>
+            </span>
+
+            <span style="display: inline-block;width: 50%;">
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="text" label="LegacyContractId" value={legacycontractid} onchange={handleLegacyChange}></lightning-input>
+            </div>
+            </span>
+
+            <span style="display: inline-block;width: 50%;">
+            <div class="slds-p-around_medium lgc-bg">
+                <lightning-input type="date" label="PortingDate" value={portingdate} onchange={handlePortingDateChange}></lightning-input>
+            </div>
+            </span>
+
+        </template>
+
+
+        <template if:false={areDetailsVisible}>
+
+            <span style="display: inline-block;width: 50%;">
+                <div class="slds-p-around_medium lgc-bg">
+                    <lightning-input type="tel" data-id="phoneNum" label="Rufnummer" placeholder="111 1111 1111" value={phonenumber} onchange={handlePhoneChange} field-level-help="Die Telefonnummer muss eingegeben werden"></lightning-input>
+                </div>
+                </span>
+    
+                <span style="display: inline-block;width: 50%;">
+                    <!-- <div class="slds-p-around_medium lgc-bg">
+                        <lightning-input type="text" label="CarrierName" value={carriername} onchange={handleCarrierNameChange}></lightning-input>
+                    </div> -->
+
+                        <lightning-combobox
+                            name="Anbietername"
+                            label="Anbietername"
+                            value={carriername}
+                            options={carrierOptions}
+                            onchange={handleCarrierNameChange} >
+                        </lightning-combobox>
+                    
+                    </span>
+
+    
+                <span style="display: inline-block;width: 50%;">
+                <div class="slds-p-around_medium lgc-bg">
+                    <lightning-input type="text" label="LegacyContractId" value={legacycontractid} onchange={handleLegacyChange}></lightning-input>
+                </div>
+                </span>
+    
+                
+        </template>
+    </template>
+
+    
+      
+</template>

@@ -1,0 +1,50 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PremiseCreationFailed",
+    "OmniProcessId": {
+        "Name": "CheckLocation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CheckLocation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PremiseNotExist",
+        "OmniProcessId": {
+            "Name": "CheckLocation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CheckLocation/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CheckLocation/Procedure/PremiseNotExist",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PremiseNotExist",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "RetCode": "NOK"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%CreatePremise:%vlocity_namespace%__Premises__c_1|1:Id% == null || %CreatePremise:%vlocity_namespace%__Premises__c_1|1:Id% == ''",
+        "label": "ResponseAction3",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CheckLocation/Procedure/PremiseCreationFailed"
+}

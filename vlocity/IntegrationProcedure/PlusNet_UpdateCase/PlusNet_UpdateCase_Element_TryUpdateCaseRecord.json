@@ -1,0 +1,26 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TryUpdateCaseRecord",
+    "OmniProcessId": {
+        "Name": "UpdateCase",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/UpdateCase/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnBlockError": true,
+        "failureResponse": {
+        },
+        "label": "TryCatchBlock1",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "show": null
+    },
+    "Type": "Try Catch Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/UpdateCase/Procedure/TryUpdateCaseRecord"
+}

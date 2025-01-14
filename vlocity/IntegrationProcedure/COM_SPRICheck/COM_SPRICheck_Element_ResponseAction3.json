@@ -1,0 +1,51 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction3",
+    "OmniProcessId": {
+        "Name": "SPRICheckAndCreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SPRICheck/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ConnectionQuoteOnly",
+        "OmniProcessId": {
+            "Name": "SPRICheckAndCreateQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SPRICheck/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SPRICheck/Procedure/ConnectionQuoteOnly",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ConnectionQuoteOnly",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "ConnectionQLIId": "%postCartsItemsConnQuote:records|1:%vlocity_namespace%__QuoteGroupId__c:actions:availablesites:remote:params:id%",
+            "ConnectionQuoteId": "%DRCreateOpportunityConnQuote:Quote_2|1:Id%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction3",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SPRICheck/Procedure/ResponseAction3"
+}

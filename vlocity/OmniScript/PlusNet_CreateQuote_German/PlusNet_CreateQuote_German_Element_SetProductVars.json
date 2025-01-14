@@ -1,0 +1,34 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetProductVars",
+    "OmniProcessId": {
+        "Name": "CreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "productFamily": "Fiber",
+            "productType": "=IF(%connectionFiberAllRadio% == 'Plusnet Office' || %fiberOnlyRadio% == 'Plusnet Office', 'Office', IF(%connectionFiberAllRadio% == 'Plusnet Business' || %fiberOnlyRadio% == 'Plusnet Business', 'Business', ''))"
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuote/German/SetProductVars"
+}

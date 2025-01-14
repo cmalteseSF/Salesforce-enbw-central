@@ -1,0 +1,65 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetHardwareOLI",
+    "OmniProcessId": {
+        "Name": "Update Offer Attributes",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/UpdateOfferAttributes/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "HardwareReplacement",
+        "OmniProcessId": {
+            "Name": "Update Offer Attributes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/UpdateOfferAttributes/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/UpdateOfferAttributes/Procedure/HardwareReplacement",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "HardwareReplacement",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRGetOrderItemAttributesByOrderId",
+        "chainOnStep": false,
+        "dataRaptor Input Parameters": [
+            {
+                "element": "OrderId",
+                "inputParam": "OrderId"
+            },
+            {
+                "element": "'PNET-HW-CPE'",
+                "inputParam": "ProductCode"
+            }
+        ],
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "ignoreCache": false,
+        "label": "DataRaptorExtractAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Extract Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/UpdateOfferAttributes/Procedure/GetHardwareOLI"
+}

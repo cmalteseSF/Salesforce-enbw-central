@@ -1,0 +1,65 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AddAdditionalCostProduct",
+    "OmniProcessId": {
+        "Name": "EnrichOrderGeostruct",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "IFConnQuoteIsNotEmpty",
+        "OmniProcessId": {
+            "Name": "EnrichOrderGeostruct",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure/IFConnQuoteIsNotEmpty",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "IFConnQuoteIsNotEmpty",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "cartId": "%CreateNewConnectionQuote:Quote_1|1:Id%",
+            "items": [
+                {
+                    "itemId": "%GetAdditionalCostProductEntry:PBookEntryId%"
+                }
+            ]
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": true,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "%vlocity_namespace%.CpqAppHandler",
+        "remoteMethod": "postCartsItems",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure/AddAdditionalCostProduct"
+}

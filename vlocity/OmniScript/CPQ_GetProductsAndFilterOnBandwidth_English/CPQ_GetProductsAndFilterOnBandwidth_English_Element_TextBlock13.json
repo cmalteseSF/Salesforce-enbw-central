@@ -1,0 +1,39 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock13",
+    "OmniProcessId": {
+        "Name": "GetProductsAndFilterOnBandwidth",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetProductsAndFilterOnBandwidth/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CheckAndSetProducts",
+        "OmniProcessId": {
+            "Name": "GetProductsAndFilterOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetProductsAndFilterOnBandwidth/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetProductsAndFilterOnBandwidth/English/CheckAndSetProducts",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CheckAndSetProducts",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock13",
+        "sanitize": false,
+        "show": null,
+        "text": "<p>All Filtered Products : %TransformProductListV2:filteredProducts%</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetProductsAndFilterOnBandwidth/English/TextBlock13"
+}

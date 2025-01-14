@@ -1,0 +1,64 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CustomLWC3",
+    "OmniProcessId": {
+        "Name": "AddAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/AddAdditionalContactDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "BillingDetailsBlock",
+        "OmniProcessId": {
+            "Name": "AddAdditionalContactDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/AddAdditionalContactDetails/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/AddAdditionalContactDetails/German/BillingDetailsBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "BillingDetailsBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "columns",
+                "source": "%ContactColumns%"
+            },
+            {
+                "name": "rows",
+                "source": "%ContactsList%"
+            },
+            {
+                "name": "key-field",
+                "source": "Id"
+            },
+            {
+                "name": "max-row-selection",
+                "source": "1"
+            },
+            {
+                "name": "debug",
+                "source": "false"
+            },
+            {
+                "name": "selected-rows",
+                "source": "%selectedBillingRow%"
+            }
+        ],
+        "hide": false,
+        "label": "CustomLWC3",
+        "lwcName": "datatable",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/AddAdditionalContactDetails/German/CustomLWC3"
+}

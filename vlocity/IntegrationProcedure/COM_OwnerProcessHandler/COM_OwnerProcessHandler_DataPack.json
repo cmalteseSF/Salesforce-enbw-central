@@ -1,0 +1,24 @@
+{
+    "CustomJavaScript": "COM_OwnerProcessHandler_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "OwnerProcessHandler",
+    "OmniProcessElement": [
+        "COM_OwnerProcessHandler_Element_DRUpdatePremiseOwner.json",
+        "COM_OwnerProcessHandler_Element_SPRICheckAndCreateQuote.json",
+        "COM_OwnerProcessHandler_Element_RA.json"
+    ],
+    "OmniProcessKey": "COM_OwnerProcessHandler",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "COM_OwnerProcessHandler_PropertySetConfig.json",
+    "SubType": "OwnerProcessHandler",
+    "Type": "COM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/COM/OwnerProcessHandler/Procedure"
+}

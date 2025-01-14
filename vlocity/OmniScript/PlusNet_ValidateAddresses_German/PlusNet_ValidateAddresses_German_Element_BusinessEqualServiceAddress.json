@@ -1,0 +1,64 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "BusinessEqualServiceAddress",
+    "OmniProcessId": {
+        "Name": "ValidateAddresses",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ValidateAddresses/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ValidateAddress",
+        "OmniProcessId": {
+            "Name": "ValidateAddresses",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ValidateAddresses/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ValidateAddresses/German/ValidateAddress",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ValidateAddress",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "checkLabel": "Diese Adresse ist auch die Serviceadresse",
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "defaultValue": false,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "label": "Checkbox1",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Lead",
+                        "field": "Context"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "Business",
+                        "field": "AddressType"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Checkbox",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ValidateAddresses/German/BusinessEqualServiceAddress"
+}

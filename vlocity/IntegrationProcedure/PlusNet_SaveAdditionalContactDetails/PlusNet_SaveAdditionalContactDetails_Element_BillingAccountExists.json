@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "BillingAccountExists",
+    "OmniProcessId": {
+        "Name": "SaveAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetBillingAccount:isBillingAccountNull% == \"false\"",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock12",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure/BillingAccountExists"
+}

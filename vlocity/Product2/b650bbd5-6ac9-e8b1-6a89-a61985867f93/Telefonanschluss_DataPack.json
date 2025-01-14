@@ -1,0 +1,347 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "Telefonanschluss_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT-FLT-EUR-PLU": false,
+        "ATT-FLT-MOB": false,
+        "ATT-FLT-NTN": false,
+        "ATT-N-PHO": null,
+        "ATT-OFF-CODE": null,
+        "ATT-TRF": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATTCAT-B2B-GNR-ATT",
+                "Name": "Allgemeine Attribut",
+                "displaySequence": 10,
+                "id": "a0YMU000000EpL62AK",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0Z9M000002Q6LZUA0",
+                            "cloneable": true,
+                            "code": "ATT-OFF-CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 50,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Offer Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            },
+            {
+                "Code__c": "ATTCAT-B2B-PHN-DTL",
+                "Name": "Rufnummerdetails",
+                "displaySequence": 40,
+                "id": "a0YMU000000EpLF2A0",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0Z9M000002Q6LaUAK",
+                            "cloneable": true,
+                            "code": "ATT-TRF",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Tariff",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4i2AA",
+                            "cloneable": true,
+                            "code": "ATT-FLT-NTN",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Flatrate National",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4g2AA",
+                            "cloneable": true,
+                            "code": "ATT-FLT-EUR-PLU",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Flatrate Euro Plus",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4h2AA",
+                            "cloneable": true,
+                            "code": "ATT-FLT-MOB",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 30,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Flatrate Mobilfunk",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4j2AA",
+                            "cloneable": true,
+                            "code": "ATT-N-PHO",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 35,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Anzahl Rufnummer",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "75cb6cba-9e49-ed8d-a2a5-8553221a6e46",
+                                    "label": "10",
+                                    "name": "75cb6cba-9e49-ed8d-a2a5-8553221a6e46",
+                                    "readonly": false,
+                                    "value": "10"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "83207c62-44b8-f9f1-52f8-e017db14d81d",
+                                    "label": "3",
+                                    "name": "83207c62-44b8-f9f1-52f8-e017db14d81d",
+                                    "readonly": false,
+                                    "value": "3"
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 5
+                }
+            }
+        ],
+        "totalSize": 2
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-09-11",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-10T22:00:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "2cd0cd27-ae74-77fb-afa7-169143793a3b",
+    "%vlocity_namespace%__GlobalKey__c": "b650bbd5-6ac9-e8b1-6a89-a61985867f93",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "Telefonanschluss_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "239ae6c2-bfce-4b4a-f72f-4d8b9fb876a9",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/239ae6c2-bfce-4b4a-f72f-4d8b9fb876a9",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__ObjectTypeName__c": "PLUSNET Voice Package Object Type",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "Telefonanschluss_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "Telefonanschluss_ProductChildItems.json",
+    "%vlocity_namespace%__ProductRelationship__c": "Telefonanschluss_ProductRelationships.json",
+    "%vlocity_namespace%__ProductSpecId__c": "",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-10T22:00:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "Bundle",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "None",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "None",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "V1",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "BillingType__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "Telefonanschluss",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PlusNet_Period_Of_Notice__c": 0,
+    "PricebookEntry": "Telefonanschluss_PricebookEntries.json",
+    "ProductCode": "PNET-FON",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "SAPMaterialNumber__c": "",
+    "SelectedDownBandWidth__c": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "Telefonanschluss",
+            "Pricebook2.Name": "Standardmäßiges Preisbuch",
+            "Pricebook2Id": {
+                "Name": "Standardmäßiges Preisbuch",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standardmäßiges Preisbuch",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "b650bbd5-6ac9-e8b1-6a89-a61985867f93",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "b650bbd5-6ac9-e8b1-6a89-a61985867f93",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/b650bbd5-6ac9-e8b1-6a89-a61985867f93",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "PNET-FON",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standardmäßiges Preisbuch/Product2/b650bbd5-6ac9-e8b1-6a89-a61985867f93"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "SyncBilling__c": false,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/b650bbd5-6ac9-e8b1-6a89-a61985867f93"
+}

@@ -1,0 +1,10 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body aria-readonly="false" style="height: auto; min-height: auto;">Folgender Lead wurde Ihnen zugeordnet. Bitte prüfen Sie das Lead und übernehmen Sie die weitere Bearbeitung (Lead-Status in Bearbeitung ändern):<br />
+<br />
+Firma:&nbsp;{{{Recipient.Company}}}<br />
+Ansprechpartner:&nbsp;{{{Recipient.Name}}}<br />
+Link zum Lead:&nbsp;<a href="https://godigital2plusnet--dev1.sandbox.lightning.force.com/lightning/r/Lead/{{{Recipient.Id}}}/view">here</a></body>
+</html>

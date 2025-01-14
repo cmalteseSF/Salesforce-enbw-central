@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SendEmail",
+    "OmniProcessId": {
+        "Name": "Send Cancellation Notification",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendCancellationNotification/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetNotificationData:Channel% == 'Email' AND %GetNotificationData:TemplateName% != '' AND %PrimaryContactId% != ''",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock1",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendCancellationNotification/Procedure/SendEmail"
+}

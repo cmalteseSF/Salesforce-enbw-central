@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alle_berf_lligen_Leads</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>LEAD.COMPANY</columns>
+    <columns>BusinessCity__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>LEAD.LEAD_SOURCE</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>LEAD.LAST_UPDATE</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.UNREAD</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>In Bearbeitung</value>
+    </filters>
+    <filters>
+        <field>LEAD.LAST_UPDATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>N_DAYS_AGO:21</value>
+    </filters>
+    <label>Alle überfälligen Leads</label>
+</ListView>

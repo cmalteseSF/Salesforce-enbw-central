@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TerminationReason__c</fullName>
+    <description>Used to identify the reason behind a termination of a service</description>
+    <externalId>false</externalId>
+    <label>Kündigngsgrund</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>TerminationCategory__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>TerminationReasons</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung durch Plusnet</controllingFieldValue>
+            <valueName>Doppelter Auftrag, Fehler etc.</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung durch Plusnet</controllingFieldValue>
+            <valueName>Hauptanbindung nicht realisierbar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung durch Plusnet</controllingFieldValue>
+            <valueName>Negativer Bonitäts-Check</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung Kundenursache</controllingFieldValue>
+            <valueName>Baukosten zu hoch</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung Kundenursache</controllingFieldValue>
+            <valueName>Kein CO verfügbar</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung Kundenursache</controllingFieldValue>
+            <valueName>Mitwirkungspflicht bei der Anschaltung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung Kundenursache</controllingFieldValue>
+            <valueName>Widerruf duch Kunde vor Aktivschaltung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung Vorlieferant</controllingFieldValue>
+            <valueName>APL nicht eindeutig</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung Vorlieferant</controllingFieldValue>
+            <valueName>APL voll</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung Vorlieferant</controllingFieldValue>
+            <valueName>GNV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung Vorlieferant</controllingFieldValue>
+            <valueName>OPAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Ablehnung Vorlieferant</controllingFieldValue>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Technisch nicht realisierbar vor Aktivschaltung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Fristgerechte Kündigung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>ISP Ersatzkunde</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Kündigung aus Kulanz</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Kündigung BFC - Bill for Commitment</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Kündigung wegen Produktwechsel</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Qualitätsprobleme Service</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Qualitätsprobleme Technik</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Rahmenvertrag (Gesamtvertrag)</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Sonderkündigung gemäß RV</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Standortauflösung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Stornierung/Widerruf mit Folgeauftrag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Stornierung/Widerruf ohne Folgeauftrag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Umzug in nicht versorgtes Gebiet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Umzug mit Folgeauftrag</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Vorzeitige Kündigung mit Abschlagszahlung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Wechsel zu Wettbewerb</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Wechsel zu Wettbewerb mit Abschlagszahlung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Zu hohe Baukosten</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Kunde</controllingFieldValue>
+            <valueName>Zu lange Bereitstellungszeit</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Betrug / Fraud</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>CO-Abschaltung/MSC-Abschaltung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Doppelter Auftrag/Fehler</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Ersatzleitung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Insolvenz Endkunde</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Insolvenz ISP</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Mitarbeiteranschluss</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Produktabkündigung durch Plusnet</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Technisch nicht realisierbar nach Aktivschaltung</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Testanschluss</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Vertragsübernahme</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Kündigung durch Plusnet</controllingFieldValue>
+            <valueName>Zahlungsproblem Kunde</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

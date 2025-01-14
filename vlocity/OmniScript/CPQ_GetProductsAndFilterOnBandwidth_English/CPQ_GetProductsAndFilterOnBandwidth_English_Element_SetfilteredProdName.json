@@ -1,0 +1,33 @@
+{
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetfilteredProdName",
+    "OmniProcessId": {
+        "Name": "GetProductsAndFilterOnBandwidth",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetProductsAndFilterOnBandwidth/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "filteredProdName": "%filteredProducts|1:Name%"
+        },
+        "label": "SetfilteredProdName",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetProductsAndFilterOnBandwidth/English/SetfilteredProdName"
+}

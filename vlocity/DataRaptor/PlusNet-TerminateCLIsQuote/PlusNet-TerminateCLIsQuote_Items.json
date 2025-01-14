@@ -1,0 +1,100 @@
+[
+    {
+        "FormulaExpression": "'Inactive'",
+        "FormulaResultPath": "StatusInactive",
+        "FormulaSequence": 1,
+        "GlobalKey": "PlusNet-TerminateCLIsQuoteCustom0jIMU0000008P1i2AEItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-TerminateCLIsQuote",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-TerminateCLIsQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-TerminateCLIsQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-TerminateCLIsQuoteCustom0jIMU0000008P1i2AEItem1",
+        "InputFieldName": "QLI:AssetRefId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "PlusNet-TerminateCLIsQuote",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-TerminateCLIsQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-TerminateCLIsQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__AssetReferenceId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-TerminateCLIsQuoteCustom6906",
+        "InputFieldName": "StatusInactive",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-TerminateCLIsQuote",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-TerminateCLIsQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-TerminateCLIsQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__LineStatus__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-TerminateCLIsQuoteCustom0jIMU0000008P1i2AEItem3",
+        "InputFieldName": "StatusInactive",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-TerminateCLIsQuote",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-TerminateCLIsQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-TerminateCLIsQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__Status__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "PlusNet-TerminateCLIsQuoteCustom0jIMU0000008P1i2AEItem2",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "PlusNet-TerminateCLIsQuote",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-TerminateCLIsQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-TerminateCLIsQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

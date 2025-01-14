@@ -1,0 +1,74 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetAddressErrors",
+    "OmniProcessId": {
+        "Name": "ValidateAddresses",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ValidateAddresses/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementErrorMap": {
+            "ValidateAddress": "error"
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "AddressCheck"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": "success",
+                                    "field": "AddressCheck:validationResult"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "AddressCheck"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": null,
+                                    "field": "AddressCheck:AddressId"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Set Errors",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ValidateAddresses/German/SetAddressErrors"
+}

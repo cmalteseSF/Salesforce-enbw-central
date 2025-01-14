@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "PlusNet_SendTerminationEmailToVoiceTeam_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PlusNet SendTerminationEmailToVoiceTeam",
+    "OmniProcessElement": [
+        "PlusNet_SendTerminationEmailToVoiceTeam_Element_GetOrder.json",
+        "PlusNet_SendTerminationEmailToVoiceTeam_Element_GetNotificationData.json",
+        "PlusNet_SendTerminationEmailToVoiceTeam_Element_GetEmailTemplate.json",
+        "PlusNet_SendTerminationEmailToVoiceTeam_Element_SendEmailTerminationToVoiceTeam.json",
+        "PlusNet_SendTerminationEmailToVoiceTeam_Element_GetOLIDetails.json",
+        "PlusNet_SendTerminationEmailToVoiceTeam_Element_SendTerminationEmail.json",
+        "PlusNet_SendTerminationEmailToVoiceTeam_Element_SendNotificationResponse.json"
+    ],
+    "OmniProcessKey": "PlusNet_SendTerminationEmailToVoiceTeam",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SendTerminationEmailToVoiceTeam_PropertySetConfig.json",
+    "SubType": "SendTerminationEmailToVoiceTeam",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SendTerminationEmailToVoiceTeam/Procedure"
+}

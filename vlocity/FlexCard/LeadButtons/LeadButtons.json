@@ -1,0 +1,449 @@
+{
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+        },
+        "type": "",
+        "value": {
+        }
+    },
+    "enableLwc": true,
+    "events": [
+        {
+            "actionList": [
+                {
+                    "actionIndex": 0,
+                    "card": "{card}",
+                    "draggable": false,
+                    "isOpen": true,
+                    "key": "1710339807241-dsegae69h",
+                    "label": "Action",
+                    "stateAction": {
+                        "displayName": "Action",
+                        "eventName": "close_modal",
+                        "id": "flex-action-1710339807405",
+                        "message": "close",
+                        "openUrlIn": "Current Window",
+                        "subType": "PubSub",
+                        "type": "Event",
+                        "vlocityIcon": "standard-default"
+                    }
+                }
+            ],
+            "channelname": "closemymodal",
+            "displayLabel": "closemymodal:data",
+            "element": "action",
+            "eventLabel": "pubsub",
+            "eventname": "data",
+            "eventtype": "pubsub",
+            "key": "event-0",
+            "recordIndex": "0",
+            "showSpinner": "false"
+        }
+    ],
+    "isFlex": true,
+    "lwc": {
+        "DeveloperName": "cfLeadButtons_1_Plusnet",
+        "Id": "0Rb9M000000LYczSAG",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfLeadButtons_1_Plusnet",
+        "NamespacePrefix": "c"
+    },
+    "selectableMode": "Multi",
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "action",
+                            "elementLabel": "BusinessAddressValidation",
+                            "name": "Action",
+                            "property": {
+                                "actionList": [
+                                    {
+                                        "actionIndex": 0,
+                                        "draggable": true,
+                                        "isOpen": true,
+                                        "key": "1710339206062-mejio0hsl",
+                                        "label": "Action",
+                                        "reRenderFlyout": true,
+                                        "stateAction": {
+                                            "channelName": "close_modal",
+                                            "flyoutLwc": "plus-net-validate-addresses-german",
+                                            "flyoutParams": {
+                                                "AddressType": "Business",
+                                                "Context": "Lead",
+                                                "ContextId": "{recordId}",
+                                                "vlocEvents": "closemymodal"
+                                            },
+                                            "flyoutType": "OmniScripts",
+                                            "hasExtraParams": true,
+                                            "id": "flex-action-1710339379283",
+                                            "layoutType": "lightning",
+                                            "openFlyoutIn": "Modal",
+                                            "openUrlIn": "Current Window",
+                                            "osName": "PlusNet/ValidateAddresses/German",
+                                            "type": "Flyout"
+                                        }
+                                    }
+                                ],
+                                "buttonVariant": "outline-brand",
+                                "card": "{card}",
+                                "displayAsButton": true,
+                                "flyoutChannel": "close_modal",
+                                "flyoutDetails": {
+                                    "openFlyoutIn": "Modal"
+                                },
+                                "iconName": "standard:record_update",
+                                "label": "Geschäftsadresse validieren",
+                                "reRenderFlyout": true,
+                                "record": "{record}",
+                                "showSpinner": "false",
+                                "stateObj": "{record}"
+                            },
+                            "size": {
+                                "default": "2",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "class": "",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                },
+                                "inlineStyle": "width: auto;",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "2",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_2-of-12 ",
+                                "style": "      \n         width: auto;",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "",
+                                            "radius": "",
+                                            "style": "",
+                                            "type": "",
+                                            "width": ""
+                                        },
+                                        "class": "",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "width: auto;",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "2",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_2-of-12 ",
+                                        "style": "      \n         width: auto;",
+                                        "text": {
+                                            "align": "",
+                                            "color": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "element",
+                            "userUpdatedElementLabel": true
+                        },
+                        {
+                            "class": "slds-col ",
+                            "element": "action",
+                            "elementLabel": "ServiceAddressValidation",
+                            "name": "Action",
+                            "property": {
+                                "actionList": [
+                                    {
+                                        "actionIndex": 0,
+                                        "draggable": false,
+                                        "isOpen": true,
+                                        "key": "1710339206062-mejio0hsl",
+                                        "label": "Action",
+                                        "reRenderFlyout": true,
+                                        "stateAction": {
+                                            "channelName": "close_modal",
+                                            "flyoutLwc": "plus-net-validate-addresses-german",
+                                            "flyoutParams": {
+                                                "AddressType": "Serviceadresse",
+                                                "Context": "Lead",
+                                                "ContextId": "{recordId}",
+                                                "vlocEvents": "closemymodal"
+                                            },
+                                            "flyoutType": "OmniScripts",
+                                            "hasExtraParams": true,
+                                            "id": "flex-action-1710341959020",
+                                            "layoutType": "lightning",
+                                            "openFlyoutIn": "Modal",
+                                            "openUrlIn": "Current Window",
+                                            "osName": "PlusNet/ValidateAddresses/German",
+                                            "type": "Flyout"
+                                        }
+                                    }
+                                ],
+                                "ariaLabel": "Serviceadresse validieren",
+                                "buttonVariant": "outline-brand",
+                                "card": "{card}",
+                                "displayAsButton": true,
+                                "flyoutChannel": "close_modal",
+                                "flyoutDetails": {
+                                    "openFlyoutIn": "Modal"
+                                },
+                                "iconName": "standard:record_update",
+                                "label": "Serviceadresse validieren",
+                                "reRenderFlyout": true,
+                                "record": "{record}",
+                                "showSpinner": "false",
+                                "stateObj": "{record}"
+                            },
+                            "size": {
+                                "default": "2",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": "",
+                                    "width": ""
+                                },
+                                "class": "",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                },
+                                "inlineStyle": "width: auto;",
+                                "margin": [
+                                ],
+                                "padding": [
+                                ],
+                                "size": {
+                                    "default": "2",
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_2-of-12 ",
+                                "style": "      \n         width: auto;",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "",
+                                            "radius": "",
+                                            "style": "",
+                                            "type": "",
+                                            "width": ""
+                                        },
+                                        "class": "",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "elementStyleProperties": {
+                                        },
+                                        "inlineStyle": "width: auto;",
+                                        "margin": [
+                                        ],
+                                        "padding": [
+                                        ],
+                                        "size": {
+                                            "default": "2",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_2-of-12 ",
+                                        "style": "      \n         width: auto;",
+                                        "text": {
+                                            "align": "",
+                                            "color": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "element",
+                            "userUpdatedElementLabel": true
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Lead",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "class": "slds-card slds-p-around_x-small slds-m-bottom_x-small",
+                "container": {
+                    "class": "slds-card"
+                },
+                "margin": [
+                    {
+                        "size": "x-small",
+                        "type": "bottom"
+                    }
+                ],
+                "padding": [
+                    {
+                        "size": "x-small",
+                        "type": "around"
+                    }
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12"
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "LeadButtons",
+    "xmlJson": [
+        {
+            "@attributes": {
+                "targets": "lightning__RecordPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "name": "recordId",
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        {
+            "@attributes": {
+                "targets": "lightning__AppPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "name": "recordId",
+                        "type": "String"
+                    }
+                }
+            ]
+        }
+    ],
+    "xmlObject": {
+        "apiVersion": 56,
+        "id": "0Rb9M000000LYI8SAO",
+        "isExplicitImport": false,
+        "isExposed": true,
+        "masterLabel": "LeadButtons",
+        "targetConfigs": "PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX1JlY29yZFBhZ2UiPgogICAgICAgICAgICAgICAgICAgICAgICA8cHJvcGVydHkgbmFtZT0iZGVidWciIHR5cGU9IkJvb2xlYW4iPjwvcHJvcGVydHk+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwcm9wZXJ0eSBuYW1lPSJyZWNvcmRJZCIgdHlwZT0iU3RyaW5nIj48L3Byb3BlcnR5PgogICAgICAgICAgICAgICAgICAgICAgPC90YXJnZXRDb25maWc+PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX0FwcFBhZ2UiPgogICAgICAgICAgICAgICAgICAgICAgPHByb3BlcnR5IG5hbWU9ImRlYnVnIiB0eXBlPSJCb29sZWFuIj48L3Byb3BlcnR5PgogICAgICAgICAgICAgICAgICAgICAgPHByb3BlcnR5IG5hbWU9InJlY29yZElkIiB0eXBlPSJTdHJpbmciPjwvcHJvcGVydHk+CiAgICAgICAgICAgICAgICAgICAgPC90YXJnZXRDb25maWc+",
+        "targets": {
+            "target": [
+                "lightning__RecordPage",
+                "lightning__AppPage",
+                "lightning__HomePage"
+            ]
+        }
+    }
+}

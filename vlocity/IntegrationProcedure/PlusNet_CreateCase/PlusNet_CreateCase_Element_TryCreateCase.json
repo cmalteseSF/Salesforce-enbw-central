@@ -1,0 +1,27 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TryCreateCase",
+    "OmniProcessId": {
+        "Name": "CreateCase",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateCase/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnBlockError": true,
+        "failureResponse": {
+            "error": "%CreateCase%"
+        },
+        "label": "TryCatchBlock1",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "show": null
+    },
+    "Type": "Try Catch Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateCase/Procedure/TryCreateCase"
+}

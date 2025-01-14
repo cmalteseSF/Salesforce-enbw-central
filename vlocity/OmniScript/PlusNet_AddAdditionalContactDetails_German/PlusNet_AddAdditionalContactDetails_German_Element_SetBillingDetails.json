@@ -1,0 +1,54 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetBillingDetails",
+    "OmniProcessId": {
+        "Name": "AddAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/AddAdditionalContactDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "selectedBillingContact": {
+                "Id": "=IF(%BillingDetails:BillingDetailsBlock:CustomLWC3% == null && %selectedBillingRow|1% <> null, %selectedBillingRow|1%, %BillingDetails:BillingDetailsBlock:CustomLWC3|1:Id%)"
+            },
+            "selectedBillingRow": [
+                "=IF(%BillingDetails:BillingDetailsBlock:CustomLWC3% == null && %selectedBillingRow|1% <> null, %selectedBillingRow|1%, %BillingDetails:BillingDetailsBlock:CustomLWC3|1:Id%)"
+            ]
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "IsPrimaryEqualBillingContact"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "CreateNewBillingContact"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/AddAdditionalContactDetails/German/SetBillingDetails"
+}

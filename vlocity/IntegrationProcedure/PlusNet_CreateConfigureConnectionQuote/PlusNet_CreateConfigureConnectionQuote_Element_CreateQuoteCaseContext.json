@@ -1,0 +1,65 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateQuoteCaseContext",
+    "OmniProcessId": {
+        "Name": "CreateConfigureConnectionQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TryCatchCreateQuoteCaseContext",
+        "OmniProcessId": {
+            "Name": "CreateConfigureConnectionQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure/TryCatchCreateQuoteCaseContext",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TryCatchCreateQuoteCaseContext",
+    "ParentElementType": "Try Catch Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountId": "=IF(%isOwnerKnown% == \"false\" , %CreateAccountOwnerRecords:Account_1|1:Id% , %PremiseOwnerAccountDetails:AccountId%)",
+            "ContactId": "=IF(%isOwnerKnown% == \"false\" , %CreateAccountOwnerRecords:Contact_4|1:Id% , %PremiseOwnerAccountDetails:ContactId%)",
+            "MarketingPhase": "%MarketingPhase%",
+            "Name": "=IF(%isOwnerKnown% == \"false\" , 'Angebot - %CreateAccountOwnerRecords:Account_1|1:Name% %GetAddressDetails:Address:City%' , 'Angebot - %PremiseOwnerAccountDetails:PremiseOwnerAccountName% %GetAddressDetails:Address:City%')",
+            "OpportunityId": "=%CreateOpportunityCaseContext:Opportunity_1|1:Id%",
+            "PremiseId": "%PremiseId%",
+            "PriceListId": "%PriceListId%",
+            "ServiceAccountId": "=IF(%isOwnerKnown% == \"false\" , %CreateAccountOwnerRecords:Account_2|1:Id% , %PremiseOwnerAccountDetails:ServiceAccountId% )",
+            "StageName": "Angebot",
+            "StandardQuoteRTId": "%RecordTypes:StandardQuoteRTId%",
+            "SubType": "Connection"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRCreateConnectionQuote",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataMapperPostAction3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure/CreateQuoteCaseContext"
+}

@@ -1,0 +1,39 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock3",
+    "OmniProcessId": {
+        "Name": "CreateConnectionQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConnectionQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ConfiguringYourOffer",
+        "OmniProcessId": {
+            "Name": "CreateConnectionQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConnectionQuote/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConnectionQuote/German/ConfiguringYourOffer",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ConfiguringYourOffer",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock3",
+        "sanitize": false,
+        "show": null,
+        "text": "<p>Einen Moment Geduld bitte!</p>\n<p><br />Das Angebot wird im Augenblick erstellt und konfiguriert. Sie erhalten eine Benachrichtigung, sobald der Vorgang abgeschlossen ist und das Angebot<br />bereitsteht.</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConnectionQuote/German/TextBlock3"
+}

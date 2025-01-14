@@ -1,0 +1,81 @@
+[
+    {
+        "FormulaExpression": "TODAY()",
+        "FormulaResultPath": "EmailSentDate",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRUpdateQuoteEmailSentDateCustom7965",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateQuoteEmailSentDate",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteEmailSentDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteEmailSentDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateQuoteEmailSentDateCustom9436",
+        "InputFieldName": "EmailSentDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateQuoteEmailSentDate",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteEmailSentDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteEmailSentDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmailSentDate__c",
+        "OutputObjectName": "Quote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateQuoteEmailSentDateCustom69",
+        "InputFieldName": "ContextId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "DRUpdateQuoteEmailSentDate",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteEmailSentDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteEmailSentDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Quote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DRUpdateQuoteEmailSentDateCustom9611",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DRUpdateQuoteEmailSentDate",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateQuoteEmailSentDate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateQuoteEmailSentDate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Quote",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

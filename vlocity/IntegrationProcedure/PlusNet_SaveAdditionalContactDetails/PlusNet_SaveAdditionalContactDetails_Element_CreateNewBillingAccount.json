@@ -1,0 +1,71 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateNewBillingAccount",
+    "OmniProcessId": {
+        "Name": "SaveAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "BillingAccountNotExists",
+        "OmniProcessId": {
+            "Name": "SaveAdditionalContactDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure/BillingAccountNotExists",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "BillingAccountNotExists",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Action": "CREATE",
+            "AddressExt": "=IF(%IsBillingEqualBusinessAddress% == 'true', %BusinessAddress:AddressExt%, %selectedBillingAddress:AddressExt%)",
+            "AddressId": "=IF(%IsBillingEqualBusinessAddress% == 'true', %BusinessAddress:Id%, %selectedBillingAddress:AddressId%)",
+            "BillingAccountRT": "%GetRecordTypes:BillingAccountRTId%",
+            "BusinessAccountName": "%Quote:BusinessAccountName%",
+            "City": "=IF(%IsBillingEqualBusinessAddress% == 'true', %BusinessAddress:City%, %selectedBillingAddress:City%)",
+            "CityExt": "=IF(%IsBillingEqualBusinessAddress% == 'true', %BusinessAddress:CityExt%, %selectedBillingAddress:CityExt%)",
+            "Country": "=IF(%IsBillingEqualBusinessAddress% == 'true', %BusinessAddress:Country%, %selectedBillingAddress:Country%)",
+            "DigitalInvoice": "%DigitalInvoice%",
+            "DigitalInvoiceEmail": "%DigitalInvoiceEmail%",
+            "HouseNo": "=IF(%IsBillingEqualBusinessAddress% == 'true', %BusinessAddress:HouseNo%, %selectedBillingAddress:HouseNo%)",
+            "HouseNoExt": "=IF(%IsBillingEqualBusinessAddress% == 'true', %BusinessAddress:HouseNoExt%, %selectedBillingAddress:HouseNoExt%)",
+            "InvoiceEmailAddress": "%InvoiceEmailAddress%",
+            "ParentAccountId": "%Quote:BusinessAccountId%",
+            "PostalCode": "=IF(%IsBillingEqualBusinessAddress% == 'true', %BusinessAddress:PostalCode%, %selectedBillingAddress:PostalCode%)",
+            "State": "=IF(%IsBillingEqualBusinessAddress% == 'true', %BusinessAddress:State%, %selectedBillingAddress:State%)",
+            "Street": "=IF(%IsBillingEqualBusinessAddress% == 'true', %BusinessAddress:Street%, %selectedBillingAddress:Street%)"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "CreateUpdateBillingAccount",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction10",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure/CreateNewBillingAccount"
+}

@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "PlusNet_BatchCancellationWrapper_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Batch Cancellation Wrapper",
+    "OmniProcessElement": [
+        "PlusNet_BatchCancellationWrapper_Element_QuoteCancellation.json",
+        "PlusNet_BatchCancellationWrapper_Element_FetchOrderQuoteDetails.json",
+        "PlusNet_BatchCancellationWrapper_Element_NoOrderCreated.json",
+        "PlusNet_BatchCancellationWrapper_Element_CancelFromQuoteWithoutOrder.json",
+        "PlusNet_BatchCancellationWrapper_Element_OrderCreated.json",
+        "PlusNet_BatchCancellationWrapper_Element_CancelFromQuoteWithOrder.json",
+        "PlusNet_BatchCancellationWrapper_Element_ResponseBatchCancellationWrapper.json"
+    ],
+    "OmniProcessKey": "PlusNet_BatchCancellationWrapper",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_BatchCancellationWrapper_PropertySetConfig.json",
+    "SubType": "BatchCancellationWrapper",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/BatchCancellationWrapper/Procedure"
+}

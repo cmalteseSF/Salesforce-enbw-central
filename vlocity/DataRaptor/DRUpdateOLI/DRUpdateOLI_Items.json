@@ -1,0 +1,161 @@
+[
+    {
+        "FormulaExpression": "FILTER(LIST(%result%), 'AttrValue != \"\"')",
+        "FormulaResultPath": "IPOLI",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRUpdateOLICustom6668",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateOLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateOLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateOLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%result%), 'SerialAttrValue != \"\"')",
+        "FormulaResultPath": "SerialOLI",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRUpdateOLICustom6402",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateOLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateOLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateOLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LISTMERGE(\"FRLId\", LIST(%IPOLI%), LIST(%SerialOLI%))",
+        "FormulaResultPath": "MergedOLIData",
+        "FormulaSequence": 3,
+        "GlobalKey": "DRUpdateOLICustom5969",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateOLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateOLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateOLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateOLI27272066672434603",
+        "InputFieldName": "MergedOLIData:AttrValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateOLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateOLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateOLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "@ATT-IP-ADD",
+        "OutputObjectName": "OrderItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateOLI6170715887910507",
+        "InputFieldName": "MergedOLIData:SerialAttrValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateOLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateOLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateOLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "@ATT-SER-NUM",
+        "OutputObjectName": "OrderItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateOLI11099606117791994",
+        "InputFieldName": "MergedOLIData:OrderItemId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "DRUpdateOLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateOLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateOLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "OrderItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DRUpdateOLI8326335608079256",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DRUpdateOLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateOLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateOLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "OrderItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateOLICustom827",
+        "InputFieldName": "OrderCompletionDate",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateOLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateOLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateOLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceDate",
+        "OutputObjectName": "OrderItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,52 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SendCustomNotification",
+    "OmniProcessId": {
+        "Name": "IPApplyAdjustment",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/IPApplyAdjustment/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "body": "Das Angebot wurde erfolgreich erstellt und die Produkte konfiguriert. Es ist jetzt bereit für Ihre Überprüfung.",
+            "developerName": "QuoteNotifications",
+            "recipientsIds": [
+                "%currentUserId%"
+            ],
+            "targetId": "%ConnectionQuoteId%",
+            "title": "Angebot bereit zur Prüfung! (%quoteNumber%)"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%sendNotification% == \"true\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction4",
+        "remoteClass": "CustomNotificationHandler",
+        "remoteMethod": "notifyUsers",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/IPApplyAdjustment/Procedure/SendCustomNotification"
+}

@@ -1,0 +1,119 @@
+[
+    {
+        "FormulaExpression": "'Inactive'",
+        "FormulaResultPath": "StatusInactive",
+        "FormulaSequence": 1,
+        "GlobalKey": "PlusNet-TerminateCLIswithQLIsCustom0jI9M00000073sPUAQItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-TerminateCLIswithQLIs",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-TerminateCLIswithQLIs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-TerminateCLIswithQLIs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-TerminateCLIswithQLIsCustom0jI9M00000073sPUAQItem3",
+        "InputFieldName": "OLI:AssetRefId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": true,
+        "Name": "PlusNet-TerminateCLIswithQLIs",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-TerminateCLIswithQLIs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-TerminateCLIswithQLIs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__AssetReferenceId__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-TerminateCLIswithQLIsCustom4245",
+        "InputFieldName": "TerminationDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-TerminateCLIswithQLIs",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-TerminateCLIswithQLIs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-TerminateCLIswithQLIs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__EffectiveEndDate__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-TerminateCLIswithQLIsCustom0jI9M00000073sPUAQItem1",
+        "InputFieldName": "StatusInactive",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-TerminateCLIswithQLIs",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-TerminateCLIswithQLIs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-TerminateCLIswithQLIs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__LineStatus__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-TerminateCLIswithQLIsCustom0jI9M00000073sPUAQItem4",
+        "InputFieldName": "StatusInactive",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-TerminateCLIswithQLIs",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-TerminateCLIswithQLIs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-TerminateCLIswithQLIs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__Status__c",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "PlusNet-TerminateCLIswithQLIsCustom0jI9M00000073sPUAQItem2",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "PlusNet-TerminateCLIswithQLIs",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-TerminateCLIswithQLIs",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-TerminateCLIswithQLIs",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__ContractLineItem__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

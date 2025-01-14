@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SameHardwareFormula",
+    "OmniProcessId": {
+        "Name": "ChangeAssets",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeAssets/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "HardwareConfiguration",
+        "OmniProcessId": {
+            "Name": "ChangeAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeAssets/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeAssets/German/HardwareConfiguration",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "HardwareConfiguration",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataType": "Boolean",
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": false,
+        "expression": "IF(%oldHardwareType% != %newHardwareType%, true, false)",
+        "hide": true,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": "",
+        "mask": null,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Formula",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeAssets/German/SameHardwareFormula"
+}

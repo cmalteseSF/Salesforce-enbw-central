@@ -1,0 +1,137 @@
+[
+    {
+        "FormulaExpression": "SUBSTRING(%maxbandwidth%, 0, STRINGINDEXOF(%maxbandwidth%, \" Mbps\"))",
+        "FormulaResultPath": "trimmedMaxBandwidth",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRGetSOHOOfferTransformCustom9608",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetSOHOOfferTransform",
+        "OmniDataTransformationId": {
+            "Name": "DRGetSOHOOfferTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetSOHOOfferTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetSOHOOfferTransformCustom0jIMU0000008Oo42AEItem20",
+        "InputFieldName": "offerList:AttributeCategory:ATTCAT-B2B-INT-DTL|1:value__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetSOHOOfferTransform",
+        "OmniDataTransformationId": {
+            "Name": "DRGetSOHOOfferTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetSOHOOfferTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:DownloadSpeed",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetSOHOOfferTransformCustom0jIMU0000008Oo42AEItem9",
+        "InputFieldName": "offerList:Family",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetSOHOOfferTransform",
+        "OmniDataTransformationId": {
+            "Name": "DRGetSOHOOfferTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetSOHOOfferTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:Family",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetSOHOOfferTransformCustom0jIMU0000008Oo42AEItem19",
+        "InputFieldName": "offerList:ProductCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetSOHOOfferTransform",
+        "OmniDataTransformationId": {
+            "Name": "DRGetSOHOOfferTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetSOHOOfferTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:ProductCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetSOHOOfferTransformCustom0jIMU0000008Oo42AEItem4",
+        "InputFieldName": "offerList:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetSOHOOfferTransform",
+        "OmniDataTransformationId": {
+            "Name": "DRGetSOHOOfferTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetSOHOOfferTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:ProductName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetSOHOOfferTransformCustom0jIMU0000008Oo42AEItem16",
+        "InputFieldName": "offerList:offerType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetSOHOOfferTransform",
+        "OmniDataTransformationId": {
+            "Name": "DRGetSOHOOfferTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetSOHOOfferTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:offerType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetSOHOOfferTransformCustom6446",
+        "InputFieldName": "trimmedMaxBandwidth",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetSOHOOfferTransform",
+        "OmniDataTransformationId": {
+            "Name": "DRGetSOHOOfferTransform",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetSOHOOfferTransform",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "trimmedMaxBandwidth",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

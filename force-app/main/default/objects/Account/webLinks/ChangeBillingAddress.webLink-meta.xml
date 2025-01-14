@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChangeBillingAddress</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Change Billing Address</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/lightning/cmp/vlocity_cmt__vlocityLWCOmniWrapper?c__target=c%3AplusNetValidateAddressesGerman&amp;c__layout=lightning&amp;c__tabIcon=custom%3Acustom18&amp;c__tabLabel=Change&amp;Billing&amp;Address&amp;&amp;c__ContextId={!Account.Id}&amp;c__Context=Account&amp;c__AddressType=Billing</url>
+</WebLink>

@@ -1,0 +1,53 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateToOrder2",
+    "OmniProcessId": {
+        "Name": "OrderVoiceDocumentGeneration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/OrderVoiceDocumentGeneration/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": "",
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "OK",
+                        "field": "RetCode"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWCLayout": "lightning",
+        "targetName": "Order",
+        "targetType": "Record",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/OrderVoiceDocumentGeneration/German/NavigateToOrder2"
+}

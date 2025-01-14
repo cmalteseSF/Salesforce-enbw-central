@@ -1,0 +1,45 @@
+{
+    "AuthorName": "Plusnet",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 1,
+                    "name": "recordId",
+                    "val": "0Q09M000000ApVuSAK"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "DRExtractQuoteButtons",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "Id": "{recordId}"
+                },
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "QuoteButtons",
+    "Namespace": "",
+    "OmniUiCardKey": "QuoteButtons/Plusnet/13.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "QuoteButtons.json",
+    "SampleDataSourceResponse": "[{\"isDisabled\":\"false\",\"hasAsset\":\"true\",\"CurrentUserProfileName\":\"System Administrator\",\"ConnectionAssetId\":\"02i9M00000088tFQAQ\",\"MarketingPhase\":\"Bauphase\",\"Status\":\"Accepted\",\"SubType\":\"Service\",\"Type\":\"Activation\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 13,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/QuoteButtons"
+}

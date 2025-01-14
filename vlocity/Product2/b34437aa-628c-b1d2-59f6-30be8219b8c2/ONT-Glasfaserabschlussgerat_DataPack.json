@@ -1,0 +1,398 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "ONT-Glasfaserabschlussgerat_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT-CWMP-ID": null,
+        "ATT-HW-BYOD": false,
+        "ATT-INT-TYP": "ONT",
+        "ATT-OFF-CODE": null,
+        "ATT-ONT-ID": null,
+        "ATT-RTR-TYP": null,
+        "ATT-SER-NUM": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATTCAT-B2B-GNR-ATT",
+                "Name": "Allgemeine Attribut",
+                "displaySequence": 10,
+                "id": "a0YMU000000EpL62AK",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0Z9M000002Q6LZUA0",
+                            "cloneable": true,
+                            "code": "ATT-OFF-CODE",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 50,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Offer Code",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 1
+                }
+            },
+            {
+                "Code__c": "ATTCAT-B2B-HRD-DTL",
+                "Name": "Hardwaredetails",
+                "displaySequence": 30,
+                "id": "a0YMU000000EpLC2A0",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0ZMU0000009w4M2AQ",
+                            "cloneable": true,
+                            "code": "ATT-SER-NUM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 1,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Seriennummer",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4L2AQ",
+                            "cloneable": true,
+                            "code": "ATT-RTR-TYP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Hardwaretyp",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 5,
+                                    "id": "096679bc-46ae-77e0-c96e-e5cf4e8fa4c4",
+                                    "label": "OneAccess",
+                                    "name": "096679bc-46ae-77e0-c96e-e5cf4e8fa4c4",
+                                    "readonly": false,
+                                    "value": "OneAccess"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 4,
+                                    "id": "47db2c0e-8cd4-562a-15a8-622877df1501",
+                                    "label": "AVM FRITZ!Box 5590",
+                                    "name": "47db2c0e-8cd4-562a-15a8-622877df1501",
+                                    "readonly": false,
+                                    "value": "AVM FRITZ!Box 5590"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 3,
+                                    "id": "b2325264-34de-a1f1-4d9d-b82045cc9090",
+                                    "label": "AVM FRITZ!Box 5530",
+                                    "name": "b2325264-34de-a1f1-4d9d-b82045cc9090",
+                                    "readonly": false,
+                                    "value": "AVM FRITZ!Box 5530"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4J2AQ",
+                            "cloneable": true,
+                            "code": "ATT-INT-TYP",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Interfacetyp",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "3f9fbd4f-5cd7-f958-e1df-b2be15d4b6d5",
+                                    "label": "Fiber CPE",
+                                    "name": "3f9fbd4f-5cd7-f958-e1df-b2be15d4b6d5",
+                                    "readonly": false,
+                                    "value": "Fiber CPE"
+                                },
+                                {
+                                    "defaultSelected": true,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "4bcb878a-eea7-d708-ae35-d3b73786c44d",
+                                    "label": "ONT",
+                                    "name": "4bcb878a-eea7-d708-ae35-d3b73786c44d",
+                                    "readonly": false,
+                                    "value": "ONT"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4K2AQ",
+                            "cloneable": true,
+                            "code": "ATT-ONT-ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 40,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "ONT ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4D2AQ",
+                            "cloneable": true,
+                            "code": "ATT-CWMP-ID",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 45,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": true,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "CWMP ID",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0Z9M000002PyhOUAS",
+                            "cloneable": true,
+                            "code": "ATT-HW-BYOD",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 50,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "BYOD",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 6
+                }
+            }
+        ],
+        "totalSize": 2
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-09-11",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-10T22:00:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "64ea5f79-f973-0eb3-5731-2f8aab975aa0",
+    "%vlocity_namespace%__GlobalKey__c": "b34437aa-628c-b1d2-59f6-30be8219b8c2",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "ONT-Glasfaserabschlussgerat_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "ONT-Glasfaserabschlussgerat_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "ONT-Glasfaserabschlussgerat_ProductChildItems.json",
+    "%vlocity_namespace%__ProductConfigurationProcedure__c": "ONT-Glasfaserabschlussgerat_ProductConfigurationProcedures.json",
+    "%vlocity_namespace%__ProductSpecId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "055dd2f4-0d22-f8c4-016c-e0e677054440",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "Product2/055dd2f4-0d22-f8c4-016c-e0e677054440",
+        "VlocityRecordSObjectType": "Product2"
+    },
+    "%vlocity_namespace%__ProductSpecName__c": "Hardware PS",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-10T22:00:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "Simple",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "V1",
+    "%vlocity_namespace%__VersionStartDateTime__c": "",
+    "BillingType__c": "",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "ONT (Glasfaserabschlussgerät)",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PlusNet_Period_Of_Notice__c": 0,
+    "PricebookEntry": "ONT-Glasfaserabschlussgerat_PricebookEntries.json",
+    "ProductCode": "PNET-ONT",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "SAPMaterialNumber__c": "",
+    "SelectedDownBandWidth__c": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "ONT (Glasfaserabschlussgerät)",
+            "Pricebook2.Name": "Standardmäßiges Preisbuch",
+            "Pricebook2Id": {
+                "Name": "Standardmäßiges Preisbuch",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standardmäßiges Preisbuch",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "b34437aa-628c-b1d2-59f6-30be8219b8c2",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "b34437aa-628c-b1d2-59f6-30be8219b8c2",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/b34437aa-628c-b1d2-59f6-30be8219b8c2",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "PNET-ONT",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standardmäßiges Preisbuch/Product2/b34437aa-628c-b1d2-59f6-30be8219b8c2"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "SyncBilling__c": false,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/b34437aa-628c-b1d2-59f6-30be8219b8c2"
+}

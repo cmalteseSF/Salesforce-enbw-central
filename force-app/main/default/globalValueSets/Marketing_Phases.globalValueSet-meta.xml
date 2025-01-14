@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Bauphase</fullName>
+        <default>false</default>
+        <label>Bauphase</label>
+    </customValue>
+    <customValue>
+        <fullName>Betriebsphase</fullName>
+        <default>false</default>
+        <label>Betriebsphase</label>
+    </customValue>
+    <customValue>
+        <fullName>Vermarktungsphase</fullName>
+        <default>false</default>
+        <label>Vermarktungsphase</label>
+    </customValue>
+    <customValue>
+        <fullName>Vorvermarktungsphase</fullName>
+        <default>false</default>
+        <label>Vorvermarktungsphase</label>
+    </customValue>
+    <description>Used to store Marketing Phase values</description>
+    <masterLabel>Marketing Phases</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

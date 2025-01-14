@@ -1,0 +1,436 @@
+{
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+            "isReverse": "",
+            "name": ""
+        },
+        "type": "Custom",
+        "value": {
+            "body": "[\n{\n          \"PBookId\": \"01uMU00000241M8YAI\",\n          \"Product2Id\": \"01tMU000000VrGBYA0\",\n          \"ProductCode\": \"PNET-B2B-FIB-SOHO-300\",\n          \"offerType\": \"Product\",\n          \"Family\": \"Double Play\",\n          \"ProductName\": \"Plusnet Glasfaser SOHO 300\",\n          \"DownloadSpeed\": \"300 Mbps\",\n          \"DwnSpd\": 300\n        },\n        {\n          \"PBookId\": \"01uMU000002410YYAQ\",\n          \"Product2Id\": \"01tMU000000VrEBYA0\",\n          \"ProductCode\": \"PNET-B2B-FIB-SOHO-600\",\n          \"offerType\": \"Product\",\n          \"Family\": \"Double Play\",\n          \"ProductName\": \"Plusnet Glasfaser SOHO 600\",\n          \"DownloadSpeed\": \"600 Mbps\",\n          \"DwnSpd\": 600\n        },\n        {\n          \"PBookId\": \"01uMU00000241Y2YAI\",\n          \"Product2Id\": \"01tMU000000VrGaYAK\",\n          \"ProductCode\": \"PNET-B2B-FIB-SOHO-1G\",\n          \"offerType\": \"Product\",\n          \"Family\": \"Double Play\",\n          \"ProductName\": \"Plusnet Glasfaser SOHO 1G\",\n          \"DownloadSpeed\": \"1000 Mbps\",\n          \"DwnSpd\": 1000\n        }\n]",
+            "dsDelay": "",
+            "resultVar": ""
+        }
+    },
+    "enableLwc": true,
+    "events": [
+        {
+            "actionList": [
+                {
+                    "actionIndex": 0,
+                    "card": "{card}",
+                    "draggable": false,
+                    "isOpen": true,
+                    "key": "1695288042366-ud98z1iz3",
+                    "label": "updateOmniscript",
+                    "stateAction": {
+                        "displayName": "Action",
+                        "elementId": "listofitems",
+                        "extraParams": {
+                            "selecteditems": "{selecteditems}"
+                        },
+                        "hasExtraParams": true,
+                        "id": "flex-action-1695290964136",
+                        "openUrlIn": "Current Window",
+                        "type": "updateOmniScript",
+                        "vlocityIcon": "standard-default"
+                    }
+                }
+            ],
+            "channelname": "CommercialContactSelection",
+            "displayLabel": "selectcards_selecteditems",
+            "element": "action",
+            "eventLabel": "custom event",
+            "eventname": "selectcards_selecteditems",
+            "eventtype": "event",
+            "key": "event-0",
+            "recordIndex": "0",
+            "showSpinner": "false"
+        }
+    ],
+    "isFlex": true,
+    "lwc": {
+        "DeveloperName": "cfNewHouseProductSelection_2_Plusnet",
+        "Id": "0Rb9M000000MsxpSAC",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfNewHouseProductSelection_2_Plusnet",
+        "NamespacePrefix": "c"
+    },
+    "osSupport": true,
+    "selectableField": "isselected",
+    "selectableMode": "Single",
+    "selectedCardsLabel": "selecteditems",
+    "states": [
+        {
+            "actions": [
+            ],
+            "blankCardState": false,
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "class": "slds-col ",
+                                    "element": "action",
+                                    "elementLabel": "Block-2-Action-0",
+                                    "key": "element_element_block_0_0_action_0_0",
+                                    "name": "Action",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "actionList": [
+                                            {
+                                                "actionIndex": 0,
+                                                "draggable": true,
+                                                "isOpen": true,
+                                                "key": "1695289149940-5a371ruu0",
+                                                "label": "Action",
+                                                "stateAction": {
+                                                    "eventName": "selectcards",
+                                                    "id": "flex-action-1695289180525",
+                                                    "openUrlIn": "Current Window",
+                                                    "type": "cardAction"
+                                                }
+                                            }
+                                        ],
+                                        "buttonVariant": "neutral",
+                                        "card": "{card}",
+                                        "displayAsButton": false,
+                                        "flyoutDetails": {
+                                        },
+                                        "hideActionIcon": true,
+                                        "iconName": "standard-default",
+                                        "iconOnly": false,
+                                        "label": "\\{Product}",
+                                        "record": "{record}",
+                                        "showSpinner": "false",
+                                        "stateObj": "{record}"
+                                    },
+                                    "size": {
+                                        "default": "1",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "size": {
+                                            "default": "1",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_1-of-12 "
+                                    },
+                                    "type": "element"
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "outputField",
+                                    "elementLabel": "Block-2-Text-1",
+                                    "key": "element_element_block_0_0_outputField_1_0",
+                                    "name": "Text",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "mergeField": "%3Cdiv%20class=%22slds-text-heading_medium%20slds-text-align_center%22%3E%3Cstrong%20class=%22slds-text-heading_small%22%3E%7BProductName%7D%3C/strong%3E%3C/div%3E%0A%3Cdiv%20class=%22slds-text-heading_medium%20slds-text-align_center%22%3E&nbsp;%3C/div%3E",
+                                        "record": "{record}"
+                                    },
+                                    "size": {
+                                        "default": "11",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "size": {
+                                            "default": "11",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_11-of-12 "
+                                    },
+                                    "type": "text"
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "flexImg",
+                                    "elementLabel": "Block-2-Image-2",
+                                    "key": "element_element_block_0_0_flexImg_2_0",
+                                    "name": "Image",
+                                    "parentElementKey": "element_block_0_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "extraclass": "slds-align_absolute-center",
+                                        "record": "{record}",
+                                        "size": "",
+                                        "stateImg": {
+                                            "alternativeText": "Hausanschluss Produkte",
+                                            "imgsrc": "/resource/buyFlowImages/workfromhome.png"
+                                        }
+                                    },
+                                    "size": {
+                                        "default": "12",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "sizeClass": "slds-size_12-of-12"
+                                    },
+                                    "type": "element"
+                                }
+                            ],
+                            "class": "slds-col ",
+                            "element": "block",
+                            "elementLabel": "Block-2",
+                            "name": "Block",
+                            "property": {
+                                "card": "{card}",
+                                "collapsedByDefault": false,
+                                "collapsible": false,
+                                "label": "Block",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": "3",
+                                "isResponsive": true,
+                                "large": "3",
+                                "medium": "3",
+                                "small": "3"
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "background": {
+                                    "color": "",
+                                    "image": "",
+                                    "position": "",
+                                    "repeat": "",
+                                    "size": ""
+                                },
+                                "border": {
+                                    "color": "#cccccc",
+                                    "radius": "",
+                                    "style": "",
+                                    "type": [
+                                        "border_top",
+                                        "border_right",
+                                        "border_bottom",
+                                        "border_left"
+                                    ],
+                                    "width": "0.5"
+                                },
+                                "class": "slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_x-small ",
+                                "container": {
+                                    "class": ""
+                                },
+                                "elementStyleProperties": {
+                                },
+                                "height": "10em",
+                                "inlineStyle": "",
+                                "margin": [
+                                ],
+                                "maxHeight": "12em",
+                                "minHeight": "0em",
+                                "padding": [
+                                    {
+                                        "label": "around:x-small",
+                                        "size": "x-small",
+                                        "type": "around"
+                                    }
+                                ],
+                                "size": {
+                                    "default": "3",
+                                    "isResponsive": true,
+                                    "large": "3",
+                                    "medium": "3",
+                                    "small": "3"
+                                },
+                                "sizeClass": "slds-large-size_3-of-12 slds-medium-size_3-of-12 slds-small-size_3-of-12 slds-size_3-of-12 ",
+                                "style": "     border-top: #cccccc 0.5px solid;border-right: #cccccc 0.5px solid;border-bottom: #cccccc 0.5px solid;border-left: #cccccc 0.5px solid; \n     height:10em; min-height:0em; max-height:12em;  ",
+                                "text": {
+                                    "align": "",
+                                    "color": ""
+                                }
+                            },
+                            "styleObjects": [
+                                {
+                                    "conditionString": "",
+                                    "conditions": "default",
+                                    "draggable": false,
+                                    "key": 0,
+                                    "label": "Default",
+                                    "name": "Default",
+                                    "styleObject": {
+                                        "background": {
+                                            "color": "",
+                                            "image": "",
+                                            "position": "",
+                                            "repeat": "",
+                                            "size": ""
+                                        },
+                                        "border": {
+                                            "color": "#cccccc",
+                                            "radius": "",
+                                            "style": "",
+                                            "type": [
+                                                "border_top",
+                                                "border_right",
+                                                "border_bottom",
+                                                "border_left"
+                                            ],
+                                            "width": "0.5"
+                                        },
+                                        "class": "slds-border_top slds-border_right slds-border_bottom slds-border_left slds-p-around_x-small ",
+                                        "container": {
+                                            "class": ""
+                                        },
+                                        "elementStyleProperties": {
+                                        },
+                                        "height": "10em",
+                                        "inlineStyle": "",
+                                        "margin": [
+                                        ],
+                                        "maxHeight": "12em",
+                                        "minHeight": "0em",
+                                        "padding": [
+                                            {
+                                                "label": "around:x-small",
+                                                "size": "x-small",
+                                                "type": "around"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "3",
+                                            "isResponsive": true,
+                                            "large": "3",
+                                            "medium": "3",
+                                            "small": "3"
+                                        },
+                                        "sizeClass": "slds-large-size_3-of-12 slds-medium-size_3-of-12 slds-small-size_3-of-12 slds-size_3-of-12 ",
+                                        "style": "     border-top: #cccccc 0.5px solid;border-right: #cccccc 0.5px solid;border-bottom: #cccccc 0.5px solid;border-left: #cccccc 0.5px solid; \n     height:10em; min-height:0em; max-height:12em;  ",
+                                        "text": {
+                                            "align": "",
+                                            "color": ""
+                                        }
+                                    }
+                                }
+                            ],
+                            "type": "block"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "background": {
+                    "color": "",
+                    "image": "",
+                    "position": "",
+                    "repeat": "",
+                    "size": ""
+                },
+                "border": {
+                    "color": "",
+                    "radius": "",
+                    "style": "",
+                    "type": "",
+                    "width": ""
+                },
+                "class": "slds-card slds-p-around_x-small slds-m-bottom_x-small ",
+                "container": {
+                    "class": "slds-card"
+                },
+                "elementStyleProperties": {
+                },
+                "inlineStyle": "",
+                "margin": [
+                    {
+                        "label": "bottom:x-small",
+                        "size": "x-small",
+                        "type": "bottom"
+                    }
+                ],
+                "padding": [
+                    {
+                        "label": "around:x-small",
+                        "size": "x-small",
+                        "type": "around"
+                    }
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12 ",
+                "style": "      \n         ",
+                "text": {
+                    "align": "",
+                    "color": ""
+                }
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "NewHouseProductSelection",
+    "xmlJson": [
+        {
+            "@attributes": {
+                "targets": "lightning__AppPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "name": "recordId",
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        {
+            "@attributes": {
+                "targets": "lightning__RecordPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                }
+            ]
+        }
+    ],
+    "xmlObject": {
+        "masterLabel": "NewHouseProductSelection",
+        "targetConfigs": "PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX0FwcFBhZ2UiPgogICAgICAgICAgICAgICAgICAgICAgPHByb3BlcnR5IG5hbWU9ImRlYnVnIiB0eXBlPSJCb29sZWFuIi8+CiAgICAgICAgICAgICAgICAgICAgICA8cHJvcGVydHkgbmFtZT0icmVjb3JkSWQiIHR5cGU9IlN0cmluZyIvPgogICAgICAgICAgICAgICAgICA8L3RhcmdldENvbmZpZz4KICAgICAgICAgICAgICAgICAgPHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX1JlY29yZFBhZ2UiPgogICAgICAgICAgICAgICAgICAgICAgPHByb3BlcnR5IG5hbWU9ImRlYnVnIiB0eXBlPSJCb29sZWFuIi8+CiAgICAgICAgICAgICAgICAgIDwvdGFyZ2V0Q29uZmlnPg==",
+        "targets": {
+            "target": [
+                "lightning__RecordPage",
+                "lightning__AppPage",
+                "lightning__HomePage"
+            ]
+        }
+    }
+}

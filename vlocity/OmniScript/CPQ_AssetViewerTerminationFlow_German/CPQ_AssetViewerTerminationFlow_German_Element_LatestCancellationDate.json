@@ -1,0 +1,55 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "LatestCancellationDate",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Termination Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerTerminationFlow/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TerminationOrderRequest",
+        "OmniProcessId": {
+            "Name": "Asset Viewer Termination Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerTerminationFlow/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerTerminationFlow/German/TerminationOrderRequest",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TerminationOrderRequest",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 4,
+        "dateFormat": "dd.MM.yyyy",
+        "dateType": "string",
+        "defaultValue": "%Asset:LatestCancellationDate%",
+        "disOnTplt": false,
+        "help": true,
+        "helpText": "Datum, zu dem die Kündigung des Kunden spätestes eingegangen sein muss, damit sie zum Vertragsende wirksam wird.",
+        "helpTextPos": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Spätestes Kündigungsdatum",
+        "maxDate": "",
+        "minDate": "",
+        "modelDateFormat": "yyyy-MM-dd",
+        "readOnly": true,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": false,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Date",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerTerminationFlow/German/LatestCancellationDate"
+}

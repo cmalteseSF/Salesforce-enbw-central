@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "PlusNet_CheckBandwidthUpgrade_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Check Bandwidth Upgrade",
+    "OmniProcessElement": [
+        "PlusNet_CheckBandwidthUpgrade_Element_GetSourceBundle.json",
+        "PlusNet_CheckBandwidthUpgrade_Element_CheckSourceAsymmetry.json",
+        "PlusNet_CheckBandwidthUpgrade_Element_GetTargetBundle.json",
+        "PlusNet_CheckBandwidthUpgrade_Element_CheckTargetAsymmetry.json",
+        "PlusNet_CheckBandwidthUpgrade_Element_GetMigrationPlan.json",
+        "PlusNet_CheckBandwidthUpgrade_Element_IsUpgrade.json",
+        "PlusNet_CheckBandwidthUpgrade_Element_CheckValidateUpgrade.json",
+        "PlusNet_CheckBandwidthUpgrade_Element_SetIsUpgradeRetMessage.json",
+        "PlusNet_CheckBandwidthUpgrade_Element_ResponseCheckBandwidthUpgrade.json"
+    ],
+    "OmniProcessKey": "PlusNet_CheckBandwidthUpgrade",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CheckBandwidthUpgrade_PropertySetConfig.json",
+    "SubType": "CheckBandwidthUpgrade",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CheckBandwidthUpgrade/Procedure"
+}

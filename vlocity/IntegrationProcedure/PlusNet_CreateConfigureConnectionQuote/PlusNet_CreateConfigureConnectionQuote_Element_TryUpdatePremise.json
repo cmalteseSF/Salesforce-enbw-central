@@ -1,0 +1,28 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TryUpdatePremise",
+    "OmniProcessId": {
+        "Name": "CreateConfigureConnectionQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnBlockError": true,
+        "failureResponse": {
+            "error": "%UpdatePremise%",
+            "success": false
+        },
+        "label": "TryCatchBlock4",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "show": null
+    },
+    "Type": "Try Catch Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure/TryUpdatePremise"
+}

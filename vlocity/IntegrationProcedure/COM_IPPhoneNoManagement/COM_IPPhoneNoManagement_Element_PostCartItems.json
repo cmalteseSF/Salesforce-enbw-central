@@ -1,0 +1,84 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PostCartItems",
+    "OmniProcessId": {
+        "Name": "IPPhoneNoManagement",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/IPPhoneNoManagement/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CB_Add",
+        "OmniProcessId": {
+            "Name": "IPPhoneNoManagement",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/COM/IPPhoneNoManagement/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/COM/IPPhoneNoManagement/Procedure/CB_Add",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CB_Add",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "cartId": "%cartId%",
+            "items": [
+                {
+                    "fieldsToUpdate": {
+                        "Quantity": "%SV1:NoPhoneAccount%"
+                    },
+                    "itemId": "%DRGetIPFonieBAPBookId:PricebookEntry:PBookId%",
+                    "parentHierarchyPath": "%DRGetIPFonieBAPBookId:QLIParentProduct:Product2Id%<%DRGetIPFonieBAPBookId:QLI:Product2Id%",
+                    "parentId": "%DRGetIPFonieBAPBookId:QLI:Id%",
+                    "parentRecord": {
+                        "records": [
+                            {
+                                "Id": "%DRGetIPFonieBAPBookId:QLI:Product2Id%",
+                                "itemType": "productGroup",
+                                "parentLineItemId": "%DRGetIPFonieBAPBookId:QLI:Id%",
+                                "productHierarchyPath": "%DRGetIPFonieBAPBookId:QLIParentProduct:Product2Id%<%DRGetIPFonieBAPBookId:QLI:Product2Id%",
+                                "productId": "%DRGetIPFonieBAPBookId:QLI:Product2Id%"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "noResponseNeeded": true,
+            "price": false,
+            "validate": false
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction4",
+        "remoteClass": "CpqAppHandler",
+        "remoteMethod": "postCartsItems",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/IPPhoneNoManagement/Procedure/PostCartItems"
+}

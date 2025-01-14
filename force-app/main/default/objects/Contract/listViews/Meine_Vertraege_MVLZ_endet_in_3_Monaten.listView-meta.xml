@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meine_Vertraege_MVLZ_endet_in_3_Monaten</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>vlocity_cmt__QuoteId__c</columns>
+    <columns>vlocity_cmt__OrderId__c</columns>
+    <columns>CONTRACT.START_DATE</columns>
+    <columns>CONTRACT_TERM</columns>
+    <columns>PlusNet_End_Of_Minimum_Contract_Term__c</columns>
+    <columns>EarliestCancellationDate__c</columns>
+    <columns>vlocity_cmt__OneTimeTotal__c</columns>
+    <columns>vlocity_cmt__RecurringTotal__c</columns>
+    <columns>CONTRACT.LAST_UPDATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CONTRACT.STATUS</field>
+        <operation>equals</operation>
+        <value>Activated,Cancelled</value>
+    </filters>
+    <filters>
+        <field>PlusNet_End_Of_Minimum_Contract_Term__c</field>
+        <operation>equals</operation>
+        <value>NEXT_N_MONTHS:3</value>
+    </filters>
+    <label>Meine Verträge MVLZ endet in 3 Monaten</label>
+</ListView>

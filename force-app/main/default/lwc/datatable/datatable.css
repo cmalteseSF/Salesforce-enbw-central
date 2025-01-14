@@ -1,0 +1,29 @@
+.tableCss{
+    height: 400px;
+    background-color: #f1a43a;
+}
+.tableCss table>thead .slds-th__action{
+	background-color: #f1a43a;
+} 
+
+.tableCss table>thead .slds-th__action:focus, .tableCss table> .slds-th__action:hover, .tableCss table>.slds-is-resizable .slds-th__action:focus, .tableCss table> .slds-is-resizable .tableCss table>.slds-th__action:focus:hover{
+	background-color:#f1a43a;
+}
+
+.datatable-CellColor{
+  color:#fff;
+  background-color:#007893;
+}
+
+.datatable-CellColor:hover{
+  color:#fff!important;;
+  background-color:#39c9e9!important;
+}
+
+.tableCss .slds-icon-utility-up svg {
+  fill: rgb(52,168,83);
+}
+
+.tableCss .slds-icon-utility-down svg {
+  fill: rgb(239 65 70);
+}

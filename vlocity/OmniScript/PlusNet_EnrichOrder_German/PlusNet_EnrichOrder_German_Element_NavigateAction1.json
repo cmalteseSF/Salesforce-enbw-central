@@ -1,0 +1,56 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateAction1",
+    "OmniProcessId": {
+        "Name": "EnrichOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrder/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Success",
+        "OmniProcessId": {
+            "Name": "EnrichOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrder/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrder/German/Success",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Success",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 3,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": "Zurück zum Auftrag",
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": false,
+        "show": null,
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWCLayout": "lightning",
+        "targetName": "Order",
+        "targetType": "Record",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrder/German/NavigateAction1"
+}

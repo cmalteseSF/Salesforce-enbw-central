@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meine_beendeten_Vertraege</fullName>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>SALES.ACCOUNT.NAME</columns>
+    <columns>vlocity_cmt__QuoteId__c</columns>
+    <columns>vlocity_cmt__OrderId__c</columns>
+    <columns>CONTRACT.START_DATE</columns>
+    <columns>CONTRACT_TERM</columns>
+    <columns>vlocity_cmt__OneTimeTotal__c</columns>
+    <columns>vlocity_cmt__RecurringTotal__c</columns>
+    <columns>vlocity_cmt__TerminateDate__c</columns>
+    <columns>vlocity_cmt__TerminationType__c</columns>
+    <columns>vlocity_cmt__TerminationReason__c</columns>
+    <columns>CONTRACT.LAST_UPDATE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CONTRACT.STATUS</field>
+        <operation>equals</operation>
+        <value>Terminated</value>
+    </filters>
+    <label>Meine beendeten Verträge</label>
+</ListView>

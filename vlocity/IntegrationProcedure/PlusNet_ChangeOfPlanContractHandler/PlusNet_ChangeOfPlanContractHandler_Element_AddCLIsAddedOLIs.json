@@ -1,0 +1,54 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AddCLIsAddedOLIs",
+    "OmniProcessId": {
+        "Name": "Change Of Plan Contract Handler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeOfPlanContractHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "MaintainCLIs",
+        "OmniProcessId": {
+            "Name": "Change Of Plan Contract Handler",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeOfPlanContractHandler/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeOfPlanContractHandler/Procedure/MaintainCLIs",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "MaintainCLIs",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+        },
+        "additionalOutput": {
+        },
+        "bundle": "PlusNet-CreateContractLineItems",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetNewOLIs:NumberOfAddedOLIs% > 0 AND %OrderType% != 'Activation'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "GetNewOLIs",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeOfPlanContractHandler/Procedure/AddCLIsAddedOLIs"
+}

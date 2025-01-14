@@ -1,0 +1,53 @@
+{
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "QLIAttrBlock7",
+    "OmniProcessId": {
+        "Name": "CapturePhoneNumberDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CapturePhoneNumberDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PhoneNumberMgmt",
+        "OmniProcessId": {
+            "Name": "CapturePhoneNumberDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CapturePhoneNumberDetails/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CapturePhoneNumberDetails/German/PhoneNumberMgmt",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PhoneNumberMgmt",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "collapse": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "hide": false,
+        "label": "Attribute Configuration 7",
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "7",
+                        "field": "CustomLWC1|1:indexNumber"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CapturePhoneNumberDetails/German/QLIAttrBlock7"
+}

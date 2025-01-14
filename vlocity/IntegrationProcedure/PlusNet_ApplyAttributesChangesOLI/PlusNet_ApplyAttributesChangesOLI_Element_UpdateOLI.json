@@ -1,0 +1,42 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateOLI",
+    "OmniProcessId": {
+        "Name": "PlusNet-ApplyAttributesChangesOLI",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ApplyAttributesChangesOLI/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Id": "%GetHardwareOLI:OLI:Id%",
+            "selectedValues": "%EraseSerialNumber:selectedValues%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "PluNet-UpdateOLI",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%changeType% == \"Hardware Malfunction\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ApplyAttributesChangesOLI/Procedure/UpdateOLI"
+}

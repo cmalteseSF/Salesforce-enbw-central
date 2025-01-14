@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "PlusNet_CreateContractTerminationOrders_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PlusNet Create Contract Termination Orders",
+    "OmniProcessElement": [
+        "PlusNet_CreateContractTerminationOrders_Element_FormatContractCLIPartialInput.json",
+        "PlusNet_CreateContractTerminationOrders_Element_FormatContractCLIFullInput.json",
+        "PlusNet_CreateContractTerminationOrders_Element_CreateTerminationOrders.json",
+        "PlusNet_CreateContractTerminationOrders_Element_CreateTerminationOrderPartial.json",
+        "PlusNet_CreateContractTerminationOrders_Element_CreateTerminationOrderFull.json"
+    ],
+    "OmniProcessKey": "PlusNet_CreateContractTerminationOrders",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CreateContractTerminationOrders_PropertySetConfig.json",
+    "SubType": "CreateContractTerminationOrders",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CreateContractTerminationOrders/Procedure"
+}

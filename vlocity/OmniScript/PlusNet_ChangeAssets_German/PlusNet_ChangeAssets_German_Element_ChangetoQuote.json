@@ -1,0 +1,33 @@
+{
+    "EmbeddedOmniScriptKey": "PlusNet|ChangeToQuote|Multi-Language",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ChangetoQuote",
+    "OmniProcessId": {
+        "Name": "ChangeAssets",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeAssets/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Language": "Multi-Language",
+        "Sub Type": "ChangeToQuote",
+        "Type": "PlusNet",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "QuoteId"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "OmniScript",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeAssets/German/ChangetoQuote"
+}

@@ -1,0 +1,24 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SubmitOrders",
+    "OmniProcessId": {
+        "Name": "Submit Orders",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SubmitOrders/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "LoopBlock1",
+        "loopList": "SetOrdersList:Orders",
+        "loopOutput": {
+        },
+        "show": null
+    },
+    "Type": "Loop Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SubmitOrders/Procedure/SubmitOrders"
+}

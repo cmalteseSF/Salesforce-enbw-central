@@ -1,0 +1,55 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock6",
+    "OmniProcessId": {
+        "Name": "SendOrderConfirmationEmail",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Email/OrderConfirmation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Email Sent Status",
+        "OmniProcessId": {
+            "Name": "SendOrderConfirmationEmail",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Email/OrderConfirmation/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Email/OrderConfirmation/English/Email Sent Status",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Email Sent Status",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock2",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "true",
+                        "field": "EmailAction2:Success"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "Vorvermarktungsphase",
+                        "field": "MarketingPhase"
+                    }
+                ]
+            }
+        },
+        "text": "<p><span class=\"ui-provider eo bbk bbl bbm bbn bbo bbp bbq bbr bbs bbt bbu bbv bbw bbx bby bbz bca bcb bcc bcd bce bcf bcg bch bci bcj bck bcl bcm bcn bco bcp bcq bcr\" dir=\"ltr\">E-Mail konnte nicht gesendet werden. Bitte E-Mail-Adresse pr&uuml;fen.</span></p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Email/OrderConfirmation/English/TextBlock6"
+}

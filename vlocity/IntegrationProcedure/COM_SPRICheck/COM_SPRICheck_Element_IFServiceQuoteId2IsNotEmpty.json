@@ -1,0 +1,36 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "IFServiceQuoteId2IsNotEmpty",
+    "OmniProcessId": {
+        "Name": "SPRICheckAndCreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SPRICheck/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ServiceAndConnectionQuote",
+        "OmniProcessId": {
+            "Name": "SPRICheckAndCreateQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SPRICheck/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SPRICheck/Procedure/ServiceAndConnectionQuote",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ServiceAndConnectionQuote",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%DRCreateQuoteServiceAndUpdateOpp2:Quote_1|1:Id% != \"\" && %items% != \"\"",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock4",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SPRICheck/Procedure/IFServiceQuoteId2IsNotEmpty"
+}

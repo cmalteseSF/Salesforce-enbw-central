@@ -1,0 +1,67 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "FiberOfferSelectionLwC",
+    "OmniProcessId": {
+        "Name": "CreateServiceQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "BandwidthSelection",
+        "OmniProcessId": {
+            "Name": "CreateServiceQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/BandwidthSelection",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "BandwidthSelection",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "record-id",
+                "source": "%ContextId%"
+            },
+            {
+                "name": "parent-data",
+                "source": "true"
+            },
+            {
+                "name": "records",
+                "source": "%fiberOffersList%"
+            },
+            {
+                "name": "prodFamily",
+                "source": "Double Play"
+            }
+        ],
+        "hide": false,
+        "label": "FiberOfferSelectionLwC",
+        "lwcName": "cfProductSelection",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "",
+                        "field": "fiberOffersList"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/FiberOfferSelectionLwC"
+}

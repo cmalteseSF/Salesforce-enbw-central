@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>x02_Notes_Closed_Lost_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>IsWon = false &amp;&amp; IsClosed = true &amp;&amp; INCLUDES(CloseLostReason__c, &quot;Sonstiges&quot;)</errorConditionFormula>
+    <errorDisplayField>NoteCloseLostReason__c</errorDisplayField>
+    <errorMessage>Sie müssen eine Erklärung abgeben. Opportunity Error x02.</errorMessage>
+</ValidationRule>

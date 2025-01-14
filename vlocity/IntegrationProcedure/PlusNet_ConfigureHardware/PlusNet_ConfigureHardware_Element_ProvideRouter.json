@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ProvideRouter",
+    "OmniProcessId": {
+        "Name": "ConfigureHardware",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ConfigureHardware/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%hardwareConfig:routerByPlusnet% == \"true\" || (%hardwareConfig:routerByPlusnet% == \"false\" &&  %hardwareConfig:ontByPlusnet% == \"false\") || ((%hardwareConfig:routerByPlusnet% == \"false\" &&  %hardwareConfig:ontByPlusnet% == \"true\"))",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock1",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ConfigureHardware/Procedure/ProvideRouter"
+}

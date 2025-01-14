@@ -1,0 +1,80 @@
+# Description     :: SIT Continous Deployment(CD) workflow
+## Trigger-action :: Execute on PR closure
+### Target-Branch :: On merge to develop branch
+##### Target-Org  :: To SIT environment
+
+name: CD workflow developBranch-to-SIT Deployment
+run-name: ${{ github.actor }} is testing developBranch-to-SIT Deployment 🚀
+on:
+  pull_request:
+     # The events are that a PR is closed i.e. when merge request is successfully closed
+    types: [closed]
+    branches:
+      - develop*
+    paths:
+      - 'force-app/**'
+      - 'vlocity/**'
+jobs:
+  build:
+        runs-on: ubuntu-latest
+        environment: SIT
+        steps:
+          # Checkout the Source code from the latest commit
+          # Make sure to specify fetch-depth:0. This allows us to
+          # access previous commits that have been pushed to the repository.
+          - uses: actions/checkout@v3
+            with:
+              fetch-depth: 0
+          - name: Install NPM
+            run: |
+              npm install
+
+          # Install the SFDX CLI using npm command
+          - name: Install the SF CLI
+            run: |
+              npm install @salesforce/cli --global
+              sf version
+
+          # Install the Vlocity Build Tool using npm
+          - name: Install the Vlocity Build
+            run: |
+              npm install --global vlocity
+              vlocity help
+
+           # Install the sfdx git delta
+          - name: Install the sfdx-git-delta plugin
+            run: |
+               echo 'y' | sf plugins:install sfdx-git-delta
+
+         # Install the npm  puppeteer for flexcards activation
+          - name: Install the npm puppeteer plugin
+            run: |
+               npm install puppeteer -g
+
+          # Decrypt the private key for jwt auth
+          - name: Decrypt the server.key.enc file & store inside assets folder
+            run: |
+              openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K ${{ secrets.DECRYPTION_KEY }} -iv ${{ secrets.DECRYPTION_IV }}
+
+          # Authenticate to SF org
+          - name: Authenticate Salesforce ORG
+            run: |
+              sf login org jwt -i ${{ secrets.ENV_CONSUMER_KEY }} -f ${{ secrets.JWT_KEY_FILE }} --username ${{ secrets.ENV_USER_NAME }} --alias SBXSITOrg --instance-url ${{ secrets.ENV_LOGIN_URL }}
+
+         # Generate a package.xml for delta components
+          - name: Generate the package.xml for delta files
+            run: |
+              mkdir delta
+              sf sgd:source:delta --to "HEAD" --from "HEAD~1" --output "./delta" --ignore-whitespace -d -i .sgdignore
+              echo "--- package.xml generated with added and modified metadata ---"
+              cat delta/package/package.xml
+
+          # Execute the project deploy command to run real deployment to Salesforce SIT Org with "Notestrun" for SIT
+          - name: Deploy Delta components to to Salesforce Org
+            run: |
+              sf project deploy start -x delta/package/package.xml -l NoTestRun -o SBXSITOrg --verbose
+
+          # Execute the VBT packDeploy command to deploy SFI components, use -gitCheck=true for delta components only
+          - name: Deploying SFI Delta components to Salesforce Org
+            run: |
+              vlocity -sfdx.username ${{ secrets.ENV_USER_NAME }} -job deploy.yaml packDeploy -gitCheck=true --verbose

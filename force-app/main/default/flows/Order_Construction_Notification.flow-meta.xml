@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>60.0</apiVersion>
+    <decisions>
+        <name>CancellationReason_Based_Decision</name>
+        <label>Cancellation Reason Based Decision</label>
+        <locationX>314</locationX>
+        <locationY>323</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Negative_Construction</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.CancellationReason__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.CancellationReason__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CancellationReason__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bau technisch nicht möglich</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Negative_Building_Decision_Email</targetReference>
+            </connector>
+            <label>Negative Construction</label>
+        </rules>
+        <rules>
+            <name>Additional_Cost</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.CancellationReason__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <elementReference>$Record.CancellationReason__c</elementReference>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.CancellationReason__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Bau nur möglich mit zusätzlichen Kosten</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Additional_Cost_Email</targetReference>
+            </connector>
+            <label>Additional Cost</label>
+        </rules>
+    </decisions>
+    <description>Used to inform the customer about construction decision
+Updates: added new email scenario (Order with add. cost)</description>
+    <environments>Default</environments>
+    <interviewLabel>Order - Geostruct Notification {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Order - Construction Notification</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>CancellationReason_Based_Decision</targetReference>
+        </connector>
+        <filterLogic>1 AND (2 OR 3)</filterLogic>
+        <filters>
+            <field>vlocity_cmt__OrderStatus__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Cancelled</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CancellationReason__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Bau technisch nicht möglich</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>CancellationReason__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Bau nur möglich mit zusätzlichen Kosten</stringValue>
+            </value>
+        </filters>
+        <object>Order</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <name>Send_Additional_Cost_Email</name>
+        <label>Send Additional Cost Email</label>
+        <locationX>314</locationX>
+        <locationY>431</locationY>
+        <flowName>Send_Notification</flowName>
+        <inputAssignments>
+            <name>ContactId</name>
+            <value>
+                <elementReference>$Record.Account.vlocity_cmt__PrimaryContactId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>RelatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>UseCase</name>
+            <value>
+                <stringValue>Order Additional Cost</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+    <subflows>
+        <name>Send_Negative_Building_Decision_Email</name>
+        <label>Send Negative Building Decision Email</label>
+        <locationX>50</locationX>
+        <locationY>431</locationY>
+        <flowName>Send_Notification</flowName>
+        <inputAssignments>
+            <name>ContactId</name>
+            <value>
+                <elementReference>$Record.Account.vlocity_cmt__PrimaryContactId__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>RelatedRecordId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>UseCase</name>
+            <value>
+                <stringValue>Order Not Feasible</stringValue>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

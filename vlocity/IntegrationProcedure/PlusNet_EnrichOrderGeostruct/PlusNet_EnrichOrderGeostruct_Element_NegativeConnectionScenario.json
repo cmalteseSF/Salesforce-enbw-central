@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NegativeConnectionScenario",
+    "OmniProcessId": {
+        "Name": "EnrichOrderGeostruct",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%ConnectionOrderDecision% == 'no' && %Order:SubType% == 'Connection'",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock7",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure/NegativeConnectionScenario"
+}

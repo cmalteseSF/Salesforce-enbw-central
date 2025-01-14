@@ -1,0 +1,38 @@
+{
+    "%vlocity_namespace%__AttributeAssignment__c": "PLUSNET-Phone-Number-Object-Type_AttributeAssignments.json",
+    "%vlocity_namespace%__EffectiveFromDate__c": "2023-09-11",
+    "%vlocity_namespace%__EffectiveUntilDate__c": "",
+    "%vlocity_namespace%__GlobalGroupKey__c": "ccf23c60-085d-76ed-1c43-808b6b46be98",
+    "%vlocity_namespace%__GlobalKey__c": "69a39e-262854-1bf205-6913e2-c777a38d7",
+    "%vlocity_namespace%__IsActive__c": true,
+    "%vlocity_namespace%__IsVirtual__c": false,
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__Mode__c": "",
+    "%vlocity_namespace%__ObjectApiName__c": "Product2",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "PLUSNET-Phone-Number-Object-Type_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ParentObjectClassId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "b31bfa-1fa88e-ed9b83-25fd79-2d2351347",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/b31bfa-1fa88e-ed9b83-25fd79-2d2351347",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__RecordTypeName__c": "",
+    "%vlocity_namespace%__RootObjectClassId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "63ba6ae5f8c257f7cdccc385d2a85dca",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/63ba6ae5f8c257f7cdccc385d2a85dca",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__VersionLabel__c": "V1",
+    "Name": "PLUSNET Phone Number Object Type",
+    "RecordTypeId": {
+        "DeveloperName": "ObjectType",
+        "SobjectType": "%vlocity_namespace%__ObjectClass__c",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/%vlocity_namespace%__ObjectClass__c/ObjectType",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/69a39e-262854-1bf205-6913e2-c777a38d7"
+}

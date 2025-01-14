@@ -1,0 +1,58 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRSubtractAdditionalCostQuantity",
+    "OmniProcessId": {
+        "Name": "IPNetworkHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/IPNetworkHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Delete",
+        "OmniProcessId": {
+            "Name": "IPNetworkHandler",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/IPNetworkHandler/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/IPNetworkHandler/Procedure/Delete",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Delete",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "add": false,
+            "defaultQuantity": "%DRGetProductIdAndPriceBookEntryId:qliIPAdditionalCostDefaultQuantity%",
+            "qliId": "%DRGetProductIdAndPriceBookEntryId:qliIPAdditionalCostId%",
+            "quantity": "%DRGetProductIdAndPriceBookEntryId:qliIPAdditionalCostQuantity%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "UpdateAdditionalCostQLI",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataMapperPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/IPNetworkHandler/Procedure/DRSubtractAdditionalCostQuantity"
+}

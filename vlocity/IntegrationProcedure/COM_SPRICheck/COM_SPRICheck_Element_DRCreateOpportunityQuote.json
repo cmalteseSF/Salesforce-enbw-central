@@ -1,0 +1,64 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRCreateOpportunityQuote",
+    "OmniProcessId": {
+        "Name": "SPRICheckAndCreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SPRICheck/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ServiceAndConnectionQuote",
+        "OmniProcessId": {
+            "Name": "SPRICheckAndCreateQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SPRICheck/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SPRICheck/Procedure/ServiceAndConnectionQuote",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ServiceAndConnectionQuote",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountId": "%ConnectionQuoteAccountId%",
+            "ContactId": "%ConnectionQuoteContactId%",
+            "MarketingPhase": "%MarketingPhase%",
+            "Opportunity": "%Opportunity%",
+            "PremiseId": "%PremiseId%",
+            "PriceListId": "%PriceListId%",
+            "SelectedAddress": "%SelectedAddress%",
+            "ServiceAccountId": "%ServiceAccountId%",
+            "StandardQuoteRTId": "%StandardQuoteRTId%",
+            "SubType": "Connection"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRCreateOpportunityQuote",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction6",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SPRICheck/Procedure/DRCreateOpportunityQuote"
+}

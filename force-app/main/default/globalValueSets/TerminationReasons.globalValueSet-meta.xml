@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>APL nicht eindeutig</fullName>
+        <default>false</default>
+        <label>APL nicht eindeutig</label>
+    </customValue>
+    <customValue>
+        <fullName>APL voll</fullName>
+        <default>false</default>
+        <label>APL voll</label>
+    </customValue>
+    <customValue>
+        <fullName>Baukosten zu hoch</fullName>
+        <default>false</default>
+        <label>Baukosten zu hoch</label>
+    </customValue>
+    <customValue>
+        <fullName>Betrug / Fraud</fullName>
+        <default>false</default>
+        <label>Betrug / Fraud</label>
+    </customValue>
+    <customValue>
+        <fullName>CO-Abschaltung/MSC-Abschaltung</fullName>
+        <default>false</default>
+        <label>CO-Abschaltung/MSC-Abschaltung</label>
+    </customValue>
+    <customValue>
+        <fullName>Doppelter Auftrag, Fehler etc.</fullName>
+        <default>false</default>
+        <label>Doppelter Auftrag, Fehler etc.</label>
+    </customValue>
+    <customValue>
+        <fullName>Doppelter Auftrag/Fehler</fullName>
+        <default>false</default>
+        <label>Doppelter Auftrag/Fehler</label>
+    </customValue>
+    <customValue>
+        <fullName>Ersatzleitung</fullName>
+        <default>false</default>
+        <label>Ersatzleitung</label>
+    </customValue>
+    <customValue>
+        <fullName>Fristgerechte Kündigung</fullName>
+        <default>false</default>
+        <label>Fristgerechte Kündigung</label>
+    </customValue>
+    <customValue>
+        <fullName>GNV</fullName>
+        <default>false</default>
+        <label>GNV</label>
+    </customValue>
+    <customValue>
+        <fullName>Hauptanbindung nicht realisierbar</fullName>
+        <default>false</default>
+        <label>Hauptanbindung nicht realisierbar</label>
+    </customValue>
+    <customValue>
+        <fullName>Insolvenz Endkunde</fullName>
+        <default>false</default>
+        <label>Insolvenz Endkunde</label>
+    </customValue>
+    <customValue>
+        <fullName>Insolvenz ISP</fullName>
+        <default>false</default>
+        <label>Insolvenz ISP</label>
+    </customValue>
+    <customValue>
+        <fullName>ISP Ersatzkunde</fullName>
+        <default>false</default>
+        <label>ISP Ersatzkunde</label>
+    </customValue>
+    <customValue>
+        <fullName>Kein CO verfügbar</fullName>
+        <default>false</default>
+        <label>Kein CO verfügbar</label>
+    </customValue>
+    <customValue>
+        <fullName>Kündigung aus Kulanz</fullName>
+        <default>false</default>
+        <label>Kündigung aus Kulanz</label>
+    </customValue>
+    <customValue>
+        <fullName>Kündigung BFC - Bill for Commitment</fullName>
+        <default>false</default>
+        <label>Kündigung BFC - Bill for Commitment</label>
+    </customValue>
+    <customValue>
+        <fullName>Kündigung wegen Produktwechsel</fullName>
+        <default>false</default>
+        <label>Kündigung wegen Produktwechsel</label>
+    </customValue>
+    <customValue>
+        <fullName>Mitarbeiteranschluss</fullName>
+        <default>false</default>
+        <label>Mitarbeiteranschluss</label>
+    </customValue>
+    <customValue>
+        <fullName>Mitwirkungspflicht bei der Anschaltung</fullName>
+        <default>false</default>
+        <label>Mitwirkungspflicht bei der Anschaltung</label>
+    </customValue>
+    <customValue>
+        <fullName>Negativer Bonitäts-Check</fullName>
+        <default>false</default>
+        <label>Negativer Bonitäts-Check</label>
+    </customValue>
+    <customValue>
+        <fullName>OPAL</fullName>
+        <default>false</default>
+        <label>OPAL</label>
+    </customValue>
+    <customValue>
+        <fullName>Produktabkündigung durch Plusnet</fullName>
+        <default>false</default>
+        <label>Produktabkündigung durch Plusnet</label>
+    </customValue>
+    <customValue>
+        <fullName>Qualitätsprobleme Service</fullName>
+        <default>false</default>
+        <label>Qualitätsprobleme Service</label>
+    </customValue>
+    <customValue>
+        <fullName>Qualitätsprobleme Technik</fullName>
+        <default>false</default>
+        <label>Qualitätsprobleme Technik</label>
+    </customValue>
+    <customValue>
+        <fullName>Rahmenvertrag (Gesamtvertrag)</fullName>
+        <default>false</default>
+        <label>Rahmenvertrag (Gesamtvertrag)</label>
+    </customValue>
+    <customValue>
+        <fullName>Sonderkündigung gemäß RV</fullName>
+        <default>false</default>
+        <label>Sonderkündigung gemäß RV</label>
+    </customValue>
+    <customValue>
+        <fullName>Standortauflösung</fullName>
+        <default>false</default>
+        <label>Standortauflösung</label>
+    </customValue>
+    <customValue>
+        <fullName>Stornierung/Widerruf mit Folgeauftrag</fullName>
+        <default>false</default>
+        <label>Stornierung/Widerruf mit Folgeauftrag</label>
+    </customValue>
+    <customValue>
+        <fullName>Stornierung/Widerruf ohne Folgeauftrag</fullName>
+        <default>false</default>
+        <label>Stornierung/Widerruf ohne Folgeauftrag</label>
+    </customValue>
+    <customValue>
+        <fullName>Technisch nicht realisierbar nach Aktivschaltung</fullName>
+        <default>false</default>
+        <label>Technisch nicht realisierbar nach Aktivschaltung</label>
+    </customValue>
+    <customValue>
+        <fullName>Technisch nicht realisierbar vor Aktivschaltung</fullName>
+        <default>false</default>
+        <label>Technisch nicht realisierbar vor Aktivschaltung</label>
+    </customValue>
+    <customValue>
+        <fullName>Testanschluss</fullName>
+        <default>false</default>
+        <label>Testanschluss</label>
+    </customValue>
+    <customValue>
+        <fullName>Umzug in nicht versorgtes Gebiet</fullName>
+        <default>false</default>
+        <label>Umzug in nicht versorgtes Gebiet</label>
+    </customValue>
+    <customValue>
+        <fullName>Umzug mit Folgeauftrag</fullName>
+        <default>false</default>
+        <label>Umzug mit Folgeauftrag</label>
+    </customValue>
+    <customValue>
+        <fullName>Vertragsübernahme</fullName>
+        <default>false</default>
+        <label>Vertragsübernahme</label>
+    </customValue>
+    <customValue>
+        <fullName>Vorzeitige Kündigung mit Abschlagszahlung</fullName>
+        <default>false</default>
+        <label>Vorzeitige Kündigung mit Abschlagszahlung</label>
+    </customValue>
+    <customValue>
+        <fullName>Wechsel zu Wettbewerb</fullName>
+        <default>false</default>
+        <label>Wechsel zu Wettbewerb</label>
+    </customValue>
+    <customValue>
+        <fullName>Wechsel zu Wettbewerb mit Abschlagszahlung</fullName>
+        <default>false</default>
+        <label>Wechsel zu Wettbewerb mit Abschlagszahlung</label>
+    </customValue>
+    <customValue>
+        <fullName>Widerruf duch Kunde vor Aktivschaltung</fullName>
+        <default>false</default>
+        <label>Widerruf duch Kunde vor Aktivschaltung</label>
+    </customValue>
+    <customValue>
+        <fullName>Zahlungsproblem Kunde</fullName>
+        <default>false</default>
+        <label>Zahlungsproblem Kunde</label>
+    </customValue>
+    <customValue>
+        <fullName>Zu hohe Baukosten</fullName>
+        <default>false</default>
+        <label>Zu hohe Baukosten</label>
+    </customValue>
+    <customValue>
+        <fullName>Zu lange Bereitstellungszeit</fullName>
+        <default>false</default>
+        <label>Zu lange Bereitstellungszeit</label>
+    </customValue>
+    <description>Used to store Order/Contract termination reasons</description>
+    <masterLabel>Termination Reasons</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

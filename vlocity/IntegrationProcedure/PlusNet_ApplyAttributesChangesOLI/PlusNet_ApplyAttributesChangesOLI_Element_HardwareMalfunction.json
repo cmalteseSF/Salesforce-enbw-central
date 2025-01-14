@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "HardwareMalfunction",
+    "OmniProcessId": {
+        "Name": "PlusNet-ApplyAttributesChangesOLI",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ApplyAttributesChangesOLI/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%changeType% == \"Hardware Malfunction\"",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock3",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ApplyAttributesChangesOLI/Procedure/HardwareMalfunction"
+}

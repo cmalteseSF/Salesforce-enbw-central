@@ -1,0 +1,61 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TerminationCategory",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Termination Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerTerminationFlow/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TerminationOrderRequest",
+        "OmniProcessId": {
+            "Name": "Asset Viewer Termination Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerTerminationFlow/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerTerminationFlow/German/TerminationOrderRequest",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TerminationOrderRequest",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Kündigungskategorie",
+        "optionSource": {
+            "source": "Order.TerminationCategory__c",
+            "type": "SObject"
+        },
+        "options": [
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Select",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerTerminationFlow/German/TerminationCategory"
+}

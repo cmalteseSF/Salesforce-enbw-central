@@ -1,0 +1,53 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ConfigureHardware",
+    "OmniProcessId": {
+        "Name": "ConfigureServiceQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ConfigureServiceQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "hardwareConfig": "%offerConfig:hardware%",
+            "pbeONT": "%GetPriceBookIdsFromQuote:pbeONT%",
+            "pbeRouter": "%GetPriceBookIdsFromQuote:pbeHardware%",
+            "pbeServiceTechniker": "%GetPriceBookIdsFromQuote:pbeServiceTechniker%",
+            "productType": "%offerConfig:productType%",
+            "qliONT": "%GetPriceBookIdsFromQuote:qliONT%",
+            "qliRootProductId": "%GetPriceBookIdsFromQuote:qliRootProductId%",
+            "qliRouter": "%GetPriceBookIdsFromQuote:qliRouter%",
+            "quoteId": "%quoteId%",
+            "rootProductId": "%GetPriceBookIdsFromQuote:rootProductId%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": true,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "PlusNet_ConfigureHardware",
+        "label": "IntegrationProcedureAction3",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ConfigureServiceQuote/Procedure/ConfigureHardware"
+}

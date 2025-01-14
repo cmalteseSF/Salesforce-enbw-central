@@ -1,0 +1,84 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetAddressError",
+    "OmniProcessId": {
+        "Name": "CreateConnectionQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConnectionQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementErrorMap": {
+            "OwnerDetailsBlock": "Please review your address"
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "AddressCheck"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": "success",
+                                    "field": "AddressCheck:validationResult"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "Case",
+                                    "field": "Context"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "AddressCheck"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": null,
+                                    "field": "AddressCheck:AddressId"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "Case",
+                                    "field": "Context"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Set Errors",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConnectionQuote/German/SetAddressError"
+}

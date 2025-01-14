@@ -1,0 +1,60 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateToQuote2",
+    "OmniProcessId": {
+        "Name": "Create Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateOrder/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 3,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": "",
+        "loginAction": "login",
+        "message": {
+            "vlocEvents": "closemymodal"
+        },
+        "objectAction": "home",
+        "pubsub": true,
+        "recordAction": "view",
+        "replace": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "0",
+                        "field": "checkout:totalSize"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "INFO",
+                        "field": "CreateAccountDiscounts:messages|1:severity"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%ContextId%",
+        "targetLWCLayout": "lightning",
+        "targetName": "Quote",
+        "targetType": "Record",
+        "targetUrl": "/apex/%vlocity_namespace%__HybridCPQ?id=%checkout:records|1:id%",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateOrder/German/NavigateToQuote2"
+}

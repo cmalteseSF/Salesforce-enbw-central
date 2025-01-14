@@ -1,0 +1,531 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "PremiseOwnerAccountId",
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom3337",
+        "InputFieldName": "Id",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PremiseOwnerAccount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "PremiseOwnerAccount:Id",
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom346",
+        "InputFieldName": "AccountId",
+        "InputObjectName": "Contact",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PrimaryContact",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "PremiseOwnerAccount:RecordTypeId",
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom5289",
+        "InputFieldName": "Id",
+        "InputObjectName": "RecordType",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "RecordType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "PremiseOwnerAccount:Id",
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom1699",
+        "InputFieldName": "ParentId",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ServiceAccount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Service'",
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom770",
+        "InputFieldName": "RecordType.Name",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ServiceAccount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "PremiseOwnerAccount:Id",
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom9136",
+        "InputFieldName": "AccountId",
+        "InputObjectName": "Opportunity",
+        "InputObjectQuerySequence": 5,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Opportunity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Connection'",
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom2558",
+        "InputFieldName": "Type",
+        "InputObjectName": "Opportunity",
+        "InputObjectQuerySequence": 5,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Opportunity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom1504",
+        "InputFieldName": "PremiseOwnerAccount:BusinessAddressExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerAddressExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom2800",
+        "InputFieldName": "PremiseOwnerAccount:BusinessCity__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerCity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom7433",
+        "InputFieldName": "PremiseOwnerAccount:BusinessCityExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerCityExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom3414",
+        "InputFieldName": "PremiseOwnerAccount:BusinessCountry__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerCountry",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom6925",
+        "InputFieldName": "PrimaryContact:Email",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerEmail",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom3262",
+        "InputFieldName": "PrimaryContact:FirstName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerFirstName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom4301",
+        "InputFieldName": "PremiseOwnerAccount:BusinessHouseNo__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerHouseNo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom9781",
+        "InputFieldName": "PremiseOwnerAccount:BusinessHouseNoExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerHouseNoExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom6530",
+        "InputFieldName": "PrimaryContact:LastName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerLastName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom5761",
+        "InputFieldName": "PrimaryContact:Phone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerPhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom5479",
+        "InputFieldName": "PremiseOwnerAccount:BusinessPostalCode__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerPostalCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom1733",
+        "InputFieldName": "PrimaryContact:Salutation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerSalutation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom4411",
+        "InputFieldName": "PremiseOwnerAccount:BusinessState__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerState",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom3906",
+        "InputFieldName": "PremiseOwnerAccount:BusinessStreet__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerStreet",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom1618",
+        "InputFieldName": "RecordType:DeveloperName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OwnerDetails:OwnerTypeRadio",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom4526",
+        "InputFieldName": "PremiseOwnerAccount:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PremiseOwnerAccountDetails:AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom1728",
+        "InputFieldName": "PrimaryContact:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PremiseOwnerAccountDetails:ContactId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom9052",
+        "InputFieldName": "PremiseOwnerAccount:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PremiseOwnerAccountDetails:PremiseOwnerAccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPremiseOwnerAccountDetailsCustom5981",
+        "InputFieldName": "ServiceAccount:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPremiseOwnerAccountDetails",
+        "OmniDataTransformationId": {
+            "Name": "GetPremiseOwnerAccountDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPremiseOwnerAccountDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PremiseOwnerAccountDetails:ServiceAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,295 @@
+[
+    {
+        "FormulaExpression": "FILTER(LIST(%OffersWithPriceBookIds%), '%DwnSpd% <= ' + %trimmedMaxBandwidth% + '' + ' && ' + 'Type == \"' + type + '\"')",
+        "FormulaResultPath": "FilteredOffersWithPriceBookIds",
+        "FormulaSequence": 3,
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LISTMERGE(\"ProductCode\",LIST(%offerListOutput%),LIST(%PriceBookEntryList:PricebookEntry%))",
+        "FormulaResultPath": "OffersWithPriceBookIds",
+        "FormulaSequence": 2,
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUBSTRING(%offerListOutput:DownloadSpeed%, 0, STRINGINDEXOF(%offerListOutput:DownloadSpeed%, \" Mbps\"))",
+        "FormulaResultPath": "offerListOutput:DwnSpd",
+        "FormulaSequence": 1,
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom301",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "FilteredOfferList",
+        "OutputObjectName": "json",
+        "TransformValueMappings": "{}",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem11",
+        "InputFieldName": "FilteredOffersWithPriceBookIds:DownloadSpeed",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredOfferList:DownloadSpeed",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem20",
+        "InputFieldName": "FilteredOffersWithPriceBookIds:DwnSpd",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Integer",
+        "OutputFieldName": "FilteredOfferList:DwnSpd",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem12",
+        "InputFieldName": "FilteredOffersWithPriceBookIds:Family",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredOfferList:Family",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem16",
+        "InputFieldName": "FilteredOffersWithPriceBookIds:PBookId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredOfferList:PBookId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem3",
+        "InputFieldName": "FilteredOffersWithPriceBookIds:Product2Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredOfferList:Product2Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem4",
+        "InputFieldName": "FilteredOffersWithPriceBookIds:ProductCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredOfferList:ProductCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem8",
+        "InputFieldName": "FilteredOffersWithPriceBookIds:ProductName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredOfferList:ProductName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom1807",
+        "InputFieldName": "FilteredOffersWithPriceBookIds:Type",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredOfferList:Type",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem7",
+        "InputFieldName": "FilteredOffersWithPriceBookIds:offerType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredOfferList:offerType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom0jI9M000000XQ5NUAWItem9",
+        "InputFieldName": "trimmedMaxBandwidth",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "trimmedMaxBandwidth",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "FilterOffersBasedOnBandwidthCustom8952",
+        "InputFieldName": "type",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "FilterOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "FilterOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/FilterOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "type",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

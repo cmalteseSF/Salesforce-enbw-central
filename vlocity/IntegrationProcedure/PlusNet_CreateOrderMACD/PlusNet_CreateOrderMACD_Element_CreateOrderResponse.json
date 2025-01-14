@@ -1,0 +1,39 @@
+{
+    "DiscoveryFrameworkUsageType": "Default",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateOrderResponse",
+    "OmniProcessId": {
+        "Name": "Plusnet-CreateOrderMACD",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateOrderMACD/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "AssetIds": "=LIST(%CreateSelectOrder:AssetIds%)",
+            "OrderId": "%CreateOrderRecord:records:Id%",
+            "createOrderMessages": "%CreateOrderRecord:messages%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateOrderMACD/Procedure/CreateOrderResponse"
+}

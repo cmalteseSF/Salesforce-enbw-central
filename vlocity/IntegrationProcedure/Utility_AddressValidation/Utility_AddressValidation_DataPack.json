@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "Utility_AddressValidation_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "UtilityAddressValidation",
+    "OmniProcessElement": [
+        "Utility_AddressValidation_Element_HTTPAction_ValidGeoAddress.json",
+        "Utility_AddressValidation_Element_CB_ServiceAddress.json",
+        "Utility_AddressValidation_Element_IP_ServiceAvailabilityCheck.json",
+        "Utility_AddressValidation_Element_ResponseAction1.json",
+        "Utility_AddressValidation_Element_CB_Error400.json",
+        "Utility_AddressValidation_Element_ResponseAction4.json",
+        "Utility_AddressValidation_Element_CB_Error500.json",
+        "Utility_AddressValidation_Element_ResponseAction6.json",
+        "Utility_AddressValidation_Element_ResponseAction2.json"
+    ],
+    "OmniProcessKey": "Utility_AddressValidation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "Utility_AddressValidation_PropertySetConfig.json",
+    "SubType": "AddressValidation",
+    "Type": "Utility",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/Utility/AddressValidation/Procedure"
+}

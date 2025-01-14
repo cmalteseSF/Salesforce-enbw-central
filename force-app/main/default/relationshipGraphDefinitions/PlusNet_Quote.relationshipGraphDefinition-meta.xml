@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelationshipGraphDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <isActive>true</isActive>
+    <isTemplate>false</isTemplate>
+    <masterLabel>PlusNet Quote</masterLabel>
+    <relationshipGraphDefVersions>
+        <graphDefinition>{
+  &quot;graph&quot; : {
+    &quot;rootNode&quot; : {
+      &quot;id&quot; : &quot;d206cfa0-cb30-4f3f-a5ac-879ea876d0fa&quot;,
+      &quot;object&quot; : {
+        &quot;entity&quot; : &quot;Quote&quot;
+      },
+      &quot;configurationType&quot; : &quot;Primary&quot;,
+      &quot;nodeUiConfig&quot; : {
+        &quot;label&quot; : &quot;Quote&quot;,
+        &quot;fieldsToDisplay&quot; : [ ],
+        &quot;showFieldLabels&quot; : true,
+        &quot;actions&quot; : { }
+      },
+      &quot;childRelationships&quot; : [ {
+        &quot;OneToMany&quot; : {
+          &quot;targetObjectNode&quot; : {
+            &quot;sortFields&quot; : [ {
+              &quot;field&quot; : {
+                &quot;field&quot; : &quot;Name&quot;,
+                &quot;whichEntity&quot; : &quot;TARGET&quot;
+              },
+              &quot;order&quot; : &quot;ASC&quot;
+            } ],
+            &quot;id&quot; : &quot;7ece9239-0f69-4f8e-8361-4be3705aedcf&quot;,
+            &quot;object&quot; : {
+              &quot;entity&quot; : &quot;Opportunity&quot;
+            },
+            &quot;configurationType&quot; : &quot;Primary&quot;,
+            &quot;nodeUiConfig&quot; : {
+              &quot;label&quot; : &quot;Opportunities&quot;,
+              &quot;recordActionsLabel&quot; : &quot;&quot;,
+              &quot;fieldsToDisplay&quot; : [ {
+                &quot;field&quot; : &quot;Account.Name&quot;,
+                &quot;whichEntity&quot; : &quot;TARGET&quot;
+              }, {
+                &quot;field&quot; : &quot;CloseDate&quot;,
+                &quot;whichEntity&quot; : &quot;TARGET&quot;
+              }, {
+                &quot;field&quot; : &quot;StageName&quot;,
+                &quot;whichEntity&quot; : &quot;TARGET&quot;
+              } ],
+              &quot;showFieldLabels&quot; : true,
+              &quot;actions&quot; : {
+                &quot;containerActions&quot; : [ ],
+                &quot;recordActions&quot; : [ ]
+              }
+            },
+            &quot;childRelationships&quot; : [ ]
+          },
+          &quot;relationshipUiConfig&quot; : { },
+          &quot;filter&quot; : {
+            &quot;filterCriteria&quot; : [ ],
+            &quot;booleanFilter&quot; : &quot;&quot;
+          },
+          &quot;targetObjectField&quot; : {
+            &quot;field&quot; : &quot;SyncedQuoteId&quot;,
+            &quot;whichEntity&quot; : &quot;TARGET&quot;
+          }
+        }
+      }, {
+        &quot;OneToMany&quot; : {
+          &quot;targetObjectNode&quot; : {
+            &quot;sortFields&quot; : [ {
+              &quot;field&quot; : {
+                &quot;field&quot; : &quot;Name&quot;,
+                &quot;whichEntity&quot; : &quot;TARGET&quot;
+              },
+              &quot;order&quot; : &quot;ASC&quot;
+            } ],
+            &quot;includeChildRelationships&quot; : true,
+            &quot;id&quot; : &quot;43464106-6374-4fdc-b9b9-07c4c8b77ac3&quot;,
+            &quot;object&quot; : {
+              &quot;entity&quot; : &quot;Contract&quot;
+            },
+            &quot;configurationType&quot; : &quot;Custom&quot;,
+            &quot;nodeUiConfig&quot; : {
+              &quot;label&quot; : &quot;Contracts&quot;,
+              &quot;recordActionsLabel&quot; : &quot;&quot;,
+              &quot;fieldsToDisplay&quot; : [ ],
+              &quot;showFieldLabels&quot; : true,
+              &quot;actions&quot; : {
+                &quot;containerActions&quot; : [ ],
+                &quot;recordActions&quot; : [ ]
+              }
+            },
+            &quot;childRelationships&quot; : [ {
+              &quot;OneToMany&quot; : {
+                &quot;targetObjectNode&quot; : {
+                  &quot;sortFields&quot; : [ {
+                    &quot;field&quot; : {
+                      &quot;field&quot; : &quot;Name&quot;,
+                      &quot;whichEntity&quot; : &quot;TARGET&quot;
+                    },
+                    &quot;order&quot; : &quot;ASC&quot;
+                  } ],
+                  &quot;id&quot; : &quot;552f2b6f-2756-4881-90f5-31547495776f&quot;,
+                  &quot;object&quot; : {
+                    &quot;entity&quot; : &quot;vlocity_cmt__ContractLineItem__c&quot;
+                  },
+                  &quot;configurationType&quot; : &quot;Primary&quot;,
+                  &quot;nodeUiConfig&quot; : {
+                    &quot;label&quot; : &quot;Contract Lines&quot;,
+                    &quot;recordActionsLabel&quot; : &quot;&quot;,
+                    &quot;fieldsToDisplay&quot; : [ {
+                      &quot;field&quot; : &quot;Name&quot;,
+                      &quot;whichEntity&quot; : &quot;TARGET&quot;
+                    }, {
+                      &quot;field&quot; : &quot;vlocity_cmt__LineStatus__c&quot;,
+                      &quot;whichEntity&quot; : &quot;TARGET&quot;
+                    }, {
+                      &quot;field&quot; : &quot;vlocity_cmt__EffectiveStartDate__c&quot;,
+                      &quot;whichEntity&quot; : &quot;TARGET&quot;
+                    } ],
+                    &quot;showFieldLabels&quot; : true,
+                    &quot;actions&quot; : {
+                      &quot;containerActions&quot; : [ ],
+                      &quot;recordActions&quot; : [ ]
+                    }
+                  },
+                  &quot;childRelationships&quot; : [ ]
+                },
+                &quot;relationshipUiConfig&quot; : { },
+                &quot;filter&quot; : {
+                  &quot;filterCriteria&quot; : [ ],
+                  &quot;booleanFilter&quot; : &quot;&quot;
+                },
+                &quot;targetObjectField&quot; : {
+                  &quot;field&quot; : &quot;vlocity_cmt__ContractId__c&quot;,
+                  &quot;whichEntity&quot; : &quot;TARGET&quot;
+                }
+              }
+            } ]
+          },
+          &quot;relationshipUiConfig&quot; : { },
+          &quot;filter&quot; : {
+            &quot;filterCriteria&quot; : [ ],
+            &quot;booleanFilter&quot; : &quot;&quot;
+          },
+          &quot;targetObjectField&quot; : {
+            &quot;field&quot; : &quot;vlocity_cmt__QuoteId__c&quot;,
+            &quot;whichEntity&quot; : &quot;TARGET&quot;
+          }
+        }
+      }, {
+        &quot;OneToMany&quot; : {
+          &quot;targetObjectNode&quot; : {
+            &quot;sortFields&quot; : [ {
+              &quot;field&quot; : {
+                &quot;field&quot; : &quot;Name&quot;,
+                &quot;whichEntity&quot; : &quot;TARGET&quot;
+              },
+              &quot;order&quot; : &quot;ASC&quot;
+            } ],
+            &quot;includeChildRelationships&quot; : true,
+            &quot;id&quot; : &quot;5162e0e1-b08a-41c8-a156-e3c7d705181e&quot;,
+            &quot;object&quot; : {
+              &quot;entity&quot; : &quot;Order&quot;
+            },
+            &quot;configurationType&quot; : &quot;Custom&quot;,
+            &quot;nodeUiConfig&quot; : {
+              &quot;label&quot; : &quot;Orders&quot;,
+              &quot;recordActionsLabel&quot; : &quot;&quot;,
+              &quot;fieldsToDisplay&quot; : [ ],
+              &quot;showFieldLabels&quot; : true,
+              &quot;actions&quot; : {
+                &quot;containerActions&quot; : [ ],
+                &quot;recordActions&quot; : [ ]
+              }
+            },
+            &quot;childRelationships&quot; : [ {
+              &quot;OneToMany&quot; : {
+                &quot;targetObjectNode&quot; : {
+                  &quot;sortFields&quot; : [ {
+                    &quot;field&quot; : {
+                      &quot;field&quot; : &quot;OrderItemNumber&quot;,
+                      &quot;whichEntity&quot; : &quot;TARGET&quot;
+                    },
+                    &quot;order&quot; : &quot;ASC&quot;
+                  } ],
+                  &quot;id&quot; : &quot;d9db3c47-f5c8-4b16-b58d-4509051cf191&quot;,
+                  &quot;object&quot; : {
+                    &quot;entity&quot; : &quot;OrderItem&quot;
+                  },
+                  &quot;configurationType&quot; : &quot;Primary&quot;,
+                  &quot;nodeUiConfig&quot; : {
+                    &quot;label&quot; : &quot;Order Products&quot;,
+                    &quot;recordActionsLabel&quot; : &quot;&quot;,
+                    &quot;fieldsToDisplay&quot; : [ {
+                      &quot;field&quot; : &quot;vlocity_cmt__Action__c&quot;,
+                      &quot;whichEntity&quot; : &quot;TARGET&quot;
+                    }, {
+                      &quot;field&quot; : &quot;vlocity_cmt__ProvisioningStatus__c&quot;,
+                      &quot;whichEntity&quot; : &quot;TARGET&quot;
+                    }, {
+                      &quot;field&quot; : &quot;vlocity_cmt__FulfilmentStatus__c&quot;,
+                      &quot;whichEntity&quot; : &quot;TARGET&quot;
+                    } ],
+                    &quot;showFieldLabels&quot; : true,
+                    &quot;actions&quot; : {
+                      &quot;containerActions&quot; : [ ],
+                      &quot;recordActions&quot; : [ ]
+                    }
+                  },
+                  &quot;childRelationships&quot; : [ ]
+                },
+                &quot;relationshipUiConfig&quot; : { },
+                &quot;filter&quot; : {
+                  &quot;filterCriteria&quot; : [ ],
+                  &quot;booleanFilter&quot; : &quot;&quot;
+                },
+                &quot;targetObjectField&quot; : {
+                  &quot;field&quot; : &quot;OrderId&quot;,
+                  &quot;whichEntity&quot; : &quot;TARGET&quot;
+                }
+              }
+            } ]
+          },
+          &quot;relationshipUiConfig&quot; : { },
+          &quot;filter&quot; : {
+            &quot;filterCriteria&quot; : [ ],
+            &quot;booleanFilter&quot; : &quot;&quot;
+          },
+          &quot;targetObjectField&quot; : {
+            &quot;field&quot; : &quot;QuoteId&quot;,
+            &quot;whichEntity&quot; : &quot;TARGET&quot;
+          }
+        }
+      } ]
+    },
+    &quot;globalUiConfig&quot; : {
+      &quot;allowRuntimeCustomizations&quot; : false
+    }
+  }
+}</graphDefinition>
+        <graphType>HorizontalHierarchy</graphType>
+    </relationshipGraphDefVersions>
+</RelationshipGraphDefinition>

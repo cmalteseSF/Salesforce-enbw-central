@@ -1,0 +1,42 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DeleteContentDocument",
+    "OmniProcessId": {
+        "Name": "DeleteContentDocument",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/DeleteContentDocument/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalOutput": {
+        },
+        "allOrNone": false,
+        "chainOnStep": false,
+        "deleteSObject": [
+            {
+                "AllOrNone": false,
+                "Id": "%GetContentDocumentByContentVersionId:ContentDocumentId%",
+                "Type": "ContentDocument"
+            }
+        ],
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DeleteAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Delete Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/DeleteContentDocument/Procedure/DeleteContentDocument"
+}

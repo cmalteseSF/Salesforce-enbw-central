@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "PlusNet_MaintainContractData_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Maintain Contract Data",
+    "OmniProcessElement": [
+        "PlusNet_MaintainContractData_Element_GetOrderDetails.json",
+        "PlusNet_MaintainContractData_Element_ChangeOfPlan.json",
+        "PlusNet_MaintainContractData_Element_HandleChangeOfPlanCLIs.json",
+        "PlusNet_MaintainContractData_Element_Change.json",
+        "PlusNet_MaintainContractData_Element_HandleChangeCLIs.json",
+        "PlusNet_MaintainContractData_Element_ResponseMaintainContractData.json"
+    ],
+    "OmniProcessKey": "PlusNet_MaintainContractData",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_MaintainContractData_PropertySetConfig.json",
+    "SubType": "MaintainContractData",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/MaintainContractData/Procedure"
+}

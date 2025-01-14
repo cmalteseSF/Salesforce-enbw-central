@@ -1,0 +1,32 @@
+{
+    "CustomJavaScript": "PlusNet_ApplyAttributesChanges_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PlusNet-ApplyAttributesChanges",
+    "OmniProcessElement": [
+        "PlusNet_ApplyAttributesChanges_Element_HardwareChange.json",
+        "PlusNet_ApplyAttributesChanges_Element_GetHardwareQLI.json",
+        "PlusNet_ApplyAttributesChanges_Element_SetHardwareAttributeValue.json",
+        "PlusNet_ApplyAttributesChanges_Element_IPChange.json",
+        "PlusNet_ApplyAttributesChanges_Element_GetIPQLI.json",
+        "PlusNet_ApplyAttributesChanges_Element_SetIPAttributeValue.json",
+        "PlusNet_ApplyAttributesChanges_Element_UpdateQLI.json",
+        "PlusNet_ApplyAttributesChanges_Element_getCartLineItemPrices.json",
+        "PlusNet_ApplyAttributesChanges_Element_getCartsItems.json",
+        "PlusNet_ApplyAttributesChanges_Element_runCartValidation.json",
+        "PlusNet_ApplyAttributesChanges_Element_ReturnApplyAttributesChanges.json"
+    ],
+    "OmniProcessKey": "PlusNet_ApplyAttributesChanges",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ApplyAttributesChanges_PropertySetConfig.json",
+    "SubType": "ApplyAttributesChanges",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ApplyAttributesChanges/Procedure"
+}

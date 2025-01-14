@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Manage to configure and split SIP accounts based on the parent offer",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ConfigureVoice",
+    "OmniProcessElement": [
+        "PlusNet_ConfigureVoice_Element_SplitVoiceAccounts.json",
+        "PlusNet_ConfigureVoice_Element_GetSIPAccountQLIs.json",
+        "PlusNet_ConfigureVoice_Element_TryUpdateVoicePaket.json",
+        "PlusNet_ConfigureVoice_Element_UpdateVoicePaket.json",
+        "PlusNet_ConfigureVoice_Element_ReturnConfigureVoice.json"
+    ],
+    "OmniProcessKey": "PlusNet_ConfigureVoice",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ConfigureVoice_PropertySetConfig.json",
+    "SubType": "ConfigureVoice",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ConfigureVoice/Procedure"
+}

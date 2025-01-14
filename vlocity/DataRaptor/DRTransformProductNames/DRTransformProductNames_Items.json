@@ -1,0 +1,242 @@
+[
+    {
+        "FormulaExpression": "FILTER(LIST(%ReTransformOfferList:FinalOutput%), '%Family% == \"Infrastruktur\"')",
+        "FormulaResultPath": "HouseConnectionProd",
+        "FormulaSequence": 3,
+        "GlobalKey": "DRTransformProductNamesCustom6413",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%ReTransformOfferList:filteredProducts%), '%Family% == \"Double Play\"')",
+        "FormulaResultPath": "OfficeFilteredProd",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRTransformProductNamesCustom8996",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%ReTransformOfferList:filteredProducts%), '%Family% == \"Single Play\"')",
+        "FormulaResultPath": "BusinessFilteredProd",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRTransformProductNamesCustom9320",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF( %SortedBusinessListSize% > 0 , SORTBY(LIST(%BusinessFilteredProd%),'DwnSpd','[:ASC]'), LIST(%BusinessFilteredProd%))",
+        "FormulaResultPath": "SortedBusinessList",
+        "FormulaSequence": 6,
+        "GlobalKey": "DRTransformProductNamesCustom3225",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(ISBLANK(%BusinessFilteredProd%), 0 , LISTSIZE(%BusinessFilteredProd%))",
+        "FormulaResultPath": "SortedBusinessListSize",
+        "FormulaSequence": 5,
+        "GlobalKey": "DRTransformProductNamesCustom9922",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SORTBY(LIST(%OfficeFilteredProd%),'DwnSpd','[:ASC]')",
+        "FormulaResultPath": "SortedOfficeList",
+        "FormulaSequence": 4,
+        "GlobalKey": "DRTransformProductNamesCustom4337",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransformProductNamesCustom7016",
+        "InputFieldName": "BusinessFilteredProd",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessFilteredProd",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransformProductNamesCustom9901",
+        "InputFieldName": "HouseConnectionProd",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HouseConnectionProd",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransformProductNamesCustom6081",
+        "InputFieldName": "OfficeFilteredProd",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OfficeFilteredProd",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransformProductNamesCustom5814",
+        "InputFieldName": "SortedBusinessList",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SortedBusinessList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransformProductNamesCustom3835",
+        "InputFieldName": "SortedBusinessListSize",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SortedBusinessListSize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransformProductNamesCustom5693",
+        "InputFieldName": "SortedOfficeList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformProductNames",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformProductNames",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformProductNames",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SortedOfficeList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

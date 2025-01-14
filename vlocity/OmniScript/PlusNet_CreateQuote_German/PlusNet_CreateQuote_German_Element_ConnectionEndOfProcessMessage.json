@@ -1,0 +1,78 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ConnectionEndOfProcessMessage",
+    "OmniProcessId": {
+        "Name": "CreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ProductSelection",
+        "OmniProcessId": {
+            "Name": "CreateQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuote/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuote/German/ProductSelection",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ProductSelection",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "hideLabel": true,
+        "label": "",
+        "messages": [
+            {
+                "active": true,
+                "text": "Der Hausanschluss kann nur dem Eigentümer angeboten werden! Nur der Eigentümer ist berechtigt das Angebot anzunehmen.",
+                "type": "Warning",
+                "value": true
+            },
+            {
+                "active": false,
+                "text": "",
+                "type": "Warning",
+                "value": false
+            }
+        ],
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Plusnet Hausanschluss",
+                        "field": "connectionFiberAllRadio"
+                    }
+                ]
+            }
+        },
+        "validateExpression": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "premiseOwnerRadioFormula"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "premiseOwnerRadio"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuote/German/ConnectionEndOfProcessMessage"
+}

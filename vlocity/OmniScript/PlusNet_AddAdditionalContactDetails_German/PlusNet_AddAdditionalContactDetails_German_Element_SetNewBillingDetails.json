@@ -1,0 +1,56 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetNewBillingDetails",
+    "OmniProcessId": {
+        "Name": "AddAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/AddAdditionalContactDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "selectedBillingContact": {
+                "Company": "=%BillingDetails:NewBillingDetailsBlock:BillingCompanyName%",
+                "Email": "=%BillingDetails:NewBillingDetailsBlock:BillingEmail%",
+                "FirstName": "=%BillingDetails:NewBillingDetailsBlock:BillingFirstName%",
+                "LastName": "=%BillingDetails:NewBillingDetailsBlock:BillingLastName%",
+                "Phone": "=%BillingDetails:NewBillingDetailsBlock:BillingPhone%",
+                "Salutation": "=%BillingDetails:NewBillingDetailsBlock:BillingSalutation%"
+            }
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "IsPrimaryEqualBillingContact"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "CreateNewBillingContact"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/AddAdditionalContactDetails/German/SetNewBillingDetails"
+}

@@ -1,0 +1,45 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ProductCode",
+        "GlobalKey": "DRGetPricebookEntryByProductCode6343285155805962",
+        "InputFieldName": "ProductCode",
+        "InputObjectName": "PricebookEntry",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetPricebookEntryByProductCode",
+        "OmniDataTransformationId": {
+            "Name": "DRGetPricebookEntryByProductCode",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetPricebookEntryByProductCode",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "PBookEntry",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetPricebookEntryByProductCode5601779559087741",
+        "InputFieldName": "PBookEntry:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetPricebookEntryByProductCode",
+        "OmniDataTransformationId": {
+            "Name": "DRGetPricebookEntryByProductCode",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetPricebookEntryByProductCode",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PBookEntryId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

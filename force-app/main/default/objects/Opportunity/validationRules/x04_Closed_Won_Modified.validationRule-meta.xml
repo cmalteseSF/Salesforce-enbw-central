@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>x04_Closed_Won_Modified</fullName>
+    <active>true</active>
+    <errorConditionFormula>IsWon = true &amp;&amp; IsClosed = false &amp;&amp; ISCHANGED(StageName)</errorConditionFormula>
+    <errorMessage>Sie können eine gewonnene Opportunity nicht ändern. Opportunity Error x04.</errorMessage>
+</ValidationRule>

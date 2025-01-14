@@ -1,0 +1,32 @@
+{
+    "CustomJavaScript": "PlusNet_ContractDisconnectService_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Contract Disconnect Service",
+    "OmniProcessElement": [
+        "PlusNet_ContractDisconnectService_Element_GetAccountId.json",
+        "PlusNet_ContractDisconnectService_Element_CanCreate.json",
+        "PlusNet_ContractDisconnectService_Element_CreateOrder.json",
+        "PlusNet_ContractDisconnectService_Element_CreateFDOOrder.json",
+        "PlusNet_ContractDisconnectService_Element_GetRootOrderItemId.json",
+        "PlusNet_ContractDisconnectService_Element_Disconnect.json",
+        "PlusNet_ContractDisconnectService_Element_UpdateOrderType.json",
+        "PlusNet_ContractDisconnectService_Element_canSubmitOrder.json",
+        "PlusNet_ContractDisconnectService_Element_SubmitOrder.json",
+        "PlusNet_ContractDisconnectService_Element_xxSubmitOrder.json",
+        "PlusNet_ContractDisconnectService_Element_ResponseContractDisconnectService.json"
+    ],
+    "OmniProcessKey": "PlusNet_ContractDisconnectService",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ContractDisconnectService_PropertySetConfig.json",
+    "SubType": "ContractDisconnectService",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ContractDisconnectService/Procedure"
+}

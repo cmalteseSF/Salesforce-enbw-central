@@ -1,0 +1,64 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CancelQuote",
+    "OmniProcessId": {
+        "Name": "UpsertQuoteBasedOnMarketingPhase",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/UpsertQuoteBasedOnMarketingPhase/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "NegativeDecision",
+        "OmniProcessId": {
+            "Name": "UpsertQuoteBasedOnMarketingPhase",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/UpsertQuoteBasedOnMarketingPhase/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/UpsertQuoteBasedOnMarketingPhase/Procedure/NegativeDecision",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "NegativeDecision",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "CancelOppty": "Y",
+            "CancellationContext": "Quote",
+            "ContextId": "%QuoteId%",
+            "PremiseId": "%GetQuoteDetails:Quote|1:%vlocity_namespace%__DefaultPremisesId__c%",
+            "Reason": "Negative Bauentscheidung",
+            "TerminationCategory": "Ablehnung durch Plusnet",
+            "Type": "%GetQuoteDetails:Quote|1:SubType__c%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "PlusNet_CancellationWrapper",
+        "label": "IntegrationProcedureAction2",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/UpsertQuoteBasedOnMarketingPhase/Procedure/CancelQuote"
+}

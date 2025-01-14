@@ -1,0 +1,39 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock3",
+    "OmniProcessId": {
+        "Name": "CapturePhoneNumberDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CapturePhoneNumberDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PhoneNumberMgmt",
+        "OmniProcessId": {
+            "Name": "CapturePhoneNumberDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CapturePhoneNumberDetails/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CapturePhoneNumberDetails/German/PhoneNumberMgmt",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PhoneNumberMgmt",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock3",
+        "sanitize": false,
+        "show": null,
+        "text": "<p><span class=\"TextRun SCXP94541259 BCX9\" lang=\"DE-DE\" xml:lang=\"DE-DE\" data-scheme-color=\"@FF0000,,\" data-usefontface=\"false\" data-contrast=\"none\"><span class=\"NormalTextRun SCXP94541259 BCX9\">Bitte immer entweder 3 oder 10&nbsp;</span></span><span class=\"TextRun SCXP94541259 BCX9\" lang=\"DE-DE\" xml:lang=\"DE-DE\" data-scheme-color=\"@FF0000,,\" data-usefontface=\"false\" data-contrast=\"none\"><span class=\"SpellingError SCXP94541259 BCX9\">IPfonie</span></span><span class=\"TextRun SCXP94541259 BCX9\" lang=\"DE-DE\" xml:lang=\"DE-DE\" data-scheme-color=\"@FF0000,,\" data-usefontface=\"false\" data-contrast=\"none\"><span class=\"NormalTextRun SCXP94541259 BCX9\">&nbsp;Basic-Accounts hinzuf&uuml;gen</span></span><span class=\"EOP SCXP94541259 BCX9\">​</span></p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CapturePhoneNumberDetails/German/TextBlock3"
+}

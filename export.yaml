@@ -1,0 +1,218 @@
+projectPath: .
+expansionPath: vlocity
+manifest:
+- OmniScript/COM_CreateContract_English
+- OmniScript/COM_OrderGeoStructProcess_English
+- OmniScript/CPQ_AssetViewerTerminationFlow_German
+- OmniScript/CPQ_GetProductsAndFilterOnBandwidth_English
+- OmniScript/Email_OrderConfirmation_English
+- OmniScript/PlusNet_AddAdditionalContactDetails_German
+- OmniScript/PlusNet_AreaConstructionDecision_German
+- OmniScript/PlusNet_CapturePhoneNumberDetails_German
+- OmniScript/PlusNet_ChangeAssets_German
+- OmniScript/PlusNet_ChangeToOrderCustom_Multi-Language
+- OmniScript/PlusNet_ChangeToQuote_MultiLanguage
+- OmniScript/PlusNet_CreateContract_German
+- OmniScript/PlusNet_CreateNewLocation_German
+- OmniScript/PlusNet_ContractTermination_MultiLanguage
+- OmniScript/PlusNet_ConfigureIPHandler_German
+- OmniScript/PlusNet_DocumentGeneration_German
+- OmniScript/PlusNet_EnrichOrder_German
+- OmniScript/PlusNet_EnrichPhoneNumbers_German
+- OmniScript/PlusNet_EnrichWithGeostructDetails_German
+- OmniScript/PlusNet_GetATPDetails_German
+- OmniScript/PlusNet_HardwareReplacementOrderFlow_German
+- OmniScript/PlusNet_QuoteAndOrderCancellation_Multi-Language
+- OmniScript/PlusNet_OrderVoiceDocumentGeneration_German
+- OmniScript/PlusNet_PlusNetSubmitOrder_Multi-Language
+- OmniScript/PlusNet_SendQuoteToCustomer_German
+- OmniScript/PlusNet_ValidateAddresses_German
+- OmniScript/PlusNet_CreateOrder_German
+- OmniScript/PlusNet_CreateConnectionQuote_German
+- OmniScript/PlusNet_CreateServiceQuote_German
+- OmniScript/PlusNet_CreateQuote_German
+- OmniScript/PlusNet_SyncQuoteToOpportunity_German
+
+- FlexCard/AccountButtons
+- FlexCard/cpqAssetViewerContainerCustom
+- FlexCard/cpqCartFlexTableAction
+- FlexCard/datatableCard
+- FlexCard/DatatableCommContactCard
+- FlexCard/DatatableShipContactCard
+- FlexCard/DatatableTechContactCard
+- FlexCard/LeadButtons
+- FlexCard/NewHouseProductSelection
+- FlexCard/OrderButtons
+- FlexCard/ProductSelection
+- FlexCard/QuoteButtons
+
+- IntegrationProcedure/COM_CreateAndRetrieveContacts
+- IntegrationProcedure/COM_CreateContract
+- IntegrationProcedure/COM_IPApplyAdjustment
+- IntegrationProcedure/COM_IPCreateAndUpdateContractOrder
+- IntegrationProcedure/COM_IPOrderPhoneNoManagement
+- IntegrationProcedure/COM_IPPhoneNoManagement
+- IntegrationProcedure/COM_IPUpdateIPFonieQLI
+- IntegrationProcedure/COM_NotOwnerProcessHandler
+- IntegrationProcedure/COM_OwnerProcessHandler
+- IntegrationProcedure/COM_SaveAdditionalInformation
+- IntegrationProcedure/COM_ServiceAvailabilityCheck
+- IntegrationProcedure/COM_SPRICheck
+- IntegrationProcedure/CPQ_CreateOrder
+- IntegrationProcedure/CPQ_CreateQuote
+- IntegrationProcedure/CPQ_GetProductsByPriceBookEntryId
+- IntegrationProcedure/CPQ_LockGroupsAndMembers
+- IntegrationProcedure/CPQ_StartBulkCreateGroups
+- IntegrationProcedure/PlusNet_SubmitOrders
+- IntegrationProcedure/PlusNet_CreateServiceOrdersforConnection
+- IntegrationProcedure/PlusNet_CreateServiceOrder
+- IntegrationProcedure/PlusNet_DisconnectService
+- IntegrationProcedure/PlusNet_CheckOrderTasks
+- IntegrationProcedure/PlusNet_BatchSubmitOrder
+- IntegrationProcedure/PlusNet_ContractDisconnectService
+- IntegrationProcedure/PLusNet_JustSubmitOrder
+- IntegrationProcedure/PlusNet_TerminateContractLineItems
+- IntegrationProcedure/PlusNet_ProductChangesValidationWrapper
+- IntegrationProcedure/PlusNet_CheckBandwidthUpgrade
+- IntegrationProcedure/PlusNet_ActivateContractLineItems
+- IntegrationProcedure/PlusNet_AddAdditionalCostToQuote
+- IntegrationProcedure/PlusNet_BatchCancellationWrapper
+- IntegrationProcedure/PlusNet_CancellationWrapper
+- IntegrationProcedure/PlusNet_CloseTask
+- IntegrationProcedure/PlusNet_CreateContractTerminationOrders
+- IntegrationProcedure/PlusNet_CreateContractTerminationOrdersBatch
+- IntegrationProcedure/PlusNet_DeleteContentDocument
+- IntegrationProcedure/PlusNet_EnrichOrderGeostruct
+- IntegrationProcedure/PlusNet_GetShippingDetails
+- IntegrationProcedure/PlusNet_MaintainContractData
+- IntegrationProcedure/PlusNet_OrderCancellation
+- IntegrationProcedure/PlusNet_QuoteCancellation
+- IntegrationProcedure/PlusNet_SendCancellationNotification
+- IntegrationProcedure/PlusNet_StoreGeostructInformation
+- IntegrationProcedure/PlusNet_SubmissionWrapper
+- IntegrationProcedure/PlusNet_SubmitOrder
+- IntegrationProcedure/PlusNet_TerminateContract
+- IntegrationProcedure/PlusNet_UpdateQuoteAfterSendEmail
+- IntegrationProcedure/PlusNet_UpdateQuoteStatus
+- IntegrationProcedure/PlusNet_ValidateOrderSubmission
+- IntegrationProcedure/PlusNet_OrderResponseHandler
+- IntegrationProcedure/PlusNet_ActivationFulfillmentHandler
+- IntegrationProcedure/PlusNet_TerminateOrderItems
+- IntegrationProcedure/PlusNet_ChangeOfPlanFulfillmentHandler
+- IntegrationProcedure/PlusNet_ChangeFulfillmentHandler
+- IntegrationProcedure/PlusNet_ATPIntegrationFlow
+- IntegrationProcedure/PlusNet_ATPIntegration
+- IntegrationProcedure/Plusnet_ChangeOfPlanContractHandler
+- IntegrationProcedure/Plusnet_ChangeContractHandler
+- IntegrationProcedure/Plusnet_GetContactDetails
+- IntegrationProcedure/Plusnet_CreateOrderMACD
+- IntegrationProcedure/Plusnet_CreateQuoteMACD
+- IntegrationProcedure/PlusNet_ChangeToQuote
+- IntegrationProcedure/PlusNet_UpdateOfferAttributes
+- IntegrationProcedure/PlusNet_SendOrderToComarch
+- IntegrationProcedure/PlusNet_SendOrderToBilling
+- IntegrationProcedure/PlusNet_CheckQuoteTasks
+- IntegrationProcedure/PlusNet_CheckOrderTasks
+- IntegrationProcedure/PlusNet_ApplyAttributesChanges
+- IntegrationProcedure/PlusNet_ApplyAttributesChangesOLI
+- IntegrationProcedure/PlusNet_SendOrderNotification
+- IntegrationProcedure/PlusNet_UpsertQuoteBasedOnMarketingPhase
+- IntegrationProcedure/PlusNet_UpdateReferenceId
+- IntegrationProcedure/PlusNet_SaveAdditionalContactDetails
+- IntegrationProcedure/PlusNet_SetAccountContactRelationship
+- IntegrationProcedure/PlusNet_SaveQuoteStatusFromPortal
+- IntegrationProcedure/PlusNet_FetchAddressHandler
+- IntegrationProcedure/PlusNet_SaveAddressDetails
+- IntegrationProcedure/PlusNet_CheckLocation
+- IntegrationProcedure/Utility_AddressValidation
+- IntegrationProcedure/PlusNet_CreateServicePoint
+- IntegrationProcedure/PlusNet_SendAccountDetailsToATPHandler
+- IntegrationProcedure/PlusNet_ProvideQuoteRelatedDetailsToPortal
+- IntegrationProcedure/PlusNet_UpdateContractLineItems
+- IntegrationProcedure/PlusNet_IPNetworkHandler
+
+- DataRaptor/DRExtractOrderItemVoiceEmailDetails
+- DataRaptor/DRExtractOrderItemVoiceEmailMapping
+- DataRaptor/DRTransformQuote
+- DataRaptor/DRExtractQuote
+
+- Product2/384b625b-a62d-ccc4-0149-bb46bdee1f1d
+- Product2/6f26715d-c367-37e1-e368-0cc0178b27e0
+- Product2/23303fe5-b496-dfaa-eedc-095059191b34
+- Product2/435add3f-d293-125d-e53e-1077e1029120
+- Product2/1e5d393f-8d3b-942d-4daf-abf430daaae4
+- Product2/b3bbbc11-57c1-2451-6100-1a8eb46f88bf
+- Product2/27708e24-1f72-8b05-3636-5a5d63e2c950
+- Product2/2ad413d6-a9f8-191e-214f-fbe65b2d4d1b
+- Product2/c0b21529-eaa8-0e35-4c77-02d363bd7296
+- Product2/e94e26f8-4681-c08c-1ffa-ca4d134ca27c
+- Product2/f89aa69d-9044-e887-3055-d3945bb73243
+- Product2/055dd2f4-0d22-f8c4-016c-e0e677054440
+- Product2/374f4015-98f4-e158-e473-c4cf91310e68
+- Product2/4c4f9774-b8e5-dd7a-2c38-bf6a8636ecdf
+- Product2/6970f41e-67e3-1128-496c-13a0b24cc628
+- Product2/7016c201-5f4d-17de-40f2-3943f941fa9f
+- Product2/9719b472-dcd6-38e5-9e79-a514e1809d9c
+- Product2/d182ec08-7029-e45f-b4af-f1403c05265e
+- Product2/eac9609a-5cbd-fcba-bb59-f939594f71d6
+- Product2/2086991e-a25e-0d9b-d358-303ad0764d01
+- Product2/28e84e10-7fee-e21b-4897-646a5ff0648e
+- Product2/4a6f90b5-d4e8-5644-5735-690523f87102
+- Product2/8ccbf96a-e729-224a-9085-24bccb8b94b5
+- Product2/e59bf02f-8612-034b-4f5c-39465f0559f7
+- Product2/d3089e6f-6c7b-625d-33aa-ea72073049fb
+- Product2/54d09b6f-b493-181c-2e13-ca3284669897
+- Product2/2afb7131-07a8-c088-8957-e0b7ba51de9d
+- Product2/108e743a-1acb-eb82-9e5f-cd2350a9e915
+- Product2/1881c95e-1f47-8b3d-d33b-528c530fe935
+- Product2/b0eed7a4-6a84-1272-9f67-ecdfba6d2258
+- Product2/65279d26-c27b-89c9-45ec-553ca6937140
+- Product2/715ac57a-b317-d796-7be0-671819621cb5
+- Product2/e22ecdda-fc3a-80e4-ce13-21f55b255111
+- Product2/d376f6b8-1323-6e30-e71e-92ff1efc2a4e
+- Product2/b34437aa-628c-b1d2-59f6-30be8219b8c2
+- Product2/c4aeefc0-1ec4-c87b-35e1-fa9938c346fc
+- Product2/b650bbd5-6ac9-e8b1-6a89-a61985867f93
+- Product2/b664f7e6-2f17-528f-5f1c-0cb5d1943f6e
+- Product2/38419df5-4332-9cb3-7af4-2c1f07145df4
+- Product2/4d3e3408-7514-1072-75f2-b7f7e28d9de3
+- Product2/1915164a-99ea-a039-0705-2b296dfc277d
+- Product2/043ed5e1-dc66-6668-6f2e-9b397ef63014
+- Product2/774db918-9382-99f5-0c48-8ae7b5cd243b
+- Product2/d3a9b64b-6c23-7540-7b2f-4a477881765d
+
+- PricingPlan/Default Pricing Plan
+
+- InterfaceImplementation/OdinAPIHandler
+- InterfaceImplementation/ProductAvailabilityOpenInterface
+- InterfaceImplementation/ProductValidationInterface
+
+- Catalog/B2B Plusnet Glasfaser
+
+- PricingVariable/OT_STD_BS_PRC
+- PricingVariable/REC_MNTH_STD_BS_PRC
+
+- CpqConfigurationSetup/AttributeValueDisplaySortMode
+- CpqConfigurationSetup/ContextRulesEnabled
+- CpqConfigurationSetup/DeltaPrice
+- CpqConfigurationSetup/DeltaValidate
+
+- Rule/997a3c80-040d-aab4-3959-7f4d301558f1
+- Rule/4ff4ba58-a0ed-2722-7cb8-d6043a960ca0
+
+- EntityFilter/074c547d-6f0f-b593-0ac4-0c735ab02ea5
+- EntityFilter/8897d049-cbe6-7668-503f-92b33d134c9a
+- EntityFilter/12c5889b-5207-ad2a-6126-d0edfe26f99c
+- EntityFilter/e9c043ce-ddfb-542b-5d44-758a04381204
+- EntityFilter/2fc08077-163e-077b-a17b-ddd772b8e8e4
+- EntityFilter/4543bd21-60e5-5d93-0ab5-ffa00234a659
+- EntityFilter/0216d745-189a-9a45-47a6-854cab641a14
+- EntityFilter/1b22e045-7b5e-953c-4be8-29d2f3f2ced3
+
+queries:
+- VlocityDataPackType: OfferMigrationPlan
+  query: Select Id, Name from %vlocity_namespace%__OfferMigrationPlan__c where Name = 'Upgrade Downgrade Fiber SOHO'
+- VlocityDataPackType: ObjectLayout
+  query: Select Id from %vlocity_namespace%__ObjectLayout__c where %vlocity_namespace%__ObjectClassId__r.Name = 'Product2 Object'
+- VlocityDataPackType: VlocityScheduledJob
+  query: Select Id from %vlocity_namespace%__VlocityScheduledJob__c where vlocity_cmt__IsActive__c = true and Name LIKE 'PlusNet%'

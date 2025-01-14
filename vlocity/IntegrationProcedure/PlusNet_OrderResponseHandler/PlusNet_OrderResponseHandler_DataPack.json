@@ -1,0 +1,33 @@
+{
+    "CustomJavaScript": "PlusNet_OrderResponseHandler_SampleInput.json",
+    "Description": "IP exposed as REST endpoint to receive OSS payload. Different logic based on Order Action.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "OrderResponseHandler",
+    "OmniProcessElement": [
+        "PlusNet_OrderResponseHandler_Element_CreateNotificationTask.json",
+        "PlusNet_OrderResponseHandler_Element_GetOrderFulfillmentDetails.json",
+        "PlusNet_OrderResponseHandler_Element_GetAccessFRLId.json",
+        "PlusNet_OrderResponseHandler_Element_OrderExists.json",
+        "PlusNet_OrderResponseHandler_Element_TransformPayload.json",
+        "PlusNet_OrderResponseHandler_Element_GetFRLsDetails.json",
+        "PlusNet_OrderResponseHandler_Element_MergeOLIsFRLsDetails.json",
+        "PlusNet_OrderResponseHandler_Element_MACD.json",
+        "PlusNet_OrderResponseHandler_Element_UpdateProvisioningStatusNOK.json",
+        "PlusNet_OrderResponseHandler_Element_CreateNotificationProcessedTask.json",
+        "PlusNet_OrderResponseHandler_Element_ReturnOrderResponseHandler.json"
+    ],
+    "OmniProcessKey": "PlusNet_OrderResponseHandler",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_OrderResponseHandler_PropertySetConfig.json",
+    "SubType": "OrderResponseHandler",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/OrderResponseHandler/Procedure"
+}

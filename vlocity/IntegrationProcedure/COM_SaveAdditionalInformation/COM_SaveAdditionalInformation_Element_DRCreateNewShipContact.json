@@ -1,0 +1,47 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRCreateNewShipContact",
+    "OmniProcessId": {
+        "Name": "SaveAdditionalInformation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SaveAdditionalInformation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "BusinessAccountId": "%BusinessAccountId%",
+            "ShippingContactCompany": "%ShippingAddressDetails:NewShipContactBlock:ShippingContactCompany%",
+            "ShippingContactEmail": "%ShippingAddressDetails:NewShipContactBlock:ShippingContactEmail%",
+            "ShippingContactFirstName": "%ShippingAddressDetails:NewShipContactBlock:ShippingContactFirstName%",
+            "ShippingContactLastName": "%ShippingAddressDetails:NewShipContactBlock:ShippingContactLastName%",
+            "ShippingContactPhone": "%ShippingAddressDetails:NewShipContactBlock:ShippingContactPhone%",
+            "ShippingContactSalutation": "%ShippingAddressDetails:NewShipContactBlock:ShippingContactSalutation%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRCreateShipContact",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%CreateNewShipContact% == \"true\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction15",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SaveAdditionalInformation/Procedure/DRCreateNewShipContact"
+}

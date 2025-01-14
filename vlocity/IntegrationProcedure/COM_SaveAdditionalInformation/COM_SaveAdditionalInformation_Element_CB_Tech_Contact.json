@@ -1,0 +1,23 @@
+{
+    "Description": "Check if an ACR already exists. If Yes, update of existing ACR with possible new roles otherwise, creation of ACR between service account and technical contact.",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CB_Tech_Contact",
+    "OmniProcessId": {
+        "Name": "SaveAdditionalInformation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SaveAdditionalInformation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%TechContact:Id% != %CommContact:Id% && CreateNewTechContact = \"false\"",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock1",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SaveAdditionalInformation/Procedure/CB_Tech_Contact"
+}

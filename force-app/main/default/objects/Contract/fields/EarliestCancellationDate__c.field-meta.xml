@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EarliestCancellationDate__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(vlocity_cmt__TerminateDate__c &lt;= PlusNet_Latest_Cancellation_Date__c, PlusNet_End_Of_Minimum_Contract_Term__c, ADDMONTHS(TODAY(),1))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Frühestes Vertragsenddatum</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

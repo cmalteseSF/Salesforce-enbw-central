@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Set Account Contact Relationship",
+    "OmniProcessElement": [
+        "PlusNet_SetAccountContactRelationship_Element_GetACRFromContactAccount.json",
+        "PlusNet_SetAccountContactRelationship_Element_NotExistACR.json",
+        "PlusNet_SetAccountContactRelationship_Element_CreateACR.json",
+        "PlusNet_SetAccountContactRelationship_Element_ExistACR.json",
+        "PlusNet_SetAccountContactRelationship_Element_UpdateACR.json",
+        "PlusNet_SetAccountContactRelationship_Element_ReturnSetACR.json"
+    ],
+    "OmniProcessKey": "PlusNet_SetAccountContactRelationship",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SetAccountContactRelationship_PropertySetConfig.json",
+    "SubType": "SetAccountContactRelationship",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SetAccountContactRelationship/Procedure"
+}

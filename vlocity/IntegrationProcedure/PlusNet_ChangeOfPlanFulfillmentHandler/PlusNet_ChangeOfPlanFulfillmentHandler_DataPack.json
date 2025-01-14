@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ChangeOfPlanFulfillmentHandler",
+    "OmniProcessElement": [
+        "PlusNet_ChangeOfPlanFulfillmentHandler_Element_GetDisconnectedOLIRefIds.json",
+        "PlusNet_ChangeOfPlanFulfillmentHandler_Element_GetActivatedOLIRefIds.json",
+        "PlusNet_ChangeOfPlanFulfillmentHandler_Element_TerminateOrderItems.json",
+        "PlusNet_ChangeOfPlanFulfillmentHandler_Element_TerminateOLIs.json",
+        "PlusNet_ChangeOfPlanFulfillmentHandler_Element_ChangeActivationDateOrderItems.json",
+        "PlusNet_ChangeOfPlanFulfillmentHandler_Element_UpdateActivationDateOrderItem.json",
+        "PlusNet_ChangeOfPlanFulfillmentHandler_Element_UpdateProvisioningStatus.json",
+        "PlusNet_ChangeOfPlanFulfillmentHandler_Element_ReturnChangeOfPlanFulfillmentHandler.json"
+    ],
+    "OmniProcessKey": "PlusNet_ChangeOfPlanFulfillmentHandler",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ChangeOfPlanFulfillmentHandler_PropertySetConfig.json",
+    "SubType": "ChangeOfPlanFulfillmentHandler",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ChangeOfPlanFulfillmentHandler/Procedure"
+}

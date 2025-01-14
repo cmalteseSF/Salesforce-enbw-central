@@ -1,0 +1,166 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AccountId",
+        "GlobalKey": "GetACRForBillingAccountAndBillingContactCustom5190",
+        "InputFieldName": "AccountId",
+        "InputObjectName": "AccountContactRelation",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetACRForBillingAccountAndBillingContact",
+        "OmniDataTransformationId": {
+            "Name": "GetACRForBillingAccountAndBillingContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetACRForBillingAccountAndBillingContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ACR",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ContactId",
+        "GlobalKey": "GetACRForBillingAccountAndBillingContactCustom312",
+        "InputFieldName": "ContactId",
+        "InputObjectName": "AccountContactRelation",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetACRForBillingAccountAndBillingContact",
+        "OmniDataTransformationId": {
+            "Name": "GetACRForBillingAccountAndBillingContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetACRForBillingAccountAndBillingContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ACR",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ACR% == NULL, \"true\", \"false\")",
+        "FormulaResultPath": "isACRNull",
+        "FormulaSequence": 1,
+        "GlobalKey": "GetACRForBillingAccountAndBillingContactCustom6536",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetACRForBillingAccountAndBillingContact",
+        "OmniDataTransformationId": {
+            "Name": "GetACRForBillingAccountAndBillingContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetACRForBillingAccountAndBillingContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetACRForBillingAccountAndBillingContactCustom5818",
+        "InputFieldName": "ACR:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetACRForBillingAccountAndBillingContact",
+        "OmniDataTransformationId": {
+            "Name": "GetACRForBillingAccountAndBillingContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetACRForBillingAccountAndBillingContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ACR:AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetACRForBillingAccountAndBillingContactCustom5855",
+        "InputFieldName": "ACR:ContactId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetACRForBillingAccountAndBillingContact",
+        "OmniDataTransformationId": {
+            "Name": "GetACRForBillingAccountAndBillingContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetACRForBillingAccountAndBillingContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ACR:ContactId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetACRForBillingAccountAndBillingContactCustom928",
+        "InputFieldName": "ACR:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetACRForBillingAccountAndBillingContact",
+        "OmniDataTransformationId": {
+            "Name": "GetACRForBillingAccountAndBillingContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetACRForBillingAccountAndBillingContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ACR:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetACRForBillingAccountAndBillingContactCustom4599",
+        "InputFieldName": "ACR:Roles",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetACRForBillingAccountAndBillingContact",
+        "OmniDataTransformationId": {
+            "Name": "GetACRForBillingAccountAndBillingContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetACRForBillingAccountAndBillingContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ACR:Roles",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetACRForBillingAccountAndBillingContactCustom3761",
+        "InputFieldName": "isACRNull",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetACRForBillingAccountAndBillingContact",
+        "OmniDataTransformationId": {
+            "Name": "GetACRForBillingAccountAndBillingContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetACRForBillingAccountAndBillingContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "isACRNull",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

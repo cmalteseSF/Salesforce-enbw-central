@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Manage to configure access product",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ConfigureAccess",
+    "OmniProcessElement": [
+        "PlusNet_ConfigureAccess_Element_TryConfigureAccess.json",
+        "PlusNet_ConfigureAccess_Element_ConfigureAccess.json",
+        "PlusNet_ConfigureAccess_Element_ReturnConfigureAccess.json"
+    ],
+    "OmniProcessKey": "PlusNet_ConfigureAccess",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ConfigureAccess_PropertySetConfig.json",
+    "SubType": "ConfigureAccess",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ConfigureAccess/Procedure"
+}

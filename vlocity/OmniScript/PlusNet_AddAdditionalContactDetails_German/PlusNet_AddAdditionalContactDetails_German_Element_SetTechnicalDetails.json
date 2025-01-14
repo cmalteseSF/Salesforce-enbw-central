@@ -1,0 +1,60 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetTechnicalDetails",
+    "OmniProcessId": {
+        "Name": "AddAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/AddAdditionalContactDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "selectedTechRow": [
+                "=IF(%TechnicalContactDetails:TechnicalDetailsBlock:CustomLWC2% == null && %selectedTechRow|1% <> null, %selectedTechRow|1%, %TechnicalContactDetails:TechnicalDetailsBlock:CustomLWC2|1:Id%)"
+            ],
+            "selectedTechnicalContact": {
+                "Company": "=%TechnicalContactDetails:TechnicalDetailsBlock:CustomLWC2|1:Company%",
+                "Email": "=%TechnicalContactDetails:TechnicalDetailsBlock:CustomLWC2|1:Email%",
+                "FirstName": "=%TechnicalContactDetails:TechnicalDetailsBlock:CustomLWC2|1:FirstName%",
+                "Id": "=IF(%TechnicalContactDetails:TechnicalDetailsBlock:CustomLWC2% == null && %selectedTechRow|1% <> null, %selectedTechRow|1%, %TechnicalContactDetails:TechnicalDetailsBlock:CustomLWC2|1:Id%)",
+                "LastName": "=%TechnicalContactDetails:TechnicalDetailsBlock:CustomLWC2|1:LastName%",
+                "Phone": "=IF(%TechnicalContactDetails:TechnicalDetailsBlock:CustomLWC2|1:Phone% == null, %TechincalContactPhoneNumber:PhoneNumber% ,%TechnicalContactDetails:TechnicalDetailsBlock:CustomLWC2|1:Phone%)",
+                "Salutation": "=%TechnicalContactDetails:TechnicalDetailsBlock:CustomLWC2|1:Salutation%"
+            }
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "IsPrimaryEqualTechnicalContact"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "CreateNewTechContact"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/AddAdditionalContactDetails/German/SetTechnicalDetails"
+}

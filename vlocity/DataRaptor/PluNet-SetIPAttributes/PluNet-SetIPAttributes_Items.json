@@ -1,0 +1,61 @@
+[
+    {
+        "FormulaExpression": "DESERIALIZE(attributeSelectedValues)",
+        "FormulaResultPath": "selectedValues",
+        "FormulaSequence": 1,
+        "GlobalKey": "PluNet-SetIPAttributesCustom0jI9M000000BIT3UAOItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PluNet-SetIPAttributes",
+        "OmniDataTransformationId": {
+            "Name": "PluNet-SetIPAttributes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PluNet-SetIPAttributes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PluNet-SetIPAttributesCustom0jI9M000000BIT3UAOItem2",
+        "InputFieldName": "selectedValues",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PluNet-SetIPAttributes",
+        "OmniDataTransformationId": {
+            "Name": "PluNet-SetIPAttributes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PluNet-SetIPAttributes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "selectedValues",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PluNet-SetIPAttributesCustom0jI9M000000BIT3UAOItem1",
+        "InputFieldName": "ipType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PluNet-SetIPAttributes",
+        "OmniDataTransformationId": {
+            "Name": "PluNet-SetIPAttributes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PluNet-SetIPAttributes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "selectedValues:ATT-IP-TYP",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

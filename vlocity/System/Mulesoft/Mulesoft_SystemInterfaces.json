@@ -1,0 +1,38 @@
+[
+    {
+        "%vlocity_namespace%__GlobalKey__c": "6f105c80-4919-2e02-c1a2-6c796e913fa1",
+        "%vlocity_namespace%__Implementation__c": "IntegrationProcedureSystemInterface",
+        "%vlocity_namespace%__Key__c": "Mulesoft:Billing",
+        "%vlocity_namespace%__Path__c": "PlusNet_SendOrderToBilling",
+        "%vlocity_namespace%__Status__c": "Online",
+        "%vlocity_namespace%__SystemId__c": {
+            "Name": "Mulesoft",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__System__c/Mulesoft",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__System__c"
+        },
+        "%vlocity_namespace%__SystemId__r.Name": "Mulesoft",
+        "Name": "Billing",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__SystemInterface__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__SystemInterface__c/Billing/%vlocity_namespace%__System__c/Mulesoft"
+    },
+    {
+        "%vlocity_namespace%__GlobalKey__c": "e9ce5af4-205f-6d55-ab69-6ab3e92c22dd",
+        "%vlocity_namespace%__Implementation__c": "IntegrationProcedureSystemInterface",
+        "%vlocity_namespace%__Key__c": "Mulesoft:Comarch",
+        "%vlocity_namespace%__Path__c": "PlusNet_SendOrderToComarch",
+        "%vlocity_namespace%__Status__c": "Online",
+        "%vlocity_namespace%__SystemId__c": {
+            "Name": "Mulesoft",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__System__c/Mulesoft",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__System__c"
+        },
+        "%vlocity_namespace%__SystemId__r.Name": "Mulesoft",
+        "Name": "Comarch",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__SystemInterface__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__SystemInterface__c/Comarch/%vlocity_namespace%__System__c/Mulesoft"
+    }
+]

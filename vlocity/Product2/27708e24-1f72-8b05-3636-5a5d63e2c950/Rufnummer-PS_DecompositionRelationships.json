@@ -1,0 +1,33 @@
+[
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "b3bbbc11-57c1-2451-6100-1a8eb46f88bf",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/b3bbbc11-57c1-2451-6100-1a8eb46f88bf",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "e8b9c6e5-1c26-26c2-4803-0a1f939af0c4",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Attribute\",\"source_attr_name\":\"Carrier Name\",\"source_attr_code\":\"ATTR-CRR-NAM\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"carrier\",\"destination_attr_code\":\"ATT-PHN-CAR\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Flatrate Euro Plus\",\"source_attr_code\":\"ATT-FLT-EUR-PLU\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"flatrateEuroPlus\",\"destination_attr_code\":\"ATT-PHN-FLT-EUR-PLS\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Flatrate Mobilfunk\",\"source_attr_code\":\"ATT-FLT-MOB\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"flatrateMobile\",\"destination_attr_code\":\"ATT-PHN-FLT-MOB\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Flatrate National\",\"source_attr_code\":\"ATT-FLT-NTN\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"flatrateNational\",\"destination_attr_code\":\"ATT-PHN-FLT-NAT\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"Rufnummer\",\"source_attr_code\":\"ATT-PHO-N\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"phoneNumber\",\"destination_attr_code\":\"ATT-PHN-PHO-NUM\"},{\"source_type\":\"Field\",\"source_field_name\":\"PortingDate__c\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"portingDate\",\"destination_attr_code\":\"ATT-PHN-POR-DAT\"},{\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"legacyContractNumber\",\"destination_attr_code\":\"ATT-LEG-CON-NUM\",\"source_field_name\":\"LegacyContractId__c\",\"source_type\":\"Field\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "27708e24-1f72-8b05-3636-5a5d63e2c950",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/27708e24-1f72-8b05-3636-5a5d63e2c950",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "27708e24-1f72-8b05-3636-5a5d63e2c950",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "Name": "Rufnummer PS Decomposes to IPfonie Basic",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/Rufnummer PS Decomposes to IPfonie Basic/Product2/27708e24-1f72-8b05-3636-5a5d63e2c950"
+    }
+]

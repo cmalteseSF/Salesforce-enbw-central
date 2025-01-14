@@ -1,0 +1,53 @@
+{
+    "Description": "Sends custom notification to the logged in user when ApplyAdjustment is not called",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SendCustomNotification",
+    "OmniProcessId": {
+        "Name": "CreateConfigureConnectionQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "body": "Das Angebot wurde erfolgreich erstellt und die Produkte konfiguriert. Es ist jetzt bereit für Ihre Überprüfung.",
+            "developerName": "QuoteNotifications",
+            "recipientsIds": [
+                "%GetConnectionQLI:currentUserId%"
+            ],
+            "targetId": "=IF(%Context% == 'Opportunity',%CreateQuote:Quote_1|1:Id%,%CreateQuoteCaseContext:Quote_1|1:Id%)",
+            "title": "Angebot bereit zur Prüfung! (%GetQuoteNumber:Quote|1:QuoteNumber%)"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%isServiceQuoteAtPremise% != \"true\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction4",
+        "remoteClass": "CustomNotificationHandler",
+        "remoteMethod": "notifyUsers",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConfigureConnectionQuote/Procedure/SendCustomNotification"
+}

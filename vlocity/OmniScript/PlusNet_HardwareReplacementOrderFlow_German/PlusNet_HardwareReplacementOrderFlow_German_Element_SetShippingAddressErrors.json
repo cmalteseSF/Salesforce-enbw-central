@@ -1,0 +1,74 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetShippingAddressErrors",
+    "OmniProcessId": {
+        "Name": "Hardware Replacement Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/HardwareReplacementOrderFlow/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementErrorMap": {
+            "ShippingAddressDetails": "Bitte überprüfen Sie die Adresse"
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "ShippingAddressCheck"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": "success",
+                                    "field": "ShippingAddressCheck:validationResult"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "ShippingAddressCheck"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": null,
+                                    "field": "ShippingAddressCheck:AddressId"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Set Errors",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/HardwareReplacementOrderFlow/German/SetShippingAddressErrors"
+}

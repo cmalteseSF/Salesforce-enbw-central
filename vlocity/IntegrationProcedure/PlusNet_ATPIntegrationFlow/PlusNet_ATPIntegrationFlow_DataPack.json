@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "PlusNet_ATPIntegrationFlow_SampleInput.json",
+    "Description": "Clone of PlusNet/ATPIntegration. This IP is called by Salesforce Flow",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ATP Integration Flow",
+    "OmniProcessElement": [
+        "PlusNet_ATPIntegrationFlow_Element_ExtractBillingDetailsFromOrder.json",
+        "PlusNet_ATPIntegrationFlow_Element_CheckATPValues.json",
+        "PlusNet_ATPIntegrationFlow_Element_HTTPBillingATP.json",
+        "PlusNet_ATPIntegrationFlow_Element_SaveBillingInfoToAccount.json",
+        "PlusNet_ATPIntegrationFlow_Element_CloseBillingTask.json",
+        "PlusNet_ATPIntegrationFlow_Element_ReturnBillingIntegrationDetails.json"
+    ],
+    "OmniProcessKey": "PlusNet_ATPIntegrationFlow",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ATPIntegrationFlow_PropertySetConfig.json",
+    "SubType": "ATPIntegrationFlow",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ATPIntegrationFlow/Procedure"
+}

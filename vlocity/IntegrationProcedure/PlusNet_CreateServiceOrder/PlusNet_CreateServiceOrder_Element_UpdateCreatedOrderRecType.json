@@ -1,0 +1,43 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateCreatedOrderRecType",
+    "OmniProcessId": {
+        "Name": "Create Service Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceOrder/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Id": "%CreateOrder:records|1:id%",
+            "orderRecType": "%GetOrderRecordTypeId:RecordTypeId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "PlusNet-UpdateRecTypeIdOrder",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISNOTBLANK(%CreateOrder:records|1:id%)",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+            "RetCode": "NOK"
+        },
+        "label": "DataRaptorPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceOrder/Procedure/UpdateCreatedOrderRecType"
+}

@@ -1,0 +1,132 @@
+{
+    "GetIPConfigurationMetadata": {
+        "ProductConfigurationList": [
+            {
+                "BundleIdentifier": "PNET-OFF-INT-FON-150",
+                "ComponentIdentifier": "PNET-IP-NET",
+                "ConfigurationData": "{\"ATT-IP-VRS\":\"IPv4\",\"ATT-SBN-MSK\":\"32\",\"ATT-USG-TYP\":\"WANIP\"}",
+                "LineNumber": "0001.0002.0001"
+            },
+            {
+                "BundleIdentifier": "PNET-OFF-INT-FON-150",
+                "ComponentIdentifier": "PNET-IP-NET",
+                "ConfigurationData": "{\"ATT-IP-VRS\":\"IPv6\",\"ATT-SBN-MSK\":\"64\",\"ATT-USG-TYP\":\"WANIP\"}",
+                "LineNumber": "0001.0002.0002"
+            },
+            {
+                "BundleIdentifier": "PNET-OFF-INT-FON-150",
+                "ComponentIdentifier": "PNET-IP-NET",
+                "ConfigurationData": "{\"ATT-IP-VRS\":\"IPv6\",\"ATT-SBN-MSK\":\"48\",\"ATT-USG-TYP\":\"Routed\"}",
+                "LineNumber": "0001.0002.0003"
+            }
+        ]
+    },
+    "GetIPConfigurationMetadataStatus": true,
+    "GetIPNetworkQLIs": {
+        "QLI": [
+            {
+                "AttributeSelectedValues": "{\"ATT-OFF-CODE\":\"PNET-OFF-INT-FON-150\",\"ATT-USG-TYP\":\"WANIP\",\"ATT-SBN-MSK\":\"32\",\"ATT-IP-TYP\":\"Static\",\"ATT-IP-VRS\":\"IPv4\",\"ATT-IP-ADD\":null}",
+                "Id": "0QL9M0000023PC4WAM",
+                "LineNumber": "0001.0002.0001"
+            },
+            {
+                "AttributeSelectedValues": "{\"ATT-OFF-CODE\":\"PNET-OFF-INT-FON-150\",\"ATT-USG-TYP\":\"WANIP\",\"ATT-SBN-MSK\":\"32\",\"ATT-IP-TYP\":\"Static\",\"ATT-IP-VRS\":\"IPv4\",\"ATT-IP-ADD\":null}",
+                "Id": "0QL9M0000023kOZWAY",
+                "LineNumber": "0001.0002.0002"
+            },
+            {
+                "AttributeSelectedValues": "{\"ATT-OFF-CODE\":\"PNET-OFF-INT-FON-150\",\"ATT-USG-TYP\":\"WANIP\",\"ATT-SBN-MSK\":\"32\",\"ATT-IP-TYP\":\"Static\",\"ATT-IP-VRS\":\"IPv4\",\"ATT-IP-ADD\":null}",
+                "Id": "0QL9M0000023kOaWAI",
+                "LineNumber": "0001.0002.0003"
+            }
+        ]
+    },
+    "GetIPNetworkQLIsStatus": true,
+    "SplitIPNetworkProduct": {
+    },
+    "SplitIPNetworkProductStatus": true,
+    "TransformIPNetworkPayload": {
+        "ipNetworkList": [
+            {
+                "Id": "0QL9M0000023PC4WAM",
+                "attributeConfiguration": {
+                    "ATT-IP-TYP": "Dynamisch",
+                    "ATT-IP-VRS": "IPv4",
+                    "ATT-SBN-MSK": "32",
+                    "ATT-USG-TYP": "WANIP"
+                }
+            },
+            {
+                "Id": "0QL9M0000023kOZWAY",
+                "attributeConfiguration": {
+                    "ATT-IP-TYP": "Dynamisch",
+                    "ATT-IP-VRS": "IPv6",
+                    "ATT-SBN-MSK": "64",
+                    "ATT-USG-TYP": "WANIP"
+                }
+            },
+            {
+                "Id": "0QL9M0000023kOaWAI",
+                "attributeConfiguration": {
+                    "ATT-IP-TYP": "Dynamisch",
+                    "ATT-IP-VRS": "IPv6",
+                    "ATT-SBN-MSK": "48",
+                    "ATT-USG-TYP": "Routed"
+                }
+            }
+        ]
+    },
+    "TransformIPNetworkPayloadStatus": true,
+    "ipConfig": {
+        "ipType": "Dynamisch"
+    },
+    "ipNetworkList": [
+        {
+            "Id": "0QL9M0000023PC4WAM",
+            "attributeConfiguration": {
+                "ATT-IP-TYP": "Dynamisch",
+                "ATT-IP-VRS": "IPv6",
+                "ATT-SBN-MSK": "64",
+                "ATT-USG-TYP": "WANIP"
+            }
+        },
+        {
+            "Id": "0QL9M0000023kOZWAY",
+            "attributeConfiguration": {
+                "ATT-IP-TYP": "Dynamisch",
+                "ATT-IP-VRS": "IPv6",
+                "ATT-SBN-MSK": "64",
+                "ATT-USG-TYP": "WANIP"
+            }
+        },
+        {
+            "Id": "0QL9M0000023kOaWAI",
+            "attributeConfiguration": {
+                "ATT-IP-TYP": "Dynamisch",
+                "ATT-IP-VRS": "IPv6",
+                "ATT-SBN-MSK": "48",
+                "ATT-USG-TYP": "Routed"
+            }
+        }
+    ],
+    "ipType": "Dynamisch",
+    "items": [
+        {
+            "itemId": ""
+        }
+    ],
+    "offerCode": "PNET-OFF-INT-FON-150",
+    "options": {
+        "chainable": false,
+        "ignoreCache": true,
+        "queueableChainable": false,
+        "resetCache": false,
+        "useQueueableApexRemoting": false
+    },
+    "productCode": "PNET-IP-NET",
+    "qliId": "0QL9M0000023PC3WAM",
+    "qliNetworkId": "0QL9M0000023PC4WAM",
+    "qliPaketId": "0QL9M0000023PC3WAM",
+    "quoteId": "0Q09M000001x0zVSAQ",
+    "selectedQuantity": 3
+}

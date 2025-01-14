@@ -1,0 +1,31 @@
+{
+    "CustomJavaScript": "PlusNet_SendAccountDetailsToATPHandler_SampleInput.json",
+    "Description": "Update ATPSyncFailed to true if the call to Mulesoft fails",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "SendAccountDetailsToATPHandler",
+    "OmniProcessElement": [
+        "PlusNet_SendAccountDetailsToATPHandler_Element_GetAccountRecordTypeName.json",
+        "PlusNet_SendAccountDetailsToATPHandler_Element_BusinessAccount.json",
+        "PlusNet_SendAccountDetailsToATPHandler_Element_GetBusinessAccountAndPrimaryContact.json",
+        "PlusNet_SendAccountDetailsToATPHandler_Element_BillingAccount.json",
+        "PlusNet_SendAccountDetailsToATPHandler_Element_GetBillingAccountAndBillingContact.json",
+        "PlusNet_SendAccountDetailsToATPHandler_Element_TryPlatformEvent.json",
+        "PlusNet_SendAccountDetailsToATPHandler_Element_PlatformEvent.json",
+        "PlusNet_SendAccountDetailsToATPHandler_Element_UpdateSyncFieldAccount.json",
+        "PlusNet_SendAccountDetailsToATPHandler_Element_ATPResponse.json"
+    ],
+    "OmniProcessKey": "PlusNet_SendAccountDetailsToATPHandler",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SendAccountDetailsToATPHandler_PropertySetConfig.json",
+    "SubType": "SendAccountDetailsToATPHandler",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SendAccountDetailsToATPHandler/Procedure"
+}

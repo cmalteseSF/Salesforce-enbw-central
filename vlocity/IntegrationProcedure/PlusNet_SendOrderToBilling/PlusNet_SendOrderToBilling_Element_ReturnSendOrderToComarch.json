@@ -1,0 +1,36 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ReturnSendOrderToComarch",
+    "OmniProcessId": {
+        "Name": "Send Order To Billing",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderToBilling/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "success": "=IF((%GetOrderType:Order|1:Type% == \"Activation\" && ISNOTBLANK(%SendBillingActivation%) && %SendBillingActivation:message% == \"Success\") || (%GetOrderType:Order|1:Type% == \"Termination\" && ISNOTBLANK(%SendBillingTermination%) && %SendBillingTermination:message% == \"Success\") || ((%GetOrderType:Order|1:Type% == \"Hardware Change\" || %GetOrderType:Order|1:Type% == \"IP Change\") && ISNOTBLANK(%SendBillingTermination%) && %SendBillingTermination:message% == \"Success\" && ISNOTBLANK(%SendBillingChange%) && %SendBillingChange:message% == \"Success\") || (%GetOrderType:Order|1:Type% == \"Change of Plan\" && ISNOTBLANK(%SendBillingTermination%) && %SendBillingTermination:message% == \"Success\" && ISNOTBLANK(%SendBillingActivation%) && %SendBillingActivation:message% == \"Success\"), true, false)"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderToBilling/Procedure/ReturnSendOrderToComarch"
+}

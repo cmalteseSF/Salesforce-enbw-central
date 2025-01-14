@@ -1,0 +1,56 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CustomLWC1",
+    "OmniProcessId": {
+        "Name": "EnrichPhoneNumbers",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichPhoneNumbers/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PhoneNumberMgmt",
+        "OmniProcessId": {
+            "Name": "EnrichPhoneNumbers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichPhoneNumbers/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichPhoneNumbers/German/PhoneNumberMgmt",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PhoneNumberMgmt",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "record-id",
+                "source": "%ContextId%"
+            },
+            {
+                "name": "max-row-selection",
+                "source": "1"
+            },
+            {
+                "name": "selected-rows",
+                "source": "%selectedRow%"
+            },
+            {
+                "name": "debug",
+                "source": "false"
+            }
+        ],
+        "hide": false,
+        "label": "CustomLWC1",
+        "lwcName": "orderPhoneMgmtLwC",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichPhoneNumbers/German/CustomLWC1"
+}

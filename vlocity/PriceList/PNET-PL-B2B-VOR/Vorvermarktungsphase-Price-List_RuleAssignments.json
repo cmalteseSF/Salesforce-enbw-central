@@ -1,0 +1,36 @@
+[
+    {
+        "%vlocity_namespace%__ObjectId__c": {
+            "%vlocity_namespace%__Code__c": "PNET-PL-B2B-VOR",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__PriceList__c/PNET-PL-B2B-VOR",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__PriceList__c"
+        },
+        "%vlocity_namespace%__RuleId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "39b4a9f4-80bd-dd14-9e6a-56d5dcf35370",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Rule__c/39b4a9f4-80bd-dd14-9e6a-56d5dcf35370",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Rule__c"
+        },
+        "%vlocity_namespace%__RuleType__c": "Qualification",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__RuleAssignment__c"
+    },
+    {
+        "%vlocity_namespace%__ObjectId__c": {
+            "%vlocity_namespace%__Code__c": "PNET-PL-B2B-VOR",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__PriceList__c/PNET-PL-B2B-VOR",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__PriceList__c"
+        },
+        "%vlocity_namespace%__RuleId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "51bf6149-6b51-2fec-110a-09a91651e869",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__Rule__c/51bf6149-6b51-2fec-110a-09a91651e869",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Rule__c"
+        },
+        "%vlocity_namespace%__RuleType__c": "Qualification",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__RuleAssignment__c"
+    }
+]

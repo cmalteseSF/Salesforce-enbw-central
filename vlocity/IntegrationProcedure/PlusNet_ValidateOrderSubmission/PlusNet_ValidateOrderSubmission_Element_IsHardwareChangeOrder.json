@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "IsHardwareChangeOrder",
+    "OmniProcessId": {
+        "Name": "Validate Order Submission",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ValidateOrderSubmission/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%OrderType% == 'Hardware Change' && %OrderStatus% == 'Ready To Submit'",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock7",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ValidateOrderSubmission/Procedure/IsHardwareChangeOrder"
+}

@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ATPIntegration",
+    "OmniProcessId": {
+        "Name": "ATP Integration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ATPIntegration/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISBLANK(%ExtractBillingDetailsFromOrder:BillingAccount:ATPInvoiceAccountId%) OR ISBLANK(%ExtractBillingDetailsFromOrder:BillingAccount:ATPBillingAccountId%) OR ISBLANK(%ExtractBillingDetailsFromOrder:BusinessAccount:ATPAccountId%) ",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock2",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ATPIntegration/Procedure/ATPIntegration"
+}

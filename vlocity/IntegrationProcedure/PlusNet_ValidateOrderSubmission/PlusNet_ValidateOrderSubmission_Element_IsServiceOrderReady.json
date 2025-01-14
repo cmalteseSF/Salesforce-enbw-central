@@ -1,0 +1,36 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "IsServiceOrderReady",
+    "OmniProcessId": {
+        "Name": "Validate Order Submission",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ValidateOrderSubmission/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "IsServiceOrder",
+        "OmniProcessId": {
+            "Name": "Validate Order Submission",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ValidateOrderSubmission/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ValidateOrderSubmission/Procedure/IsServiceOrder",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "IsServiceOrder",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%InstallationStatus% == 'Ready'",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock4",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ValidateOrderSubmission/Procedure/IsServiceOrderReady"
+}

@@ -1,0 +1,54 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "VoiceBlock",
+    "OmniProcessId": {
+        "Name": "CreateServiceQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "OfferConfiguration",
+        "OmniProcessId": {
+            "Name": "CreateServiceQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/OfferConfiguration",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "OfferConfiguration",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "collapse": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "hide": false,
+        "label": "Telefonie (Fon) konfigurieren",
+        "lwcComponentOverride": "",
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Office",
+                        "field": "productType"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/VoiceBlock"
+}

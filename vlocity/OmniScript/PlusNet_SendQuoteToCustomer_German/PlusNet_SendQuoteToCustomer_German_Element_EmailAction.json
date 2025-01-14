@@ -1,0 +1,89 @@
+{
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "EmailAction",
+    "OmniProcessId": {
+        "Name": "SendQuoteToCustomer",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendQuoteToCustomer/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "OrgWideEmailAddress": "%Notification:ContactEmail%",
+        "attachmentList": "%CDL:ContentDocumentId%",
+        "businessCategory": "",
+        "businessEvent": "",
+        "contentVersionList": "%CV:Id%",
+        "controlWidth": 12,
+        "docList": "%CDL:ContentDocumentId%",
+        "emailInformation": {
+            "bccAddressList": [
+            ],
+            "ccAddressList": [
+            ],
+            "emailBody": "",
+            "emailSubject": "",
+            "setHtmlBody": false,
+            "toAddressList": [
+            ]
+        },
+        "emailTemplateInformation": {
+            "emailTargetObjectId": "%Quote:ContactId%",
+            "emailTemplateName": "%Notification:TemplateName%",
+            "saveAsActivity": true,
+            "whatId": "%ContextId%"
+        },
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "fileAttachments": "",
+        "inProgressMessage": "In Progress",
+        "label": "",
+        "message": {
+        },
+        "postMessage": "Done",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteTimeout": 30000,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Ready",
+                        "field": "Quote:Status"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "staticDocList": [
+        ],
+        "useTemplate": true,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Email Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendQuoteToCustomer/German/EmailAction"
+}

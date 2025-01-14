@@ -1,0 +1,43 @@
+{
+    "Description": "Update decomposed OLIs attributes",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateFilteredOLIsAttributes",
+    "OmniProcessId": {
+        "Name": "ActivationFulfillmentHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ActivationFulfillmentHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "result": "%LoopBlock1:MergedOutput%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRUpdateOLI",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+            "RetCode": "NOK"
+        },
+        "label": "DataRaptorPostAction5",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ActivationFulfillmentHandler/Procedure/UpdateFilteredOLIsAttributes"
+}

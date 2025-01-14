@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "PlusNet_ApplyAttributesChangesOLI_SampleInput.json",
+    "Description": "Changed value of changeType",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PlusNet-ApplyAttributesChangesOLI",
+    "OmniProcessElement": [
+        "PlusNet_ApplyAttributesChangesOLI_Element_HardwareMalfunction.json",
+        "PlusNet_ApplyAttributesChangesOLI_Element_GetHardwareOLI.json",
+        "PlusNet_ApplyAttributesChangesOLI_Element_EraseSerialNumber.json",
+        "PlusNet_ApplyAttributesChangesOLI_Element_UpdateOLI.json",
+        "PlusNet_ApplyAttributesChangesOLI_Element_ReturnUpdateOfferAttributes.json"
+    ],
+    "OmniProcessKey": "PlusNet_ApplyAttributesChangesOLI",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ApplyAttributesChangesOLI_PropertySetConfig.json",
+    "SubType": "ApplyAttributesChangesOLI",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ApplyAttributesChangesOLI/Procedure"
+}

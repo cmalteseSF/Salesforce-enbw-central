@@ -1,0 +1,29 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "LoopBlock3",
+    "OmniProcessId": {
+        "Name": "ChangeFulfillmentHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeFulfillmentHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "LoopBlock3",
+        "loopList": "DRMergeFRL:MergedFRLData",
+        "loopOutput": {
+            "Output": {
+                "DRUpdate": "%UpdateFRLsJSONAttribute%",
+                "NetAttr": "%DRMergeFRL:MergedFRLData:SerializedNetworkAttrValue%",
+                "SerialNumAttr": "%DRMergeFRL:MergedFRLData:SerializedSerialNumAttrValue%"
+            }
+        },
+        "show": null
+    },
+    "Type": "Loop Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeFulfillmentHandler/Procedure/LoopBlock3"
+}

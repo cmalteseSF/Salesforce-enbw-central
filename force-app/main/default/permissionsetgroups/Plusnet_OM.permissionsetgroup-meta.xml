@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Plusnet OM</label>
+    <mutingPermissionSets>Plusnet_OM_Muted</mutingPermissionSets>
+    <permissionSets>All_Objects_CRUDMAVA</permissionSets>
+    <permissionSets>Apex_Custom_Classes</permissionSets>
+    <permissionSets>Apex_SFI_Classes</permissionSets>
+    <permissionSets>App_B2B_Sales_App</permissionSets>
+    <permissionSets>CLMInd_Runtime_All</permissionSets>
+    <permissionSets>CPQ_User</permissionSets>
+    <permissionSets>Case_Generic_CRUD</permissionSets>
+    <permissionSets>Convert_Lead</permissionSets>
+    <permissionSets>DC_Runtime_Shopping</permissionSets>
+    <permissionSets>DocGenInd_Design_All</permissionSets>
+    <permissionSets>DocGenInd_Runtime_All</permissionSets>
+    <permissionSets>DocGen_User</permissionSets>
+    <permissionSets>EPC_User</permissionSets>
+    <permissionSets>External_Credentials</permissionSets>
+    <permissionSets>OM_User</permissionSets>
+    <permissionSets>OrgWideAddress</permissionSets>
+    <permissionSets>Platform_Events</permissionSets>
+    <permissionSets>QuoteApprovalForm_Mulesoft</permissionSets>
+    <permissionSets>SFIOmniObjectsPermissions</permissionSets>
+    <permissionSets>VF_SFI_Pages</permissionSets>
+    <permissionSets>XOMConfigureDecompositionRelationshipDesign</permissionSets>
+    <permissionSets>XOMConfigureManualQueueDesign</permissionSets>
+    <permissionSets>XOMConfigureOrchestrationDesign</permissionSets>
+    <permissionSets>XOMConfigureOrchestrationItemDesign</permissionSets>
+    <permissionSets>XOMExecuteDecompositionRun</permissionSets>
+    <permissionSets>XOMExecuteHealthCheckRun</permissionSets>
+    <permissionSets>XOMExecuteQueryRun</permissionSets>
+    <permissionSets>XOMManageExternalCredentialsDesign</permissionSets>
+    <permissionSets>XOMManageOrchestrationItemRun</permissionSets>
+    <permissionSets>XOMSynchroniseCatalogueRun</permissionSets>
+    <permissionSets>XOMUpdateFulfilmentRun</permissionSets>
+    <permissionSets>XOMViewDecompositionRun</permissionSets>
+    <permissionSets>XOMViewOrchestrationPlanRun</permissionSets>
+    <permissionSets>XOMViewTechnicalInventoryRun</permissionSets>
+    <permissionSets>force__BREDesigner</permissionSets>
+    <permissionSets>force__OmniStudioExecution</permissionSets>
+    <permissionSets>vlocity_cmt__CommunicationsCloudPlusRuntime</permissionSets>
+    <permissionSets>vlocity_cmt__CommunicationsCloudRuntime</permissionSets>
+    <permissionSets>vlocity_cmt__DocGenIndCmeRuntime</permissionSets>
+    <status>Updating</status>
+</PermissionSetGroup>

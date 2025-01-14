@@ -1,0 +1,22 @@
+{
+    "Description": "This OS syncs the Quote to the Opportunity",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "German",
+    "Name": "SyncQuoteToOpportunity",
+    "OmniProcessElement": [
+        "PlusNet_SyncQuoteToOpportunity_German_Element_SyncQuoteToOpportunity.json",
+        "PlusNet_SyncQuoteToOpportunity_German_Element_NavigateToQuote.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "PlusNet_SyncQuoteToOpportunity_German_PropertySetConfig.json",
+    "SubType": "SyncQuoteToOpportunity",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SyncQuoteToOpportunity/German"
+}

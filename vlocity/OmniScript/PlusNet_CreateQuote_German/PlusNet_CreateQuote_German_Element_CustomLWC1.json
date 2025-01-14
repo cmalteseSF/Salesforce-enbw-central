@@ -1,0 +1,64 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CustomLWC1",
+    "OmniProcessId": {
+        "Name": "CreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SelectLocationBlock",
+        "OmniProcessId": {
+            "Name": "CreateQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuote/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuote/German/SelectLocationBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SelectLocationBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "columns",
+                "source": "%accountColumns%"
+            },
+            {
+                "name": "rows",
+                "source": "%Accounts%"
+            },
+            {
+                "name": "key-field",
+                "source": "AccountId"
+            },
+            {
+                "name": "max-row-selection",
+                "source": "1"
+            },
+            {
+                "name": "debug",
+                "source": "false"
+            },
+            {
+                "name": "selected-rows",
+                "source": "%selectedRow%"
+            }
+        ],
+        "hide": false,
+        "label": "CustomLWC1",
+        "lwcName": "datatable",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuote/German/CustomLWC1"
+}

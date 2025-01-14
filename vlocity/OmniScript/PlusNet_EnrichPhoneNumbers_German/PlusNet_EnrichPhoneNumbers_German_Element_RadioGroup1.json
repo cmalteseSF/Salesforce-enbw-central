@@ -1,0 +1,123 @@
+{
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "RadioGroup1",
+    "OmniProcessId": {
+        "Name": "EnrichPhoneNumbers",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichPhoneNumbers/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PhoneNumberMgmt",
+        "OmniProcessId": {
+            "Name": "EnrichPhoneNumbers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichPhoneNumbers/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichPhoneNumbers/German/PhoneNumberMgmt",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PhoneNumberMgmt",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "label": "Group1",
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "options": [
+            {
+                "name": "Phone1",
+                "setAll": false,
+                "value": "Phone1"
+            },
+            {
+                "name": "Phone2",
+                "setAll": false,
+                "value": "Phone2"
+            },
+            {
+                "name": "Phone3",
+                "setAll": false,
+                "value": "Phone3"
+            },
+            {
+                "name": "Phone4",
+                "setAll": false,
+                "value": "Phone4"
+            },
+            {
+                "name": "Phone5",
+                "setAll": false,
+                "value": "Phone5"
+            },
+            {
+                "name": "Phone6",
+                "setAll": false,
+                "value": "Phone6"
+            },
+            {
+                "name": "Phone7",
+                "setAll": false,
+                "value": "Phone7"
+            },
+            {
+                "name": "Phone8",
+                "setAll": false,
+                "value": "Phone8"
+            },
+            {
+                "name": "Phone9",
+                "setAll": false,
+                "value": "Phone9"
+            },
+            {
+                "name": "Phone10",
+                "setAll": false,
+                "value": "Phone10"
+            }
+        ],
+        "radioLabels": [
+            {
+                "name": "PhoneNumber",
+                "value": "Select Phone Number"
+            }
+        ],
+        "radioLabelsWidth": "3",
+        "readOnly": false,
+        "required": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "10",
+                        "field": "NoPhoneAccount"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Radio Group",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichPhoneNumbers/German/RadioGroup1"
+}

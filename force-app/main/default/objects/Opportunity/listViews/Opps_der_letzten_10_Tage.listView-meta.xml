@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opps_der_letzten_10_Tage</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.FULL_NAME</columns>
+    <columns>OPPORTUNITY.CLOSE_DATE</columns>
+    <columns>OPPORTUNITY.STAGE_NAME</columns>
+    <columns>OPPORTUNITY.LAST_STAGE_CHANGE</columns>
+    <columns>CloseLostReason__c</columns>
+    <columns>OPPORTUNITY.LAST_ACTIVITY</columns>
+    <columns>OPPORTUNITY.LAST_UPDATE</columns>
+    <columns>OPPORTUNITY.CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>OPPORTUNITY.CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>N_DAYS_AGO:10</value>
+    </filters>
+    <label>Alle Opps der letzten 10 Tage</label>
+</ListView>

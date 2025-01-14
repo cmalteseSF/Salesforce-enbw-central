@@ -1,0 +1,32 @@
+{
+    "%vlocity_namespace%__AttributeAssignment__c": "PLUSNET-B2B-Office-Object-Type_AttributeAssignments.json",
+    "%vlocity_namespace%__EffectiveFromDate__c": "2023-11-03",
+    "%vlocity_namespace%__EffectiveUntilDate__c": "",
+    "%vlocity_namespace%__GlobalGroupKey__c": "76e97584-fec2-8080-49d2-bc172a798127",
+    "%vlocity_namespace%__GlobalKey__c": "9b760dd574bc3018e3a4e2ba8b2ebeac",
+    "%vlocity_namespace%__IsActive__c": true,
+    "%vlocity_namespace%__IsVirtual__c": false,
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__Mode__c": "",
+    "%vlocity_namespace%__ObjectApiName__c": "Product2",
+    "%vlocity_namespace%__ParentObjectClassId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "66b2533dac3bf71551684a7ed8be9e3d",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/66b2533dac3bf71551684a7ed8be9e3d",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c"
+    },
+    "%vlocity_namespace%__RecordTypeName__c": "",
+    "%vlocity_namespace%__RootObjectClassId__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "V1",
+    "Name": "PLUSNET B2B Office Object Type",
+    "RecordTypeId": {
+        "DeveloperName": "ObjectType",
+        "SobjectType": "%vlocity_namespace%__ObjectClass__c",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/%vlocity_namespace%__ObjectClass__c/ObjectType",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__ObjectClass__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__ObjectClass__c/9b760dd574bc3018e3a4e2ba8b2ebeac"
+}

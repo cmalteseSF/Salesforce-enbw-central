@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Update Offer Attributes",
+    "OmniProcessElement": [
+        "PlusNet_UpdateOfferAttributes_Element_HardwareReplacement.json",
+        "PlusNet_UpdateOfferAttributes_Element_GetHardwareOLI.json",
+        "PlusNet_UpdateOfferAttributes_Element_UpdateHardwareOLI.json",
+        "PlusNet_UpdateOfferAttributes_Element_ReturnUpdateOfferAttributes.json"
+    ],
+    "OmniProcessKey": "PlusNet_UpdateOfferAttributes",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_UpdateOfferAttributes_PropertySetConfig.json",
+    "SubType": "UpdateOfferAttributes",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/UpdateOfferAttributes/Procedure"
+}

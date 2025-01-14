@@ -1,0 +1,42 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateProvisioningStatusNOK",
+    "OmniProcessId": {
+        "Name": "OrderResponseHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/OrderResponseHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "FRLID": "%GetAccessFRLId:CFSAccessFRL|1:Id%",
+            "ProvisionStatus": "OSS_NOK"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRUpdateFRLFields",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISBLANK(%GetOrderFulfillmentDetails:Order:Id%) || %MACD:RetCode% == \"NOK\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/OrderResponseHandler/Procedure/UpdateProvisioningStatusNOK"
+}

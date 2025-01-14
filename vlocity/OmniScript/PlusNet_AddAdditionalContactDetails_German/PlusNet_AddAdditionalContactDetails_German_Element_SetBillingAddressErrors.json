@@ -1,0 +1,84 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetBillingAddressErrors",
+    "OmniProcessId": {
+        "Name": "AddAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/AddAdditionalContactDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementErrorMap": {
+            "BillingAddressDetails": "Bitte überprüfen Sie die Adresse"
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "BillingAddressCheck"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": "success",
+                                    "field": "BillingAddressCheck:validationResult"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "false",
+                                    "field": "IsBillingEqualBusinessAddress"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "BillingAddressCheck"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": null,
+                                    "field": "BillingAddressCheck:AddressId"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "false",
+                                    "field": "IsBillingEqualBusinessAddress"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Set Errors",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/AddAdditionalContactDetails/German/SetBillingAddressErrors"
+}

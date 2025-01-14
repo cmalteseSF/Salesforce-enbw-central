@@ -1,0 +1,36 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NoOrderCreated",
+    "OmniProcessId": {
+        "Name": "Batch Cancellation Wrapper",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/BatchCancellationWrapper/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "QuoteCancellation",
+        "OmniProcessId": {
+            "Name": "Batch Cancellation Wrapper",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/BatchCancellationWrapper/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/BatchCancellationWrapper/Procedure/QuoteCancellation",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "QuoteCancellation",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISBLANK(%FetchOrderQuoteDetails:Order:Id%)",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock7",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/BatchCancellationWrapper/Procedure/NoOrderCreated"
+}

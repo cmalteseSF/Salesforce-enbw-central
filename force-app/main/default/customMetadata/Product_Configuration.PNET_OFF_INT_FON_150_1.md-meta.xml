@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>PNET-OFF-INT-FON-150</label>
+    <protected>false</protected>
+    <values>
+        <field>BundleIdentifier__c</field>
+        <value xsi:type="xsd:string">PNET-OFF-INT-FON-150</value>
+    </values>
+    <values>
+        <field>ComponentIdentifier__c</field>
+        <value xsi:type="xsd:string">PNET-IP-NET</value>
+    </values>
+    <values>
+        <field>ConfigurationData__c</field>
+        <value xsi:type="xsd:string">{&quot;ATT-IP-VRS&quot;:&quot;IPv4&quot;,&quot;ATT-SBN-MSK&quot;:&quot;32&quot;,&quot;ATT-USG-TYP&quot;:&quot;WANIP&quot;}</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+    <values>
+        <field>LineNumber__c</field>
+        <value xsi:type="xsd:string">0001.0002.0001</value>
+    </values>
+</CustomMetadata>

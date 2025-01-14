@@ -1,0 +1,68 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateOpportunityCreateQuote",
+    "OmniProcessId": {
+        "Name": "CreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuote/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TryCreateQuote",
+        "OmniProcessId": {
+            "Name": "CreateQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuote/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuote/Procedure/TryCreateQuote",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TryCreateQuote",
+    "ParentElementType": "Try Catch Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountId": "%accountId%",
+            "AccountName": "%GetAddressDetails:AccountName%",
+            "City": "%GetAddressDetails:Address:City%",
+            "ContactId": "%contactId%",
+            "ExternalId": "%externalId%",
+            "MarketingPhase": "%marketingPhase%",
+            "OpportunityId": "%opportunityId%",
+            "PremiseId": "%premiseId%",
+            "PriceListId": "%GetPriceListDetails:PriceList|1:Id%",
+            "ServiceAccountId": "%GetAddressDetails:ServiceAccountId%",
+            "StageName": "Angebot",
+            "StandardQuoteRTId": "%GetRecordTypeDetails:StandardQuoteRTId%",
+            "SubType": "%subType%",
+            "maxBandwidth": "%maxBandwidth%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "UpdateOpportunityCreateQuote",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataMapperPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuote/Procedure/UpdateOpportunityCreateQuote"
+}

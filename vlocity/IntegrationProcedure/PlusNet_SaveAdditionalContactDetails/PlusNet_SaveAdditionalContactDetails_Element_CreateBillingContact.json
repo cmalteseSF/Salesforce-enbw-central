@@ -1,0 +1,61 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateBillingContact",
+    "OmniProcessId": {
+        "Name": "SaveAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "NewBillingContact",
+        "OmniProcessId": {
+            "Name": "SaveAdditionalContactDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure/NewBillingContact",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "NewBillingContact",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountId": "%Quote:BusinessAccountId%",
+            "Company": "%selectedBillingContact:Company%",
+            "Email": "%selectedBillingContact:Email%",
+            "FirstName": "%selectedBillingContact:FirstName%",
+            "LastName": "%selectedBillingContact:LastName%",
+            "Phone": "%selectedBillingContact:Phone%",
+            "Salutation": "%selectedBillingContact:Salutation%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "CreateContact",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetBillingContactFromName:isContactNull% == \"true\"",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction13",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure/CreateBillingContact"
+}

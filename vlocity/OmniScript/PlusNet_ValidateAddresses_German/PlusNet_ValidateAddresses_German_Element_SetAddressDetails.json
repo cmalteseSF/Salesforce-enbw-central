@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetAddressDetails",
+    "OmniProcessId": {
+        "Name": "ValidateAddresses",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ValidateAddresses/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "Address": {
+                "AddressExt": "=IF(%AddressCheck:AddressExt% != null, %AddressCheck:AddressExt%, %AddressExt%)",
+                "AddressId": "=%AddressCheck:AddressId%",
+                "City": "=IF(%AddressCheck:AddressCity% != null, %AddressCheck:AddressCity%, %City%)",
+                "CityExt": "=IF(%AddressCheck:AddressCityExt% != null, %AddressCheck:AddressCityExt%, %CityExt%)",
+                "Country": "=IF(%AddressCheck:AddressCountry% != null, %AddressCheck:AddressCountry%, %Country%)",
+                "HouseNo": "=IF(%AddressCheck:AddressHouseNo% != null, %AddressCheck:AddressHouseNo%, %HouseNo%)",
+                "HouseNoExt": "=IF(%AddressCheck:AddressHouseNoExt% != null, %AddressCheck:AddressHouseNoExt%, %HouseNoExt%)",
+                "PostalCode": "=IF(%AddressCheck:AddressPostalCode% != null, %AddressCheck:AddressPostalCode%, %PostalCode%)",
+                "State": "=IF(%AddressCheck:AddressState% != null, %AddressCheck:AddressState%, %State%)",
+                "Street": "=IF(%AddressCheck:AddressStreet% != null, %AddressCheck:AddressStreet%, %Street%)"
+            }
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ValidateAddresses/German/SetAddressDetails"
+}

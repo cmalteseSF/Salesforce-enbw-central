@@ -1,0 +1,42 @@
+[
+    {
+        "FormulaExpression": "trimString(TOSTRING(%PricebookEntry:Id%))",
+        "FormulaResultPath": "trimmedString",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRConvertArrayAndTrimString39749057760872497",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRConvertArrayAndTrimString",
+        "OmniDataTransformationId": {
+            "Name": "DRConvertArrayAndTrimString",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRConvertArrayAndTrimString",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRConvertArrayAndTrimString45571390564081393",
+        "InputFieldName": "trimmedString",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRConvertArrayAndTrimString",
+        "OmniDataTransformationId": {
+            "Name": "DRConvertArrayAndTrimString",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRConvertArrayAndTrimString",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "trimmedString",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

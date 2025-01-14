@@ -1,0 +1,63 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SendOrderNotificationEmail",
+    "OmniProcessId": {
+        "Name": "PlusNet SendOrderNotification",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderNotification/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SendEmail",
+        "OmniProcessId": {
+            "Name": "PlusNet SendOrderNotification",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderNotification/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderNotification/Procedure/SendEmail",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SendEmail",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "OrgWideEmailAddress": "%GetNotificationData:EmailAddress%",
+        "actionMessage": "",
+        "attachmentList": "",
+        "chainOnStep": false,
+        "contentVersionList": "",
+        "disOnTplt": false,
+        "emailInformation": {
+            "bccAddressList": [
+            ],
+            "ccAddressList": [
+            ],
+            "emailBody": "",
+            "emailSubject": "",
+            "setHtmlBody": false,
+            "toAddressList": [
+            ]
+        },
+        "emailTemplateInformation": {
+            "emailTargetObjectId": "%GetOrder:Account:PrimaryContactId%",
+            "emailTemplateName": "%GetNotificationData:TemplateName%",
+            "saveAsActivity": true,
+            "whatId": "%GetOrder:Order:Id%"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "EmailAction1",
+        "show": null,
+        "staticDocList": [
+            "Vlocity_Logo"
+        ],
+        "useTemplate": true
+    },
+    "Type": "Email Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderNotification/Procedure/SendOrderNotificationEmail"
+}

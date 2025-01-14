@@ -1,0 +1,50 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseSubmittedOrderCancellation",
+    "OmniProcessId": {
+        "Name": "Order Cancellation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/OrderCancellation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "OrderCancellation",
+        "OmniProcessId": {
+            "Name": "Order Cancellation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/OrderCancellation/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/OrderCancellation/Procedure/OrderCancellation",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "OrderCancellation",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "RetCode": "=IF(%PreValidate:records:isPONR% == false,'ORDER_OK','ORDER_NOTOK')"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetOrderDetails:Order:OrderStatus% != 'Ready To Submit'",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/OrderCancellation/Procedure/ResponseSubmittedOrderCancellation"
+}

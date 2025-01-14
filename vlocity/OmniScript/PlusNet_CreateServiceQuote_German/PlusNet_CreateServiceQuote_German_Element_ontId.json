@@ -1,0 +1,74 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ontId",
+    "OmniProcessId": {
+        "Name": "CreateServiceQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "AdditionalHardwareBlock",
+        "OmniProcessId": {
+            "Name": "CreateServiceQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/AdditionalHardwareBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "AdditionalHardwareBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "autocomplete": null,
+        "conditionType": "Hide if False",
+        "controlWidth": 3,
+        "debounceValue": 0,
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": true,
+        "helpText": "Bitte geben Sie die ONT-ID des Kunden an.",
+        "helpTextPos": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "ONT Id (optional)",
+        "mask": "",
+        "maxLength": 255,
+        "minLength": 0,
+        "pattern": "",
+        "placeholder": "",
+        "ptrnErrText": "",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "isONT"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "isRouter"
+                    }
+                ]
+            }
+        },
+        "showInputWidth": false
+    },
+    "Type": "Text",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/ontId"
+}

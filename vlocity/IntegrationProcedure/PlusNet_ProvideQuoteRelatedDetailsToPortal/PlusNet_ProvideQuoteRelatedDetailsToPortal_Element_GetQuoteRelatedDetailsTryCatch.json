@@ -1,0 +1,32 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetQuoteRelatedDetailsTryCatch",
+    "OmniProcessId": {
+        "Name": "ProvideQuoteRelatedDetailsToPortal",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ProvideQuoteRelatedDetailsToPortal/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnBlockError": true,
+        "failureResponse": {
+            "errorDescription": {
+                "error": "Not possible to provide Quote OR QLIs OR Business Account OR Technical Contact OR Premise details.",
+                "errorCode": ""
+            },
+            "payload": "%GetQuoteRelatedDetails%",
+            "processName": "GetQuoteRelatedDetails"
+        },
+        "label": "TryCatchBlock2",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "show": null
+    },
+    "Type": "Try Catch Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ProvideQuoteRelatedDetailsToPortal/Procedure/GetQuoteRelatedDetailsTryCatch"
+}

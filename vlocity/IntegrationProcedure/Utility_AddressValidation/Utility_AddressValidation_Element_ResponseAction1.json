@@ -1,0 +1,63 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction1",
+    "OmniProcessId": {
+        "Name": "UtilityAddressValidation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Utility/AddressValidation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CB_ServiceAddress",
+        "OmniProcessId": {
+            "Name": "UtilityAddressValidation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Utility/AddressValidation/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Utility/AddressValidation/Procedure/CB_ServiceAddress",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CB_ServiceAddress",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "AddressCity": "%HTTPAction_ValidGeoAddress:validGeographicAddress:city%",
+            "AddressCityExt": "%CityExt%",
+            "AddressCountry": "%HTTPAction_ValidGeoAddress:validGeographicAddress:country%",
+            "AddressExt": "%AddressExt%",
+            "AddressHouseNo": "%HTTPAction_ValidGeoAddress:validGeographicAddress:streetNr%",
+            "AddressHouseNoExt": "%HTTPAction_ValidGeoAddress:validGeographicAddress:streetNrSuffix%",
+            "AddressId": "%HTTPAction_ValidGeoAddress:validGeographicAddress:id%",
+            "AddressPostalCode": "%HTTPAction_ValidGeoAddress:validGeographicAddress:postcode%",
+            "AddressState": "%HTTPAction_ValidGeoAddress:validGeographicAddress:stateOrProvince%",
+            "AddressStreet": "%HTTPAction_ValidGeoAddress:validGeographicAddress:streetName%",
+            "Latitude": "%HTTPAction_ValidGeoAddress:validGeographicAddress:bbox|1%",
+            "Longitude": "%HTTPAction_ValidGeoAddress:validGeographicAddress:bbox|2%",
+            "SPRIStatus": "%IP_ServiceAvailabilityCheck:SPRIStatus%",
+            "validationResult": "%HTTPAction_ValidGeoAddress:validationResult%"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "IPResponse",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Utility/AddressValidation/Procedure/ResponseAction1"
+}

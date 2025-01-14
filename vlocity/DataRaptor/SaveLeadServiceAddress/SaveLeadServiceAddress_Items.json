@@ -1,0 +1,269 @@
+[
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom2936",
+        "InputFieldName": "LeadId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "SaveLeadServiceAddressCustom3425",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "SaveLeadServiceAddressCustom563",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsServiceAddressValid__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom4688",
+        "InputFieldName": "SPRIStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SPRIStatus__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom830",
+        "InputFieldName": "Address:AddressExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceAddressExt__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom7225",
+        "InputFieldName": "Address:AddressId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceAddressId__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom2556",
+        "InputFieldName": "Address:CityExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceCityExt__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom7999",
+        "InputFieldName": "Address:City",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceCity__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom7089",
+        "InputFieldName": "Address:Country",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceCountry__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom8274",
+        "InputFieldName": "Address:HouseNoExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceHouseNoExt__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom4189",
+        "InputFieldName": "Address:HouseNo",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceHouseNo__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom76",
+        "InputFieldName": "Address:PostalCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServicePostalCode__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom8992",
+        "InputFieldName": "Address:State",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceState__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadServiceAddressCustom3110",
+        "InputFieldName": "Address:Street",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadServiceAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadServiceAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadServiceAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceStreet__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

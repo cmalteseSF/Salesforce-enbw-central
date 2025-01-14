@@ -1,0 +1,87 @@
+{
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "isServiceInstallation",
+    "OmniProcessId": {
+        "Name": "CreateServiceQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "AdditionalHardwareBlock",
+        "OmniProcessId": {
+            "Name": "CreateServiceQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/AdditionalHardwareBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "AdditionalHardwareBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "enableCaption": true,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "horizontalMode": true,
+        "imageCountInRow": 3,
+        "label": "Wird ein Servicetechniker gewünscht?",
+        "optionHeight": 100,
+        "optionSource": {
+            "source": "",
+            "type": ""
+        },
+        "optionWidth": 100,
+        "options": [
+            {
+                "autoAdv": null,
+                "developerName": null,
+                "name": "true",
+                "value": "Ja"
+            },
+            {
+                "autoAdv": null,
+                "developerName": null,
+                "name": "false",
+                "value": "Nein"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "isRouter"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Radio",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/isServiceInstallation"
+}

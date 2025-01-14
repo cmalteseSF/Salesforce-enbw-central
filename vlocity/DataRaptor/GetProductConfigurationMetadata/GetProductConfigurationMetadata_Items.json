@@ -1,0 +1,209 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "bundleCode",
+        "GlobalKey": "GetProductConfigurationMetadataCustom6110",
+        "InputFieldName": "BundleIdentifier__c",
+        "InputObjectName": "Product_Configuration__mdt",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetProductConfigurationMetadata",
+        "OmniDataTransformationId": {
+            "Name": "GetProductConfigurationMetadata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetProductConfigurationMetadata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ProductConfigurationList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "componentCode",
+        "GlobalKey": "GetProductConfigurationMetadataCustom8082",
+        "InputFieldName": "ComponentIdentifier__c",
+        "InputObjectName": "Product_Configuration__mdt",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetProductConfigurationMetadata",
+        "OmniDataTransformationId": {
+            "Name": "GetProductConfigurationMetadata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetProductConfigurationMetadata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ProductConfigurationList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "GetProductConfigurationMetadataCustom8356",
+        "InputFieldName": "IsActive__c",
+        "InputObjectName": "Product_Configuration__mdt",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetProductConfigurationMetadata",
+        "OmniDataTransformationId": {
+            "Name": "GetProductConfigurationMetadata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetProductConfigurationMetadata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ProductConfigurationList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "DESERIALIZE(%ProductConfigurationList:ConfigurationData%)",
+        "FormulaResultPath": "ProductConfigurationList:serialize",
+        "FormulaSequence": 1,
+        "GlobalKey": "GetProductConfigurationMetadataCustom8081",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetProductConfigurationMetadata",
+        "OmniDataTransformationId": {
+            "Name": "GetProductConfigurationMetadata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetProductConfigurationMetadata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetProductConfigurationMetadataCustom3143",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetProductConfigurationMetadata",
+        "OmniDataTransformationId": {
+            "Name": "GetProductConfigurationMetadata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetProductConfigurationMetadata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ProductConfigurationList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetProductConfigurationMetadataCustom4134",
+        "InputFieldName": "ProductConfigurationList:BundleIdentifier__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetProductConfigurationMetadata",
+        "OmniDataTransformationId": {
+            "Name": "GetProductConfigurationMetadata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetProductConfigurationMetadata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductConfigurationList:BundleIdentifier",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetProductConfigurationMetadataCustom9390",
+        "InputFieldName": "ProductConfigurationList:ComponentIdentifier__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetProductConfigurationMetadata",
+        "OmniDataTransformationId": {
+            "Name": "GetProductConfigurationMetadata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetProductConfigurationMetadata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductConfigurationList:ComponentIdentifier",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetProductConfigurationMetadataCustom3982",
+        "InputFieldName": "ProductConfigurationList:ConfigurationData__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetProductConfigurationMetadata",
+        "OmniDataTransformationId": {
+            "Name": "GetProductConfigurationMetadata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetProductConfigurationMetadata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductConfigurationList:ConfigurationData",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetProductConfigurationMetadataCustom3808",
+        "InputFieldName": "ProductConfigurationList:LineNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetProductConfigurationMetadata",
+        "OmniDataTransformationId": {
+            "Name": "GetProductConfigurationMetadata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetProductConfigurationMetadata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductConfigurationList:LineNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetProductConfigurationMetadataCustom7472",
+        "InputFieldName": "ProductConfigurationList:serialize",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetProductConfigurationMetadata",
+        "OmniDataTransformationId": {
+            "Name": "GetProductConfigurationMetadata",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetProductConfigurationMetadata",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductConfigurationList:serialize",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,50 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock3",
+    "OmniProcessId": {
+        "Name": "SendQuoteToCustomer",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendQuoteToCustomer/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "EmailStatus",
+        "OmniProcessId": {
+            "Name": "SendQuoteToCustomer",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendQuoteToCustomer/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendQuoteToCustomer/German/EmailStatus",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "EmailStatus",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock3",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "EmailResult"
+                    }
+                ]
+            }
+        },
+        "text": "<p>Es scheint, dass die E-Mail zur&uuml;ckgeschickt wurde. Bitte &uuml;berpr&uuml;fen Sie die E-Mail-Adresse des prim&auml;ren Kontos: %ContactName%</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendQuoteToCustomer/German/TextBlock3"
+}

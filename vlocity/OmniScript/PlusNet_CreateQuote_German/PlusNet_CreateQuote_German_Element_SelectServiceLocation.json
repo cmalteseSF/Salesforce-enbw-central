@@ -1,0 +1,65 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SelectServiceLocation",
+    "OmniProcessId": {
+        "Name": "CreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": false,
+        "businessCategory": "",
+        "businessEvent": "",
+        "cancelLabel": "",
+        "cancelMessage": "",
+        "chartLabel": null,
+        "completeLabel": "",
+        "completeMessage": "",
+        "conditionType": "Hide if False",
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "instruction": "<p>W&auml;hlen Sie die Adresse aus, an welcher der Kunde die<br />Dienstleistung in Anspruch nehmen m&ouml;chte. Die ausgew&auml;hlte<br />Adresse wird f&uuml;r die Erstellung des Angebots verwendet und<br />bestimmt den konkreten Ort der Leistungserbringung.</p>",
+        "instructionKey": "",
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "Standort für neue Dienstleistung auswählen",
+        "message": {
+        },
+        "nextLabel": "Weiter",
+        "nextWidth": 3,
+        "previousLabel": "",
+        "previousWidth": "0",
+        "pubsub": false,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": "",
+        "saveMessage": "",
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": true,
+        "wpm": false
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuote/German/SelectServiceLocation"
+}

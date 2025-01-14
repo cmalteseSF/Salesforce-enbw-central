@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to communicate to customer that the Termination Order is created</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Order Termination Entry Confirmation</name>
+    <pageDevName>Order_Termination_Entry_Confirmation</pageDevName>
+    <relatedEntityType>Order</relatedEntityType>
+    <style>none</style>
+    <subject>Kündigungsbestätigung - {{{Order.ContractNumber__c}}}</subject>
+    <textOnly>Kundenname: ({{{Order.AccountName__c}}})
+
+Kundennummer: {{{Order.ATPBillingAccountId__c}}} 
+
+Vertragsnummer: {{{Order.ContractNumber__c}}}
+
+Kündigungsbestätigung ({{{Order.ContractNumber__c}}})
+
+Sehr geehrte Kundin, sehr geehrter Kunde,
+
+hiermit bestätigen wir Ihnen, dass wir Ihre Kündigung erhalten haben.
+
+Wir akzeptieren Ihre Kündigung zum {{{Order.vlocity_cmt__RequestDate__c}}}.
+
+Folgender Standort wird zu oben genanntem Termin gekündigt:
+
+{{{Order.ServiceAddress__c}}}
+
+Sollten Sie Miethardware in Anspruch genommen haben, senden Sie bitte das von uns zur Verfügung gestellte Endgerät innerhalb von 14 Kalendertagen nach oben genanntem Kündigungstermin an unseren Logistikpartner zurück: 
+
+Pan Dacom Networking AG 
+
+- Plusnet-Logistik - 
+
+Max-Planck-Str. 10 
+
+63303 Dreieich 
+
+Wir möchten Sie darauf hinweisen, dass wir Ihnen andernfalls das Endgerät in Rechnung stellen müssen. Wir bitten um Ihr Verständnis.
+
+Bitte verwenden Sie den für Sie kostenlosen UPS-Retourenschein. Sie finden den Retourenschein im Plusnet Portal https://onest.plusnet.de/contract/overview &lt; https://https://onest.plusnet.de/contract/overview &gt; . Bitte drucken Sie den Retourenschein aus und veranlassen Sie die Abholung des Endgeräts durch UPS. Unfreie Sendungen können wir aus Kostengründen nicht annehmen.
+
+Für Rückfragen stehen wir Ihnen jederzeit per E-Mail an auftrag@plusnet.de &lt; mailto:auftrag@plusnet.de &gt; zur Verfügung.
+
+Bitte geben Sie bei allen Anfragen Ihre Vertragsnummer an, damit wir Ihre Anfrage schnellstmöglich bearbeiten können. Vielen Dank!
+
+Mit partnerschaftlichen Grüßen
+
+Ihre Plusnet GmbH© 2024 Plusnet | Ein Unternehmen der EnBW
+
+Plusnet GmbH – Rudi-Conin-Straße 5a – 50829 Köln – info@plusnet.de
+
+Geschäftsführung: Ulrich Hoffmann, Robert Jelinek-Nacke, Bert Wilden
+
+Registergericht: Amtsgericht Köln – Registernummer: HRB 92510
+
+Umsatzsteuer-Identifikations-Nr. nach § 27 a des Umsatzsteuergesetzes: DE31637168 [Image alt text: youtube]  &lt; https://www.youtube.com/channel/UCVA3mmD2jvv73KCfnkKpaiA &gt;  [Image alt text: xing]  &lt; https://www.xing.com/pages/plusnetgmbh-einunternehmenderenbw &gt;  [Image alt text: linkedin]  &lt; https://www.linkedin.com/company/plusnet-gmbh &gt;  [Image alt text: facebook]  &lt; https://www.facebook.com/plusnetgmbh &gt; 
+
+Impressum &lt; https://www.plusnet.de/impressum &gt; 
+
+Datenschutz &lt; https://www.plusnet.de/datenschutz &gt; 
+
+Kontakt &lt; https://www.plusnet.de/kontakt &gt; 
+
+www.plusnet.de &lt; https://www.plusnet.de/ &gt;</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

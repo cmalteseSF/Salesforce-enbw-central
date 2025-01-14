@@ -1,0 +1,62 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SendOrderNotificationEmail",
+    "OmniProcessId": {
+        "Name": "Send Cancellation Notification",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendCancellationNotification/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SendEmail",
+        "OmniProcessId": {
+            "Name": "Send Cancellation Notification",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendCancellationNotification/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendCancellationNotification/Procedure/SendEmail",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SendEmail",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "OrgWideEmailAddress": "%GetNotificationData:EmailAddress%",
+        "actionMessage": "",
+        "attachmentList": "",
+        "chainOnStep": false,
+        "contentVersionList": "",
+        "disOnTplt": false,
+        "emailInformation": {
+            "bccAddressList": [
+            ],
+            "ccAddressList": [
+            ],
+            "emailBody": "",
+            "emailSubject": "",
+            "setHtmlBody": false,
+            "toAddressList": [
+            ]
+        },
+        "emailTemplateInformation": {
+            "emailTargetObjectId": "%PrimaryContactId%",
+            "emailTemplateName": "%GetNotificationData:TemplateName%",
+            "saveAsActivity": true,
+            "whatId": ""
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "EmailAction1",
+        "show": null,
+        "staticDocList": [
+        ],
+        "useTemplate": true
+    },
+    "Type": "Email Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendCancellationNotification/Procedure/SendOrderNotificationEmail"
+}

@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "IsHardwareReplacement",
+    "OmniProcessId": {
+        "Name": "Product Change Validation Wrapper",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ProductChangesValidationWrapper/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetOrderDetails:Order:OrderType% == \"Hardware Replacement\"",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock4",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ProductChangesValidationWrapper/Procedure/IsHardwareReplacement"
+}

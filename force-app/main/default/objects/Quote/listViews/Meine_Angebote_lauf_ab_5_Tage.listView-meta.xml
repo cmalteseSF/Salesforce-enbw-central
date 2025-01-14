@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meine_Angebote_lauf_ab_5_Tage</fullName>
+    <columns>QUOTE.QUOTENUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>QUOTE.STATUS</columns>
+    <columns>MarketingPhase__c</columns>
+    <columns>SubType__c</columns>
+    <columns>QUOTE.EXPIRATIONDATE</columns>
+    <columns>vlocity_cmt__OneTimeTotal__c</columns>
+    <columns>vlocity_cmt__RecurringTotal__c</columns>
+    <columns>CONTRACT.CONTRACT_NUMBER</columns>
+    <columns>EmailSentDate__c</columns>
+    <columns>EffectiveDate__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>QUOTE.EXPIRATIONDATE</field>
+        <operation>equals</operation>
+        <value>NEXT_N_DAYS:5</value>
+    </filters>
+    <label>Meine Angebote lauf ab &lt; 5 Tage</label>
+</ListView>

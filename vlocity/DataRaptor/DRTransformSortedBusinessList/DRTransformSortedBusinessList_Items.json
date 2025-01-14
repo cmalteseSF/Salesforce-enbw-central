@@ -1,0 +1,61 @@
+[
+    {
+        "FormulaExpression": "SORTBY(LIST(%BusinessFilteredProd%),'DwnSpd','[:ASC]')",
+        "FormulaResultPath": "SortedBusinessList",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRTransformSortedBusinessListCustom0jIMU0000008Om32AEItem4",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformSortedBusinessList",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformSortedBusinessList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformSortedBusinessList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransformSortedBusinessListCustom0jIMU0000008Om32AEItem11",
+        "InputFieldName": "BusinessFilteredProd",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformSortedBusinessList",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformSortedBusinessList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformSortedBusinessList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessFilteredProd",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransformSortedBusinessListCustom0jIMU0000008Om32AEItem7",
+        "InputFieldName": "SortedBusinessList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformSortedBusinessList",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformSortedBusinessList",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformSortedBusinessList",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SortedBusinessList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

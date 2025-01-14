@@ -1,0 +1,58 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Street",
+    "OmniProcessId": {
+        "Name": "CapturePhoneNumberDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CapturePhoneNumberDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SubscriberBlock",
+        "OmniProcessId": {
+            "Name": "CapturePhoneNumberDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CapturePhoneNumberDetails/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CapturePhoneNumberDetails/German/SubscriberBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SubscriberBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "autocomplete": null,
+        "conditionType": "Hide if False",
+        "controlWidth": 9,
+        "debounceValue": 0,
+        "defaultValue": "%Quote|1:%vlocity_namespace%__DefaultServiceAccountId__r:%vlocity_namespace%__PremisesId__r:%vlocity_namespace%__StreetAddress__c%",
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Straße",
+        "mask": "",
+        "maxLength": 255,
+        "minLength": 0,
+        "pattern": "",
+        "placeholder": "",
+        "ptrnErrText": "",
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Text",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CapturePhoneNumberDetails/German/Street"
+}

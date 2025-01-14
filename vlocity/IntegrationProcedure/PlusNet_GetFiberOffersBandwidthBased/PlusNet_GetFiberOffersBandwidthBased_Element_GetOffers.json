@@ -1,0 +1,49 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetOffers",
+    "OmniProcessId": {
+        "Name": "GetFiberOffersBandwidthBased",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/GetFiberOffersBandwidthBased/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalChainableResponse": {
+        },
+        "additionalInput": {
+            "apiName": "getOffers",
+            "catalogCode": "%GetActiveCatalogs:Catalog:CatalogCode%",
+            "context": "=SERIALIZE(%SetAPIContext:contextString%)",
+            "requestURL": "/v3/catalogs/%GetActiveCatalogs:Catalog:CatalogCode%/offers?forceinvalidatecache=true"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "RemoteAction1",
+        "remoteClass": "CpqAppHandler",
+        "remoteMethod": "getOffersByCatalogCode",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "offerList",
+        "responseJSONPath": "offers",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Remote Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/GetFiberOffersBandwidthBased/Procedure/GetOffers"
+}

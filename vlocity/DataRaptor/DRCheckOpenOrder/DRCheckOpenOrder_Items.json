@@ -1,0 +1,138 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'In Progress'",
+        "GlobalKey": "DRCheckOpenOrderCustom347",
+        "InputFieldName": "%vlocity_namespace%__OrderStatus__c",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRCheckOpenOrder",
+        "OmniDataTransformationId": {
+            "Name": "DRCheckOpenOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRCheckOpenOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderDetails",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AssetDetails:AssetRefId",
+        "GlobalKey": "DRCheckOpenOrderCustom5195",
+        "InputFieldName": "AssetReferenceId__c",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRCheckOpenOrder",
+        "OmniDataTransformationId": {
+            "Name": "DRCheckOpenOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRCheckOpenOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderDetails",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "'Ready To Submit'",
+        "GlobalKey": "DRCheckOpenOrderCustom7187",
+        "InputFieldName": "%vlocity_namespace%__OrderStatus__c",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRCheckOpenOrder",
+        "OmniDataTransformationId": {
+            "Name": "DRCheckOpenOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRCheckOpenOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderDetails",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 1,
+        "FilterOperator": "=",
+        "FilterValue": "AssetDetails:AssetRefId",
+        "GlobalKey": "DRCheckOpenOrderCustom5298",
+        "InputFieldName": "AssetReferenceId__c",
+        "InputObjectName": "Order",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRCheckOpenOrder",
+        "OmniDataTransformationId": {
+            "Name": "DRCheckOpenOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRCheckOpenOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderDetails",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "COUNTQUERY(\"SELECT COUNT() FROM Order WHERE AssetReferenceId__c = '{0}' AND (%vlocity_namespace%__OrderStatus__c = 'Ready To Submit' OR %vlocity_namespace%__OrderStatus__c = 'In Progress')\", %AssetDetails:AssetRefId%)",
+        "FormulaResultPath": "NumOpenOrders",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRCheckOpenOrderCustom4749",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRCheckOpenOrder",
+        "OmniDataTransformationId": {
+            "Name": "DRCheckOpenOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRCheckOpenOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRCheckOpenOrderCustom9652",
+        "InputFieldName": "NumOpenOrders",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRCheckOpenOrder",
+        "OmniDataTransformationId": {
+            "Name": "DRCheckOpenOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRCheckOpenOrder",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NumOpenOrders",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

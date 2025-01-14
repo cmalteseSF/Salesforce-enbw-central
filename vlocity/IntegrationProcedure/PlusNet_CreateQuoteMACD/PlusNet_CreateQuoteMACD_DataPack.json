@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "PlusNet_CreateQuoteMACD_SampleInput.json",
+    "Description": "This Integration Procedure is used to create Quote for MACD processes.",
+    "DiscoveryFrameworkUsageType": "Default",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PlusNet-CreateQuoteMACD",
+    "OmniProcessElement": [
+        "PlusNet_CreateQuoteMACD_Element_CreateOpportunityRecord.json",
+        "PlusNet_CreateQuoteMACD_Element_CreateQuoteRequestData.json",
+        "PlusNet_CreateQuoteMACD_Element_CreateQuoteRecord.json",
+        "PlusNet_CreateQuoteMACD_Element_CreateQuoteResponse.json"
+    ],
+    "OmniProcessKey": "PlusNet_CreateQuoteMACD",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CreateQuoteMACD_PropertySetConfig.json",
+    "SubType": "CreateQuoteMACD",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CreateQuoteMACD/Procedure"
+}

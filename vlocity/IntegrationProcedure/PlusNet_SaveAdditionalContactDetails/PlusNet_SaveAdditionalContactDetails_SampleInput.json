@@ -1,0 +1,64 @@
+{
+    "BusinessAddress": {
+        "City": "Fürth",
+        "Country": "DE",
+        "HouseNo": "60",
+        "Id": "ccbc5909-bbf2-4946-aacb-81d2284612a7",
+        "PostalCode": "90763",
+        "State": "BY",
+        "Street": "Höfener Str."
+    },
+    "CreateNewBillingContact": true,
+    "CreateNewTechContact": "",
+    "DealerContractId": "test1",
+    "DigitalInvoice": true,
+    "DigitalInvoiceEmail": true,
+    "InvoiceEmailAddress": "test1@test.com",
+    "IsBillingEqualBusinessAddress": true,
+    "IsPrimaryEqualBillingContact": false,
+    "IsPrimaryEqualTechnicalContact": true,
+    "IsShippingEqualServiceAddress": "",
+    "Quote": {
+        "BillingAccountId": "0019M00000KMDOCQA5",
+        "BusinessAccountId": "0019M00000K3d1JQAR",
+        "BusinessAccountName": "EVOline",
+        "Id": "0Q09M000000HrKsSAK",
+        "PartnerContractId": "test1",
+        "ServiceAccountId": "0019M00000K3d1KQAR",
+        "SubDealerId": "test1",
+        "SubType": "Connection"
+    },
+    "ServiceAddress": {
+        "AddressExt": "ext",
+        "City": "Fürth",
+        "CityExt": "ext",
+        "Country": "DE",
+        "HouseNo": "60",
+        "HouseNoExt": "A",
+        "Id": "ccbc5909-bbf2-4946-aacb-81d2284612a7",
+        "PostalCode": "90763",
+        "State": "BY",
+        "Street": "Höfener Str."
+    },
+    "SiteAccessRestriction": "nein",
+    "SubDealerId": "test1",
+    "selectedBillingAddress": "",
+    "selectedBillingContact": {
+        "Company": "EVOline",
+        "Email": "wolf@test.com",
+        "FirstName": "Wolf",
+        "LastName": "Lion",
+        "Phone": "",
+        "Salutation": "Mr."
+    },
+    "selectedPrimaryContact": {
+        "Email": "lbelligoli@salesforce.com",
+        "FirstName": "Bill",
+        "Id": "0039M00000GgL7ZQAV",
+        "LastName": "Evo",
+        "Phone": "",
+        "Salutation": "Mr."
+    },
+    "selectedShippingInfo": "",
+    "selectedTechnicalContact": ""
+}

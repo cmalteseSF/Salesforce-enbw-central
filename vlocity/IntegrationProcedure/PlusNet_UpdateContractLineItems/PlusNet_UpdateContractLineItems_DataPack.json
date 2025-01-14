@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "PlusNet_UpdateContractLineItems_SampleInput.json",
+    "Description": "Used to update CLIs during a Change scenario where OrderType is HW Malfunction, HW Change, IP Change or Change of Plan",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "UpdateContractLineItems",
+    "OmniProcessElement": [
+        "PlusNet_UpdateContractLineItems_Element_GetOrder.json",
+        "PlusNet_UpdateContractLineItems_Element_GetChangedOLIs.json",
+        "PlusNet_UpdateContractLineItems_Element_MaintainCLIs.json",
+        "PlusNet_UpdateContractLineItems_Element_UpdateCLIsChangedOLIs.json",
+        "PlusNet_UpdateContractLineItems_Element_ReturnUpdateContractLineItems.json"
+    ],
+    "OmniProcessKey": "PlusNet_UpdateContractLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_UpdateContractLineItems_PropertySetConfig.json",
+    "SubType": "UpdateContractLineItems",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/UpdateContractLineItems/Procedure"
+}

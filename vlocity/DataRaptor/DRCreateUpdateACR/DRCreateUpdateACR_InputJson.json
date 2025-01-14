@@ -1,0 +1,132 @@
+{
+    "CheckOwnerOfBuilding": {
+        "Areyoutheowner": {
+            "areyouowner": null
+        },
+        "Person / Business Selection": {
+            "RadioGroup1": {
+                "PersonOrBusiness": null
+            }
+        }
+    },
+    "CollectShippingAddressInfo": {
+        "Block4": {
+        },
+        "Block5": {
+        },
+        "Messaging1": null,
+        "Messaging2": null,
+        "Messaging3": null,
+        "ShipAddressExt": null,
+        "ShipCity": null,
+        "ShipCityExt": null,
+        "ShipCompanyName": null,
+        "ShipCountry": null,
+        "ShipEMail": null,
+        "ShipFirstName": null,
+        "ShipHouseNumber": null,
+        "ShipHouseNumberExt": null,
+        "ShipLastName": null,
+        "ShipPostalCode": null,
+        "ShipSalutation": null,
+        "ShipState": null,
+        "ShipStreet": null,
+        "ShipTelephone": null
+    },
+    "Commercial Contact": {
+        "CreateNewCommercialContact": null,
+        "CustomLWC1": null,
+        "NewCommercialContact": {
+            "CommercialEmail": null,
+            "CommercialFName": null,
+            "CommercialLName": null,
+            "CommercialPhone": null,
+            "CommercialSalutation": null
+        }
+    },
+    "ContextId": null,
+    "DealerIdAndSubDealerId": {
+        "DealerContractId": null,
+        "SubDealerId": null
+    },
+    "EnterCompanyDetails": {
+        "AddressExt": null,
+        "Block1": {
+        },
+        "Block2": {
+        },
+        "City": null,
+        "CityExt": null,
+        "Company Name": null,
+        "Country": null,
+        "EMail": null,
+        "FirstName": null,
+        "HouseNumber": null,
+        "HouseNumberExt": null,
+        "IPNegaitiveResponseMsg": null,
+        "IPPositiveResponseMsg": null,
+        "IPValidateAddressMsg": null,
+        "LastName": null,
+        "PostalCode": null,
+        "Salutation": null,
+        "State": null,
+        "Street": null,
+        "Telephone": null
+    },
+    "FreeTextForServiceAccount": {
+        "TextAreaOnServiceAccount": null
+    },
+    "PreferredInvoiceCommunicationChannel": {
+        "Digitale": null,
+        "DigitaleEMail": null,
+        "EMailAdresse": null
+    },
+    "TechnicalContact": {
+        "CreateNewTechnicalContact": null,
+        "CustomLWC2": null,
+        "NewTechnicalContact": {
+            "TechnicalEmail": null,
+            "TechnicalFName": null,
+            "TechnicalLName": null,
+            "TechnicalPhone": null,
+            "TechnicalSalutation": null
+        }
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "CheckOwnerOfBuilding": null,
+        "CollectShippingAddressInfo": null,
+        "Commercial Contact": null,
+        "DRGetAllContactsOnBusinessAccount": null,
+        "DRGetBillingAccounts": null,
+        "DRGetBusinessAccount": null,
+        "DRGetServiceAccounts": null,
+        "DRSaveACRCommercial": null,
+        "DRSaveACRTechnical": null,
+        "DRSaveBusinessAccountContactDetails": null,
+        "DRSaveCommercialContact": null,
+        "DRSaveConsumerAccountContactDetails": null,
+        "DRSaveInfoOnBillingAccount": null,
+        "DRSaveShippingInfoOnServiceAccount": null,
+        "DRSaveTechnicalContact": null,
+        "DRUpdatePremiseOwner": null,
+        "DealerIdAndSubDealerId": null,
+        "EnterCompanyDetails": null,
+        "FreeTextForServiceAccount": null,
+        "IPCreateAndUpdateContract": null,
+        "PreferredInvoiceCommunicationChannel": null,
+        "SetContactColumns": null,
+        "SetPremiseValues": null,
+        "SetSelectedCommercialAndTechnicalContactRow": null,
+        "SetServiceAccounts": null,
+        "SetValues1": null,
+        "SetValues2": null,
+        "TechnicalContact": null
+    }
+}

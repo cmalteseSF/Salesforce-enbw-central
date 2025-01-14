@@ -1,0 +1,32 @@
+{
+    "CustomJavaScript": "COM_CreateAndRetrieveContacts_SampleInput.json",
+    "Description": "Used to create a Contact record and retrieve all Contacts of a given Business Account",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateAndRetrieveContacts",
+    "OmniProcessElement": [
+        "COM_CreateAndRetrieveContacts_Element_SaveAndFetchBillingContact.json",
+        "COM_CreateAndRetrieveContacts_Element_DRCreateBillingContact.json",
+        "COM_CreateAndRetrieveContacts_Element_DRGetQuoteReletedDetailsBilling.json",
+        "COM_CreateAndRetrieveContacts_Element_RA3.json",
+        "COM_CreateAndRetrieveContacts_Element_CB_SaveAndFetch.json",
+        "COM_CreateAndRetrieveContacts_Element_DRCreateContact1.json",
+        "COM_CreateAndRetrieveContacts_Element_DRGetQuoteReletedDetails.json",
+        "COM_CreateAndRetrieveContacts_Element_RA1.json",
+        "COM_CreateAndRetrieveContacts_Element_DRCreateContact2.json",
+        "COM_CreateAndRetrieveContacts_Element_RA2.json"
+    ],
+    "OmniProcessKey": "COM_CreateAndRetrieveContacts",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "COM_CreateAndRetrieveContacts_PropertySetConfig.json",
+    "SubType": "CreateAndRetrieveContacts",
+    "Type": "COM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/COM/CreateAndRetrieveContacts/Procedure"
+}

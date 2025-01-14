@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PlusNet_Submit</fullName>
+    <availability>online</availability>
+    <displayType>button</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Submit Order</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>/lightning/cmp/vlocity_cmt__vlocityLWCOmniWrapper?c__target=c:plusNetPlusNetSubmitOrderMultiLanguage&amp;c__layout=lightning&amp;c__tabIcon=custom:custom18&amp;c__tabLabel=SubmitOrder&amp;&amp;c__cartId={!Order.Id}&amp;c__OrderType={!Order.Type}&amp;c__OrderSubType={!Order.SubType__c}&amp;c__InstallationStatus={!Order.PlusNet_Installation_Status__c}&amp;c__PremiseId={!Order.PlusNet_Calc_PremiseId__c}&amp;c__OrderStatus={!Order.vlocity_cmt__OrderStatus__c}</url>
+</WebLink>

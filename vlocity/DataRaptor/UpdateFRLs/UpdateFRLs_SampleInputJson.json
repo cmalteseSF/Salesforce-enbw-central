@@ -1,0 +1,142 @@
+[
+    {
+        "FRLId": "a2P9M000000EU1RUAW",
+        "action": "add",
+        "externalId": "CS_CAC000000001166123",
+        "orderItemId": "8029M0000031g0IQAQ",
+        "pointOfNoReturn": false,
+        "serviceCharacteristic": [
+            {
+                "@type": "Characteristic",
+                "name": "oltPortId",
+                "value": "8a"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "bandwidthDown",
+                "value": "300"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "bandwidthUp",
+                "value": "100"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "oltId",
+                "value": "test"
+            }
+        ],
+        "serviceSpecificationId": "CFS_Access"
+    },
+    {
+        "FRLId": "a2P9M000000EU1SUAW",
+        "action": "add",
+        "externalId": "CS_CIP000000001167121",
+        "orderItemId": "8029M0000031g0KQAQ",
+        "pointOfNoReturn": false,
+        "serviceCharacteristic": [
+            {
+                "@type": "Characteristic",
+                "name": "subnetMask",
+                "value": "16"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "networkAddress",
+                "value": "10.0.0.1"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "addressType",
+                "value": "IPv4"
+            }
+        ],
+        "serviceSpecificationId": "CFS_IP"
+    },
+    {
+        "FRLId": "a2P9M000000EU1TUAW",
+        "action": "add",
+        "externalId": "CS_CIP000000001168129",
+        "orderItemId": "8029M0000031g0LQAQ",
+        "pointOfNoReturn": false,
+        "serviceCharacteristic": [
+            {
+                "@type": "Characteristic",
+                "name": "subnetMask",
+                "value": "16"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "networkAddress",
+                "value": "11.0.0.1"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "addressType",
+                "value": "IPv6"
+            }
+        ],
+        "serviceSpecificationId": "CFS_IP"
+    },
+    {
+        "FRLId": "a2P9M000000EU1UUAW",
+        "action": "add",
+        "externalId": "CS_CIP000000001169127",
+        "orderItemId": "8029M0000031g0MQAQ",
+        "pointOfNoReturn": false,
+        "serviceCharacteristic": [
+            {
+                "@type": "Characteristic",
+                "name": "subnetMask",
+                "value": "16"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "networkAddress",
+                "value": "12.0.1"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "addressType",
+                "value": "IPv6"
+            }
+        ],
+        "serviceSpecificationId": "CFS_IP"
+    },
+    {
+        "FRLId": "a2P9M000000EU1VUAW",
+        "action": "add",
+        "externalId": "CS_CPE000000001170125",
+        "orderItemId": "8029M0000031g0NQAQ",
+        "pointOfNoReturn": false,
+        "serviceCharacteristic": [
+            {
+                "@type": "Characteristic",
+                "name": "owner",
+                "value": "Generic"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "modell",
+                "value": "FritzBox! 5530 Fiber"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "cpeType",
+                "value": "CPE"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "manufacturer",
+                "value": "AVM"
+            },
+            {
+                "@type": "Characteristic",
+                "name": "serialNumber",
+                "value": "110012333444"
+            }
+        ],
+        "serviceSpecificationId": "CFS_CPE"
+    }
+]

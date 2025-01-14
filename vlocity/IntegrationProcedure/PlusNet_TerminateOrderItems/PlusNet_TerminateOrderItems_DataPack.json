@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Update Disconnected Date on all the OLIs given an Order Id",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "TerminateOrderItems",
+    "OmniProcessElement": [
+        "PlusNet_TerminateOrderItems_Element_GetDisconnectedOLIRefIds.json",
+        "PlusNet_TerminateOrderItems_Element_TerminateOrderItems.json",
+        "PlusNet_TerminateOrderItems_Element_TerminateOLIs.json",
+        "PlusNet_TerminateOrderItems_Element_UpdateFRLsFields.json",
+        "PlusNet_TerminateOrderItems_Element_ReturnTerminationOrderItems.json"
+    ],
+    "OmniProcessKey": "PlusNet_TerminateOrderItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_TerminateOrderItems_PropertySetConfig.json",
+    "SubType": "TerminateOrderItems",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/TerminateOrderItems/Procedure"
+}

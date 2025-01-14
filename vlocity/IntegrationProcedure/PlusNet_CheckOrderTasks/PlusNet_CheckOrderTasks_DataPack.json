@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "PlusNet_CheckOrderTasks_SampleInput.json",
+    "Description": "VIP triggered by the flow PlusNet Check Order Tasks",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Check Order Tasks",
+    "OmniProcessElement": [
+        "PlusNet_CheckOrderTasks_Element_GetOrderDetails.json",
+        "PlusNet_CheckOrderTasks_Element_FetchOrderTasks.json",
+        "PlusNet_CheckOrderTasks_Element_UpdateConnectionOrder.json",
+        "PlusNet_CheckOrderTasks_Element_UpdateConnectionOrderToProcessed.json",
+        "PlusNet_CheckOrderTasks_Element_UpdateServiceOrder.json",
+        "PlusNet_CheckOrderTasks_Element_UpdateServiceOrderToProcessed.json",
+        "PlusNet_CheckOrderTasks_Element_ResponseCheckOrderTasks.json"
+    ],
+    "OmniProcessKey": "PlusNet_CheckOrderTasks",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CheckOrderTasks_PropertySetConfig.json",
+    "SubType": "CheckOrderTasks",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CheckOrderTasks/Procedure"
+}

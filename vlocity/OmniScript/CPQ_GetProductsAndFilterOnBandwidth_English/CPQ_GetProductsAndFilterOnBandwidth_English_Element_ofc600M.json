@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ofc600M",
+    "OmniProcessId": {
+        "Name": "GetProductsAndFilterOnBandwidth",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetProductsAndFilterOnBandwidth/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CheckAndSetProducts",
+        "OmniProcessId": {
+            "Name": "GetProductsAndFilterOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/GetProductsAndFilterOnBandwidth/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetProductsAndFilterOnBandwidth/English/CheckAndSetProducts",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CheckAndSetProducts",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataType": null,
+        "dateFormat": "MM-dd-yyyy",
+        "disOnTplt": false,
+        "expression": "CONTAINS(%TransformProductListV2:filteredProducts:Name%, 'Plusnet Glasfaser Office 600M Bundle')",
+        "hide": false,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": "ofc600M",
+        "mask": null,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Formula",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/GetProductsAndFilterOnBandwidth/English/ofc600M"
+}

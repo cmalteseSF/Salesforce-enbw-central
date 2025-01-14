@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to communicate to customer that the it is not possible to proceed with the Hausanschluss order</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Quote Negative Building Decision</name>
+    <pageDevName>Quote_Negative_Building_Decision</pageDevName>
+    <relatedEntityType>Quote</relatedEntityType>
+    <style>none</style>
+    <subject>Einstellung des Glasfaserausbaus in {{{Quote.ServiceAddress__c}}} ({{{Quote.QuoteNumber}}})</subject>
+    <textOnly>Einstellung des Glasfaserausbaus in {{{Quote.ServiceAddress__c}}}
+
+Sehr geehrte Kundin, sehr geehrter Kunde,
+
+die Plusnet GmbH, eine Tochtergesellschaft der EnBW, ist als langjähriger Telekommunikationsanbieter und Infrastrukturanbieter für Geschäftskunden seit 2021 auch im bundesweiten Glasfaserausbau tätig. Dabei konzentriert sich das Unternehmen auf den eigenwirtschaftlichen Ausbau unterversorgter Gewerbegebiete bzw. Mischgebiete. Die Zielgebiete werden zuvor einer sorgfältigen Potenzialanalyse unterzogen. Anschließend geht es – wie im eigenwirtschaftlichen Glasfaserausbau üblich – in die Vorvermarktung des betreffenden Gebietes. 
+
+Finden sich im Vorfeld des Ausbaus genügend Interessenten für einen Glasfaseranschluss, so dass der Ausbau für Plusnet wirtschaftlich durchführbar ist, beginnen wir in der Regel zeitnah mit den Tiefbauarbeiten. 
+
+Leider konnten wir trotz wiederholter Bemühungen in {{{Quote.ServiceAddress__c}}} keine ausreichende Vorvermarktungsquote erreichen. Der eigenwirtschaftliche Ausbau mit moderner Glasfaserinfrastruktur ist damit für uns ökonomisch nicht vertretbar. Wir sehen uns daher gezwungen, die Ausbauaktivitäten zu beenden und uns aus dem betreffenden Gebiet zurückzuziehen. 
+
+Wir bedanken uns für Ihr Interesse an unseren Produkten und bedauern sehr, dass wir Ihren Auftrag mit der Angebotsnummer {{{Quote.QuoteNumber}}} leider nicht realisieren können.
+
+Mit partnerschaftlichen Grüßen
+
+Ihre Plusnet GmbH© 2024 Plusnet | Ein Unternehmen der EnBW
+
+Plusnet GmbH – Rudi-Conin-Straße 5a – 50829 Köln – info@plusnet.de
+
+Geschäftsführung: Ulrich Hoffmann, Robert Jelinek-Nacke, Bert Wilden
+
+Registergericht: Amtsgericht Köln – Registernummer: HRB 92510
+
+Umsatzsteuer-Identifikations-Nr. nach § 27 a des Umsatzsteuergesetzes: DE31637168 [Image alt text: youtube]  &lt; https://www.youtube.com/channel/UCVA3mmD2jvv73KCfnkKpaiA &gt;  [Image alt text: xing]  &lt; https://www.xing.com/pages/plusnetgmbh-einunternehmenderenbw &gt;  [Image alt text: linkedin]  &lt; https://www.linkedin.com/company/plusnet-gmbh &gt;  [Image alt text: facebook]  &lt; https://www.facebook.com/plusnetgmbh &gt; 
+
+Impressum &lt; https://www.plusnet.de/impressum &gt; 
+
+Datenschutz &lt; https://www.plusnet.de/datenschutz &gt; 
+
+Kontakt &lt; https://www.plusnet.de/kontakt &gt; 
+
+www.plusnet.de &lt; https://www.plusnet.de/ &gt;</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

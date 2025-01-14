@@ -1,0 +1,83 @@
+[
+    {
+        "%vlocity_namespace%__Abbreviation__c": "",
+        "%vlocity_namespace%__BooleanValue__c": false,
+        "%vlocity_namespace%__Code__c": "PNET-PKL-INT-TYP-ETH",
+        "%vlocity_namespace%__DateTimeValue__c": "",
+        "%vlocity_namespace%__DateValue__c": "",
+        "%vlocity_namespace%__EffectiveFromDate__c": "2023-01-11",
+        "%vlocity_namespace%__EffectiveUntilDate__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "d6319774-d1f6-ccea-d802-809cffd65dc3",
+        "%vlocity_namespace%__IsActive__c": true,
+        "%vlocity_namespace%__IsDefault__c": false,
+        "%vlocity_namespace%__NumberValue__c": "",
+        "%vlocity_namespace%__PicklistId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3ce21e69-c040-a293-c62a-18abbd4159f0",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Picklist__c/3ce21e69-c040-a293-c62a-18abbd4159f0",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Picklist__c"
+        },
+        "%vlocity_namespace%__Sequence__c": 3,
+        "%vlocity_namespace%__TextValue__c": "ETH",
+        "%vlocity_namespace%__UnitOfMeasureName__c": "",
+        "%vlocity_namespace%__Value__c": "ETH",
+        "Name": "ETH",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__PicklistValue__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__PicklistValue__c/d6319774-d1f6-ccea-d802-809cffd65dc3"
+    },
+    {
+        "%vlocity_namespace%__Abbreviation__c": "",
+        "%vlocity_namespace%__BooleanValue__c": false,
+        "%vlocity_namespace%__Code__c": "PNET-PKL-INT-TYP-FBR-CPE",
+        "%vlocity_namespace%__DateTimeValue__c": "",
+        "%vlocity_namespace%__DateValue__c": "",
+        "%vlocity_namespace%__EffectiveFromDate__c": "2023-09-11",
+        "%vlocity_namespace%__EffectiveUntilDate__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "3f9fbd4f-5cd7-f958-e1df-b2be15d4b6d5",
+        "%vlocity_namespace%__IsActive__c": true,
+        "%vlocity_namespace%__IsDefault__c": false,
+        "%vlocity_namespace%__NumberValue__c": "",
+        "%vlocity_namespace%__PicklistId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3ce21e69-c040-a293-c62a-18abbd4159f0",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Picklist__c/3ce21e69-c040-a293-c62a-18abbd4159f0",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Picklist__c"
+        },
+        "%vlocity_namespace%__Sequence__c": 1,
+        "%vlocity_namespace%__TextValue__c": "Fiber CPE",
+        "%vlocity_namespace%__UnitOfMeasureName__c": "",
+        "%vlocity_namespace%__Value__c": "Fiber CPE",
+        "Name": "Fiber CPE",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__PicklistValue__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__PicklistValue__c/3f9fbd4f-5cd7-f958-e1df-b2be15d4b6d5"
+    },
+    {
+        "%vlocity_namespace%__Abbreviation__c": "ONT",
+        "%vlocity_namespace%__BooleanValue__c": false,
+        "%vlocity_namespace%__Code__c": "PNET-PKL-INT-TYP-ONT",
+        "%vlocity_namespace%__DateTimeValue__c": "",
+        "%vlocity_namespace%__DateValue__c": "",
+        "%vlocity_namespace%__EffectiveFromDate__c": "2024-09-16",
+        "%vlocity_namespace%__EffectiveUntilDate__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "4bcb878a-eea7-d708-ae35-d3b73786c44d",
+        "%vlocity_namespace%__IsActive__c": true,
+        "%vlocity_namespace%__IsDefault__c": false,
+        "%vlocity_namespace%__NumberValue__c": "",
+        "%vlocity_namespace%__PicklistId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "3ce21e69-c040-a293-c62a-18abbd4159f0",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "%vlocity_namespace%__Picklist__c/3ce21e69-c040-a293-c62a-18abbd4159f0",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__Picklist__c"
+        },
+        "%vlocity_namespace%__Sequence__c": 2,
+        "%vlocity_namespace%__TextValue__c": "ONT",
+        "%vlocity_namespace%__UnitOfMeasureName__c": "",
+        "%vlocity_namespace%__Value__c": "ONT",
+        "Name": "ONT",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__PicklistValue__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__PicklistValue__c/4bcb878a-eea7-d708-ae35-d3b73786c44d"
+    }
+]

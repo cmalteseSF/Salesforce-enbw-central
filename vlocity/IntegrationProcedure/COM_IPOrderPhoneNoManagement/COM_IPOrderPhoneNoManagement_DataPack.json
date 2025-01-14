@@ -1,0 +1,24 @@
+{
+    "CustomJavaScript": "COM_IPOrderPhoneNoManagement_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "IPOrderPhoneNoManagement",
+    "OmniProcessElement": [
+        "COM_IPOrderPhoneNoManagement_Element_CB_Change.json",
+        "COM_IPOrderPhoneNoManagement_Element_DRPostOI.json",
+        "COM_IPOrderPhoneNoManagement_Element_RA1.json"
+    ],
+    "OmniProcessKey": "COM_IPOrderPhoneNoManagement",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "COM_IPOrderPhoneNoManagement_PropertySetConfig.json",
+    "SubType": "IPOrderPhoneNoManagement",
+    "Type": "COM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/COM/IPOrderPhoneNoManagement/Procedure"
+}

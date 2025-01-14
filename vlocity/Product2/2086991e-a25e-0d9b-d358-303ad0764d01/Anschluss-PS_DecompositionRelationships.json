@@ -1,0 +1,33 @@
+[
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "7016c201-5f4d-17de-40f2-3943f941fa9f",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/7016c201-5f4d-17de-40f2-3943f941fa9f",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "77793eaa-fc9a-fe3d-3765-7dc6fe030c9a",
+        "%vlocity_namespace%__MappingsData__c": "[{\"transform_mappings\":[{\"source_value\":\"300 Mbps\",\"destination_value\":\"300\"},{\"source_value\":\"600 Mbps\",\"destination_value\":\"600\"},{\"source_value\":\"1000 Mbps\",\"destination_value\":\"1000\"},{\"source_value\":\"100 Mbps\",\"destination_value\":\"100\"}],\"source_type\":\"Attribute\",\"source_attr_name\":\"Download Geschwindigkeit\",\"source_attr_code\":\"ATT-DWN-SPD\",\"mapping_type\":\"list\",\"destination_attr_name\":\"bandwidthDown\",\"destination_attr_code\":\"ATT-INT-BND-DWN\"},{\"transform_mappings\":[{\"source_value\":\"75 Mbps\",\"destination_value\":\"75\"},{\"source_value\":\"150 Mbps\",\"destination_value\":\"150\"},{\"source_value\":\"250 Mbps\",\"destination_value\":\"250\"},{\"source_value\":\"50 Mbps\",\"destination_value\":\"50\"}],\"source_type\":\"Attribute\",\"source_attr_name\":\"Upload Geschwindigkeit\",\"source_attr_code\":\"ATT-UPL-SPD\",\"mapping_type\":\"list\",\"destination_attr_name\":\"bandwidthUp\",\"destination_attr_code\":\"ATT-INT-BND-UP\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"oltId\",\"source_attr_code\":\"ATT-INT-OLT-ID\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"oltId\",\"destination_attr_code\":\"ATT-INT-OLT-ID\"},{\"source_type\":\"Attribute\",\"source_attr_name\":\"oltPortId\",\"source_attr_code\":\"ATT-INT-OLT-PRT-ID\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"oltPortId\",\"destination_attr_code\":\"ATT-INT-OLT-PRT-ID\"},{\"source_type\":\"Field\",\"source_field_name\":\"Order.Contract.ContractNumber\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"sfContractNumber\",\"destination_attr_code\":\"ATT-SF-CNT-NUM\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "2086991e-a25e-0d9b-d358-303ad0764d01",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/2086991e-a25e-0d9b-d358-303ad0764d01",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "2086991e-a25e-0d9b-d358-303ad0764d01",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "Name": "Anschluss PS Decomposes to CFS Access",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/Anschluss PS Decomposes to CFS Access/Product2/2086991e-a25e-0d9b-d358-303ad0764d01"
+    }
+]

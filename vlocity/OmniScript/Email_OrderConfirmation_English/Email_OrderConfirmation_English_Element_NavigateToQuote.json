@@ -1,0 +1,53 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigateToQuote",
+    "OmniProcessId": {
+        "Name": "SendOrderConfirmationEmail",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Email/OrderConfirmation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": "NavigateToQuote",
+        "loginAction": "login",
+        "message": {
+        },
+        "objectAction": "home",
+        "pubsub": false,
+        "recordAction": "view",
+        "replace": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "Presented",
+                        "field": "QuoteStatus"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%QuoteId%",
+        "targetLWCLayout": "lightning",
+        "targetName": "Quote",
+        "targetType": "Record",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Email/OrderConfirmation/English/NavigateToQuote"
+}

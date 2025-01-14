@@ -1,0 +1,57 @@
+{
+    "Description": "Create/Update Billing Account with billing and invoice details",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRCreateUpdateBillingAccount",
+    "OmniProcessId": {
+        "Name": "SaveAdditionalInformation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SaveAdditionalInformation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountId": "%BillingAccount:Id%",
+            "AddressExt": "%BillingAccount:AddressExt%",
+            "BillingAccountRT": "%DRGetRecordTypeDetails:BillingAccountRTId%",
+            "BusinessAccountName": "%BusinessAccountName%",
+            "City": "%BillingAccount:City%",
+            "CityExt": "%BillingAccount:CityExt%",
+            "Country": "%BillingAccount:Country%",
+            "DigitalInvoice": "%DigitalInvoice%",
+            "DigitalInvoiceEmail": "%DigitalInvoiceEmail%",
+            "HouseNo": "%BillingAccount:HouseNo%",
+            "HouseNoExt": "%BillingAccount:HouseNoExt%",
+            "InvoiceEmailAddress": "%InvoiceEmailAddress%",
+            "ParentAccountId": "%BusinessAccountId%",
+            "PostalCode": "%BillingAccount:PostalCode%",
+            "State": "%BillingAccount:State%",
+            "Street": "%BillingAccount:Street%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRCreateUpdateBillingAccount",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction8",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SaveAdditionalInformation/Procedure/DRCreateUpdateBillingAccount"
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SyncBilling__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to identify if a product has to be synchronized with the Billing system</description>
+    <externalId>false</externalId>
+    <label>Sync Billing</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

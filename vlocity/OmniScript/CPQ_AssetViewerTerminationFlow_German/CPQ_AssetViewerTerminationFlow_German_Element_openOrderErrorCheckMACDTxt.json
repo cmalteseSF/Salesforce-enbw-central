@@ -1,0 +1,50 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "openOrderErrorCheckMACDTxt",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Termination Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerTerminationFlow/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TerminationOrderValidation",
+        "OmniProcessId": {
+            "Name": "Asset Viewer Termination Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerTerminationFlow/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerTerminationFlow/German/TerminationOrderValidation",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TerminationOrderValidation",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock1",
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": ">",
+                        "data": "0",
+                        "field": "NumOpenOrders"
+                    }
+                ]
+            }
+        },
+        "text": "<p><span style=\"color: #000000;\">Leider kann der Auftrag nicht erstellt werden, da es bereits andere offene Auftr&auml;ge f&uuml;r dieselbe Anlage gibt.</span></p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerTerminationFlow/German/openOrderErrorCheckMACDTxt"
+}

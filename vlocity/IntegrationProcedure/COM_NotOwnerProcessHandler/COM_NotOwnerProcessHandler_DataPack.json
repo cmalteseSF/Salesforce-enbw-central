@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "NotOwnerProcessHandler",
+    "OmniProcessElement": [
+        "COM_NotOwnerProcessHandler_Element_DRGetAccountDetails.json",
+        "COM_NotOwnerProcessHandler_Element_CB_OwnerAlreadyExists.json",
+        "COM_NotOwnerProcessHandler_Element_SPRICheckAndCreateQuote1.json",
+        "COM_NotOwnerProcessHandler_Element_RA1.json",
+        "COM_NotOwnerProcessHandler_Element_CB_OwnerNotExists.json",
+        "COM_NotOwnerProcessHandler_Element_DRCreateAccountOwnerRecords.json",
+        "COM_NotOwnerProcessHandler_Element_SPRICheckAndCreateQuote2.json",
+        "COM_NotOwnerProcessHandler_Element_RA2.json"
+    ],
+    "OmniProcessKey": "COM_NotOwnerProcessHandler",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "COM_NotOwnerProcessHandler_PropertySetConfig.json",
+    "SubType": "NotOwnerProcessHandler",
+    "Type": "COM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/COM/NotOwnerProcessHandler/Procedure"
+}

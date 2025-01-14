@@ -1,0 +1,23 @@
+{
+    "Description": "If a negative decision is registered, the Connection Quote will be canceled together with all the Service QUotes at that Premise.",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NegativeDecision",
+    "OmniProcessId": {
+        "Name": "UpsertQuoteBasedOnMarketingPhase",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/UpsertQuoteBasedOnMarketingPhase/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%ConstructionArea% == 'No'",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock5",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/UpsertQuoteBasedOnMarketingPhase/Procedure/NegativeDecision"
+}

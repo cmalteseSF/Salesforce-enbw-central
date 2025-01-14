@@ -1,0 +1,72 @@
+{
+    "BillingAccount": {
+        "AddressExt": "1",
+        "City": "OF",
+        "CityExt": "OF",
+        "Country": "DE",
+        "HouseNo": "1",
+        "HouseNoExt": "1",
+        "Id": "001MU0000074Q4qYAE",
+        "Name": "Sudhir test1009 - Billing  - OF",
+        "PostalCode": "1234",
+        "State": "BW",
+        "Street": "qwer"
+    },
+    "BillingContact": {
+        "Email": "stkbilling@gmail.com",
+        "FirstName": "Sudhir",
+        "Id": "003MU000002m0xBYAQ",
+        "LastName": "BillingAcc",
+        "Phone": "23456",
+        "Salutation": "Mr."
+    },
+    "BusinessAccountId": "001MU0000074Q4oYAE",
+    "BusinessAccountName": "Sudhir test1009",
+    "CommContact": {
+        "Email": "test1009@gmail.com",
+        "FirstName": "Sudhir",
+        "Id": "003MU000002loXlYAI",
+        "LastName": "test1009",
+        "Phone": "",
+        "Salutation": "Mr."
+    },
+    "CreateNewBillingContact": false,
+    "CreateNewCommContact": false,
+    "CreateNewTechContact": false,
+    "DealerContractId": "242789",
+    "DigitalInvoice": true,
+    "DigitalInvoiceEmail": false,
+    "InvoiceEmailAddress": "",
+    "QuoteId": "0Q0MU00000008O30AI",
+    "ServiceAccountId": "001MU0000074Q4pYAE",
+    "ShippingAddressDetails": {
+        "IPNegativeResponseMsg": null,
+        "IPPositiveResponseMsg": true,
+        "IPValidateAddressMsg": true,
+        "ShippingCity": "OF",
+        "ShippingCityExt": "OF",
+        "ShippingContactCompany": "Sudhir test1009",
+        "ShippingContactEmail": "test1080@gmail.com",
+        "ShippingContactFirstName": "stk",
+        "ShippingContactLastName": "test1080",
+        "ShippingContactPhone": "234535",
+        "ShippingContactSalutation": "Mr.",
+        "ShippingCountry": "DE",
+        "ShippingCountryStateFormula": false,
+        "ShippingHouseNo": "1",
+        "ShippingPostalCode": "2345",
+        "ShippingState": "HB",
+        "ShippingStateCountryMsg": true,
+        "ShippingStreet": "Mühlheimer Straße"
+    },
+    "SiteAccessRestriction": "sfd",
+    "SubDealerId": "12345690876",
+    "TechContact": {
+        "Email": "test1009@gmail.com",
+        "FirstName": "Sudhir",
+        "Id": "003MU000002loXlYAI",
+        "LastName": "test1009",
+        "Phone": "",
+        "Salutation": "Mr."
+    }
+}

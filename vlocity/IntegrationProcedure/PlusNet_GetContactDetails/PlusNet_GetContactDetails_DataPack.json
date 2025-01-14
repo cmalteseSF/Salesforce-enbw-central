@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "PlusNet_GetContactDetails_SampleInput.json",
+    "Description": "Used to retrieve Contact Details for MACD processes",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Contact Details",
+    "OmniProcessElement": [
+        "PlusNet_GetContactDetails_Element_GetACR.json",
+        "PlusNet_GetContactDetails_Element_GetContactDetails.json",
+        "PlusNet_GetContactDetails_Element_ReturnGetContactDetails.json"
+    ],
+    "OmniProcessKey": "PlusNet_GetContactDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_GetContactDetails_PropertySetConfig.json",
+    "SubType": "GetContactDetails",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/GetContactDetails/Procedure"
+}

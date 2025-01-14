@@ -1,0 +1,24 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "DecryptionUtil",
+    "OmniProcessElement": [
+        "PlusNet_DecryptionUtil_Element_GetEncryptionKey.json",
+        "PlusNet_DecryptionUtil_Element_DecryptKey.json",
+        "PlusNet_DecryptionUtil_Element_ReturnDecryptionUtil.json"
+    ],
+    "OmniProcessKey": "PlusNet_DecryptionUtil",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_DecryptionUtil_PropertySetConfig.json",
+    "SubType": "DecryptionUtil",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/DecryptionUtil/Procedure"
+}

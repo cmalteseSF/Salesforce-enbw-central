@@ -1,0 +1,63 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SPRICheckAndCreateQuote",
+    "OmniProcessId": {
+        "Name": "OwnerProcessHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/OwnerProcessHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ActiveHouseConnectionAsset": "%ActiveHouseConnectionAsset%",
+            "BusinessOwnerId": "%Opportunity:AccountId%",
+            "ConnectionOppName": "%Opportunity:Account:Name% - Anbindung",
+            "ConnectionQuoteAccountId": "%Opportunity:AccountId%",
+            "ConnectionQuoteAccountName": "%Opportunity:Account:Name%",
+            "ConnectionQuoteContactId": "%Opportunity:ContactId%",
+            "ConnectionQuoteOnPremise": "%ConnectionQuoteOnPremise%",
+            "HouseProdSelected": "%HouseProdSelected%",
+            "MarketingPhase": "%MarketingPhase%",
+            "OfficeProdSelected": "%OfficeProdSelected%",
+            "Opportunity": "%Opportunity%",
+            "PremiseId": "%PremiseId%",
+            "PriceListId": "%PriceListId%",
+            "SPRIStatus": "%SPRIStatus%",
+            "SelectedAddress": "%SelectedAddress%",
+            "ServiceAccountId": "%ServiceAccountId%",
+            "ServiceQuoteAccountName": "%Opportunity:Account:Name%",
+            "StandardQuoteRTId": "%StandardQuoteRTId%",
+            "houseConnectionId": "%houseConnectionId%",
+            "items": "%items%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "COM_SPRICheck",
+        "label": "IntegrationProcedureAction1",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/OwnerProcessHandler/Procedure/SPRICheckAndCreateQuote"
+}

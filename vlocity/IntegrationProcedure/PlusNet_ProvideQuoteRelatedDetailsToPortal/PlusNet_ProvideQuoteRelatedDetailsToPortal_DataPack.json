@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "PlusNet_ProvideQuoteRelatedDetailsToPortal_SampleInput.json",
+    "Description": "IP exposed as REST Endpoint. Used to provide Quote and related details to Plusnet Portal.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ProvideQuoteRelatedDetailsToPortal",
+    "OmniProcessElement": [
+        "PlusNet_ProvideQuoteRelatedDetailsToPortal_Element_GetDecryptedDataTryCatch.json",
+        "PlusNet_ProvideQuoteRelatedDetailsToPortal_Element_GetDecryptedData.json",
+        "PlusNet_ProvideQuoteRelatedDetailsToPortal_Element_GetQuoteRelatedDetailsTryCatch.json",
+        "PlusNet_ProvideQuoteRelatedDetailsToPortal_Element_GetQuoteRelatedDetails.json",
+        "PlusNet_ProvideQuoteRelatedDetailsToPortal_Element_TransformPortalPayload.json",
+        "PlusNet_ProvideQuoteRelatedDetailsToPortal_Element_ReturnProvideQuoteRelatedDetailsToPortal.json"
+    ],
+    "OmniProcessKey": "PlusNet_ProvideQuoteRelatedDetailsToPortal",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ProvideQuoteRelatedDetailsToPortal_PropertySetConfig.json",
+    "SubType": "ProvideQuoteRelatedDetailsToPortal",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ProvideQuoteRelatedDetailsToPortal/Procedure"
+}

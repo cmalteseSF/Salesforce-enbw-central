@@ -1,0 +1,33 @@
+{
+    "CustomJavaScript": "PlusNet_SendOrderToComarch_SampleInput.json",
+    "Description": "Changed the condition on GetFRLAccess and UpdateFRLProvisionStatus to only work for Termination.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Send Order To Comarch",
+    "OmniProcessElement": [
+        "PlusNet_SendOrderToComarch_Element_GetOrderDetails.json",
+        "PlusNet_SendOrderToComarch_Element_GetComarchIntegrationTask.json",
+        "PlusNet_SendOrderToComarch_Element_ActivationOrder.json",
+        "PlusNet_SendOrderToComarch_Element_SendOrderActivation.json",
+        "PlusNet_SendOrderToComarch_Element_TerminationOrder.json",
+        "PlusNet_SendOrderToComarch_Element_SendOrderTermination.json",
+        "PlusNet_SendOrderToComarch_Element_CreateComarchIntegrationTask.json",
+        "PlusNet_SendOrderToComarch_Element_CloseComarchIntegrationTask.json",
+        "PlusNet_SendOrderToComarch_Element_GetFRLAccess.json",
+        "PlusNet_SendOrderToComarch_Element_UpdateFRLProvisionStatus.json",
+        "PlusNet_SendOrderToComarch_Element_ReturnSendOrderToComarch.json"
+    ],
+    "OmniProcessKey": "PlusNet_SendOrderToComarch",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SendOrderToComarch_PropertySetConfig.json",
+    "SubType": "SendOrderToComarch",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SendOrderToComarch/Procedure"
+}

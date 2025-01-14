@@ -1,0 +1,31 @@
+{
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "German",
+    "Name": "GetATPDetails",
+    "OmniProcessElement": [
+        "PlusNet_GetATPDetails_German_Element_GetBillingTask.json",
+        "PlusNet_GetATPDetails_German_Element_Return.json",
+        "PlusNet_GetATPDetails_German_Element_NavigateAction2.json",
+        "PlusNet_GetATPDetails_German_Element_ATPIntegration.json",
+        "PlusNet_GetATPDetails_German_Element_ATPIntegrationNOK.json",
+        "PlusNet_GetATPDetails_German_Element_TextBlock2.json",
+        "PlusNet_GetATPDetails_German_Element_Block2.json",
+        "PlusNet_GetATPDetails_German_Element_NavigateToOrder.json",
+        "PlusNet_GetATPDetails_German_Element_ATPIntegrationOK.json",
+        "PlusNet_GetATPDetails_German_Element_TextBlock1.json",
+        "PlusNet_GetATPDetails_German_Element_Block1.json",
+        "PlusNet_GetATPDetails_German_Element_NavigateAction1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "PlusNet_GetATPDetails_German_PropertySetConfig.json",
+    "SubType": "GetATPDetails",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/GetATPDetails/German"
+}

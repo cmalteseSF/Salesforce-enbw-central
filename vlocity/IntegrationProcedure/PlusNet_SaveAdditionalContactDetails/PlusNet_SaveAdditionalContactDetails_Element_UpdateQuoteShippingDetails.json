@@ -1,0 +1,70 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateQuoteShippingDetails",
+    "OmniProcessId": {
+        "Name": "SaveAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ShippingAddressForServiceQuote",
+        "OmniProcessId": {
+            "Name": "SaveAdditionalContactDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure/ShippingAddressForServiceQuote",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ShippingAddressForServiceQuote",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Id": "%Quote:Id%",
+            "ShippingAddressExt": "=IF(%IsShippingEqualServiceAddress% == true, %ServiceAddress:AddressExt%, %selectedShippingInfo:AddressExt%)",
+            "ShippingAddressId": "=IF(%IsShippingEqualServiceAddress% == true, %ServiceAddress:Id%, %selectedShippingInfo:AddressId%)",
+            "ShippingCity": "=IF(%IsShippingEqualServiceAddress% == true, %ServiceAddress:City%, %selectedShippingInfo:City%)",
+            "ShippingCityExt": "=IF(%IsShippingEqualServiceAddress% == true, %ServiceAddress:CityExt%, %selectedShippingInfo:CityExt%)",
+            "ShippingCountry": "=IF(%IsShippingEqualServiceAddress% == true, %ServiceAddress:Country%, %selectedShippingInfo:Country%)",
+            "ShippingHouseNo": "=IF(%IsShippingEqualServiceAddress% == true, %ServiceAddress:HouseNo%, %selectedShippingInfo:HouseNo%)",
+            "ShippingHouseNoExt": "=IF(%IsShippingEqualServiceAddress% == true, %ServiceAddress:HouseNoExt%, %selectedShippingInfo:HouseNoExt%)",
+            "ShippingPostalCode": "=IF(%IsShippingEqualServiceAddress% == true, %ServiceAddress:PostalCode%, %selectedShippingInfo:PostalCode%)",
+            "ShippingState": "=IF(%IsShippingEqualServiceAddress% == true, %ServiceAddress:State%, %selectedShippingInfo:State%)",
+            "ShippingStreet": "=IF(%IsShippingEqualServiceAddress% == true, %ServiceAddress:Street%, %selectedShippingInfo:Street%)",
+            "ShippingTo": {
+                "ShippingCompany": "%selectedShippingInfo:Company%",
+                "ShippingEmail": "%selectedShippingInfo:Email%",
+                "ShippingName": "%selectedShippingInfo:Name%"
+            }
+        },
+        "additionalOutput": {
+        },
+        "bundle": "UpdateQuoteShippingAddress",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction8",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SaveAdditionalContactDetails/Procedure/UpdateQuoteShippingDetails"
+}

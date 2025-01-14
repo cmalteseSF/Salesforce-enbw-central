@@ -1,0 +1,95 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "EmailAction2",
+    "OmniProcessId": {
+        "Name": "SendOrderConfirmationEmail",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Email/OrderConfirmation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "OrgWideEmailAddress": "klaus.dey@plusnet.de",
+        "attachmentList": "%CDL:ContentDocumentId%",
+        "businessCategory": "",
+        "businessEvent": "",
+        "contentVersionList": "",
+        "controlWidth": 12,
+        "docList": "",
+        "emailInformation": {
+            "bccAddressList": [
+            ],
+            "ccAddressList": [
+            ],
+            "emailBody": "Neue unverbindliche Preisindikation (%Quote:QuoteNumber%)\n\nLieber Kunde,\n\nvielen Dank für Ihr Interesse an unseren Produkten. Eine neue, unverbindliche freibleibende Preisindikation wurde durch Ihren Vertriebspartner erstellt. Die Preisindikation finden Sie im Anhang dieser Mail. Gerne erstellen wir Ihnen ein individuelles Angebot.\n\nVertriebspartner: Plusnet GmbH\nHändler-ID: 1560\nRudi-Conin-Str. 5a, 50829 Köln \n\nBenutzer, der die Preisindikation erstellt hat: %Quote:QuoteOwner__c%\nPreisindikationnummer: %Quote:QuoteNumber%\n\nDokumente:\nPreisliste Plusnet® Glasfaser Office\nLeistungsbeschreibung Plusnet® Glasfaser Hausanschluss\nLeistungsbeschreibung Plusnet® Glasfaser Office \nTK-Transparenzverordnung - Informationsblatt zu Messmöglichkeiten der Bandbreite\nAllgemeine Geschäftsbedingungen \nMit freundlichen Grüßen\nPlusnet GmbH",
+            "emailSubject": "Neue unverbindliche Preisindikation %Quote:QuoteNumber%",
+            "setHtmlBody": false,
+            "toAddressList": [
+                "%Contact:Email%"
+            ]
+        },
+        "emailTemplateInformation": {
+            "emailTargetObjectId": "%AccContactId%",
+            "emailTemplateName": "Angebot_Order_Confirmation_PreMarketing_1694695450289",
+            "saveAsActivity": false,
+            "whatId": "%ContextId%"
+        },
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "fileAttachments": "",
+        "inProgressMessage": "In Progress",
+        "label": "EmailAction1",
+        "message": {
+        },
+        "postMessage": "Done",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteTimeout": 30000,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Vorvermarktungsphase",
+                        "field": "MarketingPhase"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "Presented",
+                        "field": "QuoteStatus"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "staticDocList": [
+        ],
+        "useTemplate": true,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Email Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Email/OrderConfirmation/English/EmailAction2"
+}

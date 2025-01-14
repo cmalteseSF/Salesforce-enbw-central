@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "PlusNet_UpsertQuoteBasedOnMarketingPhase_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "UpsertQuoteBasedOnMarketingPhase",
+    "OmniProcessElement": [
+        "PlusNet_UpsertQuoteBasedOnMarketingPhase_Element_GetQuoteDetails.json",
+        "PlusNet_UpsertQuoteBasedOnMarketingPhase_Element_PositiveConnectionDecision.json",
+        "PlusNet_UpsertQuoteBasedOnMarketingPhase_Element_CreateOrder.json",
+        "PlusNet_UpsertQuoteBasedOnMarketingPhase_Element_UpdateConnectionContractStatus.json",
+        "PlusNet_UpsertQuoteBasedOnMarketingPhase_Element_ReturnConnectionDecision.json",
+        "PlusNet_UpsertQuoteBasedOnMarketingPhase_Element_NegativeDecision.json",
+        "PlusNet_UpsertQuoteBasedOnMarketingPhase_Element_CancelQuote.json",
+        "PlusNet_UpsertQuoteBasedOnMarketingPhase_Element_ReturnNegativeDecision.json",
+        "PlusNet_UpsertQuoteBasedOnMarketingPhase_Element_UpdateContractStatus.json"
+    ],
+    "OmniProcessKey": "PlusNet_UpsertQuoteBasedOnMarketingPhase",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_UpsertQuoteBasedOnMarketingPhase_PropertySetConfig.json",
+    "SubType": "UpsertQuoteBasedOnMarketingPhase",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/UpsertQuoteBasedOnMarketingPhase/Procedure"
+}

@@ -1,0 +1,152 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "PremiseId",
+        "GlobalKey": "PLusNet_GetActiveConnectionCustom938",
+        "InputFieldName": "%vlocity_namespace%__PremisesId__r.Id",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PLusNet_GetActiveConnection",
+        "OmniDataTransformationId": {
+            "Name": "PLusNet_GetActiveConnection",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PLusNet_GetActiveConnection",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Active'",
+        "GlobalKey": "PLusNet_GetActiveConnectionCustom4230",
+        "InputFieldName": "%vlocity_namespace%__ProvisioningStatus__c",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PLusNet_GetActiveConnection",
+        "OmniDataTransformationId": {
+            "Name": "PLusNet_GetActiveConnection",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PLusNet_GetActiveConnection",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'PNET-HOU'",
+        "GlobalKey": "PLusNet_GetActiveConnectionCustom6272",
+        "InputFieldName": "ProductCode",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PLusNet_GetActiveConnection",
+        "OmniDataTransformationId": {
+            "Name": "PLusNet_GetActiveConnection",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PLusNet_GetActiveConnection",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Asset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "COUNTQUERY(\"SELECT COUNT() FROM asset where %vlocity_namespace%__PremisesId__r.Id = '{0}' AND %vlocity_namespace%__ProvisioningStatus__c = 'Active' AND ProductCode = 'PNET-HOU'\",%PremiseId%)",
+        "FormulaResultPath": "CountActiveConnection",
+        "FormulaSequence": 1,
+        "GlobalKey": "PLusNet_GetActiveConnectionCustom2043",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PLusNet_GetActiveConnection",
+        "OmniDataTransformationId": {
+            "Name": "PLusNet_GetActiveConnection",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PLusNet_GetActiveConnection",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PLusNet_GetActiveConnectionCustom6957",
+        "InputFieldName": "Asset:%vlocity_namespace%__AssetReferenceId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PLusNet_GetActiveConnection",
+        "OmniDataTransformationId": {
+            "Name": "PLusNet_GetActiveConnection",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PLusNet_GetActiveConnection",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:AssetRefId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PLusNet_GetActiveConnectionCustom8303",
+        "InputFieldName": "Asset:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PLusNet_GetActiveConnection",
+        "OmniDataTransformationId": {
+            "Name": "PLusNet_GetActiveConnection",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PLusNet_GetActiveConnection",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PLusNet_GetActiveConnectionCustom1134",
+        "InputFieldName": "CountActiveConnection",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PLusNet_GetActiveConnection",
+        "OmniDataTransformationId": {
+            "Name": "PLusNet_GetActiveConnection",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PLusNet_GetActiveConnection",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CountActiveConnection",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

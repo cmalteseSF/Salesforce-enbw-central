@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Terminate Contract",
+    "OmniProcessElement": [
+        "PlusNet_TerminateContract_Element_GetActiveContractLineItems.json",
+        "PlusNet_TerminateContract_Element_InDeactivateContract.json",
+        "PlusNet_TerminateContract_Element_DeactivateContract.json",
+        "PlusNet_TerminateContract_Element_ResponseTerminateContract.json"
+    ],
+    "OmniProcessKey": "PlusNet_TerminateContract",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_TerminateContract_PropertySetConfig.json",
+    "SubType": "TerminateContract",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/TerminateContract/Procedure"
+}

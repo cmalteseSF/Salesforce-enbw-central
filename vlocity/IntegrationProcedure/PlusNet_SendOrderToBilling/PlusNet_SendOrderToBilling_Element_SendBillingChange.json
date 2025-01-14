@@ -1,0 +1,74 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SendBillingChange",
+    "OmniProcessId": {
+        "Name": "Send Order To Billing",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderToBilling/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TryBillingChange",
+        "OmniProcessId": {
+            "Name": "Send Order To Billing",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderToBilling/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderToBilling/Procedure/TryBillingChange",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TryBillingChange",
+    "ParentElementType": "Try Catch Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "orderId": "%orderId%",
+            "orderType": "Change"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "ISBLANK(%message%) || %message% == \"Error\"",
+        "failureResponse": {
+        },
+        "label": "HTTPAction4",
+        "namedCredential": "Billing",
+        "postActionLogging": "",
+        "preActionLogging": "%endpoint%",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "restMethod": "POST",
+        "restOptions": {
+            "clientCertificateName": "",
+            "headers": {
+                "Content-Type": "application/json; charset=UTF-8"
+            },
+            "isCompressed": false,
+            "params": {
+            },
+            "sendBody": true,
+            "timeout": 0,
+            "xmlEscapeResponse": false
+        },
+        "restPath": "",
+        "retryCount": 0,
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "type": "Integration",
+        "useFormulas": true
+    },
+    "Type": "Rest Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderToBilling/Procedure/SendBillingChange"
+}

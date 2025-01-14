@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsServiceAddressValid__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>Used to keep track of the Service Address validation</description>
+    <externalId>false</externalId>
+    <label>Is Service Address Valid</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

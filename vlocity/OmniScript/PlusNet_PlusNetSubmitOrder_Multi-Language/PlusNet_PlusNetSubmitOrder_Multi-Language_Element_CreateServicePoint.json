@@ -1,0 +1,114 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateServicePoint",
+    "OmniProcessId": {
+        "Name": "PlusNet Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/PlusNetSubmitOrder/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "extraPayload": {
+            "OrderId": "%ContextId%"
+        },
+        "failureAbortLabel": "",
+        "failureAbortMessage": "",
+        "failureGoBackLabel": "",
+        "failureNextLabel": "",
+        "inProgressMessage": "",
+        "integrationProcedureKey": "PlusNet_CreateServicePoint",
+        "label": "",
+        "message": {
+        },
+        "postMessage": "",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": "",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteOptions": {
+            "chainable": false,
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "useFuture": false
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyExtraPayload": true,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "canSubmitOrder:canSubmitOrder"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "INFO",
+                        "field": "createAccountDiscounts:messages|1:severity"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "canSubmitOrder:isOrderProductPresent"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "SERVICE_NOK",
+                        "field": "ValidationRetCode"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "CONNECTION_NOK",
+                        "field": "ValidationRetCode"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "ORDER_NOK",
+                        "field": "ValidationRetCode"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "Activation",
+                        "field": "OrderType"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/PlusNetSubmitOrder/Multi-Language/CreateServicePoint"
+}

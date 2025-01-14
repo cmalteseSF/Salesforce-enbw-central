@@ -1,0 +1,27 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TryCatchServiceAvailabilityCheck",
+    "OmniProcessId": {
+        "Name": "ServiceAvailabilityCheck",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ServiceAvailabilityCheck/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnBlockError": true,
+        "failureResponse": {
+            "error": "%ServiceAvailabilityCheck%"
+        },
+        "label": "TryCatchBlock1",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "show": null
+    },
+    "Type": "Try Catch Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ServiceAvailabilityCheck/Procedure/TryCatchServiceAvailabilityCheck"
+}

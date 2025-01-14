@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ServiceAndConnectionQuote",
+    "OmniProcessId": {
+        "Name": "SPRICheckAndCreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SPRICheck/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "(%HouseProdSelected% == 'true' && %OfficeProdSelected% == 'true' && %ActiveHouseConnectionAsset% == 'false' && %ConnectionQuoteOnPremise% == 'false' && %SPRIStatus% != \"homesPrepared\") OR (%HouseProdSelected% == 'true' && %OfficeProdSelected% == 'true' && %ActiveHouseConnectionAsset% == 'false' && %ConnectionQuoteOnPremise% == 'false' && %SPRIStatus% != \"homesReady\") OR (%HouseProdSelected% == 'true' && %OfficeProdSelected% == 'true' && %ActiveHouseConnectionAsset% == 'false' && %ConnectionQuoteOnPremise% == 'false' && %SPRIStatus% != \"homesConnected\")",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock3",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SPRICheck/Procedure/ServiceAndConnectionQuote"
+}

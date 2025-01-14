@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "COM_IPCreateAndUpdateContractOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "IPCreateAndUpdateContractOrder",
+    "OmniProcessElement": [
+        "COM_IPCreateAndUpdateContractOrder_Element_DRGetContractInfoFromQuote.json",
+        "COM_IPCreateAndUpdateContractOrder_Element_CB_Yes.json",
+        "COM_IPCreateAndUpdateContractOrder_Element_RACreateOrder.json",
+        "COM_IPCreateAndUpdateContractOrder_Element_DRUpdateOrderContractNo.json",
+        "COM_IPCreateAndUpdateContractOrder_Element_CancelServiceQuote.json",
+        "COM_IPCreateAndUpdateContractOrder_Element_DRUpdateContractStatus.json",
+        "COM_IPCreateAndUpdateContractOrder_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "COM_IPCreateAndUpdateContractOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "COM_IPCreateAndUpdateContractOrder_PropertySetConfig.json",
+    "SubType": "IPCreateAndUpdateContractOrder",
+    "Type": "COM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/COM/IPCreateAndUpdateContractOrder/Procedure"
+}

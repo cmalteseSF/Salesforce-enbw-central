@@ -1,0 +1,25 @@
+{
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "German",
+    "Name": "AreaConstructionDecision",
+    "OmniProcessElement": [
+        "PlusNet_AreaConstructionDecision_German_Element_ConstructionDecision.json",
+        "PlusNet_AreaConstructionDecision_German_Element_ConstructionArea.json",
+        "PlusNet_AreaConstructionDecision_German_Element_DecisionHandler.json",
+        "PlusNet_AreaConstructionDecision_German_Element_CloseContructionDecisionTask.json",
+        "PlusNet_AreaConstructionDecision_German_Element_NavigatetoOrder.json",
+        "PlusNet_AreaConstructionDecision_German_Element_NavigatetoQuote.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "PlusNet_AreaConstructionDecision_German_PropertySetConfig.json",
+    "SubType": "AreaConstructionDecision",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/AreaConstructionDecision/German"
+}

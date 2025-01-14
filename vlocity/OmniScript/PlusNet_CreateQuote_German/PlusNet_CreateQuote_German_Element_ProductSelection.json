@@ -1,0 +1,65 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ProductSelection",
+    "OmniProcessId": {
+        "Name": "CreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": false,
+        "businessCategory": "",
+        "businessEvent": "",
+        "cancelLabel": "",
+        "cancelMessage": "",
+        "chartLabel": null,
+        "completeLabel": "",
+        "completeMessage": "",
+        "conditionType": "Hide if False",
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "instruction": "<p>Bitte w&auml;hlen Sie das Produkt aus, welches Sie<br />anbieten m&ouml;chten. Der Hausanschluss kann<br />nur dem Eigent&uuml;mer angeboten werden!<br />Wenn Sie ein Dienstprodukt anbieten, muss<br />kein zus&auml;tzlicher Hausanschluss<br />ausgew&auml;hlt werden. Hierzu wird, zu einem<br />sp&auml;teren Zeitpunkt, automatisch ein<br />Prozess gestartet.</p>",
+        "instructionKey": "",
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "Produktauswahl",
+        "message": {
+        },
+        "nextLabel": "Weiter",
+        "nextWidth": 3,
+        "previousLabel": "Zurück",
+        "previousWidth": "3",
+        "pubsub": false,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": "",
+        "saveMessage": "",
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": true,
+        "wpm": false
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuote/German/ProductSelection"
+}

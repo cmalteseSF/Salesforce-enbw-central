@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "PlusNet_SendOrderNotification_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "PlusNet SendOrderNotification",
+    "OmniProcessElement": [
+        "PlusNet_SendOrderNotification_Element_GetOrder.json",
+        "PlusNet_SendOrderNotification_Element_GetNotificationData.json",
+        "PlusNet_SendOrderNotification_Element_GetEmailTemplate.json",
+        "PlusNet_SendOrderNotification_Element_SendEmail.json",
+        "PlusNet_SendOrderNotification_Element_SendOrderNotificationEmail.json",
+        "PlusNet_SendOrderNotification_Element_SendNotificationResponse.json"
+    ],
+    "OmniProcessKey": "PlusNet_SendOrderNotification",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SendOrderNotification_PropertySetConfig.json",
+    "SubType": "SendOrderNotification",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SendOrderNotification/Procedure"
+}

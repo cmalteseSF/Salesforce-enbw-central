@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ServiceAddress__c</fullName>
+    <externalId>false</externalId>
+    <formula>ServiceStreet__c + &apos; &apos; + ServiceHouseNo__c + IF(ISNULL(ServiceHouseNoExt__c), &apos;&apos;, &apos; &apos; + ServiceHouseNoExt__c) +
+IF(ISNULL(ServiceAddressExt__c), &apos;&apos;, BR() + ServiceAddressExt__c) +
+ServicePostalCode__c + &apos; &apos; + ServiceCity__c + IF(ISNULL(ServiceCityExt__c), &apos;&apos;, &apos; &apos; + ServiceCityExt__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Serviceadresse</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "PositiveConnectionDecision",
+    "OmniProcessId": {
+        "Name": "UpsertQuoteBasedOnMarketingPhase",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/UpsertQuoteBasedOnMarketingPhase/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%ConstructionArea% == 'Yes' && %GetQuoteDetails:Quote|1:SubType__c% == 'Connection'",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock7",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/UpsertQuoteBasedOnMarketingPhase/Procedure/PositiveConnectionDecision"
+}

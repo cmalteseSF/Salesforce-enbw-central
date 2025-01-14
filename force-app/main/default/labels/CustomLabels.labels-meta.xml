@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CPQAssetSelected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQAssetSelected</shortDescription>
+        <value>Asset ausgewählt</value>
+    </labels>
+        <fullName>CPQConfigureIP</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQConfigureIP</shortDescription>
+        <value>Configure IP</value>
+    </labels>
+    <labels>
+        <fullName>CPQConfigureVoice</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQConfigureVoice</shortDescription>
+        <value>Configure Voice</value>
+    </labels>
+    <labels>
+        <fullName>CPQRouterMalfunction</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQRouterMalfunction</shortDescription>
+        <value>Hardwaretausch bei Defekt</value>
+    </labels>
+    <labels>
+        <fullName>CPQSelectAction</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQSelectAction</shortDescription>
+        <value>Geschäftsvorfall wählen</value>
+    </labels>
+    <labels>
+        <fullName>CPQTermination</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CPQTermination</shortDescription>
+        <value>Kündigung</value>
+    </labels>
+    <labels>
+        <fullName>FromAddress</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FromAddress</shortDescription>
+        <value>kundenbetreuung@plusnet.de</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Active_or_Cancelled_Order</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Active or Cancelled Order</shortDescription>
+        <value>The Order %Order:OrderNumber% cannot be cancelled as the status of the order is %Order:OrderStatus%.</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Cancellation_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Cancellation Error</shortDescription>
+        <value>Cancellation Error</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Cancellation_Notification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Cancellation Notification</shortDescription>
+        <value>Send Cancellation Notification</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Cancellation_Reason</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Cancellation Reason</shortDescription>
+        <value>Cancellation Reason</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Connection_Submission_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Connection Submission Error</shortDescription>
+        <value>Connection Order cannot be submitted as the installation is not ready.</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Contract_Cancellation_Reason</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract Cancellation Reason</shortDescription>
+        <value>Contract Cancellation Reason</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Contract_Number</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Contract Number</shortDescription>
+        <value>Contract Number:</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Contract_Service_Selection</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract Service Selection</shortDescription>
+        <value>Select services</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Contract_Services_Disconnection</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Contract Services Disconnection</shortDescription>
+        <value>Select services to be terminated:</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Contract_Services_Selection</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract Services Selection</shortDescription>
+        <value>Contracted Services</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Contract_Termination_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Contract Termination Date</shortDescription>
+        <value>Please enter the termination date:</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Contract_Termination_Dunning</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract Termination Dunning</shortDescription>
+        <value>Dunning</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Contract_Termination_Start</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract Termination Start</shortDescription>
+        <value>Contract Termination</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Contract_Termination_Summary</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract Termination Summary</shortDescription>
+        <value>Contract Termination Summary</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Contract_Termination_Type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract Termination Type</shortDescription>
+        <value>Contract Termination Type</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Discontent_Bad_Service</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Discontent Bad Service</shortDescription>
+        <value>Discontent &amp; Bad Service</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Done</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Done</shortDescription>
+        <value>Done</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Full_Contract_Termination</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Full Contract Termination</shortDescription>
+        <value>Full Contract Termination</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Order_Cancellation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Order Cancellation</shortDescription>
+        <value>Order: %Order:OrderNumber%</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Order_Submission_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Order Submission Error</shortDescription>
+        <value>Order cannot be submitted as the Order is already submitted.</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Order_cannot_be_cancelled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Order cannot be cancelled</shortDescription>
+        <value>Order %Order:OrderNumber% cannot be cancelled.</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Order_or_Quote_Cancellation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Order or Quote Cancellation</shortDescription>
+        <value>Quote &amp; Order Cancellation</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Order_successfully_cancelled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Order successfully cancelled</shortDescription>
+        <value>Order %Order:OrderNumber% successfully cancelled.</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Other_Reasons</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Other Reasons</shortDescription>
+        <value>Other Reasons</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Partial_Contract_Termination</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Partial Contract Termination</shortDescription>
+        <value>Partial Contract Termination</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Quote_Cancellation</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Quote Cancellation</shortDescription>
+        <value>Quote: %Quote:QuoteNumber%</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Quote_cannot_be_cancelled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Quote cannot be cancelled</shortDescription>
+        <value>Quote %Quote:QuoteNumber% cannot be cancelled.</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Quote_successfully_cancelled</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Quote successfully cancelled</shortDescription>
+        <value>Quote %Quote:QuoteNumber% successfully cancelled.</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Send_Cancellation_Notification</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Send Cancellation Notification</shortDescription>
+        <value>Send Cancellation Notification</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Service_Submission_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Service Submission Error</shortDescription>
+        <value>Service Order cannot be submitted as there is not active connection service available or the installation is not ready.</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Service_To_Be_Terminated</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Service To Be Terminated</shortDescription>
+        <value>Services to be terminated:</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Terminate_Services</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Terminate Services</shortDescription>
+        <value>Terminate</value>
+    </labels>
+    <labels>
+        <fullName>PlusNet_Validate_Date_Time_Formula</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PlusNet Validate Date Time Formula</shortDescription>
+        <value>Please enter a valid termination date as it cannot be in the past.</value>
+    </labels>
+</CustomLabels>

@@ -1,0 +1,105 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "tariff",
+    "OmniProcessId": {
+        "Name": "CreateServiceQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "VoiceBlock",
+        "OmniProcessId": {
+            "Name": "CreateServiceQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/VoiceBlock",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "VoiceBlock",
+    "ParentElementType": "Block",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 3,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Tarif",
+        "optionSource": {
+            "type": ""
+        },
+        "options": [
+            {
+                "autoAdv": null,
+                "name": "PNET-B2B-FON-TPL-250-NME-1",
+                "value": "B2B >250 Festnetz - mit Flatrate Festnetz (D), Mobil (D) und Europlus_V1"
+            },
+            {
+                "autoAdv": null,
+                "name": "PNET-B2B-FON-TPL-500F-NME-1",
+                "value": "B2B >500 Festnetz - mit Flatrate Festnetz (D), Mobil (D) und Europlus_V1"
+            },
+            {
+                "autoAdv": null,
+                "name": "PNET-B2B-FON-TPL-500M-NME-1",
+                "value": "B2B >500 Mobil - mit Flatrate Festnetz (D), Mobil (D) und Europlus_V1"
+            },
+            {
+                "autoAdv": null,
+                "name": "PNET-B2B-FON-TPL-500K-NME-1",
+                "value": "B2B >500 Kombi - mit Flatrate Festnetz (D), Mobil (D) und Europlus_V1"
+            },
+            {
+                "autoAdv": null,
+                "name": "PNET-B2B-FON-TPL-1000F-NME-1",
+                "value": "B2B >1000 Festnetz - mit Flatrate Festnetz (D), Mobil (D) und Europlus_V1"
+            },
+            {
+                "autoAdv": null,
+                "name": "PNET-B2B-FON-TPL-1000M-NME-1",
+                "value": "B2B >1000 Mobil - mit Flatrate Festnetz (D), Mobil (D) und Europlus_V1"
+            },
+            {
+                "autoAdv": null,
+                "name": "PNET-B2B-FON-TPL-1000K-NME-1",
+                "value": "B2B >1000 Kombi - mit Flatrate Festnetz (D), Mobil (D) und Europlus_V1"
+            },
+            {
+                "autoAdv": null,
+                "name": "PNET-B2B-FON-TPL-2000SPL-NME-1",
+                "value": "B2B >2000 SPL - mit Flatrate Festnetz (D), Mobil (D) und Europlus_V1"
+            },
+            {
+                "autoAdv": null,
+                "name": "PNET-B2B-FON-TPL-2000SPLplus-NME-1",
+                "value": "B2B >2000 Plus SPL - mit Flatrate Festnetz (D), Mobil (D) und Europlus_V1"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Select",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/tariff"
+}

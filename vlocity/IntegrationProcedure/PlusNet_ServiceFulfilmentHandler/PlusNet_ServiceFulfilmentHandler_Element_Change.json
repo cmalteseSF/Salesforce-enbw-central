@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "Change",
+    "OmniProcessId": {
+        "Name": "ServiceFulfilmentHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ServiceFulfilmentHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%Type% == 'Hardware Change' || %Type% == 'IP Change' || %Type% == 'Hardware Malfunction'",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock4",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ServiceFulfilmentHandler/Procedure/Change"
+}

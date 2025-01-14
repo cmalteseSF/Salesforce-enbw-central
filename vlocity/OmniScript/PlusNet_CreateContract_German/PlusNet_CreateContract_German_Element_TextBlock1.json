@@ -1,0 +1,39 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock1",
+    "OmniProcessId": {
+        "Name": "CreateContract",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateContract/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "DisplayInfo",
+        "OmniProcessId": {
+            "Name": "CreateContract",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateContract/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateContract/German/DisplayInfo",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "DisplayInfo",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock1",
+        "sanitize": false,
+        "show": null,
+        "text": "<p>QuoteId : %QuoteId%</p>\n<p>Quote Status :&nbsp; %QuoteStatus%</p>\n<p>Quote Type : %QuoteType%</p>\n<p>QuoteNumber: %QuoteNumber%</p>\n<p>QuoteContractId : %QuoteContractId%</p>\n<p>BauteamGroupId :&nbsp; %BauteamGroupId%</p>\n<p>OrderManagementGroupId :&nbsp; %OrderManagementGroupId%</p>\n<p>OppId : %OppId%</p>\n<p>DealerId : %DealerId%</p>\n<p>SubDealerId : %SubDealerId%</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateContract/German/TextBlock1"
+}

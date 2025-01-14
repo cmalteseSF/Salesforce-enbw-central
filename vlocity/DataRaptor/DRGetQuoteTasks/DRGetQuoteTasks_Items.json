@@ -1,0 +1,106 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "QuoteId",
+        "GlobalKey": "DRGetQuoteTasksCustom2179",
+        "InputFieldName": "WhatId",
+        "InputObjectName": "Task",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetQuoteTasks",
+        "OmniDataTransformationId": {
+            "Name": "DRGetQuoteTasks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetQuoteTasks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QuoteTasks",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "COUNTQUERY(\"SELECT COUNT() FROM task where WhatId = '{0}' AND (Type = 'Additional Contact Details' OR Type = 'PDF Document' OR Type = 'Email' OR Type = 'Contract Creation') AND Status != 'Completed'\",%QuoteId%)",
+        "FormulaResultPath": "CountConnectionQuoteActivationTasks",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRGetQuoteTasksCustom1911",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetQuoteTasks",
+        "OmniDataTransformationId": {
+            "Name": "DRGetQuoteTasks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetQuoteTasks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "COUNTQUERY(\"SELECT COUNT() FROM task where WhatId = '{0}' AND (Type = 'Additional Contact Details' OR Type = 'Voice' OR Type = 'PDF Document' OR Type = 'Email' OR Type = 'Contract Creation') AND Status != 'Completed'\",%QuoteId%)",
+        "FormulaResultPath": "CountServiceQuoteActivationTasks",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRGetQuoteTasksCustom9310",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetQuoteTasks",
+        "OmniDataTransformationId": {
+            "Name": "DRGetQuoteTasks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetQuoteTasks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetQuoteTasksCustom6369",
+        "InputFieldName": "CountConnectionQuoteActivationTasks",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetQuoteTasks",
+        "OmniDataTransformationId": {
+            "Name": "DRGetQuoteTasks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetQuoteTasks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteTasks:CountConnectionQuoteActivationTasks",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetQuoteTasksCustom9817",
+        "InputFieldName": "CountServiceQuoteActivationTasks",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetQuoteTasks",
+        "OmniDataTransformationId": {
+            "Name": "DRGetQuoteTasks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetQuoteTasks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QuoteTasks:CountServiceQuoteActivationTasks",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

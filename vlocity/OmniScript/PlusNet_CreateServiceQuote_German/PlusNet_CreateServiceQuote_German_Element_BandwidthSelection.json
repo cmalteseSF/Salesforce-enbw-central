@@ -1,0 +1,65 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "BandwidthSelection",
+    "OmniProcessId": {
+        "Name": "CreateServiceQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": false,
+        "businessCategory": "",
+        "businessEvent": "",
+        "cancelLabel": "",
+        "cancelMessage": "",
+        "chartLabel": null,
+        "completeLabel": "",
+        "completeMessage": "",
+        "conditionType": "Hide if False",
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "instruction": "<p>W&auml;hlen Sie das Produkt aus, an dem der Kunde interessiert ist.</p>",
+        "instructionKey": "",
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "Produkt auswählen",
+        "message": {
+        },
+        "nextLabel": "Weiter",
+        "nextWidth": 3,
+        "previousLabel": "Zurück",
+        "previousWidth": 3,
+        "pubsub": false,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": "",
+        "saveMessage": "",
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": true,
+        "wpm": false
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/BandwidthSelection"
+}

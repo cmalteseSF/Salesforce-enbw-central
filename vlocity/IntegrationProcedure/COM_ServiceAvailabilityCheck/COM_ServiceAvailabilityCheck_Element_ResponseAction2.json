@@ -1,0 +1,40 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ResponseAction2",
+    "OmniProcessId": {
+        "Name": "ServiceAvailabilityCheck",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/ServiceAvailabilityCheck/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "additionalOutput": {
+            "RetCode": "=IF(%ServiceAvailabilityCheckInfo:statusCode% >= 200 && %ServiceAvailabilityCheckInfo:statusCode% <= 299 && %ServiceAvailabilityCheck:serviceQualificationItem:service:serviceCharacteristic|4:value% != '', 'OK', 'NOK')",
+            "SPRIStatus": "%ServiceAvailabilityCheck:serviceQualificationItem|1:state%",
+            "externalId": "%ServiceAvailabilityCheck:externalId%",
+            "items": "=LISTSIZE(%ServiceAvailabilityCheck:serviceQualificationItem%)",
+            "maxbandwidth": "=IF(%ServiceAvailabilityCheck:serviceQualificationItem:service:serviceCharacteristic|4:value% == '10000', '1000', %ServiceAvailabilityCheck:serviceQualificationItem:service:serviceCharacteristic|4:value%)"
+        },
+        "disOnTplt": false,
+        "executionConditionalFormula": "%CreateNewLocation% == \"false\"",
+        "label": "ResponseAction1",
+        "responseDefaultData": {
+        },
+        "responseFormat": "JSON",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnFullDataJSON": false,
+        "returnOnlyAdditionalOutput": true,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "show": null,
+        "useFormulas": true,
+        "vlcResponseHeaders": {
+        }
+    },
+    "Type": "Response Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/ServiceAvailabilityCheck/Procedure/ResponseAction2"
+}

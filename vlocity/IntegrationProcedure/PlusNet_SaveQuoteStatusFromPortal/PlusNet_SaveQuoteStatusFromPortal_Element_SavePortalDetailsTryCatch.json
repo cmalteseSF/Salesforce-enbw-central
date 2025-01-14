@@ -1,0 +1,32 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SavePortalDetailsTryCatch",
+    "OmniProcessId": {
+        "Name": "SaveQuoteStatusFromPortal",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SaveQuoteStatusFromPortal/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%quoteDetails:status% == \"Accepted\" || %quoteDetails:status% == \"Rejected\"",
+        "failOnBlockError": true,
+        "failureResponse": {
+            "errorDescription": {
+                "error": "Not possible to update Quote or QuoteApprovalForm.",
+                "errorCode": ""
+            },
+            "payload": "%SavePortalDetails%",
+            "processName": "SavePortalDetails"
+        },
+        "label": "TryCatchBlock2",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "show": null
+    },
+    "Type": "Try Catch Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SaveQuoteStatusFromPortal/Procedure/SavePortalDetailsTryCatch"
+}

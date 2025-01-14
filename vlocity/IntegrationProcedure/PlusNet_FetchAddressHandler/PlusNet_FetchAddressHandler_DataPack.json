@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Added logic for changing the Billing Address , AddressType = Billing",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "FetchAddressHandler",
+    "OmniProcessElement": [
+        "PlusNet_FetchAddressHandler_Element_FetchLeadAddresses.json",
+        "PlusNet_FetchAddressHandler_Element_GetLeadAddresses.json",
+        "PlusNet_FetchAddressHandler_Element_ReturnLeadAddresses.json",
+        "PlusNet_FetchAddressHandler_Element_FetchAccountAddress.json",
+        "PlusNet_FetchAddressHandler_Element_GetAccountAddresses.json",
+        "PlusNet_FetchAddressHandler_Element_ReturnAccountAddresses.json",
+        "PlusNet_FetchAddressHandler_Element_ReturnFetchAddressHandler.json"
+    ],
+    "OmniProcessKey": "PlusNet_FetchAddressHandler",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_FetchAddressHandler_PropertySetConfig.json",
+    "SubType": "FetchAddressHandler",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/FetchAddressHandler/Procedure"
+}

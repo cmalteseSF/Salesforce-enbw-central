@@ -1,0 +1,101 @@
+[
+    {
+        "FormulaExpression": "DESERIALIZE(%ProductAttributes%)",
+        "FormulaResultPath": "result",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRFilterProductsByBandwidthCustom3565",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRFilterProductsByBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "DRFilterProductsByBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFilterProductsByBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%ProductAttributes%), '%ATT-DWN-SPD% == \"' + %maxbandwidth% + '\"')",
+        "FormulaResultPath": "filteredAtt",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRFilterProductsByBandwidth9266961976983479",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRFilterProductsByBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "DRFilterProductsByBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFilterProductsByBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRFilterProductsByBandwidth9100441585662309",
+        "InputFieldName": "filteredAtt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRFilterProductsByBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "DRFilterProductsByBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFilterProductsByBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "filteredAtt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRFilterProductsByBandwidth15227746581413437",
+        "InputFieldName": "maxbandwidth",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRFilterProductsByBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "DRFilterProductsByBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFilterProductsByBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "maxbandwidth",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRFilterProductsByBandwidthCustom3710",
+        "InputFieldName": "result",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRFilterProductsByBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "DRFilterProductsByBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFilterProductsByBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "result",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

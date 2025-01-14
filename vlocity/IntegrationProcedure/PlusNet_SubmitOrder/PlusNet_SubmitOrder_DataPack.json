@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "PlusNet_SubmitOrder_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Submit Order",
+    "OmniProcessElement": [
+        "PlusNet_SubmitOrder_Element_canSubmitOrder.json",
+        "PlusNet_SubmitOrder_Element_SubmitOrder.json",
+        "PlusNet_SubmitOrder_Element_UpdateRelatedReferenceId.json",
+        "PlusNet_SubmitOrder_Element_CreateServicePoint.json",
+        "PlusNet_SubmitOrder_Element_ResponseSubmitOrder.json"
+    ],
+    "OmniProcessKey": "PlusNet_SubmitOrder",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SubmitOrder_PropertySetConfig.json",
+    "SubType": "SubmitOrder",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SubmitOrder/Procedure"
+}

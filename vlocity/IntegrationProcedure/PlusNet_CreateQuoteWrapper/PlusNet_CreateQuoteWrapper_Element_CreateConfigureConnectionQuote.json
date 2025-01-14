@@ -1,0 +1,73 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateConfigureConnectionQuote",
+    "OmniProcessId": {
+        "Name": "CreateQuoteWrapper",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuoteWrapper/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CreateConnectionQuote",
+        "OmniProcessId": {
+            "Name": "CreateQuoteWrapper",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuoteWrapper/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuoteWrapper/Procedure/CreateConnectionQuote",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CreateConnectionQuote",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountId": "%AccountId%",
+            "AdjVal": "%AdjVal%",
+            "ContactId": "%ContactId%",
+            "Context": "%Context%",
+            "ContextId": "%ContextId%",
+            "MarketingPhase": "%MarketingPhase%",
+            "OpportunityId": "%OpportunityId%",
+            "OwnerAccountId": "%ownerAccountId%",
+            "OwnerDetails": "%OwnerDetails%",
+            "OwnerDetails:AddressId": "%AddressId%",
+            "PremiseId": "%PremiseId%",
+            "PremiseOwnerAccountDetails": "%PremiseOwnerAccountDetails%",
+            "PriceListId": "%GetPriceListDetails:PriceList|1:Id%",
+            "RecordTypes": "%GetRecordTypeDetails%",
+            "isOwnerKnown": "=IF(ISNOTBLANK(%PremiseOwnerAccountDetails%), \"true\", \"false\")",
+            "isServiceQuoteAtPremise": "%isServiceQuoteAtPremise%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "PlusNet_CreateConfigureConnectionQuote",
+        "label": "IntegrationProcedureAction2",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuoteWrapper/Procedure/CreateConfigureConnectionQuote"
+}

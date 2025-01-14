@@ -1,0 +1,28 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "GetDecryptedDataTryCatch",
+    "OmniProcessId": {
+        "Name": "ProvideQuoteRelatedDetailsToPortal",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ProvideQuoteRelatedDetailsToPortal/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnBlockError": true,
+        "failureResponse": {
+            "errorDescription": "%GetDecryptedData:result%",
+            "processName": "GetDecryptedData"
+        },
+        "label": "TryCatchBlock1",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "show": null
+    },
+    "Type": "Try Catch Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ProvideQuoteRelatedDetailsToPortal/Procedure/GetDecryptedDataTryCatch"
+}

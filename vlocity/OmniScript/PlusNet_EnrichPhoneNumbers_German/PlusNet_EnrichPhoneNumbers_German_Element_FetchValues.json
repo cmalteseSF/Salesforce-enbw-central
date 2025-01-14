@@ -1,0 +1,53 @@
+{
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "FetchValues",
+    "OmniProcessId": {
+        "Name": "EnrichPhoneNumbers",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichPhoneNumbers/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "PhoneNumberMgmt",
+        "OmniProcessId": {
+            "Name": "EnrichPhoneNumbers",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichPhoneNumbers/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichPhoneNumbers/German/PhoneNumberMgmt",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "PhoneNumberMgmt",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "CarrierName1": "%PhoneNumberMgmt:CustomLWC1|1:CarrierName%",
+            "CarrierNameV2": "%PhoneNumberMgmt:CustomLWC1|1:CarrierName%",
+            "LegacyContractId": "%PhoneNumberMgmt:CustomLWC1|1:LegacyContractId%",
+            "LegacyContractIdV2": "%PhoneNumberMgmt:CustomLWC1|1:LegacyContractId%",
+            "PortingDate": "%PhoneNumberMgmt:CustomLWC1|1:PortingDate%",
+            "Telephone1": "%PhoneNumberMgmt:CustomLWC1|1:PhoneNumber%",
+            "TelephoneV2": "%PhoneNumberMgmt:CustomLWC1|1:PhoneNumber%"
+        },
+        "label": "Fetch From Table",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichPhoneNumbers/German/FetchValues"
+}

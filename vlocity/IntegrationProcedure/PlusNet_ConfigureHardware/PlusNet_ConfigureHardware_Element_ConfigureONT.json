@@ -1,0 +1,57 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ConfigureONT",
+    "OmniProcessId": {
+        "Name": "ConfigureHardware",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ConfigureHardware/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TryAddONT",
+        "OmniProcessId": {
+            "Name": "ConfigureHardware",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ConfigureHardware/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ConfigureHardware/Procedure/TryAddONT",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TryAddONT",
+    "ParentElementType": "Try Catch Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "BYOD": "=IF(%hardwareConfig:ontByPlusnet% == \"false\", \"true\", \"false\")",
+            "ontId": "%hardwareConfig:ontId%",
+            "qliId": "%GetONTQLI:QLI:Id%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "UpdateAttributesOnHardware",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataMapperPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ConfigureHardware/Procedure/ConfigureONT"
+}

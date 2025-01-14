@@ -1,0 +1,54 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetBillingAddress",
+    "OmniProcessId": {
+        "Name": "AddAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/AddAdditionalContactDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "selectedBillingAddress": {
+                "AddressExt": "=IF(%BillingAddressCheck:AddressExt% != null,%BillingAddressCheck:AddressExt%,%BillingAddressExt%)",
+                "AddressId": "=%BillingAddressCheck:AddressId%",
+                "City": "=IF(%BillingAddressCheck:AddressCity% != null,%BillingAddressCheck:AddressCity%,%BillingCity%)",
+                "Country": "=IF(%BillingAddressCheck:AddressCountry% != null,%BillingAddressCheck:AddressCountry%,%BillingCountry%)",
+                "HouseNo": "=IF(%BillingAddressCheck:AddressHouseNo% != null,%BillingAddressCheck:AddressHouseNo%,%BillingHouseNo%)",
+                "HouseNoExt": "=IF(%BillingAddressCheck:AddressHouseNoExt% != null,%BillingAddressCheck:AddressHouseNoExt%,%BillingHouseNoExt%)",
+                "PostalCode": "=IF(%BillingAddressCheck:AddressPostalCode% != null,%BillingAddressCheck:AddressPostalCode%,%BillingPostalCode%)",
+                "State": "=IF(%BillingAddressCheck:AddressState% != null,%BillingAddressCheck:AddressState%,%BillingState%)",
+                "Street": "=IF(%BillingAddressCheck:AddressStreet% != null,%BillingAddressCheck:AddressStreet%,%BillingStreet%)"
+            }
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "IsBillingEqualBusinessAddress"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/AddAdditionalContactDetails/German/SetBillingAddress"
+}

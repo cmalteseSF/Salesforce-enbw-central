@@ -1,0 +1,28 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TryBillingTermination",
+    "OmniProcessId": {
+        "Name": "Send Order To Billing",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderToBilling/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetOrderType:Order|1:Type% == \"Termination\" OR %GetOrderType:Order|1:Type% == \"Hardware Change\" OR %GetOrderType:Order|1:Type% == \"IP Change\" OR %GetOrderType:Order|1:Type% == \"Change of Plan\"",
+        "failOnBlockError": true,
+        "failureResponse": {
+            "errorDescription": "%SendBillingTermination%",
+            "processName": "SendBillingTermination"
+        },
+        "label": "TryCatchBlock1",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "show": null
+    },
+    "Type": "Try Catch Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderToBilling/Procedure/TryBillingTermination"
+}

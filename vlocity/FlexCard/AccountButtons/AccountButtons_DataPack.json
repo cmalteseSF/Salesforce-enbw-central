@@ -1,0 +1,45 @@
+{
+    "AuthorName": "Plusnet",
+    "ClonedFromOmniUiCardKey": "ValidateAccountAddress/Plusnet/2.0",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 1,
+                    "name": "recordId",
+                    "val": "001MU00000749lhYAA"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "DRGetAccountRecordType",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "Id": "{recordId}"
+                },
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "AccountButtons",
+    "Namespace": "",
+    "OmniUiCardKey": "AccountButtons/Plusnet/7.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "AccountButtons.json",
+    "SampleDataSourceResponse": "[{\"RecordTypeName\":\"Business\",\"AccountRecordTypeId\":\"01268000000Hk5pAAC\",\"AccountName\":\"Paulaner\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 7,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/AccountButtons"
+}

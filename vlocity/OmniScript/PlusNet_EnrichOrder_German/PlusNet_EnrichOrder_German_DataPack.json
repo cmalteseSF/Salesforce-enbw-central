@@ -1,0 +1,29 @@
+{
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "German",
+    "Name": "EnrichOrder",
+    "OmniProcessElement": [
+        "PlusNet_EnrichOrder_German_Element_DRExtractOrderInfo.json",
+        "PlusNet_EnrichOrder_German_Element_CaptureInfo.json",
+        "PlusNet_EnrichOrder_German_Element_OrderID.json",
+        "PlusNet_EnrichOrder_German_Element_CarrierAddressId.json",
+        "PlusNet_EnrichOrder_German_Element_PolygonID.json",
+        "PlusNet_EnrichOrder_German_Element_DRSaveOrderGeoStructInfo.json",
+        "PlusNet_EnrichOrder_German_Element_Success.json",
+        "PlusNet_EnrichOrder_German_Element_TextBlock1.json",
+        "PlusNet_EnrichOrder_German_Element_LineBreak1.json",
+        "PlusNet_EnrichOrder_German_Element_NavigateAction1.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "PlusNet_EnrichOrder_German_PropertySetConfig.json",
+    "SubType": "EnrichOrder",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/EnrichOrder/German"
+}

@@ -1,0 +1,46 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetShippingDetails",
+    "OmniProcessId": {
+        "Name": "Hardware Replacement Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/HardwareReplacementOrderFlow/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "selectedShippingInfo": {
+                "AddressExt": "=IF(%ShippingAddressCheck:AddressExt% != null,%ShippingAddressCheck:AddressExt%,%ShippingAddressExt%)",
+                "AddressId": "=%ShippingAddressCheck:AddressId%",
+                "City": "=IF(%ShippingAddressCheck:AddressCity% != null,%ShippingAddressCheck:AddressCity%,%ShippingCity%)",
+                "Company": "=%ShippingCompany%",
+                "Country": "=IF(%ShippingAddressCheck:AddressCountry% != null,%ShippingAddressCheck:AddressCountry%,%ShippingCountry%)",
+                "Email": "=%ShippingEmail%",
+                "HouseNo": "=IF(%ShippingAddressCheck:AddressHouseNo% != null,%ShippingAddressCheck:AddressHouseNo%,%ShippingHouseNo%)",
+                "HouseNoExt": "=IF(%ShippingAddressCheck:AddressHouseNoExt% != null,%ShippingAddressCheck:AddressHouseNoExt%,%ShippingHouseNoExt%)",
+                "Name": "=%ShippingName%",
+                "PostalCode": "=IF(%ShippingAddressCheck:AddressPostalCode% != null,%ShippingAddressCheck:AddressPostalCode%,%ShippingPostalCode%)",
+                "State": "=IF(%ShippingAddressCheck:AddressState% != null,%ShippingAddressCheck:AddressState%,%ShippingState%)",
+                "Street": "=IF(%ShippingAddressCheck:AddressStreet% != null,%ShippingAddressCheck:AddressStreet%,%ShippingStreet%)"
+            }
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/HardwareReplacementOrderFlow/German/SetShippingDetails"
+}

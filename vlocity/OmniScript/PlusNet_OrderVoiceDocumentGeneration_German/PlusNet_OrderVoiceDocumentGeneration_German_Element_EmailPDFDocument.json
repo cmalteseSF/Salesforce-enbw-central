@@ -1,0 +1,109 @@
+{
+    "DiscoveryFrameworkUsageType": "Default",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "EmailPDFDocument",
+    "OmniProcessId": {
+        "Name": "OrderVoiceDocumentGeneration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/OrderVoiceDocumentGeneration/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "OrgWideEmailAddress": "",
+        "attachmentList": "",
+        "contentVersionList": "%pdfGenContentVersionId%",
+        "controlWidth": 5,
+        "disOnTplt": false,
+        "docList": "",
+        "emailInformation": {
+            "bccAddressList": [
+            ],
+            "ccAddressList": [
+                ""
+            ],
+            "emailBody": "Beauftragung IPfonie Basic\nAuftragsnummern: %OrderId%\n\nLiebe Kollegen,\n\nFür den Kunden mit der Kundennummer %BillingAccount:ATPBillingAccountId% haben wir einen Glasfaserauftrag mit IPfonie Basic Bestellung über Salesforce erhalten. \n\nBitte legt den IPfonie Basic Account in ATP an und tragt im Anschluss, die erforderlichen Daten in Salesforce ein.\n\nIm Anhang finden Sie alle relevanten Informationen.\n\nVielen Dank!",
+            "emailSubject": "Beauftragung IPfonie Basic Auftragsnummern: %OrderId%",
+            "setHtmlBody": false,
+            "toAddressList": [
+                "godigi-testmail@plusnet.de",
+                "plusnet-testemails@salesforce.com"
+            ]
+        },
+        "emailTemplateInformation": {
+            "emailTargetObjectId": "lbelligoli@salesforce.com",
+            "emailTemplateName": "CommunityWelcomeEmailTemplate",
+            "saveAsActivity": true,
+            "whatId": "%ContextId%"
+        },
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "fileAttachments": "",
+        "inProgressMessage": "In Progress",
+        "label": "",
+        "message": {
+        },
+        "postMessage": "Done",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteTimeout": 30000,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "isPDFAttachDone"
+                    },
+                    {
+                        "group": {
+                            "operator": "OR",
+                            "rules": [
+                                {
+                                    "condition": "=",
+                                    "data": "pdf",
+                                    "field": "downloadFileFormat"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "all",
+                                    "field": "downloadFileFormat"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            false,
+            false
+        ],
+        "ssm": false,
+        "staticDocList": [
+        ],
+        "useTemplate": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Email Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/OrderVoiceDocumentGeneration/German/EmailPDFDocument"
+}

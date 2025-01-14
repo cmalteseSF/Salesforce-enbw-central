@@ -1,0 +1,50 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateContractAndQuote",
+    "OmniProcessId": {
+        "Name": "IPCreateContract",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/CreateContract/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ContractId": "%CreateContract:ContractId%",
+            "ContractTerm": "=IF(%Quote:SubType% == 'Service', %SetContractTerm:ContractTerm%, '')",
+            "DealerId": "%Quote:DealerId%",
+            "MarketingPhase": "%Quote:MarketingPhase%",
+            "OppId": "%Quote:OppId%",
+            "PreMarketingRT": "%GetContractRecordTypes:PreMarketingRTId%",
+            "QuoteId": "%Quote:Id%",
+            "StandardRT": "%GetContractRecordTypes:StandardRTId%",
+            "SubDealerId": "%Quote:SubDealerId%",
+            "SubType": "%Quote:SubType%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRUpdateContract",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/CreateContract/Procedure/UpdateContractAndQuote"
+}

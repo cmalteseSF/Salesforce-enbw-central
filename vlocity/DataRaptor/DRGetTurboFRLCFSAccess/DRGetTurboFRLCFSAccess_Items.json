@@ -1,0 +1,72 @@
+[
+    {
+        "FilterDataType": "REFERENCE",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "CFSAccessProdID",
+        "GlobalKey": "DRGetTurboFRLCFSAccessCustom7017",
+        "InputFieldName": "%vlocity_namespace%__Product2Id__c",
+        "InputObjectName": "%vlocity_namespace%__FulfilmentRequestLine__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetTurboFRLCFSAccess",
+        "OmniDataTransformationId": {
+            "Name": "DRGetTurboFRLCFSAccess",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetTurboFRLCFSAccess",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CFSAccessFRL",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterDataType": "ID",
+        "FilterGroup": 0,
+        "FilterOperator": "IN",
+        "FilterValue": "FRLID",
+        "GlobalKey": "DRGetTurboFRLCFSAccessCustom2629",
+        "InputFieldName": "Id",
+        "InputObjectName": "%vlocity_namespace%__FulfilmentRequestLine__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetTurboFRLCFSAccess",
+        "OmniDataTransformationId": {
+            "Name": "DRGetTurboFRLCFSAccess",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetTurboFRLCFSAccess",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "CFSAccessFRL",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetTurboFRLCFSAccessCustom6818",
+        "InputFieldName": "%vlocity_namespace%__Product2Id__r.Name",
+        "InputObjectName": "%vlocity_namespace%__FulfilmentRequestLine__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetTurboFRLCFSAccess",
+        "OmniDataTransformationId": {
+            "Name": "DRGetTurboFRLCFSAccess",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetTurboFRLCFSAccess",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CFSAccessFRL",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

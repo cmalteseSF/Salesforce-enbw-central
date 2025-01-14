@@ -1,0 +1,72 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ConfigureIPAddressLWC",
+    "OmniProcessId": {
+        "Name": "ConfigureIPHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ConfigureIPHandler/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ConfigureIPNetwork",
+        "OmniProcessId": {
+            "Name": "ConfigureIPHandler",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ConfigureIPHandler/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ConfigureIPHandler/German/ConfigureIPNetwork",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ConfigureIPNetwork",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "bStandalone": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "customAttributes": [
+            {
+                "name": "record-id",
+                "source": "%ContextId%"
+            },
+            {
+                "name": "debug",
+                "source": "false"
+            },
+            {
+                "name": "product-code",
+                "source": "%ProductCode%"
+            },
+            {
+                "name": "context",
+                "source": "%Context%"
+            },
+            {
+                "name": "max-row-selection",
+                "source": "1"
+            },
+            {
+                "name": "context-xli",
+                "source": "%ContextXLI%"
+            },
+            {
+                "name": "selected-rows",
+                "source": "%selectedRow%"
+            },
+            {
+                "name": "root-product-code",
+                "source": "%rootProductCode%"
+            }
+        ],
+        "hide": false,
+        "label": "ConfigureIPAddress",
+        "lwcName": "configureIPHandlerLWC",
+        "show": null
+    },
+    "Type": "Custom Lightning Web Component",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ConfigureIPHandler/German/ConfigureIPAddressLWC"
+}

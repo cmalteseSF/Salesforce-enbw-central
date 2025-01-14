@@ -1,0 +1,602 @@
+{
+    "dataSource": {
+        "contextVariables": [
+        ],
+        "orderBy": {
+            "isReverse": "",
+            "name": ""
+        },
+        "type": "Custom",
+        "value": {
+            "body": "[{\"Id\":\"0039M00000CgZp2QAF\",\"Salutation\":\"Mr.\",\"Email\":\"jorg@gmail.com\",\"Company\":\"Astro AG\",\"Name\":\"Jörg Helmut\"},{\"Id\":\"0039M00000CgpFbQAJ\",\"Salutation\":\"Mr.\",\"Phone\":\"01789712232\",\"Email\":\"asd@asd.com\",\"Company\":\"Astro AG\",\"Name\":\"Gigi Hadid\"},{\"Id\":\"0039M00000CgqdUQAR\",\"Salutation\":\"Mr.\",\"Phone\":\"1111111111\",\"Email\":\"aaa@testtest.com\",\"Company\":\"Astro AG\",\"Name\":\"Much Jay\"},{\"Id\":\"0039M00000Cgrv6QAB\",\"Salutation\":\"Mr.\",\"Phone\":\"122111232221\",\"Email\":\"test@abc.com\",\"Company\":\"Astro AG\",\"Name\":\"Zuit Machman\"},{\"Id\":\"0039M00000ChB69QAF\",\"Phone\":\"112889001\",\"Email\":\"codey@trail.com\",\"Company\":\"Astro AG\",\"Name\":\"Codey Codey\"}]",
+            "dsDelay": "",
+            "resultVar": ""
+        }
+    },
+    "enableLwc": true,
+    "events": [
+        {
+            "actionList": [
+                {
+                    "actionIndex": 0,
+                    "card": "{card}",
+                    "draggable": true,
+                    "isOpen": false,
+                    "key": "1701872041673-ukgu07pit",
+                    "label": "Action",
+                    "stateAction": {
+                        "displayName": "Action",
+                        "elementId": "SelectedRow",
+                        "extraParams": {
+                            "Id": "{action.result.Id}",
+                            "selectrow": "true"
+                        },
+                        "hasExtraParams": true,
+                        "id": "flex-action-1701949808496",
+                        "openUrlIn": "Current Window",
+                        "type": "updateOmniScript",
+                        "vlocityIcon": "standard-default"
+                    }
+                },
+                {
+                    "actionIndex": 1,
+                    "card": "{card}",
+                    "draggable": false,
+                    "isOpen": true,
+                    "key": "1701949867342-kg5bi6ov6",
+                    "label": "SetValue",
+                    "stateAction": {
+                        "Web Page": {
+                            "targetName": "/apex"
+                        },
+                        "displayName": "Action",
+                        "eventName": "setValues",
+                        "fieldValues": [
+                            {
+                                "fieldName": "Session.Name",
+                                "fieldValue": "{action.result.Name}"
+                            },
+                            {
+                                "fieldName": "Session.Email",
+                                "fieldValue": "{action.result.Email}"
+                            },
+                            {
+                                "fieldName": "Session.Company",
+                                "fieldValue": "{action.result.Company}"
+                            },
+                            {
+                                "fieldName": "Session.Phone",
+                                "fieldValue": "{action.result.Phone}"
+                            }
+                        ],
+                        "id": "flex-action-1701951109101",
+                        "openUrlIn": "Current Window",
+                        "targetType": "Web Page",
+                        "type": "cardAction",
+                        "vlocityIcon": "standard-default"
+                    }
+                }
+            ],
+            "channelname": "datatableCard",
+            "displayLabel": "rowclick",
+            "element": "action",
+            "eventLabel": "custom event",
+            "eventname": "rowclick",
+            "eventtype": "event",
+            "key": "event-0",
+            "recordIndex": "0",
+            "showSpinner": "false"
+        }
+    ],
+    "isFlex": true,
+    "isRepeatable": false,
+    "lwc": {
+        "DeveloperName": "cfDatatableCommContactCard_1_Plusnet",
+        "Id": "0Rb9M000000Egk9SAC",
+        "ManageableState": "unmanaged",
+        "MasterLabel": "cfDatatableCommContactCard_1_Plusnet",
+        "NamespacePrefix": "c"
+    },
+    "osSupport": true,
+    "selectableMode": "Multi",
+    "sessionVars": [
+    ],
+    "states": [
+        {
+            "actions": [
+            ],
+            "childCards": [
+            ],
+            "components": {
+                "layer-0": {
+                    "children": [
+                        {
+                            "class": "slds-col ",
+                            "element": "flexDatatable",
+                            "elementLabel": "Datatable-0",
+                            "name": "Datatable",
+                            "property": {
+                                "card": "{card}",
+                                "cellLevelEdit": false,
+                                "columns": [
+                                    {
+                                        "fieldName": "Id",
+                                        "label": "Id",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text",
+                                        "visible": "false"
+                                    },
+                                    {
+                                        "fieldName": "Salutation",
+                                        "label": "Salutation",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Name",
+                                        "label": "Name",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Company",
+                                        "label": "Company",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Email",
+                                        "label": "Email",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    },
+                                    {
+                                        "fieldName": "Phone",
+                                        "label": "Phone",
+                                        "searchable": false,
+                                        "sortable": true,
+                                        "type": "text"
+                                    }
+                                ],
+                                "groupOrder": "asc",
+                                "issearchavailable": false,
+                                "issortavailable": true,
+                                "pagelimit": 3,
+                                "record": "{record}",
+                                "records": "{records}",
+                                "userSelectableRow": false
+                            },
+                            "size": {
+                                "default": "12",
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "sizeClass": "slds-size_12-of-12"
+                            },
+                            "type": "element"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [
+                                    ],
+                                    "class": "slds-col ",
+                                    "element": "block",
+                                    "elementLabel": "Block-2",
+                                    "key": "element_element_block_1_0_block_0_0",
+                                    "name": "Block",
+                                    "property": {
+                                        "card": "{card}",
+                                        "collapsedByDefault": false,
+                                        "collapsible": false,
+                                        "label": "Block",
+                                        "record": "{record}"
+                                    },
+                                    "size": {
+                                        "default": "12",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "class": "slds-p-around_x-small",
+                                        "padding": [
+                                            {
+                                                "size": "x-small",
+                                                "type": "around"
+                                            }
+                                        ],
+                                        "sizeClass": "slds-size_12-of-12"
+                                    },
+                                    "type": "block"
+                                },
+                                {
+                                    "children": [
+                                    ],
+                                    "class": "slds-col ",
+                                    "element": "block",
+                                    "elementLabel": "Block-2-Block-4-clone-0",
+                                    "key": "element_element_block_1_0_block_0_0",
+                                    "name": "Block",
+                                    "parentElementKey": "element_block_1_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "collapsedByDefault": false,
+                                        "collapsible": false,
+                                        "label": "Block",
+                                        "record": "{record}"
+                                    },
+                                    "size": {
+                                        "default": "2",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "class": "slds-p-around_x-small",
+                                        "padding": [
+                                            {
+                                                "size": "x-small",
+                                                "type": "around"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "2",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_2-of-12 "
+                                    },
+                                    "type": "block"
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "baseInputElement",
+                                    "elementLabel": "Block-2-Text-0",
+                                    "key": "element_element_block_1_0_baseInputElement_1_0",
+                                    "name": "Text",
+                                    "parentElementKey": "element_block_1_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "propertyObj": {
+                                            "label": "Selected Contact Name",
+                                            "placeholder": "{Session.Name}",
+                                            "readOnly": true,
+                                            "value": "{Session.Name}"
+                                        },
+                                        "record": "{record}",
+                                        "type": "text"
+                                    },
+                                    "size": {
+                                        "default": "2",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "class": "slds-p-right_x-small",
+                                        "margin": [
+                                            {
+                                                "size": "xx-small",
+                                                "type": "bottom"
+                                            }
+                                        ],
+                                        "padding": [
+                                            {
+                                                "size": "small",
+                                                "type": "right"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "2",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_2-of-12 "
+                                    },
+                                    "type": "element"
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "baseInputElement",
+                                    "elementLabel": "Block-2-Text-1",
+                                    "key": "element_element_block_1_0_baseInputElement_2_0",
+                                    "name": "Text",
+                                    "parentElementKey": "element_block_1_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "propertyObj": {
+                                            "label": "Selected Contact Company",
+                                            "placeholder": "{Session.Company}",
+                                            "readOnly": true,
+                                            "value": "{Session.Company}"
+                                        },
+                                        "record": "{record}",
+                                        "type": "text"
+                                    },
+                                    "size": {
+                                        "default": "2",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "class": "slds-p-right_x-small",
+                                        "margin": [
+                                            {
+                                                "size": "xx-small",
+                                                "type": "bottom"
+                                            }
+                                        ],
+                                        "padding": [
+                                            {
+                                                "size": "small",
+                                                "type": "right"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "2",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_2-of-12 "
+                                    },
+                                    "type": "element"
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "baseInputElement",
+                                    "elementLabel": "Block-2-Email-2",
+                                    "key": "element_element_block_1_0_baseInputElement_3_0",
+                                    "name": "Email",
+                                    "parentElementKey": "element_block_1_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "propertyObj": {
+                                            "label": "Selected Contact Email",
+                                            "placeholder": "{Session.Email}",
+                                            "readOnly": true,
+                                            "value": "{Session.Email}"
+                                        },
+                                        "record": "{record}",
+                                        "type": "email"
+                                    },
+                                    "size": {
+                                        "default": "2",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "class": "slds-p-right_x-small",
+                                        "margin": [
+                                            {
+                                                "size": "xx-small",
+                                                "type": "bottom"
+                                            }
+                                        ],
+                                        "padding": [
+                                            {
+                                                "size": "small",
+                                                "type": "right"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "2",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_2-of-12 "
+                                    },
+                                    "type": "element"
+                                },
+                                {
+                                    "class": "slds-col ",
+                                    "element": "baseInputElement",
+                                    "elementLabel": "Block-2-Telephone-3",
+                                    "key": "element_element_block_1_0_baseInputElement_4_0",
+                                    "name": "Telephone",
+                                    "parentElementKey": "element_block_1_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "propertyObj": {
+                                            "fieldBinding": "",
+                                            "imask": "",
+                                            "label": "Selected Contact Phone",
+                                            "placeholder": "{Session.Phone}",
+                                            "readOnly": true,
+                                            "value": "{Session.Phone}"
+                                        },
+                                        "record": "{record}",
+                                        "type": "tel"
+                                    },
+                                    "size": {
+                                        "default": "2",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "class": "slds-p-right_x-small",
+                                        "margin": [
+                                            {
+                                                "size": "xx-small",
+                                                "type": "bottom"
+                                            }
+                                        ],
+                                        "padding": [
+                                            {
+                                                "size": "small",
+                                                "type": "right"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "2",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_2-of-12 "
+                                    },
+                                    "type": "element"
+                                },
+                                {
+                                    "children": [
+                                    ],
+                                    "class": "slds-col ",
+                                    "element": "block",
+                                    "elementLabel": "Block-2-Block-4",
+                                    "key": "element_element_block_1_0_block_5_0",
+                                    "name": "Block",
+                                    "parentElementKey": "element_block_1_0",
+                                    "property": {
+                                        "card": "{card}",
+                                        "collapsedByDefault": false,
+                                        "collapsible": false,
+                                        "label": "Block",
+                                        "record": "{record}"
+                                    },
+                                    "size": {
+                                        "default": "2",
+                                        "isResponsive": false
+                                    },
+                                    "stateIndex": 0,
+                                    "styleObject": {
+                                        "class": "slds-p-around_x-small",
+                                        "padding": [
+                                            {
+                                                "size": "x-small",
+                                                "type": "around"
+                                            }
+                                        ],
+                                        "size": {
+                                            "default": "2",
+                                            "isResponsive": false
+                                        },
+                                        "sizeClass": "slds-size_2-of-12 "
+                                    },
+                                    "type": "block"
+                                }
+                            ],
+                            "class": "slds-col ",
+                            "element": "block",
+                            "elementLabel": "Block-1",
+                            "name": "Block",
+                            "property": {
+                                "card": "{card}",
+                                "collapsedByDefault": false,
+                                "collapsible": false,
+                                "label": "Block",
+                                "record": "{record}"
+                            },
+                            "size": {
+                                "default": 12,
+                                "isResponsive": false
+                            },
+                            "stateIndex": 0,
+                            "styleObject": {
+                                "class": "slds-p-around_x-small",
+                                "padding": [
+                                    {
+                                        "size": "x-small",
+                                        "type": "around"
+                                    }
+                                ],
+                                "size": {
+                                    "default": 12,
+                                    "isResponsive": false
+                                },
+                                "sizeClass": "slds-size_12-of-12"
+                            },
+                            "type": "block"
+                        }
+                    ]
+                }
+            },
+            "conditions": {
+                "group": [
+                ],
+                "id": "state-condition-object",
+                "isParent": true
+            },
+            "definedActions": {
+                "actions": [
+                ]
+            },
+            "documents": [
+            ],
+            "fields": [
+            ],
+            "isSmartAction": false,
+            "name": "Active",
+            "omniscripts": [
+            ],
+            "smartAction": {
+            },
+            "styleObject": {
+                "class": "slds-card slds-p-around_x-small slds-m-bottom_x-small",
+                "container": {
+                    "class": "slds-card"
+                },
+                "margin": [
+                    {
+                        "size": "x-small",
+                        "type": "bottom"
+                    }
+                ],
+                "padding": [
+                    {
+                        "size": "x-small",
+                        "type": "around"
+                    }
+                ],
+                "size": {
+                    "default": "12",
+                    "isResponsive": false
+                },
+                "sizeClass": "slds-size_12-of-12"
+            }
+        }
+    ],
+    "theme": "slds",
+    "title": "DatatableCommContactCard",
+    "xmlJson": [
+        {
+            "@attributes": {
+                "targets": "lightning__AppPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                },
+                {
+                    "@attributes": {
+                        "name": "recordId",
+                        "type": "String"
+                    }
+                }
+            ]
+        },
+        {
+            "@attributes": {
+                "targets": "lightning__RecordPage"
+            },
+            "property": [
+                {
+                    "@attributes": {
+                        "name": "debug",
+                        "type": "Boolean"
+                    }
+                }
+            ]
+        }
+    ],
+    "xmlObject": {
+        "masterLabel": "DatatableCommContactCard",
+        "targetConfigs": "PHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX0FwcFBhZ2UiPgogICAgICAgICAgICAgICAgICAgICAgPHByb3BlcnR5IG5hbWU9ImRlYnVnIiB0eXBlPSJCb29sZWFuIi8+CiAgICAgICAgICAgICAgICAgICAgICA8cHJvcGVydHkgbmFtZT0icmVjb3JkSWQiIHR5cGU9IlN0cmluZyIvPgogICAgICAgICAgICAgICAgICA8L3RhcmdldENvbmZpZz4KICAgICAgICAgICAgICAgICAgPHRhcmdldENvbmZpZyB0YXJnZXRzPSJsaWdodG5pbmdfX1JlY29yZFBhZ2UiPgogICAgICAgICAgICAgICAgICAgICAgPHByb3BlcnR5IG5hbWU9ImRlYnVnIiB0eXBlPSJCb29sZWFuIi8+CiAgICAgICAgICAgICAgICAgIDwvdGFyZ2V0Q29uZmlnPg==",
+        "targets": {
+            "target": [
+                "lightning__RecordPage",
+                "lightning__AppPage",
+                "lightning__HomePage"
+            ]
+        }
+    }
+}

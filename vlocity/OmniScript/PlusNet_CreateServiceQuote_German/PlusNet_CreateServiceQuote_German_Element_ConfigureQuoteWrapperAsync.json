@@ -1,0 +1,104 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ConfigureQuoteWrapperAsync",
+    "OmniProcessId": {
+        "Name": "CreateServiceQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateServiceQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "extraPayload": {
+            "offerConfig": {
+                "access": {
+                    "contractTerm": "%contractTerm%"
+                },
+                "hardware": {
+                    "hardwareType": "%hardwareType%",
+                    "isServiceInstallation": "%isServiceInstallation%",
+                    "ontByPlusnet": "%HardwareGroupQuestion:ontByPlusnet%",
+                    "ontId": "%ontId%",
+                    "routerByPlusnet": "%HardwareGroupQuestion:routerByPlusnet%"
+                },
+                "ip": {
+                    "ipType": "%ipType%"
+                },
+                "itemId": "%FiberOfferSelectionLwC:listofitems:selecteditems|1:PBookId%",
+                "maxBandwidth": "%maxBandwidth%",
+                "offerCode": "%FiberOfferSelectionLwC:listofitems:selecteditems|1:ProductCode%",
+                "productType": "%productType%",
+                "voice": {
+                    "flatrateEuroPlus": "%flatrateEuroPlus%",
+                    "flatrateMobile": "%flatrateMobile%",
+                    "flatrateNational": "%flatrateNational%",
+                    "tariff": "%tariff%",
+                    "voicePhoneAccount": "%voicePhoneAccount%"
+                }
+            },
+            "priceListCode": "PNET-PL-B2B",
+            "quoteId": "%quoteId%",
+            "quoteNumber": "%quoteNumber%",
+            "subType": "Service"
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "integrationProcedureKey": "PlusNet_CreateQuoteWrapper",
+        "invokeMode": "fireAndForget",
+        "label": "",
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteOptions": {
+            "chainable": false,
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "queueableChainable": true,
+            "useFuture": false
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyExtraPayload": true,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateServiceQuote/German/ConfigureQuoteWrapperAsync"
+}

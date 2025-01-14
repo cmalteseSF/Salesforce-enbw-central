@@ -1,0 +1,82 @@
+[
+    {
+        "FormulaExpression": "COUNTQUERY(\"SELECT COUNT() FROM %vlocity_namespace%__ContractLineItem__c where %vlocity_namespace%__ContractId__c = '{0}' AND %vlocity_namespace%__Status__c = 'Active'\",%ContractId%)",
+        "FormulaResultPath": "CountActiveCLIs",
+        "FormulaSequence": 1,
+        "GlobalKey": "PlusNet-GetActiveContractLineItemsCustom4863",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetActiveContractLineItems",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetActiveContractLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetActiveContractLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "QUERY(\"SELECT STATUS FROM Contract where id = '{0}'\",%ContractId%)",
+        "FormulaResultPath": "ContractStatus",
+        "FormulaSequence": 2,
+        "GlobalKey": "PlusNet-GetActiveContractLineItemsCustom8470",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetActiveContractLineItems",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetActiveContractLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetActiveContractLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-GetActiveContractLineItemsCustom4472",
+        "InputFieldName": "ContractStatus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetActiveContractLineItems",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetActiveContractLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetActiveContractLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CurContractStatus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-GetActiveContractLineItemsCustom7020",
+        "InputFieldName": "CountActiveCLIs",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetActiveContractLineItems",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetActiveContractLineItems",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetActiveContractLineItems",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "NumberOfActiveCLIs",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,158 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "AddressNotValid",
+    "OmniProcessId": {
+        "Name": "CreateNewLocation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateNewLocation/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ValidateNewAddress",
+        "OmniProcessId": {
+            "Name": "CreateNewLocation",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateNewLocation/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateNewLocation/German/ValidateNewAddress",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ValidateNewAddress",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "hideLabel": true,
+        "label": "",
+        "messages": [
+            {
+                "active": false,
+                "text": "",
+                "type": "Success",
+                "value": true
+            },
+            {
+                "active": true,
+                "text": "Die von Ihnen angegebene Adresse ist ungültig",
+                "type": "Warning",
+                "value": false
+            }
+        ],
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": "",
+                                    "field": "AddressCheck"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": "success",
+                                    "field": "AddressCheck:validationResult"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": "",
+                                    "field": "AddressCheck"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "",
+                                    "field": "AddressCheck:AddressId"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": "",
+                                    "field": "AddressCheck"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "notPlanned",
+                                    "field": "AddressCheck:SPRIStatus"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "<>",
+                                    "data": "",
+                                    "field": "AddressCheck"
+                                },
+                                {
+                                    "condition": "=",
+                                    "data": "",
+                                    "field": "AddressCheck:SPRIStatus"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "validateExpression": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "group": {
+                            "operator": "AND",
+                            "rules": [
+                                {
+                                    "condition": "=",
+                                    "data": "success",
+                                    "field": "AddressCheck:validationResult"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "AddressCheck:AddressId"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": null,
+                                    "field": "AddressCheck:SPRIStatus"
+                                },
+                                {
+                                    "condition": "<>",
+                                    "data": "notPlanned",
+                                    "field": "AddressCheck:SPRIStatus"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateNewLocation/German/AddressNotValid"
+}

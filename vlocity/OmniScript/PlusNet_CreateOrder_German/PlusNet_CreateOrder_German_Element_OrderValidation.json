@@ -1,0 +1,86 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "OrderValidation",
+    "OmniProcessId": {
+        "Name": "Create Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateOrder/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": false,
+        "businessCategory": "",
+        "businessEvent": "",
+        "cancelLabel": "Cancel",
+        "cancelMessage": "Are you sure?",
+        "chartLabel": null,
+        "completeLabel": "Complete",
+        "completeMessage": "Are you sure you want to complete the script?",
+        "conditionType": "Hide if False",
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "instruction": "",
+        "instructionKey": "",
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": "Auftragserzeugung nicht möglich",
+        "message": {
+        },
+        "nextLabel": "Next",
+        "nextWidth": "0",
+        "previousLabel": "Previous",
+        "previousWidth": "0",
+        "pubsub": false,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": "Save for later",
+        "saveMessage": "Are you sure you want to save it for later?",
+        "show": {
+            "group": {
+                "operator": "OR",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "Accepted",
+                        "field": "Quote:Status"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": null,
+                        "field": "OpenTasks"
+                    },
+                    {
+                        "condition": ">",
+                        "data": "0",
+                        "field": "OrderCount"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": true,
+        "wpm": false
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateOrder/German/OrderValidation"
+}

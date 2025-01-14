@@ -1,0 +1,39 @@
+[
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT-TRF\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"\"}],\"index\":0}}",
+        "%vlocity_namespace%__EntityFilterId__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "993759c1-6bf4-6199-c63a-0c7b5950c576",
+        "%vlocity_namespace%__ProductGroupKey__c": "fd6daa81-9f09-8e66-c596-84742b11a4c8",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "4d3e3408-7514-1072-75f2-b7f7e28d9de3",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/4d3e3408-7514-1072-75f2-b7f7e28d9de3",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "TESTE",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/993759c1-6bf4-6199-c63a-0c7b5950c576"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATTR-CRR-NAM\":{\"actionsList\":[{\"action\":\"HIDE\",\"value\":false}],\"index\":0},\"ATT-PHO-N\":{\"actionsList\":[{\"action\":\"HIDE\",\"value\":false}],\"index\":1}}",
+        "%vlocity_namespace%__EntityFilterId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "1b22e045-7b5e-953c-4be8-29d2f3f2ced3",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__EntityFilter__c/1b22e045-7b5e-953c-4be8-29d2f3f2ced3",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__EntityFilter__c"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "cf7e1d56-f341-3f70-b586-0dbc188c1f0b",
+        "%vlocity_namespace%__ProductGroupKey__c": "fd6daa81-9f09-8e66-c596-84742b11a4c8",
+        "%vlocity_namespace%__ProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "4d3e3408-7514-1072-75f2-b7f7e28d9de3",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/4d3e3408-7514-1072-75f2-b7f7e28d9de3",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "Name": "ShowCarrierNameRufnumm-PortierungTrue",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductConfigurationProcedure__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductConfigurationProcedure__c/cf7e1d56-f341-3f70-b586-0dbc188c1f0b"
+    }
+]

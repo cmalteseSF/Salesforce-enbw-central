@@ -1,0 +1,877 @@
+{
+    "%vlocity_namespace%__ApprovedBy__c": "",
+    "%vlocity_namespace%__ApprovedOn__c": "",
+    "%vlocity_namespace%__AttributeAssignment__c": "IPfonie-Basic-Account_AttributeAssignments.json",
+    "%vlocity_namespace%__AttributeDefaultValues__c": {
+        "ATT-FLT-EUR-PLU": false,
+        "ATT-FLT-MOB": false,
+        "ATT-FLT-NTN": false,
+        "ATT-N-PHO": null,
+        "ATT-PHO-N": null,
+        "ATT-PRT-IN": false,
+        "ATTR-CRR-NAM": null
+    },
+    "%vlocity_namespace%__AttributeMetadata__c": {
+        "messages": [
+        ],
+        "records": [
+            {
+                "Code__c": "ATTCAT-B2B-PHN-DTL",
+                "Name": "Rufnummerdetails",
+                "displaySequence": 40,
+                "id": "a0YMU000000EpLF2A0",
+                "messages": [
+                ],
+                "productAttributes": {
+                    "messages": [
+                    ],
+                    "records": [
+                        {
+                            "attributeId": "a0ZMU0000009w4i2AA",
+                            "cloneable": true,
+                            "code": "ATT-FLT-NTN",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 10,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Flatrate National",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4g2AA",
+                            "cloneable": true,
+                            "code": "ATT-FLT-EUR-PLU",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 20,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Flatrate Euro Plus",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4h2AA",
+                            "cloneable": true,
+                            "code": "ATT-FLT-MOB",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 30,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Flatrate Mobilfunk",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4j2AA",
+                            "cloneable": true,
+                            "code": "ATT-N-PHO",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 35,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Anzahl Rufnummer",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "75cb6cba-9e49-ed8d-a2a5-8553221a6e46",
+                                    "label": "10",
+                                    "name": "75cb6cba-9e49-ed8d-a2a5-8553221a6e46",
+                                    "readonly": false,
+                                    "value": "10"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "83207c62-44b8-f9f1-52f8-e017db14d81d",
+                                    "label": "3",
+                                    "name": "83207c62-44b8-f9f1-52f8-e017db14d81d",
+                                    "readonly": false,
+                                    "value": "3"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4r2AA",
+                            "cloneable": true,
+                            "code": "ATT-PRT-IN",
+                            "dataType": "text",
+                            "disabled": true,
+                            "displaySequence": 55,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "checkbox",
+                            "isNotTranslatable": false,
+                            "label": "Portierung",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": true,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultValue": false,
+                                    "disabled": true,
+                                    "readonly": true
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4s2AA",
+                            "cloneable": true,
+                            "code": "ATTR-CRR-NAM",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 56,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "dropdown",
+                            "isNotTranslatable": false,
+                            "label": "Carrier Name",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 15,
+                                    "id": "039ecdac-6d70-74ed-e57a-6ba7fba9fd07",
+                                    "label": "Drillisch Online GmbH",
+                                    "name": "039ecdac-6d70-74ed-e57a-6ba7fba9fd07",
+                                    "readonly": false,
+                                    "value": "Drillisch Online GmbH"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 22,
+                                    "id": "0425d0aa-d5e0-159c-2579-93cf96948137",
+                                    "label": "EWE (OSNATL)",
+                                    "name": "0425d0aa-d5e0-159c-2579-93cf96948137",
+                                    "readonly": false,
+                                    "value": "EWE (OSNATL)"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 17,
+                                    "id": "06dbcad9-6823-a6d1-44eb-5822e50f22a8",
+                                    "label": "Easybell",
+                                    "name": "06dbcad9-6823-a6d1-44eb-5822e50f22a8",
+                                    "readonly": false,
+                                    "value": "Easybell"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 52,
+                                    "id": "0e420421-7ef4-a5f1-b222-3ff5c9a064ff",
+                                    "label": "Vodafone",
+                                    "name": "0e420421-7ef4-a5f1-b222-3ff5c9a064ff",
+                                    "readonly": false,
+                                    "value": "Vodafone"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 33,
+                                    "id": "1fafff2b-8c83-303b-a00f-dad591c8f663",
+                                    "label": "Outbox AG",
+                                    "name": "1fafff2b-8c83-303b-a00f-dad591c8f663",
+                                    "readonly": false,
+                                    "value": "Outbox AG"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 8,
+                                    "id": "2291cd9b-2aa2-faf8-3119-bc83af1a26a0",
+                                    "label": "Congstar GmbH",
+                                    "name": "2291cd9b-2aa2-faf8-3119-bc83af1a26a0",
+                                    "readonly": false,
+                                    "value": "Congstar GmbH"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 21,
+                                    "id": "271881b5-3cab-0907-c73a-5ecc0565ef44",
+                                    "label": "EWE",
+                                    "name": "271881b5-3cab-0907-c73a-5ecc0565ef44",
+                                    "readonly": false,
+                                    "value": "EWE"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 26,
+                                    "id": "36b0e91a-619e-8346-2f26-ef292540ee7f",
+                                    "label": "Inopla",
+                                    "name": "36b0e91a-619e-8346-2f26-ef292540ee7f",
+                                    "readonly": false,
+                                    "value": "Inopla"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 11,
+                                    "id": "39b54023-4d1e-a11d-131e-9bdf482a2ca0",
+                                    "label": "Deutsche Telekom",
+                                    "name": "39b54023-4d1e-a11d-131e-9bdf482a2ca0",
+                                    "readonly": false,
+                                    "value": "Deutsche Telekom"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 23,
+                                    "id": "3e86f9cd-6d7e-c2a9-f989-48a1f47f432f",
+                                    "label": "EWE (SWB)",
+                                    "name": "3e86f9cd-6d7e-c2a9-f989-48a1f47f432f",
+                                    "readonly": false,
+                                    "value": "EWE (SWB)"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 48,
+                                    "id": "409540e2-05f1-3300-bdde-c6a593056453",
+                                    "label": "Testaccount 1&1",
+                                    "name": "409540e2-05f1-3300-bdde-c6a593056453",
+                                    "readonly": false,
+                                    "value": "Testaccount 1&1"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 39,
+                                    "id": "428ca342-c99c-f249-c96f-bab9156c96d0",
+                                    "label": "RS Gesellschaft für Informationstechnik mbH",
+                                    "name": "428ca342-c99c-f249-c96f-bab9156c96d0",
+                                    "readonly": false,
+                                    "value": "RS Gesellschaft für Informationstechnik mbH"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 13,
+                                    "id": "46c4b247-44be-df4c-8bdf-434f435ff077",
+                                    "label": "DOKOM 21",
+                                    "name": "46c4b247-44be-df4c-8bdf-434f435ff077",
+                                    "readonly": false,
+                                    "value": "DOKOM 21"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 36,
+                                    "id": "46dc601b-e963-5b9a-cdbf-9a253897a2a1",
+                                    "label": "Plusnet Testaccount",
+                                    "name": "46dc601b-e963-5b9a-cdbf-9a253897a2a1",
+                                    "readonly": false,
+                                    "value": "Plusnet Testaccount"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 38,
+                                    "id": "470df620-fce7-04ce-13e8-3cab6d0a5ced",
+                                    "label": "Reventix",
+                                    "name": "470df620-fce7-04ce-13e8-3cab6d0a5ced",
+                                    "readonly": false,
+                                    "value": "Reventix"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 14,
+                                    "id": "496ed0e2-75c5-19c7-e1a7-0ae69b971e30",
+                                    "label": "Dolphin IT-Systeme e.K.",
+                                    "name": "496ed0e2-75c5-19c7-e1a7-0ae69b971e30",
+                                    "readonly": false,
+                                    "value": "Dolphin IT-Systeme e.K."
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 5,
+                                    "id": "4b13c57e-1170-0470-7a37-1e706f811296",
+                                    "label": "BT Germany",
+                                    "name": "4b13c57e-1170-0470-7a37-1e706f811296",
+                                    "readonly": false,
+                                    "value": "BT Germany"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 6,
+                                    "id": "54ba0577-9e7c-1e3d-093a-d5786089437f",
+                                    "label": "CNT AG",
+                                    "name": "54ba0577-9e7c-1e3d-093a-d5786089437f",
+                                    "readonly": false,
+                                    "value": "CNT AG"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 25,
+                                    "id": "58add4ef-6ec7-24fc-1efd-423faefe2ffc",
+                                    "label": "HFO Telecom",
+                                    "name": "58add4ef-6ec7-24fc-1efd-423faefe2ffc",
+                                    "readonly": false,
+                                    "value": "HFO Telecom"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 31,
+                                    "id": "58ec6235-8138-d06f-4fda-8d723efc143e",
+                                    "label": "NetCologne",
+                                    "name": "58ec6235-8138-d06f-4fda-8d723efc143e",
+                                    "readonly": false,
+                                    "value": "NetCologne"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 34,
+                                    "id": "66dcbf8e-b254-bb36-93d2-a270a7dd67a5",
+                                    "label": "Pinneberg",
+                                    "name": "66dcbf8e-b254-bb36-93d2-a270a7dd67a5",
+                                    "readonly": false,
+                                    "value": "Pinneberg"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 19,
+                                    "id": "6d4db72f-381d-4384-c99d-496a6f8c3f08",
+                                    "label": "Encoline",
+                                    "name": "6d4db72f-381d-4384-c99d-496a6f8c3f08",
+                                    "readonly": false,
+                                    "value": "Encoline"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 47,
+                                    "id": "719c3991-ac0f-8d0a-f69c-dbf590515843",
+                                    "label": "Telefonica",
+                                    "name": "719c3991-ac0f-8d0a-f69c-dbf590515843",
+                                    "readonly": false,
+                                    "value": "Telefonica"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 30,
+                                    "id": "83e95fb0-d342-b29d-b816-966570422eaa",
+                                    "label": "Net services GmbH & Co.KG",
+                                    "name": "83e95fb0-d342-b29d-b816-966570422eaa",
+                                    "readonly": false,
+                                    "value": "Net services GmbH & Co.KG"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 1,
+                                    "id": "8dd2b2a2-ca1b-5428-7f02-a625a46f4a39",
+                                    "label": "1&1",
+                                    "name": "8dd2b2a2-ca1b-5428-7f02-a625a46f4a39",
+                                    "readonly": false,
+                                    "value": "1&1"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 53,
+                                    "id": "90ae0e0d-1fd1-1445-b8d7-ee811036ab66",
+                                    "label": "Willy.tel",
+                                    "name": "90ae0e0d-1fd1-1445-b8d7-ee811036ab66",
+                                    "readonly": false,
+                                    "value": "Willy.tel"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 10,
+                                    "id": "91ae207f-a149-e5a5-f7c3-a0d314918787",
+                                    "label": "Deutsche Telefon Standard",
+                                    "name": "91ae207f-a149-e5a5-f7c3-a0d314918787",
+                                    "readonly": false,
+                                    "value": "Deutsche Telefon Standard"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 18,
+                                    "id": "92d32c44-63b2-800b-a89c-d1b90f61bb27",
+                                    "label": "Ecotel",
+                                    "name": "92d32c44-63b2-800b-a89c-d1b90f61bb27",
+                                    "readonly": false,
+                                    "value": "Ecotel"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 35,
+                                    "id": "948d3aa8-e9c1-af59-13ff-d1a3a18989da",
+                                    "label": "Planet 33 AG",
+                                    "name": "948d3aa8-e9c1-af59-13ff-d1a3a18989da",
+                                    "readonly": false,
+                                    "value": "Planet 33 AG"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 37,
+                                    "id": "957bb823-1846-afe1-abc5-437338b289b3",
+                                    "label": "Quickborn",
+                                    "name": "957bb823-1846-afe1-abc5-437338b289b3",
+                                    "readonly": false,
+                                    "value": "Quickborn"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 29,
+                                    "id": "96b5b154-07bb-6482-3325-dee5ee0f367a",
+                                    "label": "M-net",
+                                    "name": "96b5b154-07bb-6482-3325-dee5ee0f367a",
+                                    "readonly": false,
+                                    "value": "M-net"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 50,
+                                    "id": "9928620e-38c2-5c18-5377-32148cd9cba3",
+                                    "label": "Versatel",
+                                    "name": "9928620e-38c2-5c18-5377-32148cd9cba3",
+                                    "readonly": false,
+                                    "value": "Versatel"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 46,
+                                    "id": "9dedecde-c7e9-d115-0a6e-960ca969e386",
+                                    "label": "Süc dacor",
+                                    "name": "9dedecde-c7e9-d115-0a6e-960ca969e386",
+                                    "readonly": false,
+                                    "value": "Süc dacor"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 45,
+                                    "id": "9e6a7929-c59c-f5d7-736d-993d30f86c0e",
+                                    "label": "Stadtwerke Waldkirch",
+                                    "name": "9e6a7929-c59c-f5d7-736d-993d30f86c0e",
+                                    "readonly": false,
+                                    "value": "Stadtwerke Waldkirch"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 28,
+                                    "id": "adf000e2-a65f-33a0-b82c-9524cfdc1509",
+                                    "label": "KEVAG",
+                                    "name": "adf000e2-a65f-33a0-b82c-9524cfdc1509",
+                                    "readonly": false,
+                                    "value": "KEVAG"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 12,
+                                    "id": "b035d600-f996-41f3-8b9b-f9e09db7e130",
+                                    "label": "DNS:NET",
+                                    "name": "b035d600-f996-41f3-8b9b-f9e09db7e130",
+                                    "readonly": false,
+                                    "value": "DNS:NET"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 40,
+                                    "id": "ba6fcad7-3d9b-2502-de45-8f55e225388e",
+                                    "label": "Sipgate",
+                                    "name": "ba6fcad7-3d9b-2502-de45-8f55e225388e",
+                                    "readonly": false,
+                                    "value": "Sipgate"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 2,
+                                    "id": "baefc57f-5b08-b6e9-0a73-2d892c16e875",
+                                    "label": "Autphone GmbH",
+                                    "name": "baefc57f-5b08-b6e9-0a73-2d892c16e875",
+                                    "readonly": false,
+                                    "value": "Autphone GmbH"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 9,
+                                    "id": "bdc12ecb-e8c9-1558-a4af-73210a968430",
+                                    "label": "DETEWE",
+                                    "name": "bdc12ecb-e8c9-1558-a4af-73210a968430",
+                                    "readonly": false,
+                                    "value": "DETEWE"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 44,
+                                    "id": "c09c2eba-3e71-9660-e1d9-56e3a500237e",
+                                    "label": "Stadtwerke Troisdorf",
+                                    "name": "c09c2eba-3e71-9660-e1d9-56e3a500237e",
+                                    "readonly": false,
+                                    "value": "Stadtwerke Troisdorf"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 3,
+                                    "id": "c1334805-758e-e023-d113-110c85a0c61a",
+                                    "label": "Avaya",
+                                    "name": "c1334805-758e-e023-d113-110c85a0c61a",
+                                    "readonly": false,
+                                    "value": "Avaya"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 42,
+                                    "id": "c60fd08a-d626-fd7f-18dd-eb1386484e04",
+                                    "label": "Stadtwerke Karlsruhe",
+                                    "name": "c60fd08a-d626-fd7f-18dd-eb1386484e04",
+                                    "readonly": false,
+                                    "value": "Stadtwerke Karlsruhe"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 41,
+                                    "id": "cc869173-04ab-dd09-9a9f-cdf458479b50",
+                                    "label": "Stadtwerke Jülich",
+                                    "name": "cc869173-04ab-dd09-9a9f-cdf458479b50",
+                                    "readonly": false,
+                                    "value": "Stadtwerke Jülich"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 7,
+                                    "id": "d8042099-84ee-2c41-3529-86fedd960737",
+                                    "label": "Colt GmbH",
+                                    "name": "d8042099-84ee-2c41-3529-86fedd960737",
+                                    "readonly": false,
+                                    "value": "Colt GmbH"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 4,
+                                    "id": "de8c8c26-6829-8a52-540b-1222fa14f4f7",
+                                    "label": "BroadSoft Germany GmbH",
+                                    "name": "de8c8c26-6829-8a52-540b-1222fa14f4f7",
+                                    "readonly": false,
+                                    "value": "BroadSoft Germany GmbH"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 24,
+                                    "id": "dff320e0-d887-4dc4-cf5e-0cc03ede94a4",
+                                    "label": "Herzomedia GmbH & Co. KG",
+                                    "name": "dff320e0-d887-4dc4-cf5e-0cc03ede94a4",
+                                    "readonly": false,
+                                    "value": "Herzomedia GmbH & Co. KG"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 49,
+                                    "id": "e2cf2616-f347-8a0e-5d27-d5fe7ac29fad",
+                                    "label": "Verizon Deutschland GmbH",
+                                    "name": "e2cf2616-f347-8a0e-5d27-d5fe7ac29fad",
+                                    "readonly": false,
+                                    "value": "Verizon Deutschland GmbH"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 43,
+                                    "id": "e9f6b45e-497c-5879-bef4-8a3ccd5efbe0",
+                                    "label": "Stadtwerke Ludwigsburg",
+                                    "name": "e9f6b45e-497c-5879-bef4-8a3ccd5efbe0",
+                                    "readonly": false,
+                                    "value": "Stadtwerke Ludwigsburg"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 27,
+                                    "id": "ed2cfa42-3249-2dab-4910-160cc653cac5",
+                                    "label": "Kabel Deutschland",
+                                    "name": "ed2cfa42-3249-2dab-4910-160cc653cac5",
+                                    "readonly": false,
+                                    "value": "Kabel Deutschland"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 16,
+                                    "id": "f348c198-37c8-7dcd-017b-a9c8319e5516",
+                                    "label": "Drillisch Online GmbH TestKennung Schnittstelle",
+                                    "name": "f348c198-37c8-7dcd-017b-a9c8319e5516",
+                                    "readonly": false,
+                                    "value": "Drillisch Online GmbH TestKennung Schnittstelle"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 32,
+                                    "id": "f3712e6f-0c65-8567-6b7c-314eff8a5884",
+                                    "label": "NFON AG",
+                                    "name": "f3712e6f-0c65-8567-6b7c-314eff8a5884",
+                                    "readonly": false,
+                                    "value": "NFON AG"
+                                },
+                                {
+                                    "defaultSelected": false,
+                                    "disabled": false,
+                                    "displaySequence": 20,
+                                    "id": "fa0461f0-c8a0-278e-e7dc-77f6cb7bc2f1",
+                                    "label": "Equada GmbH",
+                                    "name": "fa0461f0-c8a0-278e-e7dc-77f6cb7bc2f1",
+                                    "readonly": false,
+                                    "value": "Equada GmbH"
+                                }
+                            ]
+                        },
+                        {
+                            "attributeId": "a0ZMU0000009w4q2AA",
+                            "cloneable": true,
+                            "code": "ATT-PHO-N",
+                            "dataType": "text",
+                            "disabled": false,
+                            "displaySequence": 57,
+                            "filterable": true,
+                            "hasRules": false,
+                            "hidden": false,
+                            "inputType": "text",
+                            "isNotTranslatable": false,
+                            "label": "Rufnummer",
+                            "messages": [
+                            ],
+                            "multiselect": false,
+                            "readonly": false,
+                            "required": false,
+                            "userValues": null,
+                            "values": [
+                                {
+                                    "disabled": false,
+                                    "readonly": false
+                                }
+                            ]
+                        }
+                    ],
+                    "totalSize": 7
+                }
+            }
+        ],
+        "totalSize": 1
+    },
+    "%vlocity_namespace%__AttributeRules__c": "{}",
+    "%vlocity_namespace%__AttributesMarkupConfig__c": "",
+    "%vlocity_namespace%__CategoryData__c": "",
+    "%vlocity_namespace%__ChangeDetectorImplementation__c": "",
+    "%vlocity_namespace%__ClassId__c": "",
+    "%vlocity_namespace%__DefaultImageId__c": "",
+    "%vlocity_namespace%__EffectiveDate__c": "2023-09-11",
+    "%vlocity_namespace%__EndDate__c": "",
+    "%vlocity_namespace%__EndOfLifeDate__c": "",
+    "%vlocity_namespace%__FulfilmentStartDate__c": "2023-09-10T22:00:00.000Z",
+    "%vlocity_namespace%__GlobalGroupKey__c": "472bdc2b-fafd-254a-e378-ffd5176da691",
+    "%vlocity_namespace%__GlobalKey__c": "9719b472-dcd6-38e5-9e79-a514e1809d9c",
+    "%vlocity_namespace%__HeaderData__c": "",
+    "%vlocity_namespace%__HelpText__c": "",
+    "%vlocity_namespace%__IsConfigurable__c": true,
+    "%vlocity_namespace%__IsCustomerSubscription__c": false,
+    "%vlocity_namespace%__IsLocationDependent__c": false,
+    "%vlocity_namespace%__IsNotAssetizable__c": false,
+    "%vlocity_namespace%__IsOrderable__c": false,
+    "%vlocity_namespace%__JeopardySafetyIntervalUnit__c": "Seconds",
+    "%vlocity_namespace%__JeopardySafetyInterval__c": "",
+    "%vlocity_namespace%__LifecycleStatus__c": "Draft",
+    "%vlocity_namespace%__MainFeatureQuantityUom__c": "",
+    "%vlocity_namespace%__MainFeatureQuantity__c": "",
+    "%vlocity_namespace%__MainFeatureTermInDays__c": "",
+    "%vlocity_namespace%__Modification__c": "",
+    "%vlocity_namespace%__ObjectFieldAttribute__c": "IPfonie-Basic-Account_ObjectFieldAttributes.json",
+    "%vlocity_namespace%__ObjectTypeId__c": "",
+    "%vlocity_namespace%__ParentClassId__c": "",
+    "%vlocity_namespace%__PriceListEntry__c": "IPfonie-Basic-Account_PriceListEntries.json",
+    "%vlocity_namespace%__ProductChildItem__c": "IPfonie-Basic-Account_ProductChildItems.json",
+    "%vlocity_namespace%__ProductConfigurationProcedure__c": "IPfonie-Basic-Account_ProductConfigurationProcedures.json",
+    "%vlocity_namespace%__ProductRelationship__c": "IPfonie-Basic-Account_ProductRelationships.json",
+    "%vlocity_namespace%__ProductSpecId__c": {
+        "%vlocity_namespace%__GlobalKey__c": "27708e24-1f72-8b05-3636-5a5d63e2c950",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "Product2/27708e24-1f72-8b05-3636-5a5d63e2c950",
+        "VlocityRecordSObjectType": "Product2"
+    },
+    "%vlocity_namespace%__ProductSpecName__c": "Rufnummer PS",
+    "%vlocity_namespace%__ProductTemplateProductId__c": "",
+    "%vlocity_namespace%__Scope__c": "Order Item",
+    "%vlocity_namespace%__SellingEndDate__c": "",
+    "%vlocity_namespace%__SellingStartDate__c": "2023-09-10T22:00:00.000Z",
+    "%vlocity_namespace%__SpecificationSubType__c": "Simple",
+    "%vlocity_namespace%__SpecificationType__c": "Offer",
+    "%vlocity_namespace%__StandardPremium__c": "",
+    "%vlocity_namespace%__Status__c": "Active",
+    "%vlocity_namespace%__SubType__c": "",
+    "%vlocity_namespace%__TimeToLive__c": "",
+    "%vlocity_namespace%__TrackAsAgreement__c": false,
+    "%vlocity_namespace%__Type__c": "Phone Number",
+    "%vlocity_namespace%__VendorAccountId__c": "",
+    "%vlocity_namespace%__VersionEndDateTime__c": "",
+    "%vlocity_namespace%__VersionLabel__c": "V1",
+    "%vlocity_namespace%__VersionStartDateTime__c": "2023-09-10T22:00:00.000Z",
+    "BillingType__c": "ADD_ON",
+    "CanUseQuantitySchedule": false,
+    "CanUseRevenueSchedule": false,
+    "Description": "",
+    "DisplayUrl": "",
+    "ExternalDataSourceId": "",
+    "ExternalId": "",
+    "Family": "Telefonie",
+    "IsActive": true,
+    "IsArchived": false,
+    "Name": "IPfonie Basic Account",
+    "NumberOfQuantityInstallments": "",
+    "NumberOfRevenueInstallments": "",
+    "PlusNet_Period_Of_Notice__c": 1,
+    "PricebookEntry": "IPfonie-Basic-Account_PricebookEntries.json",
+    "ProductCode": "PNET-IPF-ACC",
+    "QuantityInstallmentPeriod": "",
+    "QuantityScheduleType": "",
+    "QuantityUnitOfMeasure": "",
+    "RecordTypeId": {
+        "DeveloperName": "Product",
+        "SobjectType": "Product2",
+        "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+        "VlocityLookupRecordSourceKey": "RecordType/Product2/Product",
+        "VlocityRecordSObjectType": "RecordType"
+    },
+    "RevenueInstallmentPeriod": "",
+    "RevenueScheduleType": "",
+    "SAPMaterialNumber__c": "S11",
+    "SelectedDownBandWidth__c": "",
+    "StandardPricebookEntry": [
+        {
+            "%vlocity_namespace%__FloorPrice__c": "",
+            "%vlocity_namespace%__OverageCharge__c": "",
+            "%vlocity_namespace%__OverageUOM__c": "",
+            "%vlocity_namespace%__RecurringPrice__c": 0,
+            "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+            "IsActive": true,
+            "IsArchived": false,
+            "Name": "IPfonie Basic Account",
+            "Pricebook2.Name": "Standardmäßiges Preisbuch",
+            "Pricebook2Id": {
+                "Name": "Standardmäßiges Preisbuch",
+                "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+                "VlocityLookupRecordSourceKey": "Pricebook2/Standardmäßiges Preisbuch",
+                "VlocityRecordSObjectType": "Pricebook2"
+            },
+            "Product2.%vlocity_namespace%__GlobalKey__c": "9719b472-dcd6-38e5-9e79-a514e1809d9c",
+            "Product2Id": {
+                "%vlocity_namespace%__GlobalKey__c": "9719b472-dcd6-38e5-9e79-a514e1809d9c",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "Product2/9719b472-dcd6-38e5-9e79-a514e1809d9c",
+                "VlocityRecordSObjectType": "Product2"
+            },
+            "ProductCode": "PNET-IPF-ACC",
+            "UnitPrice": 0,
+            "UseStandardPrice": false,
+            "VlocityDataPackType": "SObject",
+            "VlocityRecordSObjectType": "PricebookEntry",
+            "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standardmäßiges Preisbuch/Product2/9719b472-dcd6-38e5-9e79-a514e1809d9c"
+        }
+    ],
+    "StockKeepingUnit": "",
+    "SyncBilling__c": false,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "Product2",
+    "VlocityRecordSourceKey": "Product2/9719b472-dcd6-38e5-9e79-a514e1809d9c"
+}

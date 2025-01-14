@@ -1,0 +1,81 @@
+[
+    {
+        "FormulaExpression": "IF(ISBLANK(%QLIList|1:CompanyName%), \"\", %QLIList|1:CompanyName%) + IF(ISBLANK(%QLIList|1:Name%), \"\", \" \" + %QLIList|1:Name%) + IF(ISBLANK(%QLIList|1:Street%), \"\", \" \" + %QLIList|1:Street%) + IF(ISBLANK(%QLIList|1:HouseNo%), \"\", \" \" + %QLIList|1:HouseNo%) + IF(ISBLANK(%QLIList|1:PostalCode%), \"\", \" \" + %QLIList|1:PostalCode%) + IF(ISBLANK(%QLIList|1:City%), \"\", \" \" + %QLIList|1:City%)",
+        "FormulaResultPath": "subscriberinfo",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRUpdateAllQLICustom0jIMU0000008OtO2AUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateAllQLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateAllQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateAllQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateAllQLICustom1534",
+        "InputFieldName": "QLIList:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateAllQLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateAllQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateAllQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DRUpdateAllQLICustom0jIMU0000008OtO2AUItem9",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DRUpdateAllQLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateAllQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateAllQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRUpdateAllQLICustom0jIMU0000008OtO2AUItem8",
+        "InputFieldName": "subscriberinfo",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRUpdateAllQLI",
+        "OmniDataTransformationId": {
+            "Name": "DRUpdateAllQLI",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRUpdateAllQLI",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VoiceSubscriber__c",
+        "OutputObjectName": "QuoteLineItem",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

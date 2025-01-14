@@ -1,0 +1,24 @@
+{
+    "CustomJavaScript": "COM_ServiceAvailabilityCheck_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ServiceAvailabilityCheck",
+    "OmniProcessElement": [
+        "COM_ServiceAvailabilityCheck_Element_ServiceAvailabilityCheck.json",
+        "COM_ServiceAvailabilityCheck_Element_ResponseAction1.json",
+        "COM_ServiceAvailabilityCheck_Element_ResponseAction2.json"
+    ],
+    "OmniProcessKey": "COM_ServiceAvailabilityCheck",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "COM_ServiceAvailabilityCheck_PropertySetConfig.json",
+    "SubType": "ServiceAvailabilityCheck",
+    "Type": "COM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/COM/ServiceAvailabilityCheck/Procedure"
+}

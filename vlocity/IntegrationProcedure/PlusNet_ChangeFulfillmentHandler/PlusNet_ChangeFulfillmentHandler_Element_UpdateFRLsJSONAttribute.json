@@ -1,0 +1,58 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateFRLsJSONAttribute",
+    "OmniProcessId": {
+        "Name": "ChangeFulfillmentHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeFulfillmentHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "LoopBlock3",
+        "OmniProcessId": {
+            "Name": "ChangeFulfillmentHandler",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeFulfillmentHandler/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeFulfillmentHandler/Procedure/LoopBlock3",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "LoopBlock3",
+    "ParentElementType": "Loop Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Attr": "=IF(%DRMergeFRL:MergedFRLData:AttrValue% != '', %DRMergeFRL:MergedFRLData:SerializedNetworkAttrValue%, %DRMergeFRL:MergedFRLData:SerializedSerialNumAttrValue%)",
+            "FrlList:FRL:Id": "=%DRMergeFRL:MergedFRLData:FRLId%",
+            "FrlList:FRL:json": "=%DRMergeFRL:MergedFRLData:JSONAttr%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRPostUpdateFrlAttrListV2",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%DRMergeFRL:MergedFRLData:SerializedNetworkAttrValue% != '' OR %DRMergeFRL:MergedFRLData:SerializedSerialNumAttrValue% != ''",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+            "RetCode": "NOK"
+        },
+        "label": "DataRaptorPostAction5",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeFulfillmentHandler/Procedure/UpdateFRLsJSONAttribute"
+}

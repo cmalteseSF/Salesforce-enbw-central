@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>areaPlanned</fullName>
+        <default>false</default>
+        <label>areaPlanned</label>
+    </customValue>
+    <customValue>
+        <fullName>homesConnected</fullName>
+        <default>false</default>
+        <label>homesConnected</label>
+    </customValue>
+    <customValue>
+        <fullName>homesPassed</fullName>
+        <default>false</default>
+        <label>homesPassed</label>
+    </customValue>
+    <customValue>
+        <fullName>homesPassedPlus</fullName>
+        <default>false</default>
+        <label>homesPassedPlus</label>
+    </customValue>
+    <customValue>
+        <fullName>homesPrepared</fullName>
+        <default>false</default>
+        <label>homesPrepared</label>
+    </customValue>
+    <customValue>
+        <fullName>homesReady</fullName>
+        <default>false</default>
+        <label>homesReady</label>
+    </customValue>
+    <customValue>
+        <fullName>notPlanned</fullName>
+        <default>false</default>
+        <label>notPlanned</label>
+    </customValue>
+    <customValue>
+        <fullName>preMarketing</fullName>
+        <default>false</default>
+        <label>preMarketing</label>
+    </customValue>
+    <customValue>
+        <fullName>underConstruction</fullName>
+        <default>false</default>
+        <label>underConstruction</label>
+    </customValue>
+    <description>Used to store all SPRI statuses which a Service Address can have</description>
+    <masterLabel>SPRI Statuses</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "This IP calculates the price and runs cart validation",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CalculatePrice",
+    "OmniProcessElement": [
+        "PlusNet_CalculatePrice_Element_GetCartsItems.json",
+        "PlusNet_CalculatePrice_Element_RunCartValidation.json",
+        "PlusNet_CalculatePrice_Element_ResponseAction.json"
+    ],
+    "OmniProcessKey": "PlusNet_CalculatePrice",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CalculatePrice_PropertySetConfig.json",
+    "SubType": "CalculatePrice",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CalculatePrice/Procedure"
+}

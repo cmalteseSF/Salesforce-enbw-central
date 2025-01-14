@@ -1,0 +1,53 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRUpdateOrder",
+    "OmniProcessId": {
+        "Name": "Disconnect Service",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/DisconnectService/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Id": "%CreateFDO:records:cartId%",
+            "assetRefId": "%TerminationData:AssetReferenceId%",
+            "billingAccountId": "%TerminationData:AssetBillingAccountId%",
+            "carrierAddressId": "%TerminationData:CarrierAddressId%",
+            "contractId": "%TerminationData:AssetContractId%",
+            "orderType": "Termination",
+            "premiseId": "%TerminationData:AssetPremiseId%",
+            "serviceAccountId": "%TerminationData:AssetServiceAccountId%",
+            "servicePointId": "%TerminationData:ServicePointId%",
+            "subType": "%TerminationData:AssetSubType%",
+            "technicalContactId": "%TerminationData:SelectedTechContactId%",
+            "terminationCategory": "%TerminationData:TerminationCategory%",
+            "terminationReason": "%TerminationData:TerminationReason%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRUpdateOrder",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/DisconnectService/Procedure/DRUpdateOrder"
+}

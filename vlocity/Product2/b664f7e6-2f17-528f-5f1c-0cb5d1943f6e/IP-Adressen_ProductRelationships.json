@@ -1,0 +1,76 @@
+[
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT-IP-TYP\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"Dynamische\"}],\"index\":0}}",
+        "%vlocity_namespace%__AddMode__c": "asSibling",
+        "%vlocity_namespace%__AttributeModificationContext__c": "Bundle",
+        "%vlocity_namespace%__Context__c": "Bundle",
+        "%vlocity_namespace%__DefaultQuantity__c": 1,
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__Family__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "98214030-bafa-7e73-9d2f-65f8513f73b9",
+        "%vlocity_namespace%__IsConditional__c": true,
+        "%vlocity_namespace%__MaxQuantity__c": 1,
+        "%vlocity_namespace%__MinQuantity__c": 1,
+        "%vlocity_namespace%__ObjectTypeId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "a628358a-09f5-a511-3723-8a8dd5af3a0a",
+        "%vlocity_namespace%__RelatedObjectTypeId__c": "",
+        "%vlocity_namespace%__RelatedProductFilterId__c": "",
+        "%vlocity_namespace%__RelatedProductGroupKey__c": "794fe000-ecf4-e6a6-0a91-3a23c308c468",
+        "%vlocity_namespace%__RelatedProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c4aeefc0-1ec4-c87b-35e1-fa9938c346fc",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/c4aeefc0-1ec4-c87b-35e1-fa9938c346fc",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__RelationshipType__c": "Modify Attributes",
+        "%vlocity_namespace%__ReverseMaxQuantity__c": "",
+        "%vlocity_namespace%__ReverseMinQuantity__c": "",
+        "Name": "ProdRel-DynamicRule-IPAddToIPNetwork",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductRelationship__c/98214030-bafa-7e73-9d2f-65f8513f73b9"
+    },
+    {
+        "%vlocity_namespace%__ActionParameters__c": "{\"ATT-IP-TYP\":{\"actionsList\":[{\"action\":\"ASSIGN\",\"value\":\"Statisch\"}],\"index\":0}}",
+        "%vlocity_namespace%__AddMode__c": "asSibling",
+        "%vlocity_namespace%__AttributeModificationContext__c": "Bundle",
+        "%vlocity_namespace%__Context__c": "Bundle",
+        "%vlocity_namespace%__DefaultQuantity__c": 1,
+        "%vlocity_namespace%__Description__c": "",
+        "%vlocity_namespace%__Family__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "efae94ec-011a-6c61-1312-ee1ec6278b5e",
+        "%vlocity_namespace%__IsConditional__c": true,
+        "%vlocity_namespace%__MaxQuantity__c": 1,
+        "%vlocity_namespace%__MinQuantity__c": 1,
+        "%vlocity_namespace%__ObjectTypeId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/b664f7e6-2f17-528f-5f1c-0cb5d1943f6e",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__ProductGroupKey__c": "a628358a-09f5-a511-3723-8a8dd5af3a0a",
+        "%vlocity_namespace%__RelatedObjectTypeId__c": "",
+        "%vlocity_namespace%__RelatedProductFilterId__c": "",
+        "%vlocity_namespace%__RelatedProductGroupKey__c": "794fe000-ecf4-e6a6-0a91-3a23c308c468",
+        "%vlocity_namespace%__RelatedProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "c4aeefc0-1ec4-c87b-35e1-fa9938c346fc",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/c4aeefc0-1ec4-c87b-35e1-fa9938c346fc",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__RelationshipType__c": "Modify Attributes",
+        "%vlocity_namespace%__ReverseMaxQuantity__c": "",
+        "%vlocity_namespace%__ReverseMinQuantity__c": "",
+        "Name": "ProdRel-StaticRule-IPAddToIPNetwork",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__ProductRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__ProductRelationship__c/efae94ec-011a-6c61-1312-ee1ec6278b5e"
+    }
+]

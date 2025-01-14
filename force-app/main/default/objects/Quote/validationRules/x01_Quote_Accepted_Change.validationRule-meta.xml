@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>x01_Quote_Accepted_Change</fullName>
+    <active>true</active>
+    <description>Ruled fired when a change is made on an Accepted Quote by the Partner</description>
+    <errorConditionFormula>AND(NOT(ISNEW()), ISPICKVAL(Status, &quot;Accepted&quot;), $Profile.Name = &quot;Partner&quot;)</errorConditionFormula>
+    <errorMessage>Sie können ein Angebot, das Sie gewonnen haben, nicht ändern (Error x01).</errorMessage>
+</ValidationRule>

@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "PlusNet_SyncQuoteToOpportunity_SampleInput.json",
+    "Description": "This IP syncs the quote to the opportunity",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "SyncQuoteToOpportunity",
+    "OmniProcessElement": [
+        "PlusNet_SyncQuoteToOpportunity_Element_GetOppotunityIdFromQuote.json",
+        "PlusNet_SyncQuoteToOpportunity_Element_SyncQuoteToOppty.json",
+        "PlusNet_SyncQuoteToOpportunity_Element_Response.json"
+    ],
+    "OmniProcessKey": "PlusNet_SyncQuoteToOpportunity",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SyncQuoteToOpportunity_PropertySetConfig.json",
+    "SubType": "SyncQuoteToOpportunity",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SyncQuoteToOpportunity/Procedure"
+}

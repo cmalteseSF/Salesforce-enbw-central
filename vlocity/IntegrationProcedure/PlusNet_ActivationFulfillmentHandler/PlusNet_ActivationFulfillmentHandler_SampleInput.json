@@ -1,0 +1,287 @@
+{
+    "ActivationDate": "2024-04-18",
+    "CFSAccessId": "a2P9M000000EU1RUAW",
+    "CFSAllListWrapper": {
+        "CFSAllList": [
+            {
+                "FRLId": "a2P9M000000EU1RUAW",
+                "action": "add",
+                "externalId": "CS_CAC000000001166123",
+                "orderItemId": "8029M0000031g0IQAQ",
+                "pointOfNoReturn": false,
+                "serviceCharacteristic": [
+                    {
+                        "@type": "Characteristic",
+                        "name": "oltPortId",
+                        "value": "8a"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "bandwidthDown",
+                        "value": "300"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "bandwidthUp",
+                        "value": "100"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "oltId",
+                        "value": "test"
+                    }
+                ],
+                "serviceSpecificationId": "CFS_Access"
+            },
+            {
+                "FRLId": "a2P9M000000EU1SUAW",
+                "action": "add",
+                "externalId": "CS_CIP000000001167121",
+                "orderItemId": "8029M0000031g0KQAQ",
+                "pointOfNoReturn": false,
+                "serviceCharacteristic": [
+                    {
+                        "@type": "Characteristic",
+                        "name": "subnetMask",
+                        "value": "16"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "networkAddress",
+                        "value": "10.0.0.1"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "addressType",
+                        "value": "IPv4"
+                    }
+                ],
+                "serviceSpecificationId": "CFS_IP"
+            },
+            {
+                "FRLId": "a2P9M000000EU1TUAW",
+                "action": "add",
+                "externalId": "CS_CIP000000001168129",
+                "orderItemId": "8029M0000031g0LQAQ",
+                "pointOfNoReturn": false,
+                "serviceCharacteristic": [
+                    {
+                        "@type": "Characteristic",
+                        "name": "subnetMask",
+                        "value": "16"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "networkAddress",
+                        "value": "11.0.0.1"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "addressType",
+                        "value": "IPv6"
+                    }
+                ],
+                "serviceSpecificationId": "CFS_IP"
+            },
+            {
+                "FRLId": "a2P9M000000EU1UUAW",
+                "action": "add",
+                "externalId": "CS_CIP000000001169127",
+                "orderItemId": "8029M0000031g0MQAQ",
+                "pointOfNoReturn": false,
+                "serviceCharacteristic": [
+                    {
+                        "@type": "Characteristic",
+                        "name": "subnetMask",
+                        "value": "16"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "networkAddress",
+                        "value": "12.0.1"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "addressType",
+                        "value": "IPv6"
+                    }
+                ],
+                "serviceSpecificationId": "CFS_IP"
+            },
+            {
+                "FRLId": "a2P9M000000EU1VUAW",
+                "action": "add",
+                "externalId": "CS_CPE000000001170125",
+                "orderItemId": "8029M0000031g0NQAQ",
+                "pointOfNoReturn": false,
+                "serviceCharacteristic": [
+                    {
+                        "@type": "Characteristic",
+                        "name": "owner",
+                        "value": "Generic"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "modell",
+                        "value": "FritzBox! 5530 Fiber"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "cpeType",
+                        "value": "CPE"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "manufacturer",
+                        "value": "AVM"
+                    },
+                    {
+                        "@type": "Characteristic",
+                        "name": "serialNumber",
+                        "value": "110012333444"
+                    }
+                ],
+                "serviceSpecificationId": "CFS_CPE"
+            }
+        ]
+    },
+    "FRLJsonList": [
+        {
+            "FRLId": "a2P9M000000EU1RUAW",
+            "FRLName": "FRL0000549",
+            "JSONAttr": "{\"ATTCAT-B2B-INT-DTL\":[{\"$$AttributeDefinitionEnd$$\":null,\"SegmentValue\":\"Fiber\",\"Filterable\":false,\"Code\":\"ATT-INT-ACC-TYP\",\"Name\":\"accessType\",\"attributeRunTimeInfo\":{\"value\":\"Fiber\",\"default\":\"\",\"dataType\":\"Text\"},\"valuedescription__c\":null,\"value__c\":null,\"uidisplaytype__c\":null,\"rulemessage__c\":null,\"querylabel__c\":null,\"querycode__c\":null,\"valueinnumber__c\":null,\"formatmask__c\":null,\"isrequired__c\":false,\"attributeconfigurable__c\":true,\"attributefilterable__c\":true,\"isconfigurable__c\":true,\"isquerydriven__c\":false,\"isreadonly__c\":false,\"isnotassetizable__c\":false,\"ishidden__c\":false,\"isactive__c\":true,\"hasrule__c\":false,\"attributedisplaysequence__c\":null,\"attributecategoryid__c\":\"\",\"displaysequence__c\":null,\"valuedatatype__c\":\"Text\",\"categoryname__c\":\"Category\",\"objecttype__c\":null,\"objectid__c\":\"\",\"id\":\"\",\"attributedisplayname__c\":\"accessType\",\"attributeuniquecode__c\":\"ATT-INT-ACC-TYP\",\"attributeid__c\":\"a0ZMU0000009w4P2AQ\",\"categorycode__c\":\"ATTCAT-B2B-INT-DTL\",\"$$AttributeDefinitionStart$$\":null},{\"$$AttributeDefinitionEnd$$\":null,\"SegmentValue\":\"300000\",\"Filterable\":false,\"Code\":\"ATT-INT-BND-DWN\",\"Name\":\"bandwidthDown\",\"attributeRunTimeInfo\":{\"value\":\"300000\",\"default\":\"\",\"dataType\":\"Text\"},\"valuedescription__c\":null,\"value__c\":null,\"uidisplaytype__c\":null,\"rulemessage__c\":null,\"querylabel__c\":null,\"querycode__c\":null,\"valueinnumber__c\":null,\"formatmask__c\":null,\"isrequired__c\":false,\"attributeconfigurable__c\":true,\"attributefilterable__c\":true,\"isconfigurable__c\":true,\"isquerydriven__c\":false,\"isreadonly__c\":false,\"isnotassetizable__c\":false,\"ishidden__c\":false,\"isactive__c\":true,\"hasrule__c\":false,\"attributedisplaysequence__c\":null,\"attributecategoryid__c\":\"\",\"displaysequence__c\":null,\"valuedatatype__c\":\"Text\",\"categoryname__c\":\"Category\",\"objecttype__c\":null,\"objectid__c\":\"\",\"id\":\"\",\"attributedisplayname__c\":\"bandwidthDown\",\"attributeuniquecode__c\":\"ATT-INT-BND-DWN\",\"attributeid__c\":\"a0ZMU0000009w4Q2AQ\",\"categorycode__c\":\"ATTCAT-B2B-INT-DTL\",\"$$AttributeDefinitionStart$$\":null},{\"$$AttributeDefinitionEnd$$\":null,\"SegmentValue\":\"75000\",\"Filterable\":false,\"Code\":\"ATT-INT-BND-UP\",\"Name\":\"bandwidthUp\",\"attributeRunTimeInfo\":{\"value\":\"75000\",\"default\":\"\",\"dataType\":\"Text\"},\"valuedescription__c\":null,\"value__c\":null,\"uidisplaytype__c\":null,\"rulemessage__c\":null,\"querylabel__c\":null,\"querycode__c\":null,\"valueinnumber__c\":null,\"formatmask__c\":null,\"isrequired__c\":false,\"attributeconfigurable__c\":true,\"attributefilterable__c\":true,\"isconfigurable__c\":true,\"isquerydriven__c\":false,\"isreadonly__c\":false,\"isnotassetizable__c\":false,\"ishidden__c\":false,\"isactive__c\":true,\"hasrule__c\":false,\"attributedisplaysequence__c\":null,\"attributecategoryid__c\":\"\",\"displaysequence__c\":null,\"valuedatatype__c\":\"Text\",\"categoryname__c\":\"Category\",\"objecttype__c\":null,\"objectid__c\":\"\",\"id\":\"\",\"attributedisplayname__c\":\"bandwidthUp\",\"attributeuniquecode__c\":\"ATT-INT-BND-UP\",\"attributeid__c\":\"a0ZMU0000009w4R2AQ\",\"categorycode__c\":\"ATTCAT-B2B-INT-DTL\",\"$$AttributeDefinitionStart$$\":null},{\"$$AttributeDefinitionEnd$$\":null,\"SegmentValue\":\"\",\"Filterable\":false,\"Code\":\"ATT-INT-OLT-ID\",\"Name\":\"oltId\",\"attributeRunTimeInfo\":{\"value\":\"\",\"default\":\"\",\"dataType\":\"Text\"},\"valuedescription__c\":null,\"value__c\":null,\"uidisplaytype__c\":null,\"rulemessage__c\":null,\"querylabel__c\":null,\"querycode__c\":null,\"valueinnumber__c\":null,\"formatmask__c\":null,\"isrequired__c\":false,\"attributeconfigurable__c\":true,\"attributefilterable__c\":true,\"isconfigurable__c\":true,\"isquerydriven__c\":false,\"isreadonly__c\":false,\"isnotassetizable__c\":false,\"ishidden__c\":false,\"isactive__c\":true,\"hasrule__c\":false,\"attributedisplaysequence__c\":null,\"attributecategoryid__c\":\"\",\"displaysequence__c\":null,\"valuedatatype__c\":\"Text\",\"categoryname__c\":\"Category\",\"objecttype__c\":null,\"objectid__c\":\"\",\"id\":\"\",\"attributedisplayname__c\":\"oltId\",\"attributeuniquecode__c\":\"ATT-INT-OLT-ID\",\"attributeid__c\":\"a0ZMU0000009w4S2AQ\",\"categorycode__c\":\"ATTCAT-B2B-INT-DTL\",\"$$AttributeDefinitionStart$$\":null},{\"$$AttributeDefinitionEnd$$\":null,\"SegmentValue\":\"\",\"Filterable\":false,\"Code\":\"ATT-INT-OLT-PRT-ID\",\"Name\":\"oltPortId\",\"attributeRunTimeInfo\":{\"value\":\"\",\"default\":\"\",\"dataType\":\"Text\"},\"valuedescription__c\":null,\"value__c\":null,\"uidisplaytype__c\":null,\"rulemessage__c\":null,\"querylabel__c\":null,\"querycode__c\":null,\"valueinnumber__c\":null,\"formatmask__c\":null,\"isrequired__c\":false,\"attributeconfigurable__c\":true,\"attributefilterable__c\":true,\"isconfigurable__c\":true,\"isquerydriven__c\":false,\"isreadonly__c\":false,\"isnotassetizable__c\":false,\"ishidden__c\":false,\"isactive__c\":true,\"hasrule__c\":false,\"attributedisplaysequence__c\":null,\"attributecategoryid__c\":\"\",\"displaysequence__c\":null,\"valuedatatype__c\":\"Text\",\"categoryname__c\":\"Category\",\"objecttype__c\":null,\"objectid__c\":\"\",\"id\":\"\",\"attributedisplayname__c\":\"oltPortId\",\"attributeuniquecode__c\":\"ATT-INT-OLT-PRT-ID\",\"attributeid__c\":\"a0ZMU0000009w4T2AQ\",\"categorycode__c\":\"ATTCAT-B2B-INT-DTL\",\"$$AttributeDefinitionStart$$\":null}]}"
+        },
+        {
+            "FRLId": "a2P9M000000EU1SUAW",
+            "FRLName": "FRL0000550",
+            "JSONAttr": "{\"ATTCAT-B2B-IP-DTL\":[{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4X2AQ\",\"attributeuniquecode__c\":\"ATT-IP-ADD-FAM\",\"attributedisplayname__c\":\"addressFamily\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"IPv4\"},\"Name\":\"addressFamily\",\"Code\":\"ATT-IP-ADD-FAM\",\"Filterable\":false,\"SegmentValue\":\"IPv4\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4Y2AQ\",\"attributeuniquecode__c\":\"ATT-IP-ADD-TYP\",\"attributedisplayname__c\":\"addressType\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"Static\"},\"Name\":\"addressType\",\"Code\":\"ATT-IP-ADD-TYP\",\"Filterable\":false,\"SegmentValue\":\"Static\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4Z2AQ\",\"attributeuniquecode__c\":\"ATT-IP-ADD-USG\",\"attributedisplayname__c\":\"addressUsage\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"WANIP\"},\"Name\":\"addressUsage\",\"Code\":\"ATT-IP-ADD-USG\",\"Filterable\":false,\"SegmentValue\":\"WANIP\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4a2AA\",\"attributeuniquecode__c\":\"ATT-IP-NET-ADD\",\"attributedisplayname__c\":\"networkAddress\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"10.0.0.1\"},\"Name\":\"networkAddress\",\"Code\":\"ATT-IP-NET-ADD\",\"Filterable\":false,\"SegmentValue\":\"\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4b2AA\",\"attributeuniquecode__c\":\"ATT-IP-SUB-MSK\",\"attributedisplayname__c\":\"subnetMask\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"32\"},\"Name\":\"subnetMask\",\"Code\":\"ATT-IP-SUB-MSK\",\"Filterable\":false,\"SegmentValue\":\"32\",\"$$AttributeDefinitionEnd$$\":null}]}"
+        },
+        {
+            "FRLId": "a2P9M000000EU1TUAW",
+            "FRLName": "FRL0000551",
+            "JSONAttr": "{\"ATTCAT-B2B-IP-DTL\":[{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4X2AQ\",\"attributeuniquecode__c\":\"ATT-IP-ADD-FAM\",\"attributedisplayname__c\":\"addressFamily\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"IPv6\"},\"Name\":\"addressFamily\",\"Code\":\"ATT-IP-ADD-FAM\",\"Filterable\":false,\"SegmentValue\":\"IPv6\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4Y2AQ\",\"attributeuniquecode__c\":\"ATT-IP-ADD-TYP\",\"attributedisplayname__c\":\"addressType\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"Static\"},\"Name\":\"addressType\",\"Code\":\"ATT-IP-ADD-TYP\",\"Filterable\":false,\"SegmentValue\":\"Static\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4Z2AQ\",\"attributeuniquecode__c\":\"ATT-IP-ADD-USG\",\"attributedisplayname__c\":\"addressUsage\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"WANIP\"},\"Name\":\"addressUsage\",\"Code\":\"ATT-IP-ADD-USG\",\"Filterable\":false,\"SegmentValue\":\"WANIP\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4a2AA\",\"attributeuniquecode__c\":\"ATT-IP-NET-ADD\",\"attributedisplayname__c\":\"networkAddress\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"11.0.0.1\"},\"Name\":\"networkAddress\",\"Code\":\"ATT-IP-NET-ADD\",\"Filterable\":false,\"SegmentValue\":\"\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4b2AA\",\"attributeuniquecode__c\":\"ATT-IP-SUB-MSK\",\"attributedisplayname__c\":\"subnetMask\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"64\"},\"Name\":\"subnetMask\",\"Code\":\"ATT-IP-SUB-MSK\",\"Filterable\":false,\"SegmentValue\":\"64\",\"$$AttributeDefinitionEnd$$\":null}]}"
+        },
+        {
+            "FRLId": "a2P9M000000EU1UUAW",
+            "FRLName": "FRL0000552",
+            "JSONAttr": "{\"ATTCAT-B2B-IP-DTL\":[{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4X2AQ\",\"attributeuniquecode__c\":\"ATT-IP-ADD-FAM\",\"attributedisplayname__c\":\"addressFamily\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"IPv6\"},\"Name\":\"addressFamily\",\"Code\":\"ATT-IP-ADD-FAM\",\"Filterable\":false,\"SegmentValue\":\"IPv6\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4Y2AQ\",\"attributeuniquecode__c\":\"ATT-IP-ADD-TYP\",\"attributedisplayname__c\":\"addressType\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"Static\"},\"Name\":\"addressType\",\"Code\":\"ATT-IP-ADD-TYP\",\"Filterable\":false,\"SegmentValue\":\"Static\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4Z2AQ\",\"attributeuniquecode__c\":\"ATT-IP-ADD-USG\",\"attributedisplayname__c\":\"addressUsage\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"Routed\"},\"Name\":\"addressUsage\",\"Code\":\"ATT-IP-ADD-USG\",\"Filterable\":false,\"SegmentValue\":\"Routed\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4a2AA\",\"attributeuniquecode__c\":\"ATT-IP-NET-ADD\",\"attributedisplayname__c\":\"networkAddress\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"12.0.0.1\"},\"Name\":\"networkAddress\",\"Code\":\"ATT-IP-NET-ADD\",\"Filterable\":false,\"SegmentValue\":\"\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-IP-DTL\",\"attributeid__c\":\"a0ZMU0000009w4b2AA\",\"attributeuniquecode__c\":\"ATT-IP-SUB-MSK\",\"attributedisplayname__c\":\"subnetMask\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"48\"},\"Name\":\"subnetMask\",\"Code\":\"ATT-IP-SUB-MSK\",\"Filterable\":false,\"SegmentValue\":\"48\",\"$$AttributeDefinitionEnd$$\":null}]}"
+        },
+        {
+            "FRLId": "a2P9M000000EU1VUAW",
+            "FRLName": "FRL0000553",
+            "JSONAttr": "{\"ATTCAT-B2B-HRD-DTL\":[{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-HRD-DTL\",\"attributeid__c\":\"a0ZMU0000009w4C2AQ\",\"attributeuniquecode__c\":\"ATT-CPE-SRL-NUM\",\"attributedisplayname__c\":\"serialNumber\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":1112002333444},\"Name\":\"serialNumber\",\"Code\":\"ATT-CPE-SRL-NUM\",\"Filterable\":false,\"SegmentValue\":\"\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-HRD-DTL\",\"attributeid__c\":\"a0ZMU0000009w4E2AQ\",\"attributeuniquecode__c\":\"ATT-HW-CPE-TYP\",\"attributedisplayname__c\":\"cpeType\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"Fiber CPE\"},\"Name\":\"cpeType\",\"Code\":\"ATT-HW-CPE-TYP\",\"Filterable\":false,\"SegmentValue\":\"Fiber CPE\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-HRD-DTL\",\"attributeid__c\":\"a0ZMU0000009w4G2AQ\",\"attributeuniquecode__c\":\"ATT-HW-MAN\",\"attributedisplayname__c\":\"manufacturer\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"AVM\"},\"Name\":\"manufacturer\",\"Code\":\"ATT-HW-MAN\",\"Filterable\":false,\"SegmentValue\":\"AVM\",\"$$AttributeDefinitionEnd$$\":null},{\"$$AttributeDefinitionStart$$\":null,\"categorycode__c\":\"ATTCAT-B2B-HRD-DTL\",\"attributeid__c\":\"a0ZMU0000009w4H2AQ\",\"attributeuniquecode__c\":\"ATT-HW-MOD\",\"attributedisplayname__c\":\"modell\",\"id\":\"\",\"objectid__c\":\"\",\"objecttype__c\":null,\"categoryname__c\":\"Category\",\"valuedatatype__c\":\"Text\",\"displaysequence__c\":null,\"attributecategoryid__c\":\"\",\"attributedisplaysequence__c\":null,\"hasrule__c\":false,\"isactive__c\":true,\"ishidden__c\":false,\"isnotassetizable__c\":false,\"isreadonly__c\":false,\"isquerydriven__c\":false,\"isconfigurable__c\":true,\"attributefilterable__c\":true,\"attributeconfigurable__c\":true,\"isrequired__c\":false,\"formatmask__c\":null,\"valueinnumber__c\":null,\"querycode__c\":null,\"querylabel__c\":null,\"rulemessage__c\":null,\"uidisplaytype__c\":null,\"value__c\":null,\"valuedescription__c\":null,\"attributeRunTimeInfo\":{\"dataType\":\"Text\",\"default\":\"\",\"value\":\"FRITZ!Box 5530 Fiber\"},\"Name\":\"modell\",\"Code\":\"ATT-HW-MOD\",\"Filterable\":false,\"SegmentValue\":\"FRITZ!Box 5530 Fiber\",\"$$AttributeDefinitionEnd$$\":null}]}"
+        }
+    ],
+    "MergedList": [
+        {
+            "FRLId": "a2P9M000000EU1SUAW",
+            "action": "add",
+            "externalId": "CS_CIP000000001167121",
+            "orderItemId": "8029M0000031g0KQAQ",
+            "pointOfNoReturn": false,
+            "serviceCharacteristic": [
+                {
+                    "@type": "Characteristic",
+                    "name": "subnetMask",
+                    "value": "16"
+                },
+                {
+                    "@type": "Characteristic",
+                    "name": "networkAddress",
+                    "value": "10.0.0.1"
+                },
+                {
+                    "@type": "Characteristic",
+                    "name": "addressType",
+                    "value": "IPv4"
+                }
+            ],
+            "serviceSpecificationId": "CFS_IP"
+        },
+        {
+            "FRLId": "a2P9M000000EU1TUAW",
+            "action": "add",
+            "externalId": "CS_CIP000000001168129",
+            "orderItemId": "8029M0000031g0LQAQ",
+            "pointOfNoReturn": false,
+            "serviceCharacteristic": [
+                {
+                    "@type": "Characteristic",
+                    "name": "subnetMask",
+                    "value": "16"
+                },
+                {
+                    "@type": "Characteristic",
+                    "name": "networkAddress",
+                    "value": "11.0.0.1"
+                },
+                {
+                    "@type": "Characteristic",
+                    "name": "addressType",
+                    "value": "IPv6"
+                }
+            ],
+            "serviceSpecificationId": "CFS_IP"
+        },
+        {
+            "FRLId": "a2P9M000000EU1UUAW",
+            "action": "add",
+            "externalId": "CS_CIP000000001169127",
+            "orderItemId": "8029M0000031g0MQAQ",
+            "pointOfNoReturn": false,
+            "serviceCharacteristic": [
+                {
+                    "@type": "Characteristic",
+                    "name": "subnetMask",
+                    "value": "16"
+                },
+                {
+                    "@type": "Characteristic",
+                    "name": "networkAddress",
+                    "value": "12.0.1"
+                },
+                {
+                    "@type": "Characteristic",
+                    "name": "addressType",
+                    "value": "IPv6"
+                }
+            ],
+            "serviceSpecificationId": "CFS_IP"
+        },
+        {
+            "FRLId": "a2P9M000000EU1VUAW",
+            "action": "add",
+            "externalId": "CS_CPE000000001170125",
+            "orderItemId": "8029M0000031g0NQAQ",
+            "pointOfNoReturn": false,
+            "serviceCharacteristic": [
+                {
+                    "@type": "Characteristic",
+                    "name": "owner",
+                    "value": "Generic"
+                },
+                {
+                    "@type": "Characteristic",
+                    "name": "modell",
+                    "value": "FritzBox! 5530 Fiber"
+                },
+                {
+                    "@type": "Characteristic",
+                    "name": "cpeType",
+                    "value": "CPE"
+                },
+                {
+                    "@type": "Characteristic",
+                    "name": "manufacturer",
+                    "value": "AVM"
+                },
+                {
+                    "@type": "Characteristic",
+                    "name": "serialNumber",
+                    "value": "110012333444"
+                }
+            ],
+            "serviceSpecificationId": "CFS_CPE"
+        }
+    ]
+}

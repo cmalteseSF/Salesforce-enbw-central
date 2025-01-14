@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "PlusNet_SetBillingAccountACR_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "SetBillingAccountACR",
+    "OmniProcessElement": [
+        "PlusNet_SetBillingAccountACR_Element_GetExistingACRForBillingAccount.json",
+        "PlusNet_SetBillingAccountACR_Element_CheckExistingACRForBillingAccount.json",
+        "PlusNet_SetBillingAccountACR_Element_UpdateAllBillingACR.json",
+        "PlusNet_SetBillingAccountACR_Element_GetACRForBillingAccountAndBillingContact.json",
+        "PlusNet_SetBillingAccountACR_Element_NotExistACR.json",
+        "PlusNet_SetBillingAccountACR_Element_CreateACR.json",
+        "PlusNet_SetBillingAccountACR_Element_ExistACR.json",
+        "PlusNet_SetBillingAccountACR_Element_UpdateACR.json",
+        "PlusNet_SetBillingAccountACR_Element_ReturnSetACR.json"
+    ],
+    "OmniProcessKey": "PlusNet_SetBillingAccountACR",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SetBillingAccountACR_PropertySetConfig.json",
+    "SubType": "SetBillingAccountACR",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SetBillingAccountACR/Procedure"
+}

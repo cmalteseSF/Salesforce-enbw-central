@@ -1,0 +1,52 @@
+[
+    {
+        "FilterDataType": "STRING",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'Active'",
+        "GlobalKey": "DRGetServiceRelatedAssetsCustom5858",
+        "InputFieldName": "%vlocity_namespace%__ProvisioningStatus__c",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetServiceRelatedAssets",
+        "OmniDataTransformationId": {
+            "Name": "DRGetServiceRelatedAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetServiceRelatedAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ServiceRelatedAsset",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterDataType": "STRING",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AssetId",
+        "GlobalKey": "DRGetServiceRelatedAssetsCustom9538",
+        "InputFieldName": "PlusNet_Related_Reference_Id__c",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetServiceRelatedAssets",
+        "OmniDataTransformationId": {
+            "Name": "DRGetServiceRelatedAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetServiceRelatedAssets",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ServiceRelatedAsset",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

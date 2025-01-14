@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Used to update Case record given a record id",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "UpdateCase",
+    "OmniProcessElement": [
+        "PlusNet_UpdateCase_Element_TryUpdateCaseRecord.json",
+        "PlusNet_UpdateCase_Element_UpdateCaseRecord.json",
+        "PlusNet_UpdateCase_Element_ReturnUpdateCase.json"
+    ],
+    "OmniProcessKey": "PlusNet_UpdateCase",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_UpdateCase_PropertySetConfig.json",
+    "SubType": "UpdateCase",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/UpdateCase/Procedure"
+}

@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "PlusNet_TerminateContractLineItems_SampleInput.json",
+    "Description": "Triggered when Termination order is Activated (flow: Order Status = Activated and Type = Termination). It inactivates all the corresponding CLIs",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Terminate Contract Line Items",
+    "OmniProcessElement": [
+        "PlusNet_TerminateContractLineItems_Element_GetDisconnectedOLIRefIds.json",
+        "PlusNet_TerminateContractLineItems_Element_TerminateContract.json",
+        "PlusNet_TerminateContractLineItems_Element_UpdateContractEndDate.json",
+        "PlusNet_TerminateContractLineItems_Element_TerminateCLIs.json",
+        "PlusNet_TerminateContractLineItems_Element_GetCLIContracts.json",
+        "PlusNet_TerminateContractLineItems_Element_LoopContracts.json",
+        "PlusNet_TerminateContractLineItems_Element_Terminate.json",
+        "PlusNet_TerminateContractLineItems_Element_ResponseTerminateContract.json"
+    ],
+    "OmniProcessKey": "PlusNet_TerminateContractLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_TerminateContractLineItems_PropertySetConfig.json",
+    "SubType": "TerminateContractLineItems",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/TerminateContractLineItems/Procedure"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Ablehnung durch Plusnet</fullName>
+        <default>false</default>
+        <label>Ablehnung durch Plusnet</label>
+    </customValue>
+    <customValue>
+        <fullName>Ablehnung Kundenursache</fullName>
+        <default>false</default>
+        <label>Ablehnung Kundenursache</label>
+    </customValue>
+    <customValue>
+        <fullName>Ablehnung Vorlieferant</fullName>
+        <default>false</default>
+        <label>Ablehnung Vorlieferant</label>
+    </customValue>
+    <customValue>
+        <fullName>Kündigung durch Kunde</fullName>
+        <default>false</default>
+        <label>Kündigung durch Kunde</label>
+    </customValue>
+    <customValue>
+        <fullName>Kündigung durch Plusnet</fullName>
+        <default>false</default>
+        <label>Kündigung durch Plusnet</label>
+    </customValue>
+    <description>Used to store Order/Contract termination categories</description>
+    <masterLabel>Termination Categories</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

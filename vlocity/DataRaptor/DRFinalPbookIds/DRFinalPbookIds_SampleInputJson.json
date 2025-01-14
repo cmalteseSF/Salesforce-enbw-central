@@ -1,0 +1,93 @@
+{
+    "BusinessPBookIds": [
+        {
+            "DownloadSpeed": "300 Mbps",
+            "DwnSpd": 300,
+            "Family": "Single Play",
+            "Id": "REC2",
+            "Name": "Plusnet Glasfaser Business 300M",
+            "PBookId": "01uMU000000YsKuYAK",
+            "Product2Id": "01tMU000000F52QYAS",
+            "ProductCode": "PNET-B2B-GLA-BUS-300",
+            "ProductName": "Plusnet Glasfaser Business 300M",
+            "_flex": {
+                "uniqueKey": "REC2"
+            },
+            "isselected": true,
+            "offerType": "Product",
+            "uniqueKey": "REC2"
+        },
+        {
+            "DownloadSpeed": "1000 Mbps",
+            "DwnSpd": 1000,
+            "Family": "Single Play",
+            "Id": "REC3",
+            "Name": "Plusnet Glasfaser Business 1G",
+            "PBookId": "01uMU000000YsKwYAK",
+            "Product2Id": "01tMU000000F52SYAS",
+            "ProductCode": "PNET-B2B-GLA-BUS-1000",
+            "ProductName": "Plusnet Glasfaser Business 1G",
+            "_flex": {
+                "uniqueKey": "REC3"
+            },
+            "isselected": true,
+            "offerType": "Product",
+            "uniqueKey": "REC3"
+        }
+    ],
+    "HousePBookId": [
+        {
+            "DownloadSpeed": null,
+            "DwnSpd": null,
+            "Family": "Infrastruktur",
+            "Id": "REC0",
+            "Name": "Hausanschluss",
+            "PBookId": "01uMU000000YsKSYA0",
+            "Product2Id": "01tMU000000F51yYAC",
+            "ProductCode": "PNET-HOU",
+            "ProductName": "Hausanschluss",
+            "_flex": {
+                "uniqueKey": "REC0"
+            },
+            "isselected": true,
+            "offerType": "Product",
+            "uniqueKey": "REC0"
+        }
+    ],
+    "OfficePBookIds": [
+        {
+            "DownloadSpeed": "50 Mbps",
+            "DwnSpd": 50,
+            "Family": "Double Play",
+            "Id": "REC0",
+            "Name": "Plusnet Glasfaser Office 50M Bundle",
+            "PBookId": "01uMU000000YsLCYA0",
+            "Product2Id": "01tMU000000F52iYAC",
+            "ProductCode": "PNET-B2B-GLA-OFF-BUN-50",
+            "ProductName": "Plusnet Glasfaser Office 50M Bundle",
+            "_flex": {
+                "uniqueKey": "REC0"
+            },
+            "isselected": true,
+            "offerType": "Product",
+            "uniqueKey": "REC0"
+        },
+        {
+            "DownloadSpeed": "100 Mbps",
+            "DwnSpd": 100,
+            "Family": "Double Play",
+            "Id": "REC1",
+            "Name": "Plusnet Glasfaser Office 100M Bundle",
+            "PBookId": "01uMU000000YsLBYA0",
+            "Product2Id": "01tMU000000F52hYAC",
+            "ProductCode": "PNET-B2B-GLA-OFF-BUN-100",
+            "ProductName": "Plusnet Glasfaser Office 100M Bundle",
+            "_flex": {
+                "uniqueKey": "REC1"
+            },
+            "isselected": true,
+            "offerType": "Product",
+            "uniqueKey": "REC1"
+        }
+    ]
+}

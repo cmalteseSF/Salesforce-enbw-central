@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "PlusNet_AddAdditionalCostToQuote_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "AddAdditionalCostToQuote",
+    "OmniProcessElement": [
+        "PlusNet_AddAdditionalCostToQuote_Element_AddAdditionalCostProduct.json",
+        "PlusNet_AddAdditionalCostToQuote_Element_GetQuoteItemAdditionalCostId.json",
+        "PlusNet_AddAdditionalCostToQuote_Element_ApplyAdjustment.json",
+        "PlusNet_AddAdditionalCostToQuote_Element_ReturnAdjustmentCost.json"
+    ],
+    "OmniProcessKey": "PlusNet_AddAdditionalCostToQuote",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_AddAdditionalCostToQuote_PropertySetConfig.json",
+    "SubType": "AddAdditionalCostToQuote",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/AddAdditionalCostToQuote/Procedure"
+}

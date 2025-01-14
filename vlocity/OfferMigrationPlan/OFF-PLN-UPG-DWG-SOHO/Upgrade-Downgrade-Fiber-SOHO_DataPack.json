@@ -1,0 +1,16 @@
+{
+    "%vlocity_namespace%__AccountScope__c": "Same Account",
+    "%vlocity_namespace%__BusinessReason__c": "DowngradeUpgrade",
+    "%vlocity_namespace%__Code__c": "OFF-PLN-UPG-DWG-SOHO",
+    "%vlocity_namespace%__Description__c": "Used to store all the migration componenents mapping to upgrade/downgrade Fiber SOHO products",
+    "%vlocity_namespace%__EffectiveEndDate__c": "",
+    "%vlocity_namespace%__EffectiveStartDate__c": "2023-11-13T11:00:00.000Z",
+    "%vlocity_namespace%__MigrationMethod__c": "Specific Offers",
+    "%vlocity_namespace%__OfferMigrationComponentMapping__c": "Upgrade-Downgrade-Fiber-SOHO_OfferMigrationComponentMappings.json",
+    "%vlocity_namespace%__ProductFamily__c": "Double Play",
+    "%vlocity_namespace%__isActive__c": true,
+    "Name": "Upgrade Downgrade Fiber SOHO",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "%vlocity_namespace%__OfferMigrationPlan__c",
+    "VlocityRecordSourceKey": "%vlocity_namespace%__OfferMigrationPlan__c/OFF-PLN-UPG-DWG-SOHO"
+}

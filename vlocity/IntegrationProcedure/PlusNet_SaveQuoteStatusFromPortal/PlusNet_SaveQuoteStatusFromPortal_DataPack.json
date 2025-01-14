@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "PlusNet_SaveQuoteStatusFromPortal_SampleInput.json",
+    "Description": "IP exposed as REST Endpoint. Used to save the new Quote Status from Plusnet Portal.",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "SaveQuoteStatusFromPortal",
+    "OmniProcessElement": [
+        "PlusNet_SaveQuoteStatusFromPortal_Element_ReturnSavePortalError.json",
+        "PlusNet_SaveQuoteStatusFromPortal_Element_GetDecryptedDataTryCatch.json",
+        "PlusNet_SaveQuoteStatusFromPortal_Element_GetDecryptedData.json",
+        "PlusNet_SaveQuoteStatusFromPortal_Element_SavePortalDetailsTryCatch.json",
+        "PlusNet_SaveQuoteStatusFromPortal_Element_SavePortalDetails.json",
+        "PlusNet_SaveQuoteStatusFromPortal_Element_ReturnSavePortalDetails.json"
+    ],
+    "OmniProcessKey": "PlusNet_SaveQuoteStatusFromPortal",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SaveQuoteStatusFromPortal_PropertySetConfig.json",
+    "SubType": "SaveQuoteStatusFromPortal",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SaveQuoteStatusFromPortal/Procedure"
+}

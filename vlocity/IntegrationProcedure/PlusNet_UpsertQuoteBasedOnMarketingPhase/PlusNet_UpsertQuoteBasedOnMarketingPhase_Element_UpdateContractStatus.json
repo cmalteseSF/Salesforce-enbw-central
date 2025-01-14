@@ -1,0 +1,46 @@
+{
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateContractStatus",
+    "OmniProcessId": {
+        "Name": "UpsertQuoteBasedOnMarketingPhase",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/UpsertQuoteBasedOnMarketingPhase/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ConstructionArea": "%ConstructionArea%",
+            "ContractId": "%DRGetContractInfoFromQuote:Quote:ContractId%",
+            "OrderId": "%RACreateOrder:records|1:id%",
+            "PremiseId": "%DRGetContractInfoFromQuote:PremiseId%",
+            "QuoteType": "%DRGetContractInfoFromQuote:QuoteType%",
+            "SPRIStatus": "%DRGetContractInfoFromQuote:PremiseSPRIStatus%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRUpdateContractStatus",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/UpsertQuoteBasedOnMarketingPhase/Procedure/UpdateContractStatus"
+}

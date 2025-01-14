@@ -1,0 +1,33 @@
+{
+    "CustomJavaScript": "PlusNet_ConfigureHardware_SampleInput.json",
+    "Description": "Used to configure Hardware CPE and ONT products Updates: reviewed logic after CFS discussion",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ConfigureHardware",
+    "OmniProcessElement": [
+        "PlusNet_ConfigureHardware_Element_ProvideONT.json",
+        "PlusNet_ConfigureHardware_Element_TryAddONT.json",
+        "PlusNet_ConfigureHardware_Element_AddONTToCart.json",
+        "PlusNet_ConfigureHardware_Element_GetONTQLI.json",
+        "PlusNet_ConfigureHardware_Element_ConfigureONT.json",
+        "PlusNet_ConfigureHardware_Element_ProvideRouter.json",
+        "PlusNet_ConfigureHardware_Element_TryAddRouter.json",
+        "PlusNet_ConfigureHardware_Element_AddRouterToCart.json",
+        "PlusNet_ConfigureHardware_Element_GetRouterQLI.json",
+        "PlusNet_ConfigureHardware_Element_ConfigureRouter.json",
+        "PlusNet_ConfigureHardware_Element_ReturnConfigureHardware.json"
+    ],
+    "OmniProcessKey": "PlusNet_ConfigureHardware",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ConfigureHardware_PropertySetConfig.json",
+    "SubType": "ConfigureHardware",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ConfigureHardware/Procedure"
+}

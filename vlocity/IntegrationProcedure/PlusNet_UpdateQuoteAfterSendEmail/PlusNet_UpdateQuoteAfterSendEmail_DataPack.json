@@ -1,0 +1,24 @@
+{
+    "CustomJavaScript": "PlusNet_UpdateQuoteAfterSendEmail_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "UpdateQuoteAfterSendEmail",
+    "OmniProcessElement": [
+        "PlusNet_UpdateQuoteAfterSendEmail_Element_SetDates.json",
+        "PlusNet_UpdateQuoteAfterSendEmail_Element_DRUpdateQuoteAndOpportunity.json",
+        "PlusNet_UpdateQuoteAfterSendEmail_Element_ReturnUpdateQuoteAfterSendEmail.json"
+    ],
+    "OmniProcessKey": "PlusNet_UpdateQuoteAfterSendEmail",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_UpdateQuoteAfterSendEmail_PropertySetConfig.json",
+    "SubType": "UpdateQuoteAfterSendEmail",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/UpdateQuoteAfterSendEmail/Procedure"
+}

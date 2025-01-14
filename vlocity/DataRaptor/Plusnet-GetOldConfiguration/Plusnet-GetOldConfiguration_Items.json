@@ -1,0 +1,136 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AssetRefId",
+        "GlobalKey": "Plusnet-GetOldConfigurationCustom4838",
+        "InputFieldName": "%vlocity_namespace%__RootItemId__c",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetOldConfiguration",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetOldConfiguration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetOldConfiguration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "HardwareAsset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'PNET-HW-CPE'",
+        "GlobalKey": "Plusnet-GetOldConfigurationCustom1957",
+        "InputFieldName": "ProductCode",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetOldConfiguration",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetOldConfiguration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetOldConfiguration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "HardwareAsset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AssetRefId",
+        "GlobalKey": "Plusnet-GetOldConfigurationCustom5938",
+        "InputFieldName": "%vlocity_namespace%__RootItemId__c",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetOldConfiguration",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetOldConfiguration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetOldConfiguration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "IPAsset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'PNET-IP'",
+        "GlobalKey": "Plusnet-GetOldConfigurationCustom2106",
+        "InputFieldName": "ProductCode",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetOldConfiguration",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetOldConfiguration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetOldConfiguration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "IPAsset",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetOldConfigurationCustom7794",
+        "InputFieldName": "HardwareAsset:%vlocity_namespace%__AttributeSelectedValues__c:ATT-RTR-TYP",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetOldConfiguration",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetOldConfiguration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetOldConfiguration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "oldHardwareType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetOldConfigurationCustom4945",
+        "InputFieldName": "IPAsset:%vlocity_namespace%__AttributeSelectedValues__c:ATT-IP-TYP",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetOldConfiguration",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetOldConfiguration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetOldConfiguration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "oldIPType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

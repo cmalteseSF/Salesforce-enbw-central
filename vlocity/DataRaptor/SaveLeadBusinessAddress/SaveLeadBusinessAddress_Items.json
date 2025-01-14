@@ -1,0 +1,250 @@
+[
+    {
+        "GlobalKey": "SaveLeadBusinessAddressCustom1797",
+        "InputFieldName": "Address:AddressExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessAddressExt__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadBusinessAddressCustom9905",
+        "InputFieldName": "Address:AddressId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessAddressId__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadBusinessAddressCustom4897",
+        "InputFieldName": "Address:CityExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessCityExt__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadBusinessAddressCustom8886",
+        "InputFieldName": "Address:City",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessCity__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadBusinessAddressCustom4011",
+        "InputFieldName": "Address:Country",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessCountry__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadBusinessAddressCustom4143",
+        "InputFieldName": "Address:HouseNoExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessHouseNoExt__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadBusinessAddressCustom4252",
+        "InputFieldName": "Address:HouseNo",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessHouseNo__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadBusinessAddressCustom7506",
+        "InputFieldName": "Address:PostalCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessPostalCode__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadBusinessAddressCustom388",
+        "InputFieldName": "Address:State",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessState__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadBusinessAddressCustom1159",
+        "InputFieldName": "Address:Street",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessStreet__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SaveLeadBusinessAddressCustom7415",
+        "InputFieldName": "LeadId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "SaveLeadBusinessAddressCustom919",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "true",
+        "GlobalKey": "SaveLeadBusinessAddressCustom5933",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SaveLeadBusinessAddress",
+        "OmniDataTransformationId": {
+            "Name": "SaveLeadBusinessAddress",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SaveLeadBusinessAddress",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "IsBusinessAddressValid__c",
+        "OutputObjectName": "Lead",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

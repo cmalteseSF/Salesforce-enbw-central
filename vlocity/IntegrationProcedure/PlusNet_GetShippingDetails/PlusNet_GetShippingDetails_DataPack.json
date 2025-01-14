@@ -1,0 +1,24 @@
+{
+    "CustomJavaScript": "PlusNet_GetShippingDetails_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Get Shipping Details",
+    "OmniProcessElement": [
+        "PlusNet_GetShippingDetails_Element_DRGetAccountContactRelationFromAccountId.json",
+        "PlusNet_GetShippingDetails_Element_DRGetContactDetails.json",
+        "PlusNet_GetShippingDetails_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "PlusNet_GetShippingDetails",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_GetShippingDetails_PropertySetConfig.json",
+    "SubType": "GetShippingDetails",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/GetShippingDetails/Procedure"
+}

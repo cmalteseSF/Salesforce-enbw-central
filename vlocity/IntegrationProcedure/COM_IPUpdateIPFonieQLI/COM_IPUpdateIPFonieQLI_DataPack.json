@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "COM_IPUpdateIPFonieQLI_SampleInput.json",
+    "Description": "Added ProductCode in DRExtractQLIs",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "IPUpdateIPFonieQLI",
+    "OmniProcessElement": [
+        "COM_IPUpdateIPFonieQLI_Element_DRExtractQLIs.json",
+        "COM_IPUpdateIPFonieQLI_Element_DRTransformQLIs.json",
+        "COM_IPUpdateIPFonieQLI_Element_DRUpdateAllQLI.json",
+        "COM_IPUpdateIPFonieQLI_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "COM_IPUpdateIPFonieQLI",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "COM_IPUpdateIPFonieQLI_PropertySetConfig.json",
+    "SubType": "IPUpdateIPFonieQLI",
+    "Type": "COM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/COM/IPUpdateIPFonieQLI/Procedure"
+}

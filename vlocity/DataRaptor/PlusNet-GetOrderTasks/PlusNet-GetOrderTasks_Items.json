@@ -1,0 +1,106 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "OrderId",
+        "GlobalKey": "PlusNet-GetOrderTasksCustom7",
+        "InputFieldName": "WhatId",
+        "InputObjectName": "Task",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetOrderTasks",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetOrderTasks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetOrderTasks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "OrderTasks",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "COUNTQUERY(\"SELECT COUNT() FROM task where WhatId = '{0}' AND (Type = 'Billing Invoice' OR Type = 'Connection Feasibility' OR Type = 'House Survey') AND Status != 'Completed'\",%OrderId%)",
+        "FormulaResultPath": "CountConnectionOrderActivationTasks",
+        "FormulaSequence": 2,
+        "GlobalKey": "PlusNet-GetOrderTasksCustom9234",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetOrderTasks",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetOrderTasks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetOrderTasks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "COUNTQUERY(\"SELECT COUNT() FROM task where WhatId = '{0}' AND (Type = 'Billing Invoice' OR Type = 'Voice' OR Type = 'Connection Feasibility' OR Type = 'House Survey' OR Type = 'Email') AND Status != 'Completed'\",%OrderId%)",
+        "FormulaResultPath": "CountServiceOrderActivationTasks",
+        "FormulaSequence": 1,
+        "GlobalKey": "PlusNet-GetOrderTasksCustom4738",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetOrderTasks",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetOrderTasks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetOrderTasks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-GetOrderTasksCustom4367",
+        "InputFieldName": "CountConnectionOrderActivationTasks",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetOrderTasks",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetOrderTasks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetOrderTasks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderTasks:CountConnectionOrderActivationTasks",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-GetOrderTasksCustom1491",
+        "InputFieldName": "CountServiceOrderActivationTasks",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetOrderTasks",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetOrderTasks",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetOrderTasks",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OrderTasks:CountServiceOrderActivationTasks",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

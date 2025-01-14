@@ -1,0 +1,98 @@
+[
+    {
+        "%vlocity_namespace%__Action__c": "Add",
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "41869156-6081-38c5-19ef-b3e52676110d",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "CFS Access - Add",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/CFS Access - Add",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "7016c201-5f4d-17de-40f2-3943f941fa9f",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/7016c201-5f4d-17de-40f2-3943f941fa9f",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "7016c201-5f4d-17de-40f2-3943f941fa9f",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "CFS Access - Add",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/CFS Access - Add/41869156-6081-38c5-19ef-b3e52676110d/Product2/7016c201-5f4d-17de-40f2-3943f941fa9f"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Disconnect",
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "dc88a0c2-4608-4139-1e86-8d8cffa2ce94",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "CFS Access - Disconnect",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/CFS Access - Disconnect",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "7016c201-5f4d-17de-40f2-3943f941fa9f",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/7016c201-5f4d-17de-40f2-3943f941fa9f",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "7016c201-5f4d-17de-40f2-3943f941fa9f",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "CFS Access - Disconnect",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/CFS Access - Disconnect/dc88a0c2-4608-4139-1e86-8d8cffa2ce94/Product2/7016c201-5f4d-17de-40f2-3943f941fa9f"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "Modify",
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "95f8bee2-7a25-ed26-0d0a-523720c483b1",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "CFS Access - Change",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/CFS Access - Change",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "7016c201-5f4d-17de-40f2-3943f941fa9f",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/7016c201-5f4d-17de-40f2-3943f941fa9f",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "7016c201-5f4d-17de-40f2-3943f941fa9f",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "CFS Access - Change",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/CFS Access - Change/95f8bee2-7a25-ed26-0d0a-523720c483b1/Product2/7016c201-5f4d-17de-40f2-3943f941fa9f"
+    },
+    {
+        "%vlocity_namespace%__Action__c": "NoChange",
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__GlobalKey__c": "2fa3e057-490b-7f47-3263-ef86a5bbc717",
+        "%vlocity_namespace%__OrchestrationPlanDefinitionId__c": {
+            "Name": "CFS Access - Change",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "%vlocity_namespace%__OrchestrationPlanDefinition__c/CFS Access - Change",
+            "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationPlanDefinition__c"
+        },
+        "%vlocity_namespace%__OrchestrationPlanId__c": "",
+        "%vlocity_namespace%__Product2Id__c": {
+            "%vlocity_namespace%__GlobalKey__c": "7016c201-5f4d-17de-40f2-3943f941fa9f",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/7016c201-5f4d-17de-40f2-3943f941fa9f",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__Product2Id__r.%vlocity_namespace%__GlobalKey__c": "7016c201-5f4d-17de-40f2-3943f941fa9f",
+        "%vlocity_namespace%__SubAction__c": "",
+        "Name": "CFS Access - Change",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__OrchestrationScenario__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__OrchestrationScenario__c/CFS Access - Change/2fa3e057-490b-7f47-3263-ef86a5bbc717/Product2/7016c201-5f4d-17de-40f2-3943f941fa9f"
+    }
+]

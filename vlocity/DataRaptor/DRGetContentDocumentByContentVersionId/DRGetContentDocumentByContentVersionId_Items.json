@@ -1,0 +1,45 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "ContentVersionId",
+        "GlobalKey": "DRGetContentDocumentByContentVersionIdCustom4867",
+        "InputFieldName": "Id",
+        "InputObjectName": "ContentVersion",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetContentDocumentByContentVersionId",
+        "OmniDataTransformationId": {
+            "Name": "DRGetContentDocumentByContentVersionId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetContentDocumentByContentVersionId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ContentVersion",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetContentDocumentByContentVersionIdCustom2317",
+        "InputFieldName": "ContentVersion:ContentDocumentId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetContentDocumentByContentVersionId",
+        "OmniDataTransformationId": {
+            "Name": "DRGetContentDocumentByContentVersionId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetContentDocumentByContentVersionId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ContentDocumentId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,43 @@
+[
+    {
+        "FormulaExpression": "SORTBY(LIST(FilteredOfferList),'DwnSpd','[:ASC]')",
+        "FormulaResultPath": "SortedDoublePlayOffers",
+        "FormulaSequence": 1,
+        "GlobalKey": "SortOffersBasedOnBandwidthCustom0jI9M000000XQ6zUAGItem1",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SortOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "SortOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SortOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "SortOffersBasedOnBandwidthCustom0jI9M000000XQ6zUAGItem4",
+        "InputFieldName": "SortedDoublePlayOffers",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "SortOffersBasedOnBandwidth",
+        "OmniDataTransformationId": {
+            "Name": "SortOffersBasedOnBandwidth",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/SortOffersBasedOnBandwidth",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "SortedDoublePlayOffers",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

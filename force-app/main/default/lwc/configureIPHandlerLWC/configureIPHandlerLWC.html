@@ -1,0 +1,83 @@
+<template>
+    <template if:true={isLoaded}>
+        <lightning-modal-header label="Ihre vorhandenen IP Netzwerke">
+        </lightning-modal-header>
+        <lightning-modal-body>
+            <div>
+                <lightning-datatable columns={columns} data={rows} key-field="id" hide-checkbox-column=true>
+                </lightning-datatable>
+            </div>
+        </lightning-modal-body>
+
+
+        <lightning-modal-header label="Zusätzliche IP Netzwerke">
+            <template if:false={isAdditionalRows}>
+                Es wurde keine zusätzliche IP Netzwerke ausgewählt.
+            </template>
+        </lightning-modal-header>
+        <lightning-modal-body>
+            <template if:true={isAdditionalRows}>
+                <div>
+                    <lightning-datatable columns={columns} data={additionalRows} key-field="Id"
+                        max-row-selection={maxRowSelection} hide-checkbox-column={hideCheckboxColumn}
+                        selected-rows={selectedRows} show-row-number-column={showRowNumberColumn} onrowselection={handleRowSelection}>
+                    </lightning-datatable>
+                </div>
+            </template>
+        </lightning-modal-body>
+
+        <lightning-modal-header>
+        </lightning-modal-header>
+        <lightning-modal-body>
+            <lightning-button variant="brand" label="IP Netzwerk hinzufügen" title="IP Netzwerk hinzufügen"
+                onclick={handleAddAdditionalIP} class="slds-m-left_x-small"></lightning-button>
+
+            <template if:true={isIPConfig}>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <span>
+                            <lightning-combobox name="Subnet" label="Subnet" value={subnetValue}
+                                options={subnetOptions} onchange={handleSubnetChange} class="subnetCmp"
+                                required="true">
+                            </lightning-combobox>
+                        </span>
+                    </div>
+                    <div class="slds-col">
+                        <span>
+                            <lightning-combobox name="Version" label="Version" value={versionValue}
+                                 disabled options={versionOptions} required="true">
+                            </lightning-combobox>
+                        </span>
+                    </div>
+                    <div class="slds-col">
+                        <span>
+                            <lightning-combobox name="Usage Type" label="Usage Type" value={usageTypeValue}
+                                 disabled options={usageTypeOptions}
+                                required="true">
+                            </lightning-combobox>
+                        </span>
+                    </div>
+                </div>
+                &nbsp;&nbsp;
+                <div align="center">
+                    <template if:true={isRowSelected}>
+                        <lightning-button variant="brand" data-name="Delete" label="Löschen" title="Löschen" onclick={handleOperation}
+                            class="slds-m-left_x-small"></lightning-button>
+                        <lightning-button variant="brand" data-name="Update" label="Aktualisieren" title="Aktualisieren"
+                            onclick={handleOperation} class="slds-m-left_x-small"></lightning-button>
+                    </template>
+                    <template if:true={isNewSelected}>
+                        <lightning-button label="Abbrechen" title="Abbrechen" onclick={handleCancel}
+                            class="slds-m-left_x-small"></lightning-button>
+                        <lightning-button variant="brand" data-name="Add" label="Speichern" title="Speichern" onclick={handleOperation}
+                            class="slds-m-left_x-small"></lightning-button>
+                    </template>
+                </div>
+            </template>
+        </lightning-modal-body>
+    </template>
+
+    <template if:false={isLoaded}>
+        <lightning-spinner alternative-text="Loading"></lightning-spinner>
+    </template>
+</template>

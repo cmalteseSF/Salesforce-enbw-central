@@ -1,0 +1,83 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "DeveloperName",
+        "GlobalKey": "GetEncryptionConfigurationMdtCustom4827",
+        "InputFieldName": "DeveloperName",
+        "InputObjectName": "Encryption_Configuration__mdt",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetEncryptionConfigurationMdt",
+        "OmniDataTransformationId": {
+            "Name": "GetEncryptionConfigurationMdt",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetEncryptionConfigurationMdt",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "EncryptionConfig",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetEncryptionConfigurationMdtCustom5612",
+        "InputFieldName": "EncryptionConfig:DeveloperName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetEncryptionConfigurationMdt",
+        "OmniDataTransformationId": {
+            "Name": "GetEncryptionConfigurationMdt",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetEncryptionConfigurationMdt",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EncryptionConfig:DeveloperName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetEncryptionConfigurationMdtCustom4049",
+        "InputFieldName": "EncryptionConfig:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetEncryptionConfigurationMdt",
+        "OmniDataTransformationId": {
+            "Name": "GetEncryptionConfigurationMdt",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetEncryptionConfigurationMdt",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EncryptionConfig:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetEncryptionConfigurationMdtCustom7925",
+        "InputFieldName": "EncryptionConfig:PrivateKey__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetEncryptionConfigurationMdt",
+        "OmniDataTransformationId": {
+            "Name": "GetEncryptionConfigurationMdt",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetEncryptionConfigurationMdt",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EncryptionConfig:PrivateKey",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

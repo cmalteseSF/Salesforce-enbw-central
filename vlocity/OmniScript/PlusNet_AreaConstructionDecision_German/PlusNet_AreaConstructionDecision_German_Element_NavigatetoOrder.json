@@ -1,0 +1,59 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "NavigatetoOrder",
+    "OmniProcessId": {
+        "Name": "AreaConstructionDecision",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/AreaConstructionDecision/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "iconName": "",
+        "iconPosition": "left",
+        "iconVariant": "",
+        "label": "",
+        "loginAction": "login",
+        "message": {
+            "vlocEvents": "closemymodal"
+        },
+        "objectAction": "home",
+        "pubsub": true,
+        "recordAction": "view",
+        "replace": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "OK",
+                        "field": "RetCode"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "",
+                        "field": "OrderId"
+                    }
+                ]
+            }
+        },
+        "ssm": false,
+        "targetFilter": "Recent",
+        "targetId": "%OrderId%",
+        "targetLWCLayout": "lightning",
+        "targetName": "Order",
+        "targetType": "Record",
+        "validationRequired": "Submit",
+        "variant": "brand",
+        "wpm": false
+    },
+    "Type": "Navigate Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/AreaConstructionDecision/German/NavigatetoOrder"
+}

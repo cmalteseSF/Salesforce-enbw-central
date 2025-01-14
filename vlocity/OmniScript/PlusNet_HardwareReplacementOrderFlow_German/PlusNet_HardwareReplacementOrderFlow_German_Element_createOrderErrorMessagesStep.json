@@ -1,0 +1,81 @@
+{
+    "DiscoveryFrameworkUsageType": "Default",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "createOrderErrorMessagesStep",
+    "OmniProcessId": {
+        "Name": "Hardware Replacement Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/HardwareReplacementOrderFlow/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "allowSaveForLater": false,
+        "businessCategory": "",
+        "businessEvent": "",
+        "cancelLabel": "Cancel",
+        "cancelMessage": null,
+        "chartLabel": null,
+        "completeLabel": null,
+        "completeMessage": null,
+        "conditionType": "Hide if False",
+        "errorMessage": {
+            "custom": [
+            ]
+        },
+        "instruction": "",
+        "instructionKey": null,
+        "knowledgeOptions": {
+            "dataCategoryCriteria": "",
+            "keyword": "",
+            "language": "English",
+            "publishStatus": "Online",
+            "remoteTimeout": 30000,
+            "typeFilter": ""
+        },
+        "label": null,
+        "message": {
+        },
+        "nextLabel": "Next",
+        "nextWidth": 3,
+        "previousLabel": "Previous",
+        "previousWidth": 3,
+        "pubsub": false,
+        "remoteClass": "",
+        "remoteMethod": "",
+        "remoteOptions": {
+        },
+        "remoteTimeout": 30000,
+        "saveLabel": "SaveLabel",
+        "saveMessage": "SaveMessage",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "",
+                        "field": "OrderId"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "changeAssets",
+                        "field": "selectActionType"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "validationRequired": true,
+        "wpm": false
+    },
+    "Type": "Step",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/HardwareReplacementOrderFlow/German/createOrderErrorMessagesStep"
+}

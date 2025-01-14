@@ -1,0 +1,27 @@
+{
+    "Description": "Omniscript to change an asset to quote",
+    "DiscoveryFrameworkUsageType": "Default",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": true,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "Multi-Language",
+    "Name": "Change to Quote",
+    "OmniProcessElement": [
+        "PlusNet_ChangeToQuote_Multi-Language_Element_GetExistingAssetsFromQuoteLineItem.json",
+        "PlusNet_ChangeToQuote_Multi-Language_Element_GetAssetIdsToProcess.json",
+        "PlusNet_ChangeToQuote_Multi-Language_Element_SetDuplicateAssetsErrorMessage.json",
+        "PlusNet_ChangeToQuote_Multi-Language_Element_ChangeToQuoteRemoteAction.json",
+        "PlusNet_ChangeToQuote_Multi-Language_Element_ApplyAttributesChanges.json",
+        "PlusNet_ChangeToQuote_Multi-Language_Element_QuoteNavigateAction.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "PlusNet_ChangeToQuote_Multi-Language_PropertySetConfig.json",
+    "SubType": "ChangeToQuote",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ChangeToQuote/Multi-Language"
+}

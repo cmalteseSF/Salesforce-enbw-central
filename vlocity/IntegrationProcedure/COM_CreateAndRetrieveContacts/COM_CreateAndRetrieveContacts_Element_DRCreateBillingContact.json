@@ -1,0 +1,63 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRCreateBillingContact",
+    "OmniProcessId": {
+        "Name": "CreateAndRetrieveContacts",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/CreateAndRetrieveContacts/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "SaveAndFetchBillingContact",
+        "OmniProcessId": {
+            "Name": "CreateAndRetrieveContacts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/COM/CreateAndRetrieveContacts/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/COM/CreateAndRetrieveContacts/Procedure/SaveAndFetchBillingContact",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "SaveAndFetchBillingContact",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "BillingAccountId": "%BillingAccountId%",
+            "BusinessAccountId": "%BusinessAccountId%",
+            "ContactCompany": "%BillingContactCompany%",
+            "Email": "%ContactEmail%",
+            "FirstName": "%ContactFirstName%",
+            "LastName": "%ContactLastName%",
+            "Phone": "%ContactPhone%",
+            "Roles": "%Roles%",
+            "Salutation": "%ContactSalutation%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRCreateBillingContact",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/CreateAndRetrieveContacts/Procedure/DRCreateBillingContact"
+}

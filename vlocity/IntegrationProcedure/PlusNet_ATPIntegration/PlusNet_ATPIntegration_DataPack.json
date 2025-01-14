@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "PlusNet_ATPIntegration_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ATP Integration",
+    "OmniProcessElement": [
+        "PlusNet_ATPIntegration_Element_ExtractBillingDetailsFromOrder.json",
+        "PlusNet_ATPIntegration_Element_ATPIntegration.json",
+        "PlusNet_ATPIntegration_Element_HTTPBillingATP.json",
+        "PlusNet_ATPIntegration_Element_SaveBillingInfoToAccount.json",
+        "PlusNet_ATPIntegration_Element_CloseBillingTaskAfterIntegration.json",
+        "PlusNet_ATPIntegration_Element_ReturnBillingIntegrationDetails.json",
+        "PlusNet_ATPIntegration_Element_CloseBillingTaskWithoutIntegration.json",
+        "PlusNet_ATPIntegration_Element_ReturnATPIntegration.json"
+    ],
+    "OmniProcessKey": "PlusNet_ATPIntegration",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ATPIntegration_PropertySetConfig.json",
+    "SubType": "ATPIntegration",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ATPIntegration/Procedure"
+}

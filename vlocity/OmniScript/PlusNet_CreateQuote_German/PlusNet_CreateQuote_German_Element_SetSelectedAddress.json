@@ -1,0 +1,47 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetSelectedAddress",
+    "OmniProcessId": {
+        "Name": "CreateQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "selectedAddress": {
+                "address": "=%CustomLWC1|1:Address%",
+                "addressId": "=%CustomLWC1|1:AddressId%",
+                "city": "=%CustomLWC1|1:City%",
+                "houseNo": "=%CustomLWC1|1:HouseNo%",
+                "houseNoExt": "=%CustomLWC1|1:HouseNoExt%",
+                "premiseId": "=%CustomLWC1|1:PremiseId%",
+                "premiseName": "=%CustomLWC1|1:PremiseName%",
+                "propertyOwnerAccountId": "=%CustomLWC1|1:PropertyOwnerAccountId%",
+                "serviceAccountId": "=%CustomLWC1|1:AccountId%",
+                "street": "=%CustomLWC1|1:Street%"
+            },
+            "selectedRow": [
+                "=%CustomLWC1|1:AccountId%"
+            ]
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateQuote/German/SetSelectedAddress"
+}

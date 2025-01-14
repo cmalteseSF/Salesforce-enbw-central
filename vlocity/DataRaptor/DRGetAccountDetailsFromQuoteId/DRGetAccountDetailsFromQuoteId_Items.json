@@ -1,0 +1,147 @@
+[
+    {
+        "FilterDataType": "ID",
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Id",
+        "GlobalKey": "DRGetAccountDetailsFromQuoteIdCustom2420",
+        "InputFieldName": "Id",
+        "InputObjectName": "Quote",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetAccountDetailsFromQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRGetAccountDetailsFromQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetAccountDetailsFromQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetAccountDetailsFromQuoteIdCustom7383",
+        "InputFieldName": "%vlocity_namespace%__DefaultServiceAccountId__r.%vlocity_namespace%__PremisesId__r.%vlocity_namespace%__City__c",
+        "InputObjectName": "Quote",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetAccountDetailsFromQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRGetAccountDetailsFromQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetAccountDetailsFromQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetAccountDetailsFromQuoteIdCustom248",
+        "InputFieldName": "%vlocity_namespace%__DefaultServiceAccountId__r.%vlocity_namespace%__PremisesId__r.%vlocity_namespace%__PostalCode__c",
+        "InputObjectName": "Quote",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetAccountDetailsFromQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRGetAccountDetailsFromQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetAccountDetailsFromQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetAccountDetailsFromQuoteIdCustom4482",
+        "InputFieldName": "%vlocity_namespace%__DefaultServiceAccountId__r.%vlocity_namespace%__PremisesId__r.%vlocity_namespace%__StreetAddress__c",
+        "InputObjectName": "Quote",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetAccountDetailsFromQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRGetAccountDetailsFromQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetAccountDetailsFromQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetAccountDetailsFromQuoteIdCustom5495",
+        "InputFieldName": "%vlocity_namespace%__DefaultServiceAccountId__r.%vlocity_namespace%__PremisesId__r.HouseNoExt__c",
+        "InputObjectName": "Quote",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetAccountDetailsFromQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRGetAccountDetailsFromQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetAccountDetailsFromQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetAccountDetailsFromQuoteIdCustom1064",
+        "InputFieldName": "%vlocity_namespace%__DefaultServiceAccountId__r.%vlocity_namespace%__PremisesId__r.HouseNo__c",
+        "InputObjectName": "Quote",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetAccountDetailsFromQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRGetAccountDetailsFromQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetAccountDetailsFromQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetAccountDetailsFromQuoteIdCustom5873",
+        "InputFieldName": "Account.Name",
+        "InputObjectName": "Quote",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetAccountDetailsFromQuoteId",
+        "OmniDataTransformationId": {
+            "Name": "DRGetAccountDetailsFromQuoteId",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetAccountDetailsFromQuoteId",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "Turbo Extract",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

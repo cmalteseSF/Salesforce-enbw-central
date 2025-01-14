@@ -1,0 +1,81 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SPRICheckAndCreateQuote2",
+    "OmniProcessId": {
+        "Name": "NotOwnerProcessHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/NotOwnerProcessHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CB_OwnerNotExists",
+        "OmniProcessId": {
+            "Name": "NotOwnerProcessHandler",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/COM/NotOwnerProcessHandler/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/COM/NotOwnerProcessHandler/Procedure/CB_OwnerNotExists",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CB_OwnerNotExists",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ActiveHouseConnectionAsset": "%ActiveHouseConnectionAsset%",
+            "BusinessAccountName": "%DRCreateAccountOwnerRecords:Account_1|1:Name%",
+            "ConnectionOppName": "%DRCreateAccountOwnerRecords:Account_1|1:Name% - Anbindung",
+            "ConnectionQuoteAccountId": "%DRCreateAccountOwnerRecords:Account_1|1:Id%",
+            "ConnectionQuoteAccountName": "%DRCreateAccountOwnerRecords:Account_1|1:Name%",
+            "ConnectionQuoteContactId": "%DRCreateAccountOwnerRecords:Contact_4|1:Id%",
+            "ConnectionQuoteOnPremise": "%ConnectionQuoteOnPremise%",
+            "HouseProdSelected": "%HouseProdSelected%",
+            "MarketingPhase": "%MarketingPhase%",
+            "NewCreatedAccount": "%DRCreateAccountOwnerRecords:Account_1%",
+            "OfficeProdSelected": "%OfficeProdSelected%",
+            "Opportunity": "%Opportunity%",
+            "OwnerDetails": "%OwnerDetails%",
+            "PremiseId": "%PremiseId%",
+            "PremiseOwnerAccountId": "%PremiseOwnerAccountId%",
+            "PriceListId": "%PriceListId%",
+            "RecordTypes": "%DRGetRecordTypeDetails%",
+            "SPRIStatus": "%SPRIStatus%",
+            "SelectedAddress": "%SelectedAddress%",
+            "ServiceAccountId": "%DRCreateAccountOwnerRecords:Account_2|1:Id%",
+            "ServiceQuoteAccountName": "%DRGetAccountDetails:BusinessAccount:Name%",
+            "StandardQuoteRTId": "%StandardQuoteRTId%",
+            "houseConnectionId": "%houseConnectionId%",
+            "items": "%items%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "disableChainable": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "integrationProcedureKey": "COM_SPRICheck",
+        "label": "IntegrationProcedureAction1",
+        "remoteOptions": {
+        },
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/NotOwnerProcessHandler/Procedure/SPRICheckAndCreateQuote2"
+}

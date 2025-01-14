@@ -1,0 +1,61 @@
+[
+    {
+        "FormulaExpression": "DESERIALIZE(attributeSelectedValues)",
+        "FormulaResultPath": "selectedValues",
+        "FormulaSequence": 1,
+        "GlobalKey": "PluNet-SetHardwareAttributesCustom0jI9M000000BIPpUAOItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PluNet-SetHardwareAttributes",
+        "OmniDataTransformationId": {
+            "Name": "PluNet-SetHardwareAttributes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PluNet-SetHardwareAttributes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PluNet-SetHardwareAttributesCustom0jI9M000000BIPpUAOItem2",
+        "InputFieldName": "selectedValues",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PluNet-SetHardwareAttributes",
+        "OmniDataTransformationId": {
+            "Name": "PluNet-SetHardwareAttributes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PluNet-SetHardwareAttributes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "selectedValues",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PluNet-SetHardwareAttributesCustom0jI9M000000BIPpUAOItem1",
+        "InputFieldName": "hardwareType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PluNet-SetHardwareAttributes",
+        "OmniDataTransformationId": {
+            "Name": "PluNet-SetHardwareAttributes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PluNet-SetHardwareAttributes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "selectedValues:ATT-RTR-TYP",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

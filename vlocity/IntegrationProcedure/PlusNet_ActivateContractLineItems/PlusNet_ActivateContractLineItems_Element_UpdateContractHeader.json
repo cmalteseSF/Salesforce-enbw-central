@@ -1,0 +1,58 @@
+{
+    "Description": "Removed LatestCancellationDate =ADDMONTH(%GetNewOLIs:OLI|1:EndOfMinimumContractTerm%, - %GetNewOLIs:OLI|1:PeriodOfNotice%)",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateContractHeader",
+    "OmniProcessId": {
+        "Name": "Activate Contract Line Items",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ActivateContractLineItems/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "MaintainCLIs",
+        "OmniProcessId": {
+            "Name": "Activate Contract Line Items",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ActivateContractLineItems/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ActivateContractLineItems/Procedure/MaintainCLIs",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "MaintainCLIs",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ActivationDate": "%GetNewOLIs:OLI|1:ServiceDate%",
+            "ContractId": "%GetOrder:Order|1:ContractId%",
+            "LatestCancellationDate": "=ADDMONTH(%GetNewOLIs:OLI|1:EndOfMinimumContractTerm%, -1)"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "PlusNet-UpdateContract",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataMapperPostAction3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ActivateContractLineItems/Procedure/UpdateContractHeader"
+}

@@ -1,0 +1,351 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Id",
+        "GlobalKey": "GetBusinessAccountAndPrimaryContact2500362947781791",
+        "InputFieldName": "Id",
+        "InputObjectName": "Account",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "businessAccount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "businessAccount:Register__c + ' ' + businessAccount:RegisterNumber__c",
+        "FormulaResultPath": "registerNumber",
+        "FormulaSequence": 1,
+        "GlobalKey": "GetBusinessAccountAndPrimaryContactCustom4305",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContact33491560093985173",
+        "InputFieldName": "businessAccount:Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:accountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContactCustom9135",
+        "InputFieldName": "businessAccount:BusinessAddressId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:addressUuid",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContact1687080078351917",
+        "InputFieldName": "businessAccount:ATPAccountId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:atpAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContact15065906518708294",
+        "InputFieldName": "businessAccount:Type",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:defaultDebitorRole",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "BU-PRO KM Eingang GK",
+        "GlobalKey": "GetBusinessAccountAndPrimaryContactCustom8374",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:defaultSupportGroup",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContact9369095775473679",
+        "InputFieldName": "businessAccount:%vlocity_namespace%__PrimaryContactId__r.Email",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:email",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContact3729651039237545",
+        "InputFieldName": "businessAccount:%vlocity_namespace%__PrimaryContactId__r.FirstName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:firstName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContact6910106868404293",
+        "InputFieldName": "businessAccount:%vlocity_namespace%__PrimaryContactId__r.LastName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:lastName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContact06925187872013394",
+        "InputFieldName": "businessAccount:%vlocity_namespace%__PrimaryContactId__r.Phone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:phone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContactCustom3031",
+        "InputFieldName": "businessAccount:RegisterCourt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:registerCourt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContactCustom234",
+        "InputFieldName": "registerNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:registerNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContactCustom7899",
+        "InputFieldName": "businessAccount:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:salesforceAccountUuid",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContact8825601406637589",
+        "InputFieldName": "businessAccount:%vlocity_namespace%__PrimaryContactId__r.Salutation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:salutation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContact0580162040669967",
+        "InputFieldName": "businessAccount:VATRegKey__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:taxNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContact13779228288166068",
+        "InputFieldName": "businessAccount:%vlocity_namespace%__PrimaryContactId__r.Title",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:account:title",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetBusinessAccountAndPrimaryContactCustom7719",
+        "InputFieldName": "businessAccount:RecordType.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetBusinessAccountAndPrimaryContact",
+        "OmniDataTransformationId": {
+            "Name": "GetBusinessAccountAndPrimaryContact",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetBusinessAccountAndPrimaryContact",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:accountType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

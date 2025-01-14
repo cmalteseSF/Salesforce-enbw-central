@@ -1,0 +1,74 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "HTTPBillingATP",
+    "OmniProcessId": {
+        "Name": "ATP Integration",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ATPIntegration/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ATPIntegration",
+        "OmniProcessId": {
+            "Name": "ATP Integration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ATPIntegration/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ATPIntegration/Procedure/ATPIntegration",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ATPIntegration",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "orderId": "%Id%"
+        },
+        "additionalOutput": {
+        },
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+            "ReturnBillingIntegrationDetails": "NOK"
+        },
+        "label": "HTTPAction1",
+        "namedCredential": "atpBilling",
+        "postActionLogging": "",
+        "preActionLogging": "%endpoint%",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "restMethod": "POST",
+        "restOptions": {
+            "clientCertificateName": "",
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "isCompressed": false,
+            "params": {
+            },
+            "sendBody": true,
+            "timeout": 0,
+            "xmlEscapeResponse": false
+        },
+        "restPath": "",
+        "retryCount": 0,
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "type": "Integration",
+        "useFormulas": true
+    },
+    "Type": "Rest Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ATPIntegration/Procedure/HTTPBillingATP"
+}

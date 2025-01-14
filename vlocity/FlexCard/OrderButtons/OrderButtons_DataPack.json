@@ -1,0 +1,45 @@
+{
+    "AuthorName": "Plusnet",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+                {
+                    "id": 1,
+                    "name": "recordId",
+                    "val": "8019M00000GWOb4QAH"
+                }
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "DataRaptor",
+            "value": {
+                "bundle": "DRExtractOrderType",
+                "bundleType": "",
+                "dsDelay": "",
+                "inputMap": {
+                    "Id": "{recordId}"
+                },
+                "jsonMap": "{\"recordId\":\"{recordId}\"}",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "OrderButtons",
+    "Namespace": "",
+    "OmniUiCardKey": "OrderButtons/Plusnet/6.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "OrderButtons.json",
+    "SampleDataSourceResponse": "[{\"OrderType\":\"Activation\",\"SubType\":\"Service\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 6,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/OrderButtons"
+}

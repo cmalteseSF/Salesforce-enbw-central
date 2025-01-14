@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "PlusNet_UpdateReferenceId_SampleInput.json",
+    "Description": "Used to associate the Connection AssetReferenceId to the root Asset of the Service Order in Plusnet Reference Id field",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Update Reference Id",
+    "OmniProcessElement": [
+        "PlusNet_UpdateReferenceId_Element_GetOrderDetails.json",
+        "PlusNet_UpdateReferenceId_Element_Service.json",
+        "PlusNet_UpdateReferenceId_Element_GetActiveConnection.json",
+        "PlusNet_UpdateReferenceId_Element_GetServiceRootOLI.json",
+        "PlusNet_UpdateReferenceId_Element_UpdateRelatedReferenceId.json",
+        "PlusNet_UpdateReferenceId_Element_ReturnUpdateReferenceId.json"
+    ],
+    "OmniProcessKey": "PlusNet_UpdateReferenceId",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_UpdateReferenceId_PropertySetConfig.json",
+    "SubType": "UpdateReferenceId",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/UpdateReferenceId/Procedure"
+}

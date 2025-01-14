@@ -1,0 +1,33 @@
+[
+    {
+        "%vlocity_namespace%__ConditionData__c": "",
+        "%vlocity_namespace%__DestinationDefaultQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMaxQuantity__c": 1,
+        "%vlocity_namespace%__DestinationMinQuantity__c": 1,
+        "%vlocity_namespace%__DestinationProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "e94e26f8-4681-c08c-1ffa-ca4d134ca27c",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Product2/e94e26f8-4681-c08c-1ffa-ca4d134ca27c",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__GlobalKey__c": "d3a88e46-43cc-05d9-b22d-b55f0a8af348",
+        "%vlocity_namespace%__MappingsData__c": "[{\"source_type\":\"Attribute\",\"source_attr_name\":\"Interfacetyp\",\"source_attr_code\":\"ATT-INT-TYP\",\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"cpeType\",\"destination_attr_code\":\"ATT-HW-CPE-TYP\"},{\"transform_mappings\":[{\"source_value\":\"AVM FRITZ!Box 5530\",\"destination_value\":\"AVM GmbH\"},{\"source_value\":\"AVM FRITZ!Box 5590\",\"destination_value\":\"AVM GmbH\"}],\"source_type\":\"Attribute\",\"source_attr_name\":\"Hardwaretyp\",\"source_attr_code\":\"ATT-RTR-TYP\",\"mapping_type\":\"list\",\"destination_attr_name\":\"manufacturer\",\"destination_attr_code\":\"ATT-HW-MAN\"},{\"transform_mappings\":[{\"source_value\":\"AVM FRITZ!Box 5530\",\"destination_value\":\"FRITZ!Box 5530 Fiber\"},{\"source_value\":\"AVM FRITZ!Box 5590\",\"destination_value\":\"FRITZ!Box 5590 Fiber\"}],\"source_type\":\"Attribute\",\"source_attr_name\":\"Hardwaretyp\",\"source_attr_code\":\"ATT-RTR-TYP\",\"mapping_type\":\"list\",\"destination_attr_name\":\"modell\",\"destination_attr_code\":\"ATT-HW-MOD\"},{\"value\":\"Plusnet\",\"mapping_type\":\"static\",\"destination_attr_name\":\"owner\",\"destination_attr_code\":\"ATT-HW-OWN\"},{\"mapping_type\":\"ad-verbatim\",\"destination_attr_name\":\"serialNumber\",\"destination_attr_code\":\"ATT-CPE-SRL-NUM\",\"source_attr_name\":\"Seriennummer\",\"source_attr_code\":\"ATT-SER-NUM\",\"source_type\":\"Attribute\"}]",
+        "%vlocity_namespace%__Priority__c": "",
+        "%vlocity_namespace%__RequireReservation__c": false,
+        "%vlocity_namespace%__SourceDefaultQuantity__c": 1,
+        "%vlocity_namespace%__SourceMaxQuantity__c": "",
+        "%vlocity_namespace%__SourceMinQuantity__c": 0,
+        "%vlocity_namespace%__SourceProductId__c": {
+            "%vlocity_namespace%__GlobalKey__c": "055dd2f4-0d22-f8c4-016c-e0e677054440",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/055dd2f4-0d22-f8c4-016c-e0e677054440",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "%vlocity_namespace%__SourceProductId__r.%vlocity_namespace%__GlobalKey__c": "055dd2f4-0d22-f8c4-016c-e0e677054440",
+        "%vlocity_namespace%__XORGroup__c": "",
+        "Name": "Hardware PS Decomposes to CFS CPE",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "%vlocity_namespace%__DecompositionRelationship__c",
+        "VlocityRecordSourceKey": "%vlocity_namespace%__DecompositionRelationship__c/Hardware PS Decomposes to CFS CPE/Product2/055dd2f4-0d22-f8c4-016c-e0e677054440"
+    }
+]

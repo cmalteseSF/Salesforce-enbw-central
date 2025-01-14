@@ -1,0 +1,66 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateCase",
+    "OmniProcessId": {
+        "Name": "CreateCase",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateCase/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TryCreateCase",
+        "OmniProcessId": {
+            "Name": "CreateCase",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateCase/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateCase/Procedure/TryCreateCase",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TryCreateCase",
+    "ParentElementType": "Try Catch Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "accountId": "%accountId%",
+            "caseOrigin": "%caseOrigin%",
+            "confirmationStatus": "=IF(%premiseOwnerRadioFormula% == \"true\", \"Found\", \"\")",
+            "contactId": "%contactId%",
+            "description": "%description%",
+            "marketingPhase": "%marketingPhase%",
+            "premiseId": "%premiseId%",
+            "premiseOwner": "=IF(%premiseOwnerRadioFormula% == \"true\", %accountId%, \"\")",
+            "recordTypeId": "%GetCaseRecordType:RecordTypeId%",
+            "status": "=IF(%premiseOwnerRadioFormula% == \"true\", \"Owner Identified\", \"\")",
+            "subject": "Eigentümerdaten erfassen - %premiseName%",
+            "type": "%type%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "CreateCase",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataMapperPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateCase/Procedure/CreateCase"
+}

@@ -1,0 +1,51 @@
+{
+    "DiscoveryFrameworkUsageType": "Default",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlockOrderQueuingResultSuccess",
+    "OmniProcessId": {
+        "Name": "PlusNet Submit Order",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/PlusNetSubmitOrder/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ResultsGroup",
+        "OmniProcessId": {
+            "Name": "PlusNet Submit Order",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/PlusNetSubmitOrder/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/PlusNetSubmitOrder/Multi-Language/ResultsGroup",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ResultsGroup",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": null,
+        "sanitize": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "canSubmitOrder:canSubmitOrder"
+                    }
+                ]
+            }
+        },
+        "text": "",
+        "textKey": "CPQTextBlockOrderQueuingResultSuccess"
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/PlusNetSubmitOrder/Multi-Language/TextBlockOrderQueuingResultSuccess"
+}

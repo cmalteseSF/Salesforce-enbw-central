@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Change Of Plan Contract Handler",
+    "OmniProcessElement": [
+        "PlusNet_ChangeOfPlanContractHandler_Element_GetNewAccessOLI.json",
+        "PlusNet_ChangeOfPlanContractHandler_Element_UpdateContractHeader.json",
+        "PlusNet_ChangeOfPlanContractHandler_Element_MaintainCLIs.json",
+        "PlusNet_ChangeOfPlanContractHandler_Element_GetDisconnectedOLIs.json",
+        "PlusNet_ChangeOfPlanContractHandler_Element_DeactivateDisconnectedCLIs.json",
+        "PlusNet_ChangeOfPlanContractHandler_Element_GetNewOLIs.json",
+        "PlusNet_ChangeOfPlanContractHandler_Element_AddCLIsAddedOLIs.json",
+        "PlusNet_ChangeOfPlanContractHandler_Element_ReturnChangeOfPlanContractHandler.json"
+    ],
+    "OmniProcessKey": "PlusNet_ChangeOfPlanContractHandler",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ChangeOfPlanContractHandler_PropertySetConfig.json",
+    "SubType": "ChangeOfPlanContractHandler",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ChangeOfPlanContractHandler/Procedure"
+}

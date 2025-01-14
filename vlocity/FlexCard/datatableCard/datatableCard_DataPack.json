@@ -1,0 +1,35 @@
+{
+    "AuthorName": "Plusnet",
+    "ClonedFromOmniUiCardKey": "",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "[{\"Id\":\"0039M00000CgZp2QAF\",\"Salutation\":\"Mr.\",\"Email\":\"jorg@gmail.com\",\"Company\":\"Astro AG\",\"Name\":\"Jörg Helmut\"},{\"Id\":\"0039M00000CgpFbQAJ\",\"Salutation\":\"Mr.\",\"Phone\":\"01789712232\",\"Email\":\"asd@asd.com\",\"Company\":\"Astro AG\",\"Name\":\"Gigi Hadid\"},{\"Id\":\"0039M00000CgqdUQAR\",\"Salutation\":\"Mr.\",\"Phone\":\"1111111111\",\"Email\":\"aaa@testtest.com\",\"Company\":\"Astro AG\",\"Name\":\"Much Jay\"},{\"Id\":\"0039M00000Cgrv6QAB\",\"Salutation\":\"Mr.\",\"Phone\":\"122111232221\",\"Email\":\"test@abc.com\",\"Company\":\"Astro AG\",\"Name\":\"Zuit Machman\"},{\"Id\":\"0039M00000ChB69QAF\",\"Phone\":\"112889001\",\"Email\":\"codey@trail.com\",\"Company\":\"Astro AG\",\"Name\":\"Codey Codey\"}]",
+                "dsDelay": "",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "",
+    "IsTrackingEnabled": false,
+    "Name": "datatableCard",
+    "Namespace": "",
+    "OmniUiCardKey": "datatableCard/Plusnet/1.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "datatableCard.json",
+    "SampleDataSourceResponse": "[{\"Id\":\"0039M00000CgZp2QAF\",\"Salutation\":\"Mr.\",\"Email\":\"jorg@gmail.com\",\"Company\":\"Astro AG\",\"Name\":\"Jörg Helmut\"},{\"Id\":\"0039M00000CgpFbQAJ\",\"Salutation\":\"Mr.\",\"Phone\":\"01789712232\",\"Email\":\"asd@asd.com\",\"Company\":\"Astro AG\",\"Name\":\"Gigi Hadid\"},{\"Id\":\"0039M00000CgqdUQAR\",\"Salutation\":\"Mr.\",\"Phone\":\"1111111111\",\"Email\":\"aaa@testtest.com\",\"Company\":\"Astro AG\",\"Name\":\"Much Jay\"},{\"Id\":\"0039M00000Cgrv6QAB\",\"Salutation\":\"Mr.\",\"Phone\":\"122111232221\",\"Email\":\"test@abc.com\",\"Company\":\"Astro AG\",\"Name\":\"Zuit Machman\"},{\"Id\":\"0039M00000ChB69QAF\",\"Phone\":\"112889001\",\"Email\":\"codey@trail.com\",\"Company\":\"Astro AG\",\"Name\":\"Codey Codey\"}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 1,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/datatableCard"
+}

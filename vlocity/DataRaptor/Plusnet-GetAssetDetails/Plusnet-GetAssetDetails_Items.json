@@ -1,0 +1,539 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "AssetId",
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item4",
+        "InputFieldName": "Id",
+        "InputObjectName": "Asset",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "AssetDetails",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom5133",
+        "InputFieldName": "AssetDetails:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:AccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom1443",
+        "InputFieldName": "AssetDetails:Account.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:AccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item11",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__AssetReferenceId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:AssetRefId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item15",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__BillingAccountId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:BillingAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item8",
+        "InputFieldName": "AssetDetails:CarrierAddressId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:CarrierAddressId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom8658",
+        "InputFieldName": "AssetDetails:Account.ContactId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:ContactId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item18",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__ContractId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:ContractId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom8168",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__ContractId__r.SubDealerID__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:DealerId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item5",
+        "InputFieldName": "AssetDetails:PlusNet_End_Of_Minimum_Contract_Term__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:EndOfMinimumContractTerm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item6",
+        "InputFieldName": "AssetDetails:PlusNet_Latest_Cancellation_Date__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:LatestCancellationDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom2076",
+        "InputFieldName": "AssetDetails:LegacyContractId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:LegacyContractId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom3117",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__ContractId__r.PartnerContractID__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:PartnerId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item7",
+        "InputFieldName": "AssetDetails:PlusNet_Period_Of_Notice__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:PeriodOfNotice",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item9",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__PremisesId__r.%vlocity_namespace%__PremisesIdentifier__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:PremiseExternalId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item20",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__PremisesId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:PremiseId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item10",
+        "InputFieldName": "AssetDetails:ProductCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:ProductCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item17",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__ServiceAccountId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:ServiceAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom6256",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__ServicePointId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:ServicePointId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom0jI9M000000AjQTUA0Item19",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__ContractId__r.SubType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Asset:SubType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom8510",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__PremisesId__r.AddressExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceAddress:AddressExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom5916",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__PremisesId__r.%vlocity_namespace%__City__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceAddress:City",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom9527",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__PremisesId__r.%vlocity_namespace%__Country__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceAddress:Country",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom8539",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__PremisesId__r.HouseNo__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceAddress:HouseNo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom2630",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__PremisesId__r.HouseNoExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceAddress:HouseNoExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom4202",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__PremisesId__r.%vlocity_namespace%__PostalCode__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceAddress:PostalCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom5668",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__PremisesId__r.%vlocity_namespace%__State__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceAddress:State",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetAssetDetailsCustom6266",
+        "InputFieldName": "AssetDetails:%vlocity_namespace%__PremisesId__r.%vlocity_namespace%__StreetAddress__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetAssetDetails",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetAssetDetails",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetAssetDetails",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceAddress:Street",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "COM_IPApplyAdjustment_SampleInput.json",
+    "Description": "Added SendCustomNotification for sending notification to loggedin user",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "IPApplyAdjustment",
+    "OmniProcessElement": [
+        "COM_IPApplyAdjustment_Element_ApplyAdjustment.json",
+        "COM_IPApplyAdjustment_Element_PriceCart.json",
+        "COM_IPApplyAdjustment_Element_SendCustomNotification.json",
+        "COM_IPApplyAdjustment_Element_ReturnAdjustment.json"
+    ],
+    "OmniProcessKey": "COM_IPApplyAdjustment",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "COM_IPApplyAdjustment_PropertySetConfig.json",
+    "SubType": "IPApplyAdjustment",
+    "Type": "COM",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/COM/IPApplyAdjustment/Procedure"
+}

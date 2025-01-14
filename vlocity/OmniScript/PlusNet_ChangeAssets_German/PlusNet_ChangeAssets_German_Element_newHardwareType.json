@@ -1,0 +1,78 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "newHardwareType",
+    "OmniProcessId": {
+        "Name": "ChangeAssets",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeAssets/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "HardwareConfiguration",
+        "OmniProcessId": {
+            "Name": "ChangeAssets",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeAssets/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeAssets/German/HardwareConfiguration",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "HardwareConfiguration",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 8,
+        "controllingField": {
+            "element": "",
+            "source": "",
+            "type": ""
+        },
+        "defaultValue": "%oldHardwareType%",
+        "disOnTplt": false,
+        "enableCaption": true,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "horizontalMode": "image",
+        "imageCountInRow": 2,
+        "label": "Hardwaretyp",
+        "optionHeight": 100,
+        "optionSource": {
+            "source": "",
+            "type": "image"
+        },
+        "optionWidth": 100,
+        "options": [
+            {
+                "autoAdv": null,
+                "developerName": "AVM FRITZ!Box 5530",
+                "imgId": "/resource/buyFlowImages/bundled-entertainment.png",
+                "name": "AVM FRITZ!Box 5530",
+                "value": "AVM FRITZ!Box 5530"
+            },
+            {
+                "autoAdv": null,
+                "developerName": "AVM FRITZ!Box 5590",
+                "imgId": "/resource/buyFlowImages/bundled-entertainment.png",
+                "name": "AVM FRITZ!Box 5590",
+                "value": "AVM FRITZ!Box 5590"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null
+    },
+    "Type": "Radio",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeAssets/German/newHardwareType"
+}

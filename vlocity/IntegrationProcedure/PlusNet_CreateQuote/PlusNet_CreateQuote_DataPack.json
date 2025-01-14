@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Manage Quote record creation",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateQuote",
+    "OmniProcessElement": [
+        "PlusNet_CreateQuote_Element_GetPriceListDetails.json",
+        "PlusNet_CreateQuote_Element_GetRecordTypeDetails.json",
+        "PlusNet_CreateQuote_Element_GetAddressDetails.json",
+        "PlusNet_CreateQuote_Element_Service.json",
+        "PlusNet_CreateQuote_Element_TryCreateQuote.json",
+        "PlusNet_CreateQuote_Element_UpdateOpportunityCreateQuote.json",
+        "PlusNet_CreateQuote_Element_GetQuoteNumber.json",
+        "PlusNet_CreateQuote_Element_ReturnQuoteId.json"
+    ],
+    "OmniProcessKey": "PlusNet_CreateQuote",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CreateQuote_PropertySetConfig.json",
+    "SubType": "CreateQuote",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CreateQuote/Procedure"
+}

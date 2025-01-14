@@ -1,0 +1,42 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateSyncFieldAccount",
+    "OmniProcessId": {
+        "Name": "SendAccountDetailsToATPHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendAccountDetailsToATPHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "Id": "%Id%",
+            "IsATPSyncFailed": true
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRUpdateATPSync",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%PlatformEvent:error% == \"true\"",
+        "failOnStepError": false,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataMapperPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendAccountDetailsToATPHandler/Procedure/UpdateSyncFieldAccount"
+}

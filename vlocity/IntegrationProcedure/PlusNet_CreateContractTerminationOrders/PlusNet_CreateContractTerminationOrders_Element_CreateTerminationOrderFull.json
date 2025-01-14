@@ -1,0 +1,60 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateTerminationOrderFull",
+    "OmniProcessId": {
+        "Name": "PlusNet Create Contract Termination Orders",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateContractTerminationOrders/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CreateTerminationOrders",
+        "OmniProcessId": {
+            "Name": "PlusNet Create Contract Termination Orders",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateContractTerminationOrders/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateContractTerminationOrders/Procedure/CreateTerminationOrders",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CreateTerminationOrders",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "TerminationDate": "%TerminationDate%",
+            "vlcObjectList": "%FormatContractCLIFullInput:records%"
+        },
+        "additionalOutput": {
+        },
+        "batchOptions": {
+        },
+        "chainOnStep": false,
+        "chainable": true,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%TerminationType% == 'Full_Contract_Termination'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "BatchAction2",
+        "listInput": "",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "scheduledJobId": "2a24c495-e105-2d06-fc6d-63dfd7fc6e80",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": false,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "Batch Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateContractTerminationOrders/Procedure/CreateTerminationOrderFull"
+}

@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "CPQ_GetProductsByPriceBookEntryId_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "IPGetProductsByPriceBookEntryId",
+    "OmniProcessElement": [
+        "CPQ_GetProductsByPriceBookEntryId_Element_DRGetProductsByPriceBookEntry.json",
+        "CPQ_GetProductsByPriceBookEntryId_Element_GetOffer.json",
+        "CPQ_GetProductsByPriceBookEntryId_Element_TransformProductList.json",
+        "CPQ_GetProductsByPriceBookEntryId_Element_ReTransformOfferList.json",
+        "CPQ_GetProductsByPriceBookEntryId_Element_DRTransformProductNames.json",
+        "CPQ_GetProductsByPriceBookEntryId_Element_DRTransformSortedBusinessList.json",
+        "CPQ_GetProductsByPriceBookEntryId_Element_Response.json"
+    ],
+    "OmniProcessKey": "CPQ_GetProductsByPriceBookEntryId",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "CPQ_GetProductsByPriceBookEntryId_PropertySetConfig.json",
+    "SubType": "GetProductsByPriceBookEntryId",
+    "Type": "CPQ",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/CPQ/GetProductsByPriceBookEntryId/Procedure"
+}

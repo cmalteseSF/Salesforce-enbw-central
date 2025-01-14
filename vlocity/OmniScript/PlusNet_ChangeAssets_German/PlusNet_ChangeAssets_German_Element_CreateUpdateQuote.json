@@ -1,0 +1,92 @@
+{
+    "DiscoveryFrameworkUsageType": "Default",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateUpdateQuote",
+    "OmniProcessId": {
+        "Name": "ChangeAssets",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeAssets/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ]
+        },
+        "extraPayload": {
+            "AssetDetails": "%Asset%",
+            "CreateSelectQuote": {
+                "AssetIds": "%AssetIds%",
+                "ContextId": "%ContextId%",
+                "accountName": "%Asset:AccountName%",
+                "assetRefId": "%Asset:AssetRefId%",
+                "billingAccountId": "%Asset:BillingAccountId%",
+                "carrierAddressId": "%Asset:CarrierAddressId%",
+                "contractId": "%Asset:ContractId%",
+                "filterString": "%filterString%",
+                "maxBandwidth": "%maxbandwidth%",
+                "premiseId": "%Asset:PremiseId%",
+                "priceList": "%b2bPriceListId%",
+                "query": "%query%",
+                "quoteType": "%changeType%",
+                "recordTypeId": "%recordTypeId%",
+                "searchBy": "%searchBy%",
+                "selectAllResults": "%selectAllResults%",
+                "serviceAccountId": "%Asset:ServiceAccountId%",
+                "subType": "%Asset:SubType%"
+            }
+        },
+        "failureAbortLabel": null,
+        "failureAbortMessage": null,
+        "failureGoBackLabel": "GoBack",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "InProgress",
+        "integrationProcedureKey": "PlusNet_CreateQuoteMACD",
+        "label": "CreateUpdateQuote",
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": null,
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": null,
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteOptions": {
+            "chainable": false,
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "useFuture": false
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "CreateSelectQuote",
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeAssets/German/CreateUpdateQuote"
+}

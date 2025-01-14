@@ -1,0 +1,63 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRCreateContact1",
+    "OmniProcessId": {
+        "Name": "CreateAndRetrieveContacts",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/CreateAndRetrieveContacts/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CB_SaveAndFetch",
+        "OmniProcessId": {
+            "Name": "CreateAndRetrieveContacts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/COM/CreateAndRetrieveContacts/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/COM/CreateAndRetrieveContacts/Procedure/CB_SaveAndFetch",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CB_SaveAndFetch",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "BusinessAccountId": "%BusinessAccountId%",
+            "ContactCompany": "%ContactCompany%",
+            "Email": "%ContactEmail%",
+            "FirstName": "%ContactFirstName%",
+            "LastName": "%ContactLastName%",
+            "Phone": "%ContactPhone%",
+            "Roles": "%Roles%",
+            "Salutation": "%ContactSalutation%",
+            "ServiceAccountId": "%ServiceAccountId%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRCreateACRContact",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/CreateAndRetrieveContacts/Procedure/DRCreateContact1"
+}

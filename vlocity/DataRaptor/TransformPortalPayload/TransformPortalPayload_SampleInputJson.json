@@ -1,0 +1,167 @@
+{
+    "Payload": {
+        "businessAccount": {
+            "address": {
+                "city": "Köln",
+                "country": "DE",
+                "externalId": "00137cc5-3b8c-4014-8e25-c1f75c653e76",
+                "houseNo": "55",
+                "houseNoExt": "B",
+                "postalCode": "50829",
+                "state": "NW",
+                "street": "Mattias-Brüggen-Straße"
+            },
+            "id": "0019M00000FwPaIQAV",
+            "name": "Reisebüro Schmidt"
+        },
+        "premise": {
+            "city": "Köln",
+            "externalId": "0013819c-9890-465e-b265-6c1dcf021594",
+            "houseNo": "7",
+            "houseNoExt": "a",
+            "postalCode": "50676",
+            "street": "Quirinstraße"
+        },
+        "qlis": [
+            {
+                "downloadSpeed": "600 Mbps",
+                "lineNumber": "0002",
+                "oneTimeCharge": "€0,00",
+                "productName": "Plusnet Office 600M",
+                "quantity": 1,
+                "recurringCharge": "€0,00",
+                "uploadSpeed": "150 Mbps"
+            },
+            {
+                "accessType": "Fiber",
+                "contractTerm": "24 Monate",
+                "downloadSpeed": "600 Mbps",
+                "lineNumber": "0002.0001",
+                "oneTimeCharge": "€0,00",
+                "productName": "Glasfaser Anschluss",
+                "quantity": 1,
+                "recurringCharge": "€109,00",
+                "uploadSpeed": "150 Mbps"
+            },
+            {
+                "ipType": "Dynamic",
+                "lineNumber": "0002.0002",
+                "oneTimeCharge": "€0,00",
+                "productName": "Dynamic IP Adresse",
+                "quantity": 1,
+                "recurringCharge": "€0,00"
+            },
+            {
+                "ipType": "Dynamic",
+                "ipUsageType": "WANIP",
+                "ipVersion": "IPv4",
+                "lineNumber": "0002.0002.0001",
+                "oneTimeCharge": "€0,00",
+                "productName": "IPv4 Adresse",
+                "quantity": 1,
+                "recurringCharge": "€0,00"
+            },
+            {
+                "ipType": "Dynamic",
+                "ipUsageType": "WANIP",
+                "ipVersion": "IPv6",
+                "lineNumber": "0002.0002.0002",
+                "oneTimeCharge": "€0,00",
+                "productName": "IPv6 Adresse",
+                "quantity": 1,
+                "recurringCharge": "€0,00"
+            },
+            {
+                "ipType": "Dynamic",
+                "ipUsageType": "Routed",
+                "ipVersion": "IPv6",
+                "lineNumber": "0002.0002.0003",
+                "oneTimeCharge": "€0,00",
+                "productName": "IPv6 Netz /56",
+                "quantity": 1,
+                "recurringCharge": "€0,00"
+            },
+            {
+                "cpeInternetType": "Fiber CPE",
+                "cpeType": "AVM FRITZ!Box 5590",
+                "lineNumber": "0002.0003",
+                "oneTimeCharge": "€0,00",
+                "productName": "Plusnet Homserver Plus",
+                "quantity": 1,
+                "recurringCharge": "€9,00"
+            },
+            {
+                "lineNumber": "0002.0004",
+                "oneTimeCharge": "€0,00",
+                "productName": "Service Techniker",
+                "quantity": 1,
+                "recurringCharge": "€0,00"
+            },
+            {
+                "flatrateEuroPlus": true,
+                "flatrateMobile": true,
+                "flatrateNational": true,
+                "lineNumber": "0002.0005",
+                "oneTimeCharge": "€0,00",
+                "phoneNumberQuantity": "3",
+                "productName": "IPfonie Basic Paket",
+                "quantity": 1,
+                "recurringCharge": "€0,00"
+            },
+            {
+                "carrierName": "1&1",
+                "flatrateEuroPlus": true,
+                "flatrateMobile": true,
+                "flatrateNational": true,
+                "lineNumber": "0002.0005.0001",
+                "oneTimeCharge": "€0,00",
+                "phoneNumber": "017612311211",
+                "portIn": false,
+                "productName": "IPfonie Basic Account",
+                "quantity": 1,
+                "recurringCharge": "€0,00"
+            },
+            {
+                "carrierName": "1&1",
+                "flatrateEuroPlus": true,
+                "flatrateMobile": true,
+                "flatrateNational": true,
+                "lineNumber": "0002.0005.0002",
+                "oneTimeCharge": "€0,00",
+                "phoneNumber": "017612311212",
+                "portIn": false,
+                "productName": "IPfonie Basic Account",
+                "quantity": 1,
+                "recurringCharge": "€0,00"
+            },
+            {
+                "carrierName": "1&1",
+                "flatrateEuroPlus": true,
+                "flatrateMobile": true,
+                "flatrateNational": true,
+                "lineNumber": "0002.0005.0003",
+                "oneTimeCharge": "€0,00",
+                "phoneNumber": "017612311213",
+                "portIn": false,
+                "productName": "IPfonie Basic Account",
+                "quantity": 1,
+                "recurringCharge": "€0,00"
+            }
+        ],
+        "quote": {
+            "createdByName": "Luca Belligoli",
+            "createdDate": "2024-02-01T13:50:20.000Z",
+            "oneTimeTotal": "€0,00",
+            "partnerContractId": "1234",
+            "quoteNumber": "00001059",
+            "recurringTotal": "€118,00",
+            "subDealerId": "4321",
+            "subType": "Service"
+        },
+        "technicalContact": {
+            "email": "mayanksharma+20@salesforce.com",
+            "name": "Mayank Sharma",
+            "salutation": "Mr."
+        }
+    }
+}

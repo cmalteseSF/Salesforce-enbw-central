@@ -1,0 +1,45 @@
+{
+    "DiscoveryFrameworkUsageType": "Default",
+    "EmbeddedOmniScriptKey": "PlusNet|ChangeToOrderCustom|Multi-Language",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "ChangetoOrderCustom",
+    "OmniProcessId": {
+        "Name": "Hardware Replacement Order Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/HardwareReplacementOrderFlow/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Language": "Multi-Language",
+        "Sub Type": "ChangeToOrderCustom",
+        "Type": "PlusNet",
+        "disOnTplt": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "individual",
+                        "field": "isBulk"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "changeAssets",
+                        "field": "selectActionType"
+                    },
+                    {
+                        "condition": "<>",
+                        "data": "",
+                        "field": "OrderId"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "OmniScript",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/HardwareReplacementOrderFlow/German/ChangetoOrderCustom"
+}

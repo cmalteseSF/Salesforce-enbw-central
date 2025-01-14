@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to inform the customer about new Quote proposal</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Quote Document Email - Portal</name>
+    <pageDevName>Quote_Document_Email_Portal</pageDevName>
+    <relatedEntityType>Quote</relatedEntityType>
+    <style>none</style>
+    <subject>Neues unverbindliches Angebot {{{Quote.QuoteNumber}}}</subject>
+    <textOnly>Neues unverbindliches Angebot ({{Quote.QuoteNumber}})
+
+Sehr geehrte Kundin, sehr geehrter Kunde,
+
+vielen Dank für Ihr Interesse an unseren Produkten. Ein neues, unverbindliches Angebot wurde für Sie erstellt. Der unten stehende Link führt Sie direkt zum unverbindlichen Angebot. Auf der Zielseite können Sie das unverbindliche Angebot einsehen und beantworten.
+
+{{{customUrl}}}/sf/offer/confirmation/{{{EncryptedQuoteId}}} &lt;  {{{customUrl}}}/sf/offer/confirmation/{{{EncryptedQuoteId}}}  &gt; 
+
+Dieser Link ist gültig bis zum {{{Quote.ExpirationDate}}}.
+
+Das Angebot wurde erstellt durch:
+
+{{{Sender.CompanyName}}}
+
+{{{Sender.Name}}}
+
+{{{Sender.Address}}}
+
+Dokumente:
+
+- Preisliste Plusnet Office &lt; https://www.plusnet.de/go/plusnetoffice.preisliste &gt; 
+
+- Leistungsbeschreibung Plusnet Glasfaser Hausanschluss &lt; https://www.plusnet.de/go/gfhausanschluss.leistungsbeschreibung &gt; 
+
+- Leistungsbeschreibung Plusnet Office &lt; https://www.plusnet.de/go/plusnetoffice.leistungsbeschreibung &gt; 
+
+- Leistungsbeschreibung Plusnet IPfonie SIP Produkte &lt; https://www.plusnet.de/go/voice.leistungsbeschreibung &gt; 
+
+- TK-Transparenzverordnung - Informationsblatt zu Messmöglichkeiten der Bandbreite &lt; https://www.plusnet.de/go/transparenzvo &gt; 
+
+- Besonderen Geschäftsbedingungen für Telekommunikationsdienstleitungen &lt; https://www.plusnet.de/go/bgb.tk-dienstleistungen &gt; 
+
+- Allgemeine Geschäftsbedingungen &lt; https://www.plusnet.de/go/agb &gt; 
+
+- Datenschutzerklärung &lt; https://www.plusnet.de/datenschutz &gt; 
+
+Mit partnerschaftlichen Grüßen
+
+Ihre Plusnet GmbH© 2024 Plusnet | Ein Unternehmen der EnBW
+
+Plusnet GmbH – Rudi-Conin-Straße 5a – 50829 Köln – info@plusnet.de
+
+Geschäftsführung: Ulrich Hoffmann, Robert Jelinek-Nacke, Bert Wilden
+
+Registergericht: Amtsgericht Köln – Registernummer: HRB 92510
+
+Umsatzsteuer-Identifikations-Nr. nach § 27 a des Umsatzsteuergesetzes: DE31637168 [Image alt text: youtube]  &lt; https://www.youtube.com/channel/UCVA3mmD2jvv73KCfnkKpaiA &gt;  [Image alt text: xing]  &lt; https://www.xing.com/pages/plusnetgmbh-einunternehmenderenbw &gt;  [Image alt text: linkedin]  &lt; https://www.linkedin.com/company/plusnet-gmbh &gt;  [Image alt text: facebook]  &lt; https://www.facebook.com/plusnetgmbh &gt; 
+
+Impressum &lt; https://www.plusnet.de/impressum &gt; 
+
+Datenschutz &lt; https://www.plusnet.de/datenschutz &gt; 
+
+Kontakt &lt; https://www.plusnet.de/kontakt &gt; 
+
+www.plusnet.de &lt; https://www.plusnet.de/ &gt;</textOnly>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,1261 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Id",
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom9286",
+        "InputFieldName": "Id",
+        "InputObjectName": "Quote",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Quote",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "Quote:Id",
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom2262",
+        "InputFieldName": "QuoteId",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QLIs",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%QLIs:@ATT-RTR-TYP% == \"AVM FRITZ!Box 5530\", \"Plusnet Homeserver Standard\", IF(%QLIs:@ATT-RTR-TYP% == \"AVM FRITZ!Box 5590\", \"Plusnet Homeserver Plus\", IF(%QLIs:ProductName__c% == \"IP Network\", %QLIs:@ATT-IP-VRS% + \" Adresse \" + \"/\" + %QLIs:@ATT-SBN-MSK%, %QLIs:ProductName__c%)))",
+        "FormulaResultPath": "QLIs:ProductName",
+        "FormulaSequence": 3,
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom8466",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUM(QLIs:%vlocity_namespace%__EffectiveOneTimeTotal__c)",
+        "FormulaResultPath": "OneTimeTotal",
+        "FormulaSequence": 1,
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom4859",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUM(QLIs:%vlocity_namespace%__EffectiveRecurringTotal__c)",
+        "FormulaResultPath": "RecurringTotal",
+        "FormulaSequence": 2,
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom747",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom9618",
+        "InputFieldName": "Quote:Account.BusinessAddressExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:address:addressExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom2382",
+        "InputFieldName": "Quote:Account.BusinessCity__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:address:city",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom7781",
+        "InputFieldName": "Quote:Account.BusinessCityExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:address:cityExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom2853",
+        "InputFieldName": "Quote:Account.BusinessCountry__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:address:country",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom8919",
+        "InputFieldName": "Quote:Account.BusinessAddressId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:address:externalId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom2312",
+        "InputFieldName": "Quote:Account.BusinessHouseNo__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:address:houseNo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom3842",
+        "InputFieldName": "Quote:Account.BusinessHouseNoExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:address:houseNoExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom9351",
+        "InputFieldName": "Quote:Account.BusinessPostalCode__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:address:postalCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom813",
+        "InputFieldName": "Quote:Account.BusinessState__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:address:state",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom2921",
+        "InputFieldName": "Quote:Account.BusinessStreet__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:address:street",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom6533",
+        "InputFieldName": "Quote:AccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom1229",
+        "InputFieldName": "Quote:Account.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "businessAccount:name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom7010",
+        "InputFieldName": "Quote:%vlocity_namespace%__DefaultPremisesId__r.AddressExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "premise:addressExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom871",
+        "InputFieldName": "Quote:%vlocity_namespace%__DefaultPremisesId__r.%vlocity_namespace%__City__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "premise:city",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom8428",
+        "InputFieldName": "Quote:%vlocity_namespace%__DefaultPremisesId__r.CityExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "premise:cityExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom9776",
+        "InputFieldName": "Quote:%vlocity_namespace%__DefaultPremisesId__r.%vlocity_namespace%__Country__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "premise:country",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom2012",
+        "InputFieldName": "Quote:%vlocity_namespace%__DefaultPremisesId__r.%vlocity_namespace%__PremisesIdentifier__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "premise:externalId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom6504",
+        "InputFieldName": "Quote:%vlocity_namespace%__DefaultPremisesId__r.HouseNo__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "premise:houseNo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom8310",
+        "InputFieldName": "Quote:%vlocity_namespace%__DefaultPremisesId__r.HouseNoExt__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "premise:houseNoExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom9458",
+        "InputFieldName": "Quote:%vlocity_namespace%__DefaultPremisesId__r.%vlocity_namespace%__PostalCode__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "premise:postalCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom1516",
+        "InputFieldName": "Quote:%vlocity_namespace%__DefaultPremisesId__r.%vlocity_namespace%__State__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "premise:state",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom7922",
+        "InputFieldName": "Quote:%vlocity_namespace%__DefaultPremisesId__r.%vlocity_namespace%__StreetAddress__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "premise:street",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom9872",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "qlis",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom2568",
+        "InputFieldName": "QLIs:@ATT-ACC-TYP",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:accessType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom8839",
+        "InputFieldName": "QLIs:@ATTR-CRR-NAM",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:carrierName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom1200",
+        "InputFieldName": "QLIs:@ATT-CNT-TRM",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:contractTerm",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom3654",
+        "InputFieldName": "QLIs:@ATT-INT-TYP",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:cpeInternetType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom7231",
+        "InputFieldName": "QLIs:@ATT-RTR-TYP",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:cpeType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom8818",
+        "InputFieldName": "QLIs:@ATT-DWN-SPD",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:downloadSpeed",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom9740",
+        "InputFieldName": "QLIs:@ATT-FLT-EUR-PLU",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "qlis:flatrateEuroPlus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom2381",
+        "InputFieldName": "QLIs:@ATT-FLT-MOB",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "qlis:flatrateMobile",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom8947",
+        "InputFieldName": "QLIs:@ATT-FLT-NTN",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "qlis:flatrateNational",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom6374",
+        "InputFieldName": "QLIs:@ATT-IP-ADD",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:ipAddress",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom7416",
+        "InputFieldName": "QLIs:@ATT-SBN-MSK",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:ipSubnetMask",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom7474",
+        "InputFieldName": "QLIs:@ATT-IP-TYP",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:ipType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom1878",
+        "InputFieldName": "QLIs:@ATT-USG-TYP",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:ipUsageType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom6722",
+        "InputFieldName": "QLIs:@ATT-IP-VRS",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:ipVersion",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom9381",
+        "InputFieldName": "QLIs:%vlocity_namespace%__LineNumber__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:lineNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom9091",
+        "InputFieldName": "QLIs:%vlocity_namespace%__OneTimeCharge__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "qlis:oneTimeCharge",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom9668",
+        "InputFieldName": "QLIs:@ATT-PHO-N",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:phoneNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom562",
+        "InputFieldName": "QLIs:@ATT-N-PHO",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:phoneNumberQuantity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom4796",
+        "InputFieldName": "QLIs:@ATT-PRT-IN",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Boolean",
+        "OutputFieldName": "qlis:portIn",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom4603",
+        "InputFieldName": "QLIs:ProductName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:productName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom6446",
+        "InputFieldName": "QLIs:Quantity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:quantity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom4838",
+        "InputFieldName": "QLIs:%vlocity_namespace%__RecurringCharge__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "qlis:recurringCharge",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom5419",
+        "InputFieldName": "QLIs:@ATT-UPL-SPD",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qlis:uploadSpeed",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom5505",
+        "InputFieldName": "Quote:CreatedBy.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quote:createdByName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom3899",
+        "InputFieldName": "Quote:CreatedDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quote:createdDate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom8622",
+        "InputFieldName": "OneTimeTotal",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "quote:oneTimeTotal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom2206",
+        "InputFieldName": "Quote:PartnerContractId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quote:partnerContractId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom8254",
+        "InputFieldName": "Quote:QuoteNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quote:quoteNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom3195",
+        "InputFieldName": "RecurringTotal",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Currency",
+        "OutputFieldName": "quote:recurringTotal",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom2964",
+        "InputFieldName": "Quote:Status",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quote:status",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom5469",
+        "InputFieldName": "Quote:SubDealerId__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quote:subDealerId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom7261",
+        "InputFieldName": "Quote:SubType__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "quote:subType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom7212",
+        "InputFieldName": "Quote:TechnicalContact__r.Email",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "technicalContact:email",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom1619",
+        "InputFieldName": "Quote:TechnicalContact__r.MobilePhone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "technicalContact:mobilePhone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom4307",
+        "InputFieldName": "Quote:TechnicalContact__r.Name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "technicalContact:name",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom7706",
+        "InputFieldName": "Quote:TechnicalContact__r.Phone",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "technicalContact:phone",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetQuoteRelatedDetailsForPortalIntegrationCustom5743",
+        "InputFieldName": "Quote:TechnicalContact__r.Salutation",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+        "OmniDataTransformationId": {
+            "Name": "GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetQuoteRelatedDetailsForPortalIntegration",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "technicalContact:salutation",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

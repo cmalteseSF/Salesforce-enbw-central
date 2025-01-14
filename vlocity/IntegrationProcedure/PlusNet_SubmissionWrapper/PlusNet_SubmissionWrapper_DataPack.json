@@ -1,0 +1,24 @@
+{
+    "CustomJavaScript": "PlusNet_SubmissionWrapper_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Submission Wrapper",
+    "OmniProcessElement": [
+        "PlusNet_SubmissionWrapper_Element_FormatBatchInput.json",
+        "PlusNet_SubmissionWrapper_Element_SubmitOrder.json",
+        "PlusNet_SubmissionWrapper_Element_ResponseSubmissionWrapper.json"
+    ],
+    "OmniProcessKey": "PlusNet_SubmissionWrapper",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SubmissionWrapper_PropertySetConfig.json",
+    "SubType": "SubmissionWrapper",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SubmissionWrapper/Procedure"
+}

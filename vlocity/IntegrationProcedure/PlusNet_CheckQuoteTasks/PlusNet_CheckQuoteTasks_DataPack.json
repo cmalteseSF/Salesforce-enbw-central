@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "PlusNet_CheckQuoteTasks_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CheckQuoteTasks",
+    "OmniProcessElement": [
+        "PlusNet_CheckQuoteTasks_Element_GetQuoteDetails.json",
+        "PlusNet_CheckQuoteTasks_Element_FetchQuoteTasks.json",
+        "PlusNet_CheckQuoteTasks_Element_UpdateConnectionQuote.json",
+        "PlusNet_CheckQuoteTasks_Element_UpdateConnectionQuoteToProcessed.json",
+        "PlusNet_CheckQuoteTasks_Element_UpdateServiceQuote.json",
+        "PlusNet_CheckQuoteTasks_Element_UpdateServiceQuoteToProcessed.json",
+        "PlusNet_CheckQuoteTasks_Element_ResponseCheckQuoteTasks.json"
+    ],
+    "OmniProcessKey": "PlusNet_CheckQuoteTasks",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CheckQuoteTasks_PropertySetConfig.json",
+    "SubType": "CheckQuoteTasks",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CheckQuoteTasks/Procedure"
+}

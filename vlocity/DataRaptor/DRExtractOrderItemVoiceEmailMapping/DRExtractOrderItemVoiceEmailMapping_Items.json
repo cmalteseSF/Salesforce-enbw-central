@@ -1,0 +1,428 @@
+[
+    {
+        "FormulaExpression": "IF(%FlatrateEuroPlus% == \"true\", \"ja\", \"nein\")",
+        "FormulaResultPath": "FlatrateEuroPlus",
+        "FormulaSequence": 4,
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom1070",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%FlatrateMobile% == \"true\", \"ja\", \"nein\")",
+        "FormulaResultPath": "FlatrateMobile",
+        "FormulaSequence": 3,
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom1487",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%FlatrateNational% == \"true\", \"ja\", \"nein\")",
+        "FormulaResultPath": "FlatrateNational",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom2213",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%OLI:Porting% == \"true\", \"true\", \"false\")",
+        "FormulaResultPath": "OLI:IF_isPorting",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom4653",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom9855",
+        "InputFieldName": "ATPBillingAccountId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ATPBillingAccountId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom8833",
+        "InputFieldName": "BusinessAccountName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "BusinessAccountName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom695",
+        "InputFieldName": "CountProducts",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CountProducts",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom9629",
+        "InputFieldName": "FlatrateEuroPlus",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FlatrateEuroPlus",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom4666",
+        "InputFieldName": "FlatrateMobile",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FlatrateMobile",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom7305",
+        "InputFieldName": "FlatrateNational",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FlatrateNational",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom2019",
+        "InputFieldName": "OLI:CarrierName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OLI:CarrierName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom3661",
+        "InputFieldName": "OLI:IF_isPorting",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OLI:IF_isPorting",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom4917",
+        "InputFieldName": "OLI:PhoneNumber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OLI:PhoneNumber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom6389",
+        "InputFieldName": "OLI:Porting",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OLI:Porting",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom6084",
+        "InputFieldName": "OLI:ProductName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "OLI:ProductName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom6302",
+        "InputFieldName": "PartnerId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "PartnerId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom9324",
+        "InputFieldName": "ServiceCity",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceCity",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom718",
+        "InputFieldName": "ServiceHouseNo",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceHouseNo",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom8495",
+        "InputFieldName": "ServiceHouseNoExt",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceHouseNoExt",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom6096",
+        "InputFieldName": "ServicePostalCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServicePostalCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom544",
+        "InputFieldName": "ServiceStreet",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ServiceStreet",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRExtractOrderItemVoiceEmailMappingCustom844",
+        "InputFieldName": "Subscriber",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRExtractOrderItemVoiceEmailMapping",
+        "OmniDataTransformationId": {
+            "Name": "DRExtractOrderItemVoiceEmailMapping",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRExtractOrderItemVoiceEmailMapping",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Subscriber",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

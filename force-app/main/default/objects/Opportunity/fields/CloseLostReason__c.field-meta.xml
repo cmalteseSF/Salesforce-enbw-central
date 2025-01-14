@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CloseLostReason__c</fullName>
+    <externalId>false</externalId>
+    <label>Verweigerungsgrund</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Anbieterwechsel ausgeschlossen</fullName>
+                <default>false</default>
+                <label>Anbieterwechsel ausgeschlossen</label>
+            </value>
+            <value>
+                <fullName>Umstellung zu aufwendig</fullName>
+                <default>false</default>
+                <label>Umstellung zu aufwendig</label>
+            </value>
+            <value>
+                <fullName>Wettbewerb Bundle-Produkt günstiger</fullName>
+                <default>false</default>
+                <label>Wettbewerb Bundle-Produkt günstiger</label>
+            </value>
+            <value>
+                <fullName>Wettbewerb Cuda/Coax</fullName>
+                <default>false</default>
+                <label>Wettbewerb Cuda/Coax</label>
+            </value>
+            <value>
+                <fullName>Wettbewerb Glasfaser</fullName>
+                <default>false</default>
+                <label>Wettbewerb Glasfaser</label>
+            </value>
+            <value>
+                <fullName>Sonstiges</fullName>
+                <default>false</default>
+                <label>Sonstiges</label>
+            </value>
+            <value>
+                <fullName>Negative Bauentscheidung</fullName>
+                <default>false</default>
+                <label>Negative Bauentscheidung</label>
+            </value>
+            <value>
+                <fullName>Bau technisch nicht möglich</fullName>
+                <default>false</default>
+                <label>Bau technisch nicht möglich</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

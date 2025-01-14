@@ -1,0 +1,65 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRPostOI",
+    "OmniProcessId": {
+        "Name": "IPOrderPhoneNoManagement",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/IPOrderPhoneNoManagement/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CB_Change",
+        "OmniProcessId": {
+            "Name": "IPOrderPhoneNoManagement",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/COM/IPOrderPhoneNoManagement/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/COM/IPOrderPhoneNoManagement/Procedure/CB_Change",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CB_Change",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "CarrierName": "%CarrierName%",
+            "CarrierNameV2": "%CarrierNameV2%",
+            "Id": "%OrderItemId%",
+            "LegacyContractId": "%LegacyContractId%",
+            "LegacyContractIdV2": "%LegacyContractIdV2%",
+            "PhoneNumber": "%PhoneNumber%",
+            "PhoneNumberV2": "%PhoneNumberV2%",
+            "Porting": "%Porting%",
+            "PortingDate": "%PortingDate%",
+            "PortingDateV2": "%PortingDateV2%",
+            "PortingValueV2": "%PortingValueV2%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRPostOI",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/IPOrderPhoneNoManagement/Procedure/DRPostOI"
+}

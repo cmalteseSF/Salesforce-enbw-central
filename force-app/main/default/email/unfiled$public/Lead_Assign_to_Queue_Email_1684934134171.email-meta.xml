@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Used to inform users that they have been assigned a lead.</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Lead - Assign to Queue Email</name>
+    <relatedEntityType>Lead</relatedEntityType>
+    <style>none</style>
+    <subject>Neuer Lead: {{{Recipient.Company}}}</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

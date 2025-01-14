@@ -1,0 +1,30 @@
+{
+    "CustomJavaScript": "PlusNet_ServiceFulfilmentHandler_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ServiceFulfilmentHandler",
+    "OmniProcessElement": [
+        "PlusNet_ServiceFulfilmentHandler_Element_Activation.json",
+        "PlusNet_ServiceFulfilmentHandler_Element_ActivationFulfilmentHandler.json",
+        "PlusNet_ServiceFulfilmentHandler_Element_Termination.json",
+        "PlusNet_ServiceFulfilmentHandler_Element_TerminationFulfilmentHandler.json",
+        "PlusNet_ServiceFulfilmentHandler_Element_Change.json",
+        "PlusNet_ServiceFulfilmentHandler_Element_ChangeFulfillmentHandler.json",
+        "PlusNet_ServiceFulfilmentHandler_Element_ChangeOfPlan.json",
+        "PlusNet_ServiceFulfilmentHandler_Element_ChangeOfPlanFulfilmenHandler.json",
+        "PlusNet_ServiceFulfilmentHandler_Element_ReturnServiceFulfilmentHandler.json"
+    ],
+    "OmniProcessKey": "PlusNet_ServiceFulfilmentHandler",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ServiceFulfilmentHandler_PropertySetConfig.json",
+    "SubType": "ServiceFulfilmentHandler",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ServiceFulfilmentHandler/Procedure"
+}

@@ -1,0 +1,101 @@
+[
+    {
+        "FormulaExpression": "LISTMERGE(\"ProductCode\",LIST(%OfficePBookIds%),LIST(%HousePBookId%))",
+        "FormulaResultPath": "SelectedProducts",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRFinalPbookIdsCustom2153",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRFinalPbookIds",
+        "OmniDataTransformationId": {
+            "Name": "DRFinalPbookIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFinalPbookIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "trimString(TOSTRING(%SelectedProducts:PBookId%))",
+        "FormulaResultPath": "FinalPBookIds:itemId",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRFinalPbookIdsCustom7214",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRFinalPbookIds",
+        "OmniDataTransformationId": {
+            "Name": "DRFinalPbookIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFinalPbookIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRFinalPbookIdsCustom2338",
+        "InputFieldName": "FinalIPFoniePBookIds:itemId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRFinalPbookIds",
+        "OmniDataTransformationId": {
+            "Name": "DRFinalPbookIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFinalPbookIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FinalIPFoniePBookIds:itemId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRFinalPbookIdsCustom5035",
+        "InputFieldName": "FinalPBookIds:itemId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRFinalPbookIds",
+        "OmniDataTransformationId": {
+            "Name": "DRFinalPbookIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFinalPbookIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FinalPBookIds:itemId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRFinalPbookIdsCustom6729",
+        "InputFieldName": "SelectedProducts:PBookId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRFinalPbookIds",
+        "OmniDataTransformationId": {
+            "Name": "DRFinalPbookIds",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRFinalPbookIds",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SelectedProducts:PBookId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

@@ -1,0 +1,65 @@
+<messaging:emailTemplate subject="Rejection Email" recipientType="User" relatedToType="Quote">
+
+
+
+<messaging:HtmlEmailBody >
+
+<html>
+<body>
+
+<div align="center">
+    <apex:image id="Logo" value="https://godigital2plusnet--dev1.sandbox.file.force.com/servlet/servlet.ImageServer?id=015MU0000008wzB&oid=00DMU0000008gAp&lastMod=1698833140000"  width="300px" height="150px"/>
+</div>
+
+<br/><br/>
+
+<div>
+    Ablehnung Ihres Auftrags mit der Angebotsnummer: ({!relatedTo.QuoteNumber})<br/><br/>
+    Lieber Kunde,<br/><br/>
+    
+    wir müssen Ihnen heute mitteilen, dass wir Ihren Glasfaseranschluss in 
+    {!relatedTo.vlocity_cmt__DefaultPremisesId__r.vlocity_cmt__City__c} ({!relatedTo.vlocity_cmt__DefaultPremisesId__r.vlocity_cmt__StreetAddress__c} {!relatedTo.vlocity_cmt__DefaultPremisesId__r.HouseNo__c} {!relatedTo.vlocity_cmt__DefaultPremisesId__r.HouseNoExt__c}) leider nicht realisieren können. 
+    
+    <br/><br/>
+    
+    Die Plusnet GmbH ist als langjähriger Telekommunikationsanbieter und Infrastrukturanbieter im Bereich DSL und Richtfunk seit 2021 auch aktiv im Glasfaserausbau in Deutschland tätig. Dabei konzentriert sich das Unternehmen auf den eigenwirtschaftlichen Ausbau unterversorgter Gewerbegebiete. Um die Wirtschaftlichkeit des Glasfaserausbaus zu gewährleisten, werden die Zielgebiete zuvor einer sorgfältigen Potenzialanalyse unterzogen. Anschließend geht es in die Vorvermarktung des betreffenden Gebietes. Ist die Vorvermarktung abgeschlossen, beginnt Plusnet zeitnah mit dem Verlegen der Glasfaser.
+    <br/><br/>
+    Im Falle einer unzureichenden Vorvermarktungsquote, behält sich Plusnet jedoch auch das Recht vor, auf den Ausbau eines Gebietes zu verzichten.
+    <br/><br/>
+    In Ihrem Gebiet konnte die notwendige Vermarktungsquote, um den Glasfaseranschluss wirtschaftlich zu betreiben, leider nicht erreicht werden. Aus diesem Grunde haben wir uns entschlossen, das Gebiet nicht weiter zu erschließen und können Ihnen damit in absehbarer Zeit auch keinen schnellen Glasfaseranschluss bereitstellen.
+    <br/><br/>
+    Wir bedauern dies sehr, die Wirtschaftlichkeit solcher Ausbauprojekte bleibt jedoch Grundvoraussetzung für deren Realisierung. 
+    <br/><br/>
+    Sofern wir in Ihrem Ausbaugebiet ein eigenes Plusnet-Angebot in Kooperation mit einem alternativen Netzbetreiber anbieten können, werden wir Sie selbstverständlich umgehend hierüber informieren.
+    <br/><br/>
+    Mit freundlichen Grüßen
+    <br/>
+    Plusnet GmbH
+    <br/><br/>
+</div>
+
+
+
+<p style="margin-top:0pt; margin-bottom:8pt;"><span style="font-family:Arial; color:#141e28; display:none;">&nbsp;</span></p>
+<table cellspacing="0" cellpadding="0" style="width:100%;">
+    <tbody>
+        <tr>
+            <td style="padding:15pt 13.5pt; vertical-align:middle; background-color:#008796;">
+                <p style="margin-top:0pt; margin-bottom:0pt; line-height:150%; font-size:11pt;">
+                <span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">&copy; 2022 Plusnet GmbH &ndash;&nbsp;</span>
+                <a href="https://www.plusnet.de/de/impressum" style="text-decoration:none;"><u><span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">Impressum</span></u></a><span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">&nbsp;&ndash;&nbsp;</span><a href="https://www.plusnet.de/de/datenschutz" style="text-decoration:none;"><u><span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">Datenschutz</span></u></a><span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">&nbsp;&ndash;&nbsp;</span><a href="https://www.plusnet.de/de/kontakt" style="text-decoration:none;"><u><span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">Kontakt</span></u></a><span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">&nbsp;&ndash;&nbsp;</span><a href="https://www.plusnet.de/" style="text-decoration:none;"><u><span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">Website</span></u></a><span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">&nbsp;</span>
+                <br/><br/>
+                <span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">Impressum: Plusnet GmbH &ndash; Rudi-Conin-Str. 5a &ndash; 50829 K&ouml;ln &ndash;&nbsp;</span><a href="mailto:info@plusnet.de" style="text-decoration:none;"><u><span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">info@plusnet.de</span></u></a><span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">&nbsp;</span>
+                <span style="line-height:150%; font-family:Arial; font-size:9pt; color:#ffffff;">Gesch&auml;ftsf&uuml;hrung: Ulrich Hoffmann, Dr. Veronika Bunk-Sanderson, Bert Wilden</span></p>
+                <p style="margin-top:0pt; margin-bottom:0pt; line-height:150%; font-size:9pt;"><span style="font-family:Arial; color:#ffffff;">Registergericht: Amtsgericht K&ouml;ln &ndash; Registernummer: HRB 92510</span>
+                <br/>
+                <span style="font-family:Arial; color:#ffffff;">Umsatzsteuer-Identifikations-Nr. nach &sect; 27 a des Umsatzsteuergesetzes: DE316371688&nbsp;</span></p>
+                </td>
+        </tr>
+    </tbody>
+</table>
+                
+</body>
+</html>           
+</messaging:HtmlEmailBody>
+</messaging:emailTemplate>

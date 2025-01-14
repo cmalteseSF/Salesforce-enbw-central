@@ -1,0 +1,26 @@
+<!--
+  @description       : 
+  @author            : Sudhir Kumar Thanna
+  @group             : 
+  @last modified on  : 10-19-2023
+  @last modified by  : Sudhir Kumar Thanna
+-->
+<template>
+    
+    <div class="tableCss">
+        <lightning-datatable 
+            columns={columns} 
+            data={rows}
+            key-field="id"
+            max-row-selection={maxRowSelection}
+            hide-checkbox-column={hideCheckboxColumn}
+            selected-rows={selectedRows}
+            show-row-number-column={showRowNumberColumn}     
+            sorted-by={sortedBy}
+            sorted-direction={sortedDirection}
+            onsort={handleSort}             
+            onrowselection={handleRowSelection}>
+        </lightning-datatable>
+    </div>
+
+</template>

@@ -1,0 +1,122 @@
+[
+    {
+        "FormulaExpression": "FILTER(LIST(%DRGetDownloadSpeedAndFilterSOHOProducts:FilteredProducts%), '%Family% == \"Double Play\"')",
+        "FormulaResultPath": "SOHOProducts",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRTransformSOHOProductCategoryCustom0jIMU0000008OoE2AUItem2",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformSOHOProductCategory",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformSOHOProductCategory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformSOHOProductCategory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(%DRGetDownloadSpeedAndFilterSOHOProducts:MergedProducts%), '%Family% == \"Infrastruktur\"')",
+        "FormulaResultPath": "HouseConnectionProd",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRTransformSOHOProductCategoryCustom0jIMU0000008OoE2AUItem3",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformSOHOProductCategory",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformSOHOProductCategory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformSOHOProductCategory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SORTBY(LIST(%SOHOProducts%),'DwnSpd','[:ASC]')",
+        "FormulaResultPath": "SOHOSortedProd",
+        "FormulaSequence": 3,
+        "GlobalKey": "DRTransformSOHOProductCategoryCustom5633",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformSOHOProductCategory",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformSOHOProductCategory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformSOHOProductCategory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransformSOHOProductCategoryCustom0jIMU0000008OoE2AUItem6",
+        "InputFieldName": "HouseConnectionProd",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformSOHOProductCategory",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformSOHOProductCategory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformSOHOProductCategory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "HouseConnectionProd",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransformSOHOProductCategoryCustom0jIMU0000008OoE2AUItem10",
+        "InputFieldName": "SOHOProducts",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformSOHOProductCategory",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformSOHOProductCategory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformSOHOProductCategory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SOHOProducts",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRTransformSOHOProductCategoryCustom8732",
+        "InputFieldName": "SOHOSortedProd",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRTransformSOHOProductCategory",
+        "OmniDataTransformationId": {
+            "Name": "DRTransformSOHOProductCategory",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRTransformSOHOProductCategory",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "SOHOSortedProd",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

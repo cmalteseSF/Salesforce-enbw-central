@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "PlusNet_ServiceAvailabilityCheck_SampleInput.json",
+    "Description": "It performs a service availability check (TMF-645) against the Replicat service.  Updates: removed hardcoded max bandwidth",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ServiceAvailabilityCheck",
+    "OmniProcessElement": [
+        "PlusNet_ServiceAvailabilityCheck_Element_TryCatchServiceAvailabilityCheck.json",
+        "PlusNet_ServiceAvailabilityCheck_Element_ServiceAvailabilityCheck.json",
+        "PlusNet_ServiceAvailabilityCheck_Element_ReturnServiceAvailabilityCheck.json"
+    ],
+    "OmniProcessKey": "PlusNet_ServiceAvailabilityCheck",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ServiceAvailabilityCheck_PropertySetConfig.json",
+    "SubType": "ServiceAvailabilityCheck",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ServiceAvailabilityCheck/Procedure"
+}

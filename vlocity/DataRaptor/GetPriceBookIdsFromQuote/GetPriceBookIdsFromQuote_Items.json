@@ -1,0 +1,696 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "quoteId",
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom5226",
+        "InputFieldName": "QuoteId",
+        "InputObjectName": "QuoteLineItem",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "QLIs",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'PNET-IP-INS-COST'",
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom8403",
+        "InputFieldName": "ProductCode",
+        "InputObjectName": "PricebookEntry",
+        "InputObjectQuerySequence": 2,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "IPAdditionalCost",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'PNET-HOU'",
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom6641",
+        "InputFieldName": "ProductCode",
+        "InputObjectName": "PricebookEntry",
+        "InputObjectQuerySequence": 3,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ConnectionPBook",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'PNET-HW-CPE'",
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom334",
+        "InputFieldName": "ProductCode",
+        "InputObjectName": "PricebookEntry",
+        "InputObjectQuerySequence": 4,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "HardwarePBook",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'PNET-ONT'",
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom322",
+        "InputFieldName": "ProductCode",
+        "InputObjectName": "PricebookEntry",
+        "InputObjectQuerySequence": 5,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ONTPBook",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'PNET-SRV-TCH'",
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom7909",
+        "InputFieldName": "ProductCode",
+        "InputObjectName": "PricebookEntry",
+        "InputObjectQuerySequence": 6,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "ServiceTechnikerPBook",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "$Vlocity.UserId",
+        "FormulaResultPath": "currentUserId",
+        "FormulaSequence": 8,
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom3430",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(QLIs), '%vlocity_namespace%__ParentItemId__c == $Vlocity.null')",
+        "FormulaResultPath": "rootProduct",
+        "FormulaSequence": 9,
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom9940",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(QLIs), 'Product2.ProductCode == \"PNET-FON\"')",
+        "FormulaResultPath": "voiceAccountPaket",
+        "FormulaSequence": 2,
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom199",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(QLIs), 'Product2.ProductCode == \"PNET-HOU\"')",
+        "FormulaResultPath": "connectionQLI",
+        "FormulaSequence": 7,
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom85",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(QLIs), 'Product2.ProductCode == \"PNET-HW-CPE\"')",
+        "FormulaResultPath": "router",
+        "FormulaSequence": 4,
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom880",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(QLIs), 'Product2.ProductCode == \"PNET-INT-ACC\"')",
+        "FormulaResultPath": "fiberAccess",
+        "FormulaSequence": 10,
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom7486",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(QLIs), 'Product2.ProductCode == \"PNET-IP-ADR\"')",
+        "FormulaResultPath": "ipPaket",
+        "FormulaSequence": 6,
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom8294",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(QLIs), 'Product2.ProductCode == \"PNET-IP-NET\"')",
+        "FormulaResultPath": "ipNetwork",
+        "FormulaSequence": 3,
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom957",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(QLIs), 'Product2.ProductCode == \"PNET-ONT\"')",
+        "FormulaResultPath": "ont",
+        "FormulaSequence": 5,
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom3962",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "FILTER(LIST(QLIs), 'Product2.ProductCode == \"PNET-SIP-ACC\"')",
+        "FormulaResultPath": "voiceAccount",
+        "FormulaSequence": 1,
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom5727",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom7961",
+        "InputFieldName": "ConnectionPBook:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ConnectionPBookId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom2841",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QLIs:%vlocity_namespace%__ParentItemId__c",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom2170",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "QLIs:Product2.ProductCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom2074",
+        "InputFieldName": "connectionQLI:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "connectionQLIId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom7220",
+        "InputFieldName": "currentUserId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "currentUserId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom4747",
+        "InputFieldName": "IPAdditionalCost:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "pbeAdditionalCost",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom3202",
+        "InputFieldName": "HardwarePBook:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "pbeHardware",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom9650",
+        "InputFieldName": "ONTPBook:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "pbeONT",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom9999",
+        "InputFieldName": "ServiceTechnikerPBook:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "pbeServiceTechniker",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom1765",
+        "InputFieldName": "fiberAccess:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qliAccessId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom7671",
+        "InputFieldName": "ipNetwork|1:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qliIpNetwork",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom3358",
+        "InputFieldName": "ipPaket:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qliIpPaket",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom5905",
+        "InputFieldName": "ont:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qliONT",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom5617",
+        "InputFieldName": "rootProduct:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qliRootProductId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom7142",
+        "InputFieldName": "router:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qliRouter",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom3509",
+        "InputFieldName": "voiceAccount|1:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qliVoiceAccount",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom1879",
+        "InputFieldName": "voiceAccountPaket:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "qliVoicePaket",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "GetPriceBookIdsFromQuoteCustom261",
+        "InputFieldName": "rootProduct:Product2Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "GetPriceBookIdsFromQuote",
+        "OmniDataTransformationId": {
+            "Name": "GetPriceBookIdsFromQuote",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/GetPriceBookIdsFromQuote",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "rootProductId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

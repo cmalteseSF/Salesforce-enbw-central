@@ -1,0 +1,33 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "LoopBlock1",
+    "OmniProcessId": {
+        "Name": "ActivationFulfillmentHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ActivationFulfillmentHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "label": "LoopBlock4",
+        "loopList": "MergedList",
+        "loopOutput": {
+            "MergedOutput": {
+                "AttrValue": "%SVFetchAttrValues:attrNetworkAddress:value%",
+                "ExternalId": "%MergedList:externalId%",
+                "FRLId": "%MergedList:FRLId%",
+                "OrderItemId": "%MergedList:orderItemId%",
+                "SerialAttrValue": "%SVFetchAttrValues:attrSerialNumber:value%",
+                "SerializedNetworkAttrValue": "%SVSerializeAttrs:SerializedNetworkAttrValue%",
+                "SerializedSerialNumAttrValue": "%SVSerializeAttrs:SerializedSerialNumAttrValue%"
+            }
+        },
+        "show": null
+    },
+    "Type": "Loop Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ActivationFulfillmentHandler/Procedure/LoopBlock1"
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Activation</fullName>
+        <default>true</default>
+        <label>Aktivierung</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Change of Plan</fullName>
+        <default>false</default>
+        <label>Bandbreiten Änderung</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Downgrade</fullName>
+        <default>false</default>
+        <label>Downgrade</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hardware Change</fullName>
+        <default>false</default>
+        <label>Hardware Änderung</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Hardware Malfunction</fullName>
+        <default>false</default>
+        <label>Hardwaretausch bei Defekt</label>
+    </standardValue>
+    <standardValue>
+        <fullName>IP Change</fullName>
+        <default>false</default>
+        <label>IP-Adressen Änderung</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Termination</fullName>
+        <default>false</default>
+        <label>Kündigung</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Upgrade</fullName>
+        <default>false</default>
+        <label>Upgrade</label>
+    </standardValue>
+</StandardValueSet>

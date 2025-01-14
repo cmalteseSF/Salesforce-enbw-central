@@ -1,0 +1,56 @@
+{
+    "DRGetProductsByPriceBookEntry": {
+        "PricebookEntry": [
+            {
+                "PBookId": "01uMU00000241Y2YAI",
+                "Product2Id": "01tMU000000VrGaYAK",
+                "ProductCode": "PNET-B2B-FIB-SOHO-1G"
+            },
+            {
+                "PBookId": "01uMU000002410YYAQ",
+                "Product2Id": "01tMU000000VrEBYA0",
+                "ProductCode": "PNET-B2B-FIB-SOHO-600"
+            },
+            {
+                "PBookId": "01uMU000002412FYAQ",
+                "Product2Id": "01tMU000000VrEZYA0",
+                "ProductCode": "PNET-HOU"
+            },
+            {
+                "PBookId": "01uMU00000241M8YAI",
+                "Product2Id": "01tMU000000VrGBYA0",
+                "ProductCode": "PNET-B2B-FIB-SOHO-300"
+            }
+        ]
+    },
+    "offerListOutput": [
+        {
+            "DownloadSpeed": "1000 Mbps",
+            "Family": "Double Play",
+            "ProductCode": "PNET-B2B-FIB-SOHO-1G",
+            "ProductName": "Plusnet Glasfaser SOHO 1G",
+            "offerType": "Product"
+        },
+        {
+            "DownloadSpeed": "300 Mbps",
+            "Family": "Double Play",
+            "ProductCode": "PNET-B2B-FIB-SOHO-300",
+            "ProductName": "Plusnet Glasfaser SOHO 300",
+            "offerType": "Product"
+        },
+        {
+            "DownloadSpeed": "600 Mbps",
+            "Family": "Double Play",
+            "ProductCode": "PNET-B2B-FIB-SOHO-600",
+            "ProductName": "Plusnet Glasfaser SOHO 600",
+            "offerType": "Product"
+        },
+        {
+            "Family": "Infrastruktur",
+            "ProductCode": "PNET-HOU",
+            "ProductName": "Hausanschluss",
+            "offerType": "Product"
+        }
+    ],
+    "trimmedMaxBandwidth": "600"
+}

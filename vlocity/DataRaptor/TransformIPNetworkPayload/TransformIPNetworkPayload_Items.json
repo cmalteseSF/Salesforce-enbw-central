@@ -1,0 +1,143 @@
+[
+    {
+        "FormulaExpression": "%ipType%",
+        "FormulaResultPath": "ProductConfigurationList:attributeConfiguration:ATT-IP-TYP",
+        "FormulaSequence": 2,
+        "GlobalKey": "TransformIPNetworkPayloadCustom2287",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformIPNetworkPayload",
+        "OmniDataTransformationId": {
+            "Name": "TransformIPNetworkPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformIPNetworkPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "DESERIALIZE(ProductConfigurationList:ConfigurationData)",
+        "FormulaResultPath": "ProductConfigurationList:attributeConfiguration",
+        "FormulaSequence": 1,
+        "GlobalKey": "TransformIPNetworkPayload4254783002223119",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformIPNetworkPayload",
+        "OmniDataTransformationId": {
+            "Name": "TransformIPNetworkPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformIPNetworkPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "IF(%ipType% == \"Statisch\" && %ProductConfigurationList:attributeConfiguration:ATT-USG-TYP% == \"Delegated\", \"48\", IF(%ipType% == \"Dynamische\" && %ProductConfigurationList:attributeConfiguration:ATT-USG-TYP% == \"Delegated\", \"56\", %ProductConfigurationList:attributeConfiguration:ATT-SBN-MSK% + \"\"))",
+        "FormulaResultPath": "ProductConfigurationList:attributeConfiguration:ATT-SBN-MSK",
+        "FormulaSequence": 3,
+        "GlobalKey": "TransformIPNetworkPayloadCustom2834",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformIPNetworkPayload",
+        "OmniDataTransformationId": {
+            "Name": "TransformIPNetworkPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformIPNetworkPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LISTMERGE(\"LineNumber\", LIST(ProductConfigurationList), LIST(QLIs))",
+        "FormulaResultPath": "ipNetworkList",
+        "FormulaSequence": 4,
+        "GlobalKey": "TransformIPNetworkPayload689171740343292",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformIPNetworkPayload",
+        "OmniDataTransformationId": {
+            "Name": "TransformIPNetworkPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformIPNetworkPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformIPNetworkPayload10748927714375967",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformIPNetworkPayload",
+        "OmniDataTransformationId": {
+            "Name": "TransformIPNetworkPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformIPNetworkPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "List<Map>",
+        "OutputFieldName": "ipNetworkList",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformIPNetworkPayloadCustom2292",
+        "InputFieldName": "ipNetworkList:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformIPNetworkPayload",
+        "OmniDataTransformationId": {
+            "Name": "TransformIPNetworkPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformIPNetworkPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ipNetworkList:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "TransformIPNetworkPayloadCustom8755",
+        "InputFieldName": "ipNetworkList:attributeConfiguration",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "TransformIPNetworkPayload",
+        "OmniDataTransformationId": {
+            "Name": "TransformIPNetworkPayload",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/TransformIPNetworkPayload",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ipNetworkList:attributeConfiguration",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

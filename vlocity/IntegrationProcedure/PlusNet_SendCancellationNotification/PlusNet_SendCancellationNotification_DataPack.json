@@ -1,0 +1,25 @@
+{
+    "CustomJavaScript": "PlusNet_SendCancellationNotification_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Send Cancellation Notification",
+    "OmniProcessElement": [
+        "PlusNet_SendCancellationNotification_Element_GetNotificationData.json",
+        "PlusNet_SendCancellationNotification_Element_SendEmail.json",
+        "PlusNet_SendCancellationNotification_Element_SendOrderNotificationEmail.json",
+        "PlusNet_SendCancellationNotification_Element_ResponseSendCancellationNotification.json"
+    ],
+    "OmniProcessKey": "PlusNet_SendCancellationNotification",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SendCancellationNotification_PropertySetConfig.json",
+    "SubType": "SendCancellationNotification",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SendCancellationNotification/Procedure"
+}

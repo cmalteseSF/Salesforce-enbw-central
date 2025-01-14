@@ -1,0 +1,42 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateFRLProvisionStatus",
+    "OmniProcessId": {
+        "Name": "Send Order To Billing",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderToBilling/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "FRLID": "%GetFRLAccess:FRL|1:Id%",
+            "ProvisionStatus": "=IF((%GetOrderType:Order|1:Type% == \"Activation\" && ISNOTBLANK(%SendBillingActivation%) && %SendBillingActivation:message% == \"Success\") || (%GetOrderType:Order|1:Type% == \"Termination\" && ISNOTBLANK(%SendBillingTermination%) && %SendBillingTermination:message% == \"Success\") || ((%GetOrderType:Order|1:Type% == \"Hardware Change\" || %GetOrderType:Order|1:Type% == \"IP Change\") && ISNOTBLANK(%SendBillingTermination%) && %SendBillingTermination:message% == \"Success\" && ISNOTBLANK(%SendBillingChange%) && %SendBillingChange:message% == \"Success\") || (%GetOrderType:Order|1:Type% == \"Change of Plan\" && ISNOTBLANK(%SendBillingTermination%) && %SendBillingTermination:message% == \"Success\" && ISNOTBLANK(%SendBillingActivation%) && %SendBillingActivation:message% == \"Success\"), 'B2_OK','B2_NOK')"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRUpdateFRLFields",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderToBilling/Procedure/UpdateFRLProvisionStatus"
+}

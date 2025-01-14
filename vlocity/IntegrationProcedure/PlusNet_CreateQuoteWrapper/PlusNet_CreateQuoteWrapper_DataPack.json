@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "PlusNet_CreateQuoteWrapper_SampleInput.json",
+    "Description": "Added PremiseOwnerAccountDetails in ConnectionQuote",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateQuoteWrapper",
+    "OmniProcessElement": [
+        "PlusNet_CreateQuoteWrapper_Element_GetPriceListDetails.json",
+        "PlusNet_CreateQuoteWrapper_Element_GetRecordTypeDetails.json",
+        "PlusNet_CreateQuoteWrapper_Element_CreateServiceQuote.json",
+        "PlusNet_CreateQuoteWrapper_Element_CreateConfigureServiceQuote.json",
+        "PlusNet_CreateQuoteWrapper_Element_CreateConnectionQuote.json",
+        "PlusNet_CreateQuoteWrapper_Element_CreateConfigureConnectionQuote.json",
+        "PlusNet_CreateQuoteWrapper_Element_ReturnCreateQuoteWrapper.json"
+    ],
+    "OmniProcessKey": "PlusNet_CreateQuoteWrapper",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CreateQuoteWrapper_PropertySetConfig.json",
+    "SubType": "CreateQuoteWrapper",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CreateQuoteWrapper/Procedure"
+}

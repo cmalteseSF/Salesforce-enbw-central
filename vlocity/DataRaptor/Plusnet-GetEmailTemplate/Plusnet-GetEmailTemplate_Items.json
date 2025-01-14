@@ -1,0 +1,45 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "TemplateName",
+        "GlobalKey": "Plusnet-GetEmailTemplateCustom2107",
+        "InputFieldName": "DeveloperName",
+        "InputObjectName": "EmailTemplate",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetEmailTemplate",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetEmailTemplate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetEmailTemplate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "EmailTemplate",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-GetEmailTemplateCustom2968",
+        "InputFieldName": "EmailTemplate:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-GetEmailTemplate",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-GetEmailTemplate",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-GetEmailTemplate",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "EmailTemplate:Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

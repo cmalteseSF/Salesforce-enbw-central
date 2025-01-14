@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>PartnerA_LeadRule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>PartnerA_LeadRule</label>
+        <sharedTo>
+            <role>Partner_A</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Partner_A</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>PartnerB_LeadRule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>PartnerB_LeadRule</label>
+        <sharedTo>
+            <role>Partner_B</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Partner_B</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>PartnerC_LeadRule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>PartnerC LeadRule</label>
+        <sharedTo>
+            <role>Partner_C</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Partner_C</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>PartnerD_LeadRule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>PartnerD LeadRule</label>
+        <sharedTo>
+            <role>Partner_D</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Partner_D</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>PartnerE_LeadRule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>PartnerE LeadRule</label>
+        <sharedTo>
+            <role>Partner_E</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Partner_E</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>PartnerF_LeadRule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>PartnerF LeadRule</label>
+        <sharedTo>
+            <role>Partner_F</role>
+        </sharedTo>
+        <sharedFrom>
+            <role>Partner_F</role>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

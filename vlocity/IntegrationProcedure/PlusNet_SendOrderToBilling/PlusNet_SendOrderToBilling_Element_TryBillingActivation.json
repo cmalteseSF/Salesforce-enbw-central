@@ -1,0 +1,28 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TryBillingActivation",
+    "OmniProcessId": {
+        "Name": "Send Order To Billing",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderToBilling/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "%GetOrderType:Order|1:Type% == \"Activation\" OR (%GetOrderType:Order|1:Type% == \"Change of Plan\" && ISNOTBLANK(%SendBillingTermination%) && %SendBillingTermination:message% == \"Success\")",
+        "failOnBlockError": true,
+        "failureResponse": {
+            "errorDescription": "%SendBillingActivation%",
+            "processName": "SendBillingActivation"
+        },
+        "label": "TryCatchBlock2",
+        "remoteClass": "",
+        "remoteMethod": "",
+        "show": null
+    },
+    "Type": "Try Catch Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderToBilling/Procedure/TryBillingActivation"
+}

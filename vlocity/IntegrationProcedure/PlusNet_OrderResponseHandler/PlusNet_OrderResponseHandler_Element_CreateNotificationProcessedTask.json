@@ -1,0 +1,45 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateNotificationProcessedTask",
+    "OmniProcessId": {
+        "Name": "OrderResponseHandler",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/OrderResponseHandler/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "description": "=IF(ISNOTBLANK(%GetOrderFulfillmentDetails:Order:Id%) && %MACD:RetCode% == \"OK\", \"die Abschlussmeldung wurde korrekt verarbeitet \" + %MACD:RetCode%, \"Während der Bearbeitung der Abschlussmeldung ist ein Fehler aufgetreten \" + %MACD:RetCode%)",
+            "relatedTo": "%Id:event:serviceOrder:externalId%",
+            "status": "Completed",
+            "subject": "=IF(ISNOTBLANK(%GetOrderFulfillmentDetails:Order:Id%) && %MACD:RetCode% == \"OK\", \"Comarch Abschlussmeldung Status Positiv\", \"Comarch Abschlussmeldung Status Negativ\")",
+            "type": "Other"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRCreateTask",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/OrderResponseHandler/Procedure/CreateNotificationProcessedTask"
+}

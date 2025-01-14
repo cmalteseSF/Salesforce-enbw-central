@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>x01_Closed_Lost_Reason</fullName>
+    <active>true</active>
+    <errorConditionFormula>IsWon = false &amp;&amp; IsClosed = true &amp;&amp; INCLUDES(CloseLostReason__c, &quot;Sonstiges&quot;) &amp;&amp; ISBLANK(NoteCloseLostReason__c)</errorConditionFormula>
+    <errorDisplayField>CloseLostReason__c</errorDisplayField>
+    <errorMessage>Geben Sie den Grund an, warum der Hinweis kein Potenzial hat. Opportunity Error x01.</errorMessage>
+</ValidationRule>

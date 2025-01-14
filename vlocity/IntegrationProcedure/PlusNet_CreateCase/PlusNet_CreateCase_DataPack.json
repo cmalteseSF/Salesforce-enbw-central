@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "PlusNet_CreateCase_SampleInput.json",
+    "Description": "Used to create Case record targeting based on Context variable Updates: adjusted logic for owner/not owner of premise",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateCase",
+    "OmniProcessElement": [
+        "PlusNet_CreateCase_Element_GetCaseRecordType.json",
+        "PlusNet_CreateCase_Element_TryCreateCase.json",
+        "PlusNet_CreateCase_Element_CreateCase.json",
+        "PlusNet_CreateCase_Element_ReturnCreateCase.json"
+    ],
+    "OmniProcessKey": "PlusNet_CreateCase",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CreateCase_PropertySetConfig.json",
+    "SubType": "CreateCase",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CreateCase/Procedure"
+}

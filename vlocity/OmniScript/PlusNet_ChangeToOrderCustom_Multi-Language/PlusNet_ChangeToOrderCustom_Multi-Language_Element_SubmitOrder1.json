@@ -1,0 +1,48 @@
+{
+    "Description": "Moves to the next step in the OmniScript",
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "SubmitOrder1",
+    "OmniProcessId": {
+        "Name": "Change to Order Custom",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ConfirmationOrder",
+        "OmniProcessId": {
+            "Name": "Change to Order Custom",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language/ConfirmationOrder",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ConfirmationOrder",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 3,
+        "elementValueMap": {
+        },
+        "label": "Auftrag abschicken",
+        "lwcComponentOverride": "demoSetValueNext",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language/SubmitOrder1"
+}

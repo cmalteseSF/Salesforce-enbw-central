@@ -1,0 +1,39 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock1",
+    "OmniProcessId": {
+        "Name": "EnrichOrder",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrder/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Success",
+        "OmniProcessId": {
+            "Name": "EnrichOrder",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrder/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrder/German/Success",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Success",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock1",
+        "sanitize": false,
+        "show": null,
+        "text": "<p><span class=\"ui-provider ed bcd bce bcf bcg bch bci bcj bck bcl bcm bcn bco bcp bcq bcr bcs bct bcu bcv bcw bcx bcy bcz bda bdb bdc bdd bde bdf bdg bdh bdi bdj bdk\" dir=\"ltr\">Auftrag</span> erfolgreich aktualisiert : %Order:OrderNumber%</p>\n<p><a href=\"/lightning/r/%vlocity_namespace%__ServicePoint__c/%DRId_%vlocity_namespace%__ServicePoint__c%/view\" target=\"_blank\" rel=\"noopener\"></a></p>\n<div id=\"gtx-trans\" style=\"position: absolute; left: 45px; top: -11.0966px;\">\n<div class=\"gtx-trans-icon\">&nbsp;</div>\n</div>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrder/German/TextBlock1"
+}

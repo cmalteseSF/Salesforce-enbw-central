@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Meine_Premises</fullName>
+    <columns>OBJECT_ID</columns>
+    <columns>NAME</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>vlocity_cmt__StreetAddress__c</columns>
+    <columns>HouseNo__c</columns>
+    <columns>HouseNoExt__c</columns>
+    <columns>AddressExt__c</columns>
+    <columns>vlocity_cmt__PostalCode__c</columns>
+    <columns>vlocity_cmt__City__c</columns>
+    <columns>vlocity_cmt__State__c</columns>
+    <columns>AddressId__c</columns>
+    <columns>FiberPotentialId__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Mine</filterScope>
+    <label>Meine Premises</label>
+</ListView>

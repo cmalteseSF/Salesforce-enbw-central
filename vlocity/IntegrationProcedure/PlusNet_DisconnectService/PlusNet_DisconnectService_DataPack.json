@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "PlusNet_DisconnectService_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Disconnect Service",
+    "OmniProcessElement": [
+        "PlusNet_DisconnectService_Element_CreateFDO.json",
+        "PlusNet_DisconnectService_Element_GetRootOrderItemId.json",
+        "PlusNet_DisconnectService_Element_Disconnect.json",
+        "PlusNet_DisconnectService_Element_DRUpdateOrder.json",
+        "PlusNet_DisconnectService_Element_ResponseDisconnectService.json"
+    ],
+    "OmniProcessKey": "PlusNet_DisconnectService",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_DisconnectService_PropertySetConfig.json",
+    "SubType": "DisconnectService",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/DisconnectService/Procedure"
+}

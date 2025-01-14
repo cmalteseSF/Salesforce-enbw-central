@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>x03_Note_Closed_Lost_Reason</fullName>
+    <active>true</active>
+    <description>You have to specify another reason if Other. Lead Error x03</description>
+    <errorConditionFormula>AND(ISPICKVAL(CloseLostReason__c,&quot;Sonstiges&quot;), ISBLANK(NoteCloseLostReason__c))</errorConditionFormula>
+    <errorDisplayField>NoteCloseLostReason__c</errorDisplayField>
+    <errorMessage>Sie müssen eine Erklärung abgeben. Lead Error x03.</errorMessage>
+</ValidationRule>

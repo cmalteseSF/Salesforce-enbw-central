@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SPRIStatus__c</fullName>
+    <description>Used to keep track of SPRI staus of a Service Address</description>
+    <externalId>false</externalId>
+    <label>SPRI Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>SPRI_Statuses</valueSetName>
+    </valueSet>
+</CustomField>

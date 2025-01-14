@@ -1,0 +1,24 @@
+{
+    "CustomJavaScript": "PlusNet_DeleteContentDocument_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "DeleteContentDocument",
+    "OmniProcessElement": [
+        "PlusNet_DeleteContentDocument_Element_GetContentDocumentByContentVersionId.json",
+        "PlusNet_DeleteContentDocument_Element_DeleteContentDocument.json",
+        "PlusNet_DeleteContentDocument_Element_ReturnDeletionResult.json"
+    ],
+    "OmniProcessKey": "PlusNet_DeleteContentDocument",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_DeleteContentDocument_PropertySetConfig.json",
+    "SubType": "DeleteContentDocument",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/DeleteContentDocument/Procedure"
+}

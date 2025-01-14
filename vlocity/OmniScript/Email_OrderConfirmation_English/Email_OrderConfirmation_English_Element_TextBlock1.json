@@ -1,0 +1,39 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "TextBlock1",
+    "OmniProcessId": {
+        "Name": "SendOrderConfirmationEmail",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Email/OrderConfirmation/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "Info",
+        "OmniProcessId": {
+            "Name": "SendOrderConfirmationEmail",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Email/OrderConfirmation/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Email/OrderConfirmation/English/Info",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "Info",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "dataJSON": false,
+        "label": "TextBlock1",
+        "sanitize": false,
+        "show": null,
+        "text": "<p></p>\n<p>ContextId : %ContextId%</p>\n<p>Account Id is : %Quote:AccountId%</p>\n<p>Contact Id is : %Quote:ContactId%</p>\n<p>Quote Owner : %Quote:QuoteOwner__c%<br />Quote Number : %Quote:QuoteNumber%</p>\n<p>Quote Contact Email : %Contact:Email%</p>\n<p>Quote Status : %Quote:Status%</p>\n<p></p>\n<p>From UI:&nbsp;</p>\n<p>Quote Id : %QuoteId%</p>\n<p>Quote Related Premise Marketing Phase: %MarketingPhase%</p>\n<p>Quote Related BA Primary Contact Id : %AccContactId%</p>\n<p>Quote Related BA Primary Contact EMail : %ContactEmail%</p>",
+        "textKey": ""
+    },
+    "Type": "Text Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Email/OrderConfirmation/English/TextBlock1"
+}

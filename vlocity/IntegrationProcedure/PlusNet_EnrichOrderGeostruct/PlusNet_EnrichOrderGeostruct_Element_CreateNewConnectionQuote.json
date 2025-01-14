@@ -1,0 +1,68 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CreateNewConnectionQuote",
+    "OmniProcessId": {
+        "Name": "EnrichOrderGeostruct",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "IFContractCanceled",
+        "OmniProcessId": {
+            "Name": "EnrichOrderGeostruct",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure/IFContractCanceled",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "IFContractCanceled",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountId": "%Order:AccountId%",
+            "BillingAccountId": "%Order:BillingAccountId%",
+            "CarrierAddressId": "%Order:CarrierAddressId%",
+            "ContactId": "%Order:ContactId%",
+            "MarketingPhase": "%Order:MarketingPhase%",
+            "MaxBandwidth": "%Order:MaxBandwidth%",
+            "Name": "%Order:QuoteName%",
+            "OpportunityId": "%Order:OpportunityId%",
+            "PremiseId": "%Order:PremiseId%",
+            "PriceListId": "%Order:PriceListId%",
+            "RecordType": "%Order:QuoteRecordType%",
+            "ServiceAccountId": "%Order:ServiceAccountId%",
+            "SubType": "%Order:SubType%",
+            "Type": "%Order:Type%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRCreateNewQuote",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction7",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/EnrichOrderGeostruct/Procedure/CreateNewConnectionQuote"
+}

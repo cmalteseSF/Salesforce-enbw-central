@@ -1,0 +1,31 @@
+{
+    "CustomJavaScript": "PlusNet_CheckLocation_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CheckLocation",
+    "OmniProcessElement": [
+        "PlusNet_CheckLocation_Element_GetServiceRecordType.json",
+        "PlusNet_CheckLocation_Element_CheckExistingPremises.json",
+        "PlusNet_CheckLocation_Element_ServiceAccountNotExists.json",
+        "PlusNet_CheckLocation_Element_PremiseNotExist.json",
+        "PlusNet_CheckLocation_Element_CreatePremise.json",
+        "PlusNet_CheckLocation_Element_PremiseCreationFailed.json",
+        "PlusNet_CheckLocation_Element_CreateServiceAccount.json",
+        "PlusNet_CheckLocation_Element_ReturnServiceAccountNotExists.json",
+        "PlusNet_CheckLocation_Element_ServiceAccountExits.json",
+        "PlusNet_CheckLocation_Element_ReturnServiceAccountExists.json"
+    ],
+    "OmniProcessKey": "PlusNet_CheckLocation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CheckLocation_PropertySetConfig.json",
+    "SubType": "CheckLocation",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CheckLocation/Procedure"
+}

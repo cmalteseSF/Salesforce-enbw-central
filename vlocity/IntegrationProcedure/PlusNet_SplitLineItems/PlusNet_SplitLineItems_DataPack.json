@@ -1,0 +1,27 @@
+{
+    "CustomJavaScript": "{}",
+    "Description": "Leverages SplitInterface OOB functionality to split xLIs",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "SplitLineItems",
+    "OmniProcessElement": [
+        "PlusNet_SplitLineItems_Element_SetQuantity.json",
+        "PlusNet_SplitLineItems_Element_TryQuantityUpdate.json",
+        "PlusNet_SplitLineItems_Element_UpdateXLIQuantity.json",
+        "PlusNet_SplitLineItems_Element_SplitXLIs.json",
+        "PlusNet_SplitLineItems_Element_ReturnSplitLineItems.json"
+    ],
+    "OmniProcessKey": "PlusNet_SplitLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_SplitLineItems_PropertySetConfig.json",
+    "SubType": "SplitLineItems",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/SplitLineItems/Procedure"
+}

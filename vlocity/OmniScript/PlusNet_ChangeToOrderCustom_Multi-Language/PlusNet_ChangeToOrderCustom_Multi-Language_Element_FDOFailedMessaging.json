@@ -1,0 +1,64 @@
+{
+    "DiscoveryFrameworkUsageType": "Default",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "FDOFailedMessaging",
+    "OmniProcessId": {
+        "Name": "Change to Order Custom",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "ErrorStep",
+        "OmniProcessId": {
+            "Name": "Change to Order Custom",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language/ErrorStep",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "ErrorStep",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "disOnTplt": false,
+        "hideLabel": true,
+        "label": null,
+        "messages": [
+            {
+                "active": true,
+                "text": "CPQCannotCreateOrder",
+                "type": "Warning",
+                "value": true
+            },
+            {
+                "active": true,
+                "type": "Requirement",
+                "value": false
+            }
+        ],
+        "messages|0:text": "CPQCannotCreateOrder",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "false",
+                        "field": "disconnectedAssets"
+                    }
+                ]
+            }
+        },
+        "validateExpression": null
+    },
+    "Type": "Validation",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ChangeToOrderCustom/Multi-Language/FDOFailedMessaging"
+}

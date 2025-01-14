@@ -1,0 +1,611 @@
+{
+    "correlationId": "633084b4-283f-46fc-bb51-e699ebb74963",
+    "event": {
+        "serviceOrder": {
+            "@type": "ServiceOrder",
+            "completionDate": "2024-07-04T12:34:54.870+02:00",
+            "errorMessage": [
+            ],
+            "externalId": "MJ_Access_IPfonie_PLN_prov_test_1720089151",
+            "href": "http://pln-test-pfm.dres.cadc.pl:25080/ngsf/serviceOrderingManagement/serviceOrder/ORD000000002393122",
+            "id": "ORD000000002393122",
+            "note": [
+            ],
+            "orderItem": [
+                {
+                    "@type": "ServiceOrderItem",
+                    "action": "add",
+                    "additionalParameter": [
+                        {
+                            "name": "PointOfNoReturn",
+                            "value": "true"
+                        }
+                    ],
+                    "aspect": "execute",
+                    "completionDate": "2024-07-04T12:34:34.620+02:00",
+                    "errorMessage": [
+                    ],
+                    "id": "2",
+                    "orderItemRelationship": [
+                    ],
+                    "pointOfNoReturn": true,
+                    "service": {
+                        "@type": "Service",
+                        "externalId": "f0bae147-3a4b-4fbd-8a50-cf1cd46e0b7a",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/ngsf/si/serviceInventoryManagement/service/CS_CAC000000017724121?perspective=plan",
+                        "id": "CS_CAC000000017724121",
+                        "place": [
+                        ],
+                        "relatedParty": [
+                        ],
+                        "serviceCharacteristic": [
+                            {
+                                "@type": "Characteristic",
+                                "name": "oltPortId",
+                                "value": "1/1/1/1"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "bandwidthDown",
+                                "value": "300"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "sfContractNumber",
+                                "value": "MJ_159"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "bandwidthUp",
+                                "value": "75"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "oltId",
+                                "value": "OLT1"
+                            }
+                        ],
+                        "serviceRelationship": [
+                        ],
+                        "serviceState": "active",
+                        "state": "active",
+                        "supportingResource": [
+                        ],
+                        "supportingService": [
+                        ]
+                    },
+                    "serviceSpecification": {
+                        "@type": "SpecificationRef",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/catalog/catalogManagementserviceSpecification/CFS_Access",
+                        "id": "CFS_Access",
+                        "release": "30.0.0.1"
+                    },
+                    "startDate": "2024-07-04T12:32:49.085+02:00",
+                    "state": "completed"
+                },
+                {
+                    "@type": "ServiceOrderItem",
+                    "action": "add",
+                    "additionalParameter": [
+                        {
+                            "name": "PointOfNoReturn",
+                            "value": "true"
+                        }
+                    ],
+                    "aspect": "execute",
+                    "completionDate": "2024-07-04T12:34:54.122+02:00",
+                    "errorMessage": [
+                    ],
+                    "id": "55",
+                    "orderItemRelationship": [
+                        {
+                            "action": "add",
+                            "orderItem": {
+                                "id": "2"
+                            },
+                            "relationshipType": "dependency",
+                            "role": "source",
+                            "type": "dependency"
+                        }
+                    ],
+                    "pointOfNoReturn": true,
+                    "service": {
+                        "@type": "Service",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/ngsf/si/serviceInventoryManagement/service/CS_CSE000000017725128?perspective=plan",
+                        "id": "CS_CSE000000017725128",
+                        "place": [
+                        ],
+                        "relatedParty": [
+                        ],
+                        "serviceCharacteristic": [
+                            {
+                                "@type": "Characteristic",
+                                "name": "resultStatus",
+                                "value": "Test OK"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "shippedBy",
+                                "value": "UPS"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "plannedTechnicianDate",
+                                "value": "2024-07-04"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "plannedArrivalDate",
+                                "value": "2024-07-04T10:32:31.089Z"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "trackingId",
+                                "value": "17854e3d-4dec-47d6-8f42-0c43e67bdaac"
+                            }
+                        ],
+                        "serviceRelationship": [
+                        ],
+                        "serviceState": "active",
+                        "state": "active",
+                        "supportingResource": [
+                        ],
+                        "supportingService": [
+                        ]
+                    },
+                    "serviceSpecification": {
+                        "@type": "SpecificationRef",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/catalog/catalogManagementserviceSpecification/CFS_Service",
+                        "id": "CFS_Service",
+                        "release": "30.0.0.1"
+                    },
+                    "startDate": "2024-07-04T12:32:50.625+02:00",
+                    "state": "completed"
+                },
+                {
+                    "@type": "ServiceOrderItem",
+                    "action": "add",
+                    "additionalParameter": [
+                        {
+                            "name": "PointOfNoReturn",
+                            "value": "true"
+                        }
+                    ],
+                    "aspect": "execute",
+                    "completionDate": "2024-07-04T12:34:04.388+02:00",
+                    "errorMessage": [
+                    ],
+                    "id": "3",
+                    "orderItemRelationship": [
+                        {
+                            "action": "add",
+                            "orderItem": {
+                                "id": "2"
+                            },
+                            "relationshipType": "dependency",
+                            "role": "source",
+                            "type": "dependency"
+                        }
+                    ],
+                    "pointOfNoReturn": true,
+                    "service": {
+                        "@type": "Service",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/ngsf/si/serviceInventoryManagement/service/CS_CIP000000017726126?perspective=plan",
+                        "id": "CS_CIP000000017726126",
+                        "place": [
+                        ],
+                        "relatedParty": [
+                        ],
+                        "serviceCharacteristic": [
+                            {
+                                "@type": "Characteristic",
+                                "name": "subnetMask",
+                                "value": "48"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "addressFamily",
+                                "value": "IPv6"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "networkAddress",
+                                "value": "2001:1a84:13c::"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "addressType",
+                                "value": "static"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "addressUsage",
+                                "value": "Routed"
+                            }
+                        ],
+                        "serviceRelationship": [
+                        ],
+                        "serviceState": "active",
+                        "state": "active",
+                        "supportingResource": [
+                        ],
+                        "supportingService": [
+                        ]
+                    },
+                    "serviceSpecification": {
+                        "@type": "SpecificationRef",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/catalog/catalogManagementserviceSpecification/CFS_IP",
+                        "id": "CFS_IP",
+                        "release": "30.0.0.1"
+                    },
+                    "startDate": "2024-07-04T12:32:46.933+02:00",
+                    "state": "completed"
+                },
+                {
+                    "@type": "ServiceOrderItem",
+                    "action": "add",
+                    "additionalParameter": [
+                        {
+                            "name": "PointOfNoReturn",
+                            "value": "true"
+                        }
+                    ],
+                    "aspect": "execute",
+                    "completionDate": "2024-07-04T12:34:04.475+02:00",
+                    "errorMessage": [
+                    ],
+                    "id": "34",
+                    "orderItemRelationship": [
+                        {
+                            "action": "add",
+                            "orderItem": {
+                                "id": "2"
+                            },
+                            "relationshipType": "dependency",
+                            "role": "source",
+                            "type": "dependency"
+                        }
+                    ],
+                    "pointOfNoReturn": true,
+                    "service": {
+                        "@type": "Service",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/ngsf/si/serviceInventoryManagement/service/CS_CIP000000017727124?perspective=plan",
+                        "id": "CS_CIP000000017727124",
+                        "place": [
+                        ],
+                        "relatedParty": [
+                        ],
+                        "serviceCharacteristic": [
+                            {
+                                "@type": "Characteristic",
+                                "name": "subnetMask",
+                                "value": "32"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "addressFamily",
+                                "value": "IPv4"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "networkAddress",
+                                "value": "92.198.133.60"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "addressType",
+                                "value": "static"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "addressUsage",
+                                "value": "WANIP"
+                            }
+                        ],
+                        "serviceRelationship": [
+                        ],
+                        "serviceState": "active",
+                        "state": "active",
+                        "supportingResource": [
+                        ],
+                        "supportingService": [
+                        ]
+                    },
+                    "serviceSpecification": {
+                        "@type": "SpecificationRef",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/catalog/catalogManagementserviceSpecification/CFS_IP",
+                        "id": "CFS_IP",
+                        "release": "30.0.0.1"
+                    },
+                    "startDate": "2024-07-04T12:32:46.906+02:00",
+                    "state": "completed"
+                },
+                {
+                    "@type": "ServiceOrderItem",
+                    "action": "add",
+                    "additionalParameter": [
+                        {
+                            "name": "PointOfNoReturn",
+                            "value": "true"
+                        }
+                    ],
+                    "aspect": "execute",
+                    "completionDate": "2024-07-04T12:34:04.410+02:00",
+                    "errorMessage": [
+                    ],
+                    "id": "33",
+                    "orderItemRelationship": [
+                        {
+                            "action": "add",
+                            "orderItem": {
+                                "id": "2"
+                            },
+                            "relationshipType": "dependency",
+                            "role": "source",
+                            "type": "dependency"
+                        }
+                    ],
+                    "pointOfNoReturn": true,
+                    "service": {
+                        "@type": "Service",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/ngsf/si/serviceInventoryManagement/service/CS_CIP000000017728122?perspective=plan",
+                        "id": "CS_CIP000000017728122",
+                        "place": [
+                        ],
+                        "relatedParty": [
+                        ],
+                        "serviceCharacteristic": [
+                            {
+                                "@type": "Characteristic",
+                                "name": "subnetMask",
+                                "value": "64"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "addressFamily",
+                                "value": "IPv6"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "networkAddress",
+                                "value": "2001:1a80:400:13c::"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "addressType",
+                                "value": "static"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "addressUsage",
+                                "value": "WANIP"
+                            }
+                        ],
+                        "serviceRelationship": [
+                        ],
+                        "serviceState": "active",
+                        "state": "active",
+                        "supportingResource": [
+                        ],
+                        "supportingService": [
+                        ]
+                    },
+                    "serviceSpecification": {
+                        "@type": "SpecificationRef",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/catalog/catalogManagementserviceSpecification/CFS_IP",
+                        "id": "CFS_IP",
+                        "release": "30.0.0.1"
+                    },
+                    "startDate": "2024-07-04T12:32:46.858+02:00",
+                    "state": "completed"
+                },
+                {
+                    "@type": "ServiceOrderItem",
+                    "action": "add",
+                    "additionalParameter": [
+                        {
+                            "name": "PointOfNoReturn",
+                            "value": "true"
+                        }
+                    ],
+                    "aspect": "execute",
+                    "completionDate": "2024-07-04T12:34:05.651+02:00",
+                    "errorMessage": [
+                    ],
+                    "id": "5",
+                    "orderItemRelationship": [
+                        {
+                            "action": "add",
+                            "orderItem": {
+                                "id": "2"
+                            },
+                            "relationshipType": "dependency",
+                            "role": "source",
+                            "type": "dependency"
+                        }
+                    ],
+                    "pointOfNoReturn": true,
+                    "service": {
+                        "@type": "Service",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/ngsf/si/serviceInventoryManagement/service/CS_CPE000000017729120?perspective=plan",
+                        "id": "CS_CPE000000017729120",
+                        "place": [
+                        ],
+                        "relatedParty": [
+                        ],
+                        "serviceCharacteristic": [
+                            {
+                                "@type": "Characteristic",
+                                "name": "owner",
+                                "value": "Plusnet"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "serialNumber",
+                                "value": "F0910000000091"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "modell",
+                                "value": "FRITZ!Box 5530 Fiber"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "cpeType",
+                                "value": "CPE"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "cwmpId",
+                                "value": "00040E-091A000B0AF0"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "ontId",
+                                "value": "AVMG0910000A"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "manufacturer",
+                                "value": "AVM GmbH"
+                            }
+                        ],
+                        "serviceRelationship": [
+                        ],
+                        "serviceState": "active",
+                        "state": "active",
+                        "supportingResource": [
+                        ],
+                        "supportingService": [
+                        ]
+                    },
+                    "serviceSpecification": {
+                        "@type": "SpecificationRef",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/catalog/catalogManagementserviceSpecification/CFS_CPE",
+                        "id": "CFS_CPE",
+                        "release": "30.0.0.1"
+                    },
+                    "startDate": "2024-07-04T12:32:48.140+02:00",
+                    "state": "completed"
+                },
+                {
+                    "@type": "ServiceOrderItem",
+                    "action": "add",
+                    "additionalParameter": [
+                        {
+                            "name": "PointOfNoReturn",
+                            "value": "true"
+                        }
+                    ],
+                    "aspect": "execute",
+                    "completionDate": "2024-07-04T12:34:44.618+02:00",
+                    "errorMessage": [
+                    ],
+                    "id": "6",
+                    "orderItemRelationship": [
+                        {
+                            "action": "add",
+                            "orderItem": {
+                                "id": "2"
+                            },
+                            "relationshipType": "dependency",
+                            "role": "source",
+                            "type": "dependency"
+                        }
+                    ],
+                    "pointOfNoReturn": true,
+                    "service": {
+                        "@type": "Service",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/ngsf/si/serviceInventoryManagement/service/CS_CIF000000017730128?perspective=plan",
+                        "id": "CS_CIF000000017730128",
+                        "place": [
+                        ],
+                        "relatedParty": [
+                        ],
+                        "serviceCharacteristic": [
+                            {
+                                "@type": "Characteristic",
+                                "name": "portingDate",
+                                "value": "2024-07-04T10:32:31.089Z"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "legacyContractNumber",
+                                "value": "520967b5-2e50-452a-868e-b8967edba204"
+                            },
+                            {
+                                "@type": "Characteristic",
+                                "name": "phoneNumber",
+                                "value": "302-865-9249"
+                            }
+                        ],
+                        "serviceRelationship": [
+                        ],
+                        "serviceState": "active",
+                        "state": "active",
+                        "supportingResource": [
+                        ],
+                        "supportingService": [
+                        ]
+                    },
+                    "serviceSpecification": {
+                        "@type": "SpecificationRef",
+                        "href": "http://pln-test-pfm.dres.cadc.pl:25080/catalog/catalogManagementserviceSpecification/CFS_IPfonie_Basic",
+                        "id": "CFS_IPfonie_Basic",
+                        "release": "30.0.0.1"
+                    },
+                    "startDate": "2024-07-04T12:32:50.114+02:00",
+                    "state": "completed"
+                }
+            ],
+            "orderRelationship": [
+            ],
+            "priority": "4",
+            "relatedParty": [
+                {
+                    "contactMedium": [
+                        {
+                            "medium": {
+                                "address": {
+                                    "additionalAttributes": [
+                                    ],
+                                    "city": "Fairfield",
+                                    "postcode": "18",
+                                    "streetName": "711 Natalia Trafficway",
+                                    "streetNr": "102"
+                                }
+                            },
+                            "type": "postalAddress"
+                        },
+                        {
+                            "medium": {
+                                "emailAddress": "maria.janicka@comarch.com"
+                            },
+                            "type": "email"
+                        },
+                        {
+                            "medium": {
+                                "number": "207-399-7459"
+                            },
+                            "type": "telephoneNumber"
+                        },
+                        {
+                            "medium": {
+                                "number": "229-414-7298"
+                            },
+                            "type": "mobileNumber"
+                        }
+                    ],
+                    "id": "12dd4268-9521-462f-92ce-41241da308da",
+                    "name": "Troy Kerluke",
+                    "role": "privateCustomer/businessCustomer"
+                }
+            ],
+            "startDate": "2024-07-04T10:32:46.000+00:00",
+            "state": "completed"
+        }
+    },
+    "eventId": "633084b4-283f-46fc-bb51-e699ebb74963",
+    "eventTime": "2024-07-04T10:34:54.914+00:00",
+    "eventType": "ServiceOrderStateChangeNotification"
+}

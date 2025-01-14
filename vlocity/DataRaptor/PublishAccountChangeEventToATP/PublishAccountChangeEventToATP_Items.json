@@ -1,0 +1,62 @@
+[
+    {
+        "FormulaExpression": "SERIALIZE(%account%)",
+        "FormulaResultPath": "accountSerialized",
+        "FormulaSequence": 1,
+        "GlobalKey": "PublishAccountChangeEventToATPCustom126",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PublishAccountChangeEventToATP",
+        "OmniDataTransformationId": {
+            "Name": "PublishAccountChangeEventToATP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PublishAccountChangeEventToATP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "PublishAccountChangeEventToATPCustom525",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "PublishAccountChangeEventToATP",
+        "OmniDataTransformationId": {
+            "Name": "PublishAccountChangeEventToATP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PublishAccountChangeEventToATP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "AccountChangeEventToATP__e",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PublishAccountChangeEventToATPCustom9744",
+        "InputFieldName": "accountSerialized",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PublishAccountChangeEventToATP",
+        "OmniDataTransformationId": {
+            "Name": "PublishAccountChangeEventToATP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PublishAccountChangeEventToATP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Payload__c",
+        "OutputObjectName": "AccountChangeEventToATP__e",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

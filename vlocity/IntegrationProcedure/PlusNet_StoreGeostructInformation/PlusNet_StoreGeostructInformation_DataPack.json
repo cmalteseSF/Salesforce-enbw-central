@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "PlusNet_StoreGeostructInformation_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "StoreGeostructInformation",
+    "OmniProcessElement": [
+        "PlusNet_StoreGeostructInformation_Element_ConnectionOrder.json",
+        "PlusNet_StoreGeostructInformation_Element_UpdateOrderCarrierAddressId.json",
+        "PlusNet_StoreGeostructInformation_Element_ServiceOrder.json",
+        "PlusNet_StoreGeostructInformation_Element_CreateUpdateOrderItem.json",
+        "PlusNet_StoreGeostructInformation_Element_ReturnGeostructUpdate.json"
+    ],
+    "OmniProcessKey": "PlusNet_StoreGeostructInformation",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_StoreGeostructInformation_PropertySetConfig.json",
+    "SubType": "StoreGeostructInformation",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/StoreGeostructInformation/Procedure"
+}

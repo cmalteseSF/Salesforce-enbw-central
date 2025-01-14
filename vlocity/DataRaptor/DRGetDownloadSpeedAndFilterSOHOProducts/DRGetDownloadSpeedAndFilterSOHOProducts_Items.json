@@ -1,0 +1,409 @@
+[
+    {
+        "FormulaExpression": "FILTER(LIST(%MergedProducts%), '%DwnSpd% <= '+ %trimmedMaxBandwidth% +'')",
+        "FormulaResultPath": "FilteredProducts",
+        "FormulaSequence": 3,
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom3359",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "LISTMERGE(\"ProductCode\",LIST(%offerListOutput%),LIST(%DRGetProductsByPriceBookEntry:PricebookEntry%))",
+        "FormulaResultPath": "MergedProducts",
+        "FormulaSequence": 2,
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom5807",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "SUBSTRING(%offerListOutput:DownloadSpeed%, 0, STRINGINDEXOF(%offerListOutput:DownloadSpeed%, \" Mbps\"))",
+        "FormulaResultPath": "offerListOutput:DwnSpd",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom0jIMU0000008OoJ2AUItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom2465",
+        "InputFieldName": "FilteredProducts:DownloadSpeed",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredProducts:DownloadSpeed",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom613",
+        "InputFieldName": "FilteredProducts:DwnSpd",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Integer",
+        "OutputFieldName": "FilteredProducts:DwnSpd",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom6434",
+        "InputFieldName": "FilteredProducts:Family",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredProducts:Family",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom2678",
+        "InputFieldName": "FilteredProducts:PBookId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredProducts:PBookId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom9897",
+        "InputFieldName": "FilteredProducts:Product2Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredProducts:Product2Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom3861",
+        "InputFieldName": "FilteredProducts:ProductCode",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredProducts:ProductCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom7123",
+        "InputFieldName": "FilteredProducts:ProductName",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredProducts:ProductName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom1037",
+        "InputFieldName": "FilteredProducts:offerType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "FilteredProducts:offerType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom7137",
+        "InputFieldName": "MergedProducts",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MergedProducts",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom7406",
+        "InputFieldName": "offerListOutput:DownloadSpeed",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:DownloadSpeed",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom0jIMU0000008OoJ2AUItem6",
+        "InputFieldName": "offerListOutput:DwnSpd",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldFormat": "Integer",
+        "OutputFieldName": "offerListOutput:DwnSpd",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom6746",
+        "InputFieldName": "offerListOutput:Family",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:Family",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom3655",
+        "InputFieldName": "offerListOutput:PBookId",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:PBookId",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom8087",
+        "InputFieldName": "offerListOutput:Product2Id",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:Product2Id",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom8548",
+        "InputFieldName": "offerListOutput:ProductCode",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:ProductCode",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom7034",
+        "InputFieldName": "offerListOutput:ProductName",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:ProductName",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom5111",
+        "InputFieldName": "offerListOutput:offerType",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "offerListOutput:offerType",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRGetDownloadSpeedAndFilterSOHOProductsCustom0jIMU0000008OoJ2AUItem3",
+        "InputFieldName": "trimmedMaxBandwidth",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+        "OmniDataTransformationId": {
+            "Name": "DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRGetDownloadSpeedAndFilterSOHOProducts",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "trimmedMaxBandwidth",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

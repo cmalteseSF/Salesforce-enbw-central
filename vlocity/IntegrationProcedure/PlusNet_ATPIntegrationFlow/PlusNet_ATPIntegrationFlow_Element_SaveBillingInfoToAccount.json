@@ -1,0 +1,59 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SaveBillingInfoToAccount",
+    "OmniProcessId": {
+        "Name": "ATP Integration Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ATPIntegrationFlow/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "CheckATPValues",
+        "OmniProcessId": {
+            "Name": "ATP Integration Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ATPIntegrationFlow/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ATPIntegrationFlow/Procedure/CheckATPValues",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "CheckATPValues",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "ATPBillingAccountId": "%HTTPBillingATP:billingAccount:customerNumber%",
+            "ATPBusinessAccountId": "%HTTPBillingATP:businessAccount:atpAccountId%",
+            "BillingAccountId": "%ExtractBillingDetailsFromOrder:BillingAccount:Id%",
+            "BusinessAccountId": "%ExtractBillingDetailsFromOrder:BusinessAccount:Id%",
+            "InvoiceAccountId": "%HTTPBillingATP:billingAccount:invoiceAccountNo%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRSaveBillingInfoToAccount",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "%HTTPBillingATPInfo:statusCode% >= 200 && %HTTPBillingATPInfo:statusCode% <= 299",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction1",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ATPIntegrationFlow/Procedure/SaveBillingInfoToAccount"
+}

@@ -1,0 +1,93 @@
+[
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "SourceId",
+        "GlobalKey": "PlusNet-GetMigrationPlanCustom2244",
+        "InputFieldName": "%vlocity_namespace%__SourceProductId__c",
+        "InputObjectName": "%vlocity_namespace%__OfferMigrationComponentMapping__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetMigrationPlan",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetMigrationPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetMigrationPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "MIG",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "TargetId",
+        "GlobalKey": "PlusNet-GetMigrationPlanCustom5779",
+        "InputFieldName": "%vlocity_namespace%__TargetProductId__c",
+        "InputObjectName": "%vlocity_namespace%__OfferMigrationComponentMapping__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetMigrationPlan",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetMigrationPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetMigrationPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "MIG",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterGroup": 0,
+        "FilterOperator": "=",
+        "FilterValue": "'true'",
+        "GlobalKey": "PlusNet-GetMigrationPlanCustom2352",
+        "InputFieldName": "%vlocity_namespace%__isActive__c",
+        "InputObjectName": "%vlocity_namespace%__OfferMigrationComponentMapping__c",
+        "InputObjectQuerySequence": 1,
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetMigrationPlan",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetMigrationPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetMigrationPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "MIG",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PlusNet-GetMigrationPlanCustom2014",
+        "InputFieldName": "MIG:PlusNet_Is_Upgrade__c",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PlusNet-GetMigrationPlan",
+        "OmniDataTransformationId": {
+            "Name": "PlusNet-GetMigrationPlan",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PlusNet-GetMigrationPlan",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "MIG:IsUpgrade",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

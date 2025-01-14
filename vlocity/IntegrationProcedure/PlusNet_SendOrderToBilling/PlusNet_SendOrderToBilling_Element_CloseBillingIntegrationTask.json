@@ -1,0 +1,42 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CloseBillingIntegrationTask",
+    "OmniProcessId": {
+        "Name": "Send Order To Billing",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderToBilling/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "id": "=IF(ISBLANK(%CreateBillingIntegrationTask%), %GetBillingIntegrationTask:TaskList|1:Id%, %CreateBillingIntegrationTask:Task_1|1:Id%)",
+            "status": "Completed"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRUpdateTask",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISNOTBLANK(%GetBillingIntegrationTask%) || ISNOTBLANK(%CreateBillingIntegrationTask%)",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction2",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderToBilling/Procedure/CloseBillingIntegrationTask"
+}

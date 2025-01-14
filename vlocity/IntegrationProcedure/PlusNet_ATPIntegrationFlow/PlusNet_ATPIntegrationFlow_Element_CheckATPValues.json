@@ -1,0 +1,22 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CheckATPValues",
+    "OmniProcessId": {
+        "Name": "ATP Integration Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/ATPIntegrationFlow/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "disOnTplt": false,
+        "executionConditionalFormula": "ISBLANK(%ExtractBillingDetailsFromOrder:BillingAccount:ATPInvoiceAccountId%) OR ISBLANK(%ExtractBillingDetailsFromOrder:BillingAccount:ATPBillingAccountId%) OR ISBLANK(%ExtractBillingDetailsFromOrder:BusinessAccount:ATPAccountId%) ",
+        "isIfElseBlock": false,
+        "label": "ConditionalBlock2",
+        "show": null
+    },
+    "Type": "Conditional Block",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/ATPIntegrationFlow/Procedure/CheckATPValues"
+}

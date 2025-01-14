@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BillingType__c</fullName>
+    <externalId>false</externalId>
+    <label>BillingType</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ADD_ON</fullName>
+                <default>false</default>
+                <label>ADD ON</label>
+            </value>
+            <value>
+                <fullName>HARDWARE</fullName>
+                <default>false</default>
+                <label>HARDWARE</label>
+            </value>
+            <value>
+                <fullName>PRODUCT</fullName>
+                <default>false</default>
+                <label>PRODUCT</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

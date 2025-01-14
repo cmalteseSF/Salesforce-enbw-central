@@ -1,0 +1,81 @@
+[
+    {
+        "FormulaExpression": "LoadAttributes(FrlList:FRL:json, Attr)",
+        "FormulaResultPath": "FrlList:Frl:JsonAttrField",
+        "FormulaSequence": 1,
+        "GlobalKey": "DRPostUpdateFrlAttrListV2Custom0jI9M000000AhEzUAKItem0",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRPostUpdateFrlAttrListV2",
+        "OmniDataTransformationId": {
+            "Name": "DRPostUpdateFrlAttrListV2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRPostUpdateFrlAttrListV2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRPostUpdateFrlAttrListV2Custom0jI9M000000AhEzUAKItem1",
+        "InputFieldName": "FrlList:Frl:JsonAttrField",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "DRPostUpdateFrlAttrListV2",
+        "OmniDataTransformationId": {
+            "Name": "DRPostUpdateFrlAttrListV2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRPostUpdateFrlAttrListV2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__JSONAttribute__c",
+        "OutputObjectName": "%vlocity_namespace%__FulfilmentRequestLine__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "DRPostUpdateFrlAttrListV2Custom0jI9M000000AhEzUAKItem2",
+        "InputFieldName": "FrlList:FRL:Id",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": true,
+        "IsUpsertKey": true,
+        "Name": "DRPostUpdateFrlAttrListV2",
+        "OmniDataTransformationId": {
+            "Name": "DRPostUpdateFrlAttrListV2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRPostUpdateFrlAttrListV2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__FulfilmentRequestLine__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "DRPostUpdateFrlAttrListV2Custom0jI9M000000AhEzUAKItem3",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "DRPostUpdateFrlAttrListV2",
+        "OmniDataTransformationId": {
+            "Name": "DRPostUpdateFrlAttrListV2",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/DRPostUpdateFrlAttrListV2",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "%vlocity_namespace%__FulfilmentRequestLine__c",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

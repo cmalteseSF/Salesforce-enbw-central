@@ -1,0 +1,28 @@
+{
+    "CustomJavaScript": "PlusNet_ActivateContractLineItems_SampleInput.json",
+    "Description": "Triggered when Activation order is Activated (flow: Order Status = Activated and Type = Activation). It activates all the corresponding CLIs",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Activate Contract Line Items",
+    "OmniProcessElement": [
+        "PlusNet_ActivateContractLineItems_Element_GetOrder.json",
+        "PlusNet_ActivateContractLineItems_Element_GetNewOLIs.json",
+        "PlusNet_ActivateContractLineItems_Element_MaintainCLIs.json",
+        "PlusNet_ActivateContractLineItems_Element_UpdateContractHeader.json",
+        "PlusNet_ActivateContractLineItems_Element_UpdateCLIsAddOLIs.json",
+        "PlusNet_ActivateContractLineItems_Element_ReturnActivateContractLineItems.json"
+    ],
+    "OmniProcessKey": "PlusNet_ActivateContractLineItems",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ActivateContractLineItems_PropertySetConfig.json",
+    "SubType": "ActivateContractLineItems",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ActivateContractLineItems/Procedure"
+}

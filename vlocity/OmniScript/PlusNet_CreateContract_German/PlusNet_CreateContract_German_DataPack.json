@@ -1,0 +1,29 @@
+{
+    "Description": "Creates Contract record from Quote, process triggered only if Portal integration fails",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": false,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": true,
+    "Language": "German",
+    "Name": "CreateContract",
+    "OmniProcessElement": [
+        "PlusNet_CreateContract_German_Element_SetValuesForTesting.json",
+        "PlusNet_CreateContract_German_Element_DisplayInfo.json",
+        "PlusNet_CreateContract_German_Element_TextBlock1.json",
+        "PlusNet_CreateContract_German_Element_CreateContractFromQuote.json",
+        "PlusNet_CreateContract_German_Element_NavigateToContract.json",
+        "PlusNet_CreateContract_German_Element_ContractGenerationKO.json",
+        "PlusNet_CreateContract_German_Element_TextBlock6.json",
+        "PlusNet_CreateContract_German_Element_LineBreak3.json",
+        "PlusNet_CreateContract_German_Element_NavigateAction2.json"
+    ],
+    "OmniProcessType": "OmniScript",
+    "PropertySetConfig": "PlusNet_CreateContract_German_PropertySetConfig.json",
+    "SubType": "CreateContract",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CreateContract/German"
+}

@@ -1,0 +1,50 @@
+{
+    "Description": "Save of Billing relevant information (Billing Account lookup and dealer and sub-dealer Ids)",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "DRUpdateQuote",
+    "OmniProcessId": {
+        "Name": "SaveAdditionalInformation",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/COM/SaveAdditionalInformation/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "AccountId": "%DRCreateUpdateBillingAccount:Account_1|1:Id%",
+            "BillingContact": "%BillingContact:Id%",
+            "CommContact": "%CommContact:Id%",
+            "DealerId": "%DealerContractId%",
+            "QuoteId": "%QuoteId%",
+            "ShippingContactExist": "%ShipContact:Id%",
+            "ShippingContactNew": "%DRCreateNewShipContact:Contact_1:Id%",
+            "SubDealerId": "%SubDealerId%",
+            "TechContact": "%TechContact:Id%"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRUpdateQuote",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction9",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/COM/SaveAdditionalInformation/Procedure/DRUpdateQuote"
+}

@@ -1,0 +1,54 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetAdjustmentPricesOpportunityContext",
+    "OmniProcessId": {
+        "Name": "CreateConnectionQuote",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CreateConnectionQuote/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "AdjustmentNumber": "=IF(%marketingPhase% == \"Vermarktungsphase\", -1999, IF(%marketingPhase% == \"Bauphase\", -1500, IF(%marketingPhase% == \"Vorvermarktungsphase\", -1999, 0)))"
+        },
+        "label": "",
+        "message": {
+        },
+        "pubsub": false,
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "<>",
+                        "data": "Betriebsphase",
+                        "field": "marketingPhase"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "Opportunity",
+                        "field": "Context"
+                    },
+                    {
+                        "condition": "=",
+                        "data": "true",
+                        "field": "isServiceQuoteAtPremise"
+                    }
+                ]
+            }
+        },
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CreateConnectionQuote/German/SetAdjustmentPricesOpportunityContext"
+}

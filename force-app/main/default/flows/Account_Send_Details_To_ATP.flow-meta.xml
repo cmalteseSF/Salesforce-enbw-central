@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Call_Integration_Procedure_To_Send_Details_To_ATP</name>
+        <label>Call Integration Procedure To Send Details To ATP</label>
+        <locationX>176</locationX>
+        <locationY>323</locationY>
+        <actionName>IntegrationProcedureInvocable</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>input</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>procedureAPIName</name>
+            <value>
+                <stringValue>PlusNet_SendAccountDetailsToATPHandler</stringValue>
+            </value>
+        </inputParameters>
+        <nameSegment>IntegrationProcedureInvocable</nameSegment>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+        <versionSegment>1</versionSegment>
+    </actionCalls>
+    <apiVersion>61.0</apiVersion>
+    <description>This flow sends the business and billing account details to ATP</description>
+    <environments>Default</environments>
+    <interviewLabel>Account - Send Details To ATP {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account - Send Details To ATP</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Call_Integration_Procedure_To_Send_Details_To_ATP</targetReference>
+        </connector>
+        <filterFormula>(({!$Record.RecordType.DeveloperName} = &apos;Business&apos; &amp;&amp; NOT(ISBLANK({!$Record.ATPAccountId__c}))) ||({!$Record.RecordType.DeveloperName} = &apos;Billing&apos; &amp;&amp; NOT(ISBLANK({!$Record.ATPBillingAccountId__c})))) &amp;&amp; {!$Profile.Name} != &apos;Salesforce API Only System Integrations&apos; &amp;&amp; {!$Record.IsATPSyncFailed__c} = false</filterFormula>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

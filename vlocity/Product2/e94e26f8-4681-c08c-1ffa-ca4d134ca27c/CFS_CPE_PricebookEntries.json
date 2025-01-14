@@ -1,0 +1,32 @@
+[
+    {
+        "%vlocity_namespace%__FloorPrice__c": "",
+        "%vlocity_namespace%__OverageCharge__c": "",
+        "%vlocity_namespace%__OverageUOM__c": "",
+        "%vlocity_namespace%__RecurringPrice__c": 0,
+        "%vlocity_namespace%__RecurringUOM__c": "Monthly",
+        "IsActive": true,
+        "IsArchived": false,
+        "Name": "CFS_CPE",
+        "Pricebook2.Name": "Standardmäßiges Preisbuch",
+        "Pricebook2Id": {
+            "Name": "Standardmäßiges Preisbuch",
+            "VlocityDataPackType": "VlocityLookupMatchingKeyObject",
+            "VlocityLookupRecordSourceKey": "Pricebook2/Standardmäßiges Preisbuch",
+            "VlocityRecordSObjectType": "Pricebook2"
+        },
+        "Product2.%vlocity_namespace%__GlobalKey__c": "e94e26f8-4681-c08c-1ffa-ca4d134ca27c",
+        "Product2Id": {
+            "%vlocity_namespace%__GlobalKey__c": "e94e26f8-4681-c08c-1ffa-ca4d134ca27c",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "Product2/e94e26f8-4681-c08c-1ffa-ca4d134ca27c",
+            "VlocityRecordSObjectType": "Product2"
+        },
+        "ProductCode": "PNET-B2B-CFS-CPE",
+        "UnitPrice": 0,
+        "UseStandardPrice": false,
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "PricebookEntry",
+        "VlocityRecordSourceKey": "PricebookEntry/Pricebook2/Standardmäßiges Preisbuch/Product2/e94e26f8-4681-c08c-1ffa-ca4d134ca27c"
+    }
+]

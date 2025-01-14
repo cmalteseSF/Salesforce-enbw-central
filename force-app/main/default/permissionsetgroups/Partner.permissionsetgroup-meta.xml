@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Partner</label>
+    <permissionSets>Account_Generic_CU</permissionSets>
+    <permissionSets>Apex_Custom_Classes</permissionSets>
+    <permissionSets>Apex_SFI_Classes</permissionSets>
+    <permissionSets>App_B2B_Partner_App</permissionSets>
+    <permissionSets>CPQ_User</permissionSets>
+    <permissionSets>Contact_Generic_CU</permissionSets>
+    <permissionSets>ContractLineItem_Generic_CU</permissionSets>
+    <permissionSets>Contract_Generic_CU</permissionSets>
+    <permissionSets>Convert_Lead</permissionSets>
+    <permissionSets>DC_Runtime_Shopping</permissionSets>
+    <permissionSets>DocGenInd_Design_All</permissionSets>
+    <permissionSets>DocGenInd_Runtime_All</permissionSets>
+    <permissionSets>DocGen_User</permissionSets>
+    <permissionSets>EPC_User</permissionSets>
+    <permissionSets>External_Credentials</permissionSets>
+    <permissionSets>Lead_Generic_CU</permissionSets>
+    <permissionSets>OM_User</permissionSets>
+    <permissionSets>OpportunityAndLineItems_Generic_CU</permissionSets>
+    <permissionSets>OrgWideAddress</permissionSets>
+    <permissionSets>Premise_Generic_CU</permissionSets>
+    <permissionSets>QuoteAndLineItems_Generic_CU</permissionSets>
+    <permissionSets>Task_Generic_CRUD</permissionSets>
+    <permissionSets>VF_SFI_Pages</permissionSets>
+    <permissionSets>force__BREDesigner</permissionSets>
+    <permissionSets>force__OmniStudioExecution</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,93 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SaveAdditionalInformation",
+    "OmniProcessId": {
+        "Name": "AddAdditionalContactDetails",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/AddAdditionalContactDetails/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "businessCategory": "",
+        "businessEvent": "",
+        "controlWidth": 12,
+        "enableActionMessage": false,
+        "enableDefaultAbort": false,
+        "errorMessage": {
+            "custom": [
+            ],
+            "default": null
+        },
+        "extraPayload": {
+            "BusinessAddress": "%BusinessAddress%",
+            "CreateNewBillingContact": "%CreateNewBillingContact%",
+            "CreateNewTechContact": "%CreateNewTechContact%",
+            "DealerContractId": "%DealerContractId%",
+            "DigitalInvoice": "%DigitalInvoice%",
+            "DigitalInvoiceEmail": "%DigitalInvoiceEmail%",
+            "InvoiceEmailAddress": "%InvoiceEmailAddress%",
+            "IsBillingEqualBusinessAddress": "%IsBillingEqualBusinessAddress%",
+            "IsPrimaryEqualBillingContact": "%IsPrimaryEqualBillingContact%",
+            "IsPrimaryEqualTechnicalContact": "%IsPrimaryEqualTechnicalContact%",
+            "IsShippingEqualServiceAddress": "%IsShippingEqualServiceAddress%",
+            "PhoneNumber": "%TechincalContactPhoneNumber:PhoneNumber%",
+            "Quote": "%Quote%",
+            "ServiceAddress": "%ServiceAddress%",
+            "SiteAccessRestriction": "%SiteAccessRestriction%",
+            "SubDealerId": "%SubDealerId%",
+            "selectedBillingAddress": "%selectedBillingAddress%",
+            "selectedBillingContact": "%selectedBillingContact%",
+            "selectedPrimaryContact": "%selectedPrimaryContact%",
+            "selectedShippingInfo": "%selectedShippingInfo%",
+            "selectedTechnicalContact": "%selectedTechnicalContact%"
+        },
+        "failureAbortLabel": "Abort",
+        "failureAbortMessage": "Are you sure?",
+        "failureGoBackLabel": "Go Back",
+        "failureNextLabel": "Continue",
+        "inProgressMessage": "In Progress",
+        "integrationProcedureKey": "PlusNet_SaveAdditionalContactDetails",
+        "label": "",
+        "message": {
+        },
+        "postMessage": "Done",
+        "postTransformBundle": "",
+        "preTransformBundle": "",
+        "pubsub": false,
+        "redirectNextLabel": "Next",
+        "redirectNextWidth": 3,
+        "redirectPageName": "",
+        "redirectPreviousLabel": "Previous",
+        "redirectPreviousWidth": 3,
+        "redirectTemplateUrl": "vlcAcknowledge.html",
+        "remoteOptions": {
+            "chainable": false,
+            "postTransformBundle": "",
+            "preTransformBundle": "",
+            "useFuture": false
+        },
+        "remoteTimeout": 30000,
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyExtraPayload": true,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "svgIcon": "",
+        "svgSprite": "",
+        "useContinuation": false,
+        "validationRequired": "Step",
+        "wpm": false
+    },
+    "Type": "Integration Procedure Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/AddAdditionalContactDetails/German/SaveAdditionalInformation"
+}

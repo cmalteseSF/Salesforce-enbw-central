@@ -1,0 +1,53 @@
+{
+    "ElapsedTime": 134,
+    "ElapsedTimeCPU": 101,
+    "Input": {
+        "NumOfDisconnectedOLIs": 12,
+        "OLI": [
+            {
+                "AssetRefId": "2760ee96-1d65-9318-f8d0-e8ad4bed7fac"
+            },
+            {
+                "AssetRefId": "83b8f288-558c-7708-6b31-2d9d4cb03b5d"
+            },
+            {
+                "AssetRefId": "c82adc25-34fa-ae1d-b4fb-55c2c49db57e"
+            },
+            {
+                "AssetRefId": "19512272-52b8-3d8d-19d6-50dd90dec974"
+            },
+            {
+                "AssetRefId": "44777da3-4638-0904-b58b-320308e2d96c"
+            },
+            {
+                "AssetRefId": "549d6d84-16da-e991-80e3-50b15121cd92"
+            },
+            {
+                "AssetRefId": "056fa473-c980-c571-7479-dddd4ce6ce8d"
+            },
+            {
+                "AssetRefId": "2d6825c7-593c-edb6-d04c-172adf9705d7"
+            },
+            {
+                "AssetRefId": "fa079337-cb6c-599e-5722-9fdc83f77411"
+            },
+            {
+                "AssetRefId": "40405e73-cec1-2058-a455-6845faa65bc8"
+            },
+            {
+                "AssetRefId": "fbea4bc7-0331-091a-67bc-cd5afc427612"
+            },
+            {
+                "AssetRefId": "ad69d127-b0af-5cf5-5921-7a8e00203b23"
+            }
+        ],
+        "Order": {
+            "TerminationCategory": "Ablehnung durch Plusnet",
+            "TerminationDate": "2027-07-15",
+            "TerminationReason": "Doppelter Auftrag, Fehler etc."
+        },
+        "TerminationDate": "2024-07-01"
+    },
+    "Status": false,
+    "Type": "DataRaptor Post Action"
+}

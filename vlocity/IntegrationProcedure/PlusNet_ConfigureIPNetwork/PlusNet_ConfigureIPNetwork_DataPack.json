@@ -1,0 +1,29 @@
+{
+    "CustomJavaScript": "PlusNet_ConfigureIPNetwork_SampleInput.json",
+    "Description": "Used to configure IP Network product",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "ConfigureIPNetwork",
+    "OmniProcessElement": [
+        "PlusNet_ConfigureIPNetwork_Element_SplitIPNetworkProduct.json",
+        "PlusNet_ConfigureIPNetwork_Element_GetIPConfigurationMetadata.json",
+        "PlusNet_ConfigureIPNetwork_Element_GetIPNetworkQLIs.json",
+        "PlusNet_ConfigureIPNetwork_Element_TransformIPNetworkPayload.json",
+        "PlusNet_ConfigureIPNetwork_Element_AddIPAdditionalCostToCart.json",
+        "PlusNet_ConfigureIPNetwork_Element_TryUpdateIPNetwork.json",
+        "PlusNet_ConfigureIPNetwork_Element_UpdateIPConfiguration.json"
+    ],
+    "OmniProcessKey": "PlusNet_ConfigureIPNetwork",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_ConfigureIPNetwork_PropertySetConfig.json",
+    "SubType": "ConfigureIPNetwork",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/ConfigureIPNetwork/Procedure"
+}

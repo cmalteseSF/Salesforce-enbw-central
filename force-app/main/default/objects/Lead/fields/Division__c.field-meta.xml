@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Division__c</fullName>
+    <externalId>false</externalId>
+    <label>Unternehmensbereich</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Einkauf</fullName>
+                <default>false</default>
+                <label>Einkauf</label>
+            </value>
+            <value>
+                <fullName>Externer Berater</fullName>
+                <default>false</default>
+                <label>Externer Berater</label>
+            </value>
+            <value>
+                <fullName>Finanzen/Verwaltung</fullName>
+                <default>false</default>
+                <label>Finanzen/Verwaltung</label>
+            </value>
+            <value>
+                <fullName>Geschäftsleitung</fullName>
+                <default>false</default>
+                <label>Geschäftsleitung</label>
+            </value>
+            <value>
+                <fullName>IT/TK</fullName>
+                <default>false</default>
+                <label>IT/TK</label>
+            </value>
+            <value>
+                <fullName>Marketing/Vertrieb</fullName>
+                <default>false</default>
+                <label>Marketing/Vertrieb</label>
+            </value>
+            <value>
+                <fullName>Sonstiges</fullName>
+                <default>false</default>
+                <label>Sonstiges</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

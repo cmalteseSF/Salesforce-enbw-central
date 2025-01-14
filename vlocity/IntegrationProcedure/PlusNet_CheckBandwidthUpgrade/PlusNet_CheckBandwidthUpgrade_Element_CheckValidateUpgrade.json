@@ -1,0 +1,44 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CheckValidateUpgrade",
+    "OmniProcessId": {
+        "Name": "Check Bandwidth Upgrade",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CheckBandwidthUpgrade/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "IsUpgrade",
+        "OmniProcessId": {
+            "Name": "Check Bandwidth Upgrade",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/CheckBandwidthUpgrade/Procedure",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CheckBandwidthUpgrade/Procedure/IsUpgrade",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "IsUpgrade",
+    "ParentElementType": "Conditional Block",
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "elementValueMap": {
+            "ValidateUpgrade": "=IF(%CheckSourceAsymmetry:IsSourceAssymetric% == 'Y' AND %CheckTargetAsymmetry:IsTargetAssymetric% == 'N',IF(%OrderRequestDate% > ADDMONTH(%GetSourceBundle:OLI:EndOfMinimumContractTerm%,6) , 'OK','NOK') , 'OK')"
+        },
+        "executionConditionalFormula": "",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "label": "SetValues3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "show": null
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/CheckBandwidthUpgrade/Procedure/CheckValidateUpgrade"
+}

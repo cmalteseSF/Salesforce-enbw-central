@@ -1,0 +1,42 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "UpdateFRLProvisionStatus",
+    "OmniProcessId": {
+        "Name": "Send Order To Comarch",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/PlusNet/SendOrderToComarch/Procedure",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "actionMessage": "",
+        "additionalInput": {
+            "FRLID": "%GetFRLAccess:FRL|1:Id%",
+            "ProvisionStatus": "=IF((%SendOrderActivationStatus% == 'true' && %SendOrderActivation:message% != \"Error\") || (%SendOrderTerminationStatus% == 'true' && %SendOrderTermination:message% != \"Error\"), 'OSS_OK', 'OSS_NOK')"
+        },
+        "additionalOutput": {
+        },
+        "bundle": "DRUpdateFRLFields",
+        "chainOnStep": false,
+        "disOnTplt": false,
+        "executionConditionalFormula": "(ISNOTBLANK(%SendOrderTermination%) && %SendOrderTermination:message% == \"Success\") && %GetOrderDetails:Order:OrderType% == 'Termination'",
+        "failOnStepError": true,
+        "failureConditionalFormula": "",
+        "failureResponse": {
+        },
+        "label": "DataRaptorPostAction3",
+        "responseJSONNode": "",
+        "responseJSONPath": "",
+        "returnOnlyAdditionalOutput": false,
+        "returnOnlyFailureResponse": false,
+        "sendJSONNode": "",
+        "sendJSONPath": "",
+        "sendOnlyAdditionalInput": true,
+        "show": null,
+        "useFormulas": true
+    },
+    "Type": "DataRaptor Post Action",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/PlusNet/SendOrderToComarch/Procedure/UpdateFRLProvisionStatus"
+}

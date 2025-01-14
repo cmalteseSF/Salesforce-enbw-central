@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Dublette</fullName>
+        <default>false</default>
+        <label>Dublette</label>
+    </customValue>
+    <customValue>
+        <fullName>Fehlerhafte Daten</fullName>
+        <default>false</default>
+        <label>Fehlerhafte Daten</label>
+    </customValue>
+    <customValue>
+        <fullName>Keine Gesprächsbereitschaft</fullName>
+        <default>false</default>
+        <label>Keine Gesprächsbereitschaft</label>
+    </customValue>
+    <customValue>
+        <fullName>Konzernbindung</fullName>
+        <default>false</default>
+        <label>Konzernbindung</label>
+    </customValue>
+    <customValue>
+        <fullName>Nicht erreichbar</fullName>
+        <default>false</default>
+        <label>Nicht erreichbar</label>
+    </customValue>
+    <customValue>
+        <fullName>Sonstiges</fullName>
+        <default>false</default>
+        <label>Sonstiges</label>
+    </customValue>
+    <customValue>
+        <fullName>Unternehmen nicht mehr existent</fullName>
+        <default>false</default>
+        <label>Unternehmen nicht mehr existent</label>
+    </customValue>
+    <customValue>
+        <fullName>Vertraglich gebunden</fullName>
+        <default>false</default>
+        <label>Vertraglich gebunden</label>
+    </customValue>
+    <customValue>
+        <fullName>Wegfall Bedarf/ kein Interesse</fullName>
+        <default>false</default>
+        <label>Wegfall Bedarf/ kein Interesse</label>
+    </customValue>
+    <description>Used to keep track of why a Lead was lost</description>
+    <masterLabel>Close Lost Reasons</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

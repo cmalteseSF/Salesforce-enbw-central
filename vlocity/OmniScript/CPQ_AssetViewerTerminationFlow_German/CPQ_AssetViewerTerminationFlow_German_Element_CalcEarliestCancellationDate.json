@@ -1,0 +1,47 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "CalcEarliestCancellationDate",
+    "OmniProcessId": {
+        "Name": "Asset Viewer Termination Flow",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerTerminationFlow/German",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "TerminationOrderRequest",
+        "OmniProcessId": {
+            "Name": "Asset Viewer Termination Flow",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/CPQ/AssetViewerTerminationFlow/German",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerTerminationFlow/German/TerminationOrderRequest",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "TerminationOrderRequest",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 4,
+        "dataType": "Date",
+        "dateFormat": "dd.MM.yyyy",
+        "disOnTplt": false,
+        "expression": "IF(DATEDIFF(%EndOfMinimumContractTerm%,MOMENT(TODAY()).add(1,'month')) > 0 , MOMENT(TODAY()).add(1,'month'), IF(%RequestDateTime% <= %EndOfMinimumContractTerm%, %EndOfMinimumContractTerm%, %RequestDateTime%))",
+        "help": true,
+        "helpText": "Das frühestmögliche Datum zu dem ein Vertrag beendet werden kann. Der Vertrag ende um 24:00 an diesem Tag.",
+        "helpTextPos": "",
+        "hide": false,
+        "hideGroupSep": false,
+        "inputWidth": 12,
+        "label": "Frühestes Vertragsenddatum",
+        "mask": null,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Formula",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/CPQ/AssetViewerTerminationFlow/German/CalcEarliestCancellationDate"
+}

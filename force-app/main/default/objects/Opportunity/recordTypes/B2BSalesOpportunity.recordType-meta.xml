@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2BSalesOpportunity</fullName>
+    <active>true</active>
+    <businessProcess>B2B Sales Process</businessProcess>
+    <compactLayoutAssignment>OppCompactLayout</compactLayoutAssignment>
+    <label>B2B Sales Opportunity</label>
+    <picklistValues>
+        <picklist>CancellationReason__c</picklist>
+        <values>
+            <fullName>Anbieterwechsel ausgeschlossen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bau nur möglich mit zusätzlichen Kosten</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bau technisch nicht möglich</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fehler des Agenten</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negative Bauentscheidung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonstiges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Umstellung zu aufwendig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wettbewerb Bundle-Produkt günstiger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wettbewerb Cuda%2FCoax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wettbewerb Glasfaser</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CloseLostReason__c</picklist>
+        <values>
+            <fullName>Anbieterwechsel ausgeschlossen</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bau technisch nicht möglich</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Negative Bauentscheidung</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sonstiges</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Umstellung zu aufwendig</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wettbewerb Bundle-Produkt günstiger</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wettbewerb Cuda%2FCoax</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wettbewerb Glasfaser</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telesales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Connection</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Service</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

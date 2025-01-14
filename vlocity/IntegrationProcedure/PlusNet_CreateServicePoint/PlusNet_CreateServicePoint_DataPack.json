@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "{}",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CreateServicePoint",
+    "OmniProcessElement": [
+        "PlusNet_CreateServicePoint_Element_GetOrderDetails.json",
+        "PlusNet_CreateServicePoint_Element_ServiceAccountPresent.json",
+        "PlusNet_CreateServicePoint_Element_CreateServicePoint.json",
+        "PlusNet_CreateServicePoint_Element_UpdateOLIs.json",
+        "PlusNet_CreateServicePoint_Element_ResponseAction1.json"
+    ],
+    "OmniProcessKey": "PlusNet_CreateServicePoint",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CreateServicePoint_PropertySetConfig.json",
+    "SubType": "CreateServicePoint",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CreateServicePoint/Procedure"
+}

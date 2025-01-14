@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsExpired__c</fullName>
+    <description>Used to understand if a Quote is expired or not</description>
+    <externalId>false</externalId>
+    <formula>ExpirationDate  &lt; TODAY()  &amp;&amp;  ISPICKVAL( Status ,&apos;Presented&apos;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Is Expired</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

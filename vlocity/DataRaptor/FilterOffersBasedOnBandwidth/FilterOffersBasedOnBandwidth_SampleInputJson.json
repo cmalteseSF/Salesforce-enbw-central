@@ -1,0 +1,97 @@
+{
+    "PriceBookEntryList": {
+        "PricebookEntry": [
+            {
+                "PBookId": "01u9M00000AaL8DQAV",
+                "Product2Id": "01t9M000008eGcXQAU",
+                "ProductCode": "PNET-OFF-INT-FON-150"
+            },
+            {
+                "PBookId": "01u9M00000AdtzlQAB",
+                "Product2Id": "01t9M000008iy8kQAA",
+                "ProductCode": "PNET-IP-INS-COST"
+            },
+            {
+                "PBookId": "01u9M00000AfrPFQAZ",
+                "Product2Id": "01t9M000008lzjtQAA",
+                "ProductCode": "PNET-OFF-INT-FON-600"
+            },
+            {
+                "PBookId": "01u9M00000AfrPGQAZ",
+                "Product2Id": "01t9M000008lzjuQAA",
+                "ProductCode": "PNET-OFF-INT-FON-300"
+            },
+            {
+                "PBookId": "01u9M00000Afu6xQAB",
+                "Product2Id": "01t9M000008lvOfQAI",
+                "ProductCode": "PNET-OFF-INT-FON-1000"
+            },
+            {
+                "PBookId": "01u9M00000Av7evQAB",
+                "Product2Id": "01t9M000008wrfFQAQ",
+                "ProductCode": "PNET-B2B-BUS-150"
+            },
+            {
+                "PBookId": "01uMU000002PdT3YAK",
+                "Product2Id": "01tMU000000lEdVYAU",
+                "ProductCode": "PNET-B2B-CON-COS"
+            },
+            {
+                "PBookId": "01uMU000002PdU8YAK",
+                "Product2Id": "01tMU000000lEerYAE",
+                "ProductCode": "PNET-HOU"
+            }
+        ]
+    },
+    "offerListOutput": [
+        {
+            "DownloadSpeed": "150 Mbps",
+            "Family": "Fiber",
+            "ProductCode": "PNET-B2B-BUS-150",
+            "ProductName": "Plusnet Business 150M",
+            "Type": "Business",
+            "offerType": "Product"
+        },
+        {
+            "DownloadSpeed": "600 Mbps",
+            "Family": "Double Play",
+            "ProductCode": "PNET-OFF-INT-FON-600",
+            "ProductName": "Plusnet Office Internet & Fon 600M",
+            "Type": "Office",
+            "offerType": "Product"
+        },
+        {
+            "DownloadSpeed": "300 Mbps",
+            "Family": "Double Play",
+            "ProductCode": "PNET-OFF-INT-FON-300",
+            "ProductName": "Plusnet Office Internet & Fon 300M",
+            "Type": "Office",
+            "offerType": "Product"
+        },
+        {
+            "DownloadSpeed": "1000 Mbps",
+            "Family": "Double Play",
+            "ProductCode": "PNET-OFF-INT-FON-1000",
+            "ProductName": "Plusnet Office Internet & Fon 1G",
+            "Type": "Office",
+            "offerType": "Product"
+        },
+        {
+            "DownloadSpeed": "150 Mbps",
+            "Family": "Double Play",
+            "ProductCode": "PNET-OFF-INT-FON-150",
+            "ProductName": "Plusnet Office Internet & Fon 150M",
+            "Type": "Office",
+            "offerType": "Product"
+        },
+        {
+            "Family": "Infrastruktur",
+            "ProductCode": "PNET-HOU",
+            "ProductName": "Hausanschluss",
+            "Type": "Connection",
+            "offerType": "Product"
+        }
+    ],
+    "trimmedMaxBandwidth": "1000",
+    "type": "Office"
+}

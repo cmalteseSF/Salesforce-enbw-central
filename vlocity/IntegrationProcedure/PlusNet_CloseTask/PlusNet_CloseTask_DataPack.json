@@ -1,0 +1,24 @@
+{
+    "CustomJavaScript": "PlusNet_CloseTask_SampleInput.json",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "CloseTask",
+    "OmniProcessElement": [
+        "PlusNet_CloseTask_Element_GetTaskId.json",
+        "PlusNet_CloseTask_Element_UpdateTaskStatusToComplete.json",
+        "PlusNet_CloseTask_Element_ReturnTaskUpdate.json"
+    ],
+    "OmniProcessKey": "PlusNet_CloseTask",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CloseTask_PropertySetConfig.json",
+    "SubType": "CloseTask",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CloseTask/Procedure"
+}

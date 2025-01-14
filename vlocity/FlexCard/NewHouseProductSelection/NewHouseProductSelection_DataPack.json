@@ -1,0 +1,35 @@
+{
+    "AuthorName": "Plusnet",
+    "ClonedFromOmniUiCardKey": "ProductSelection/Plusnet/2.0",
+    "DataSourceConfig": {
+        "dataSource": {
+            "contextVariables": [
+            ],
+            "orderBy": {
+                "isReverse": "",
+                "name": ""
+            },
+            "type": "Custom",
+            "value": {
+                "body": "[\n{\n          \"PBookId\": \"01uMU00000241M8YAI\",\n          \"Product2Id\": \"01tMU000000VrGBYA0\",\n          \"ProductCode\": \"PNET-B2B-FIB-SOHO-300\",\n          \"offerType\": \"Product\",\n          \"Family\": \"Double Play\",\n          \"ProductName\": \"Plusnet Glasfaser SOHO 300\",\n          \"DownloadSpeed\": \"300 Mbps\",\n          \"DwnSpd\": 300\n        },\n        {\n          \"PBookId\": \"01uMU000002410YYAQ\",\n          \"Product2Id\": \"01tMU000000VrEBYA0\",\n          \"ProductCode\": \"PNET-B2B-FIB-SOHO-600\",\n          \"offerType\": \"Product\",\n          \"Family\": \"Double Play\",\n          \"ProductName\": \"Plusnet Glasfaser SOHO 600\",\n          \"DownloadSpeed\": \"600 Mbps\",\n          \"DwnSpd\": 600\n        },\n        {\n          \"PBookId\": \"01uMU00000241Y2YAI\",\n          \"Product2Id\": \"01tMU000000VrGaYAK\",\n          \"ProductCode\": \"PNET-B2B-FIB-SOHO-1G\",\n          \"offerType\": \"Product\",\n          \"Family\": \"Double Play\",\n          \"ProductName\": \"Plusnet Glasfaser SOHO 1G\",\n          \"DownloadSpeed\": \"1000 Mbps\",\n          \"DwnSpd\": 1000\n        }\n]",
+                "dsDelay": "",
+                "resultVar": ""
+            }
+        }
+    },
+    "Description": "Used to show available products and be able to select one of the presented offer",
+    "IsTrackingEnabled": false,
+    "Name": "NewHouseProductSelection",
+    "Namespace": "",
+    "OmniUiCardKey": "NewHouseProductSelection/Plusnet/2.0",
+    "OmniUiCardType": "Parent",
+    "OverrideKey": "",
+    "PropertySetConfig": "NewHouseProductSelection.json",
+    "SampleDataSourceResponse": "[{\"PBookId\":\"01uMU00000241M8YAI\",\"Product2Id\":\"01tMU000000VrGBYA0\",\"ProductCode\":\"PNET-B2B-FIB-SOHO-300\",\"offerType\":\"Product\",\"Family\":\"Double Play\",\"ProductName\":\"Plusnet Glasfaser SOHO 300\",\"DownloadSpeed\":\"300 Mbps\",\"DwnSpd\":300},{\"PBookId\":\"01uMU000002410YYAQ\",\"Product2Id\":\"01tMU000000VrEBYA0\",\"ProductCode\":\"PNET-B2B-FIB-SOHO-600\",\"offerType\":\"Product\",\"Family\":\"Double Play\",\"ProductName\":\"Plusnet Glasfaser SOHO 600\",\"DownloadSpeed\":\"600 Mbps\",\"DwnSpd\":600},{\"PBookId\":\"01uMU00000241Y2YAI\",\"Product2Id\":\"01tMU000000VrGaYAK\",\"ProductCode\":\"PNET-B2B-FIB-SOHO-1G\",\"offerType\":\"Product\",\"Family\":\"Double Play\",\"ProductName\":\"Plusnet Glasfaser SOHO 1G\",\"DownloadSpeed\":\"1000 Mbps\",\"DwnSpd\":1000}]",
+    "StylingConfiguration": "",
+    "UniqueName": "",
+    "VersionNumber": 2,
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniUiCard",
+    "VlocityRecordSourceKey": "OmniUiCard/NewHouseProductSelection"
+}

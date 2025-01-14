@@ -1,0 +1,26 @@
+{
+    "CustomJavaScript": "PlusNet_CreateOrderMACD_SampleInput.json",
+    "Description": "This Integration Procedure is used to create a MACD Order.",
+    "DiscoveryFrameworkUsageType": "Default",
+    "ElementTypeComponentMapping": "{\"ElementTypeToHTMLTemplateList\":[]}",
+    "IsIntegrationProcedure": true,
+    "IsMetadataCacheDisabled": false,
+    "IsOmniScriptEmbeddable": false,
+    "IsTestProcedure": false,
+    "IsWebCompEnabled": false,
+    "Language": "Procedure",
+    "Name": "Plusnet-CreateOrderMACD",
+    "OmniProcessElement": [
+        "PlusNet_CreateOrderMACD_Element_CreateOrderRequestData.json",
+        "PlusNet_CreateOrderMACD_Element_CreateOrderRecord.json",
+        "PlusNet_CreateOrderMACD_Element_CreateOrderResponse.json"
+    ],
+    "OmniProcessKey": "PlusNet_CreateOrderMACD",
+    "OmniProcessType": "Integration Procedure",
+    "PropertySetConfig": "PlusNet_CreateOrderMACD_PropertySetConfig.json",
+    "SubType": "CreateOrderMACD",
+    "Type": "PlusNet",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcess",
+    "VlocityRecordSourceKey": "OmniProcess/PlusNet/CreateOrderMACD/Procedure"
+}

@@ -1,0 +1,84 @@
+[
+    {
+        "FormulaExpression": "DESERIALIZE(attributeSelectedValues)",
+        "FormulaResultPath": "resultSelectedValues",
+        "FormulaSequence": 2,
+        "GlobalKey": "PluNet-EraseHardwareAttributesCustom4677",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PluNet-EraseHardwareAttributes",
+        "OmniDataTransformationId": {
+            "Name": "PluNet-EraseHardwareAttributes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PluNet-EraseHardwareAttributes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "\" \"",
+        "FormulaResultPath": "resultSelectedValues:ATT-SER-NUM",
+        "FormulaSequence": 3,
+        "GlobalKey": "PluNet-EraseHardwareAttributesCustom4874",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PluNet-EraseHardwareAttributes",
+        "OmniDataTransformationId": {
+            "Name": "PluNet-EraseHardwareAttributes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PluNet-EraseHardwareAttributes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "setNodeTo(attributeSelectedValues, \"ATT-SER-NUM\", \" \")",
+        "FormulaResultPath": "resultSelectedValues",
+        "FormulaSequence": 1,
+        "GlobalKey": "PluNet-EraseHardwareAttributesCustom7163",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PluNet-EraseHardwareAttributes",
+        "OmniDataTransformationId": {
+            "Name": "PluNet-EraseHardwareAttributes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PluNet-EraseHardwareAttributes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "PluNet-EraseHardwareAttributesCustom6962",
+        "InputFieldName": "resultSelectedValues",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "PluNet-EraseHardwareAttributes",
+        "OmniDataTransformationId": {
+            "Name": "PluNet-EraseHardwareAttributes",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/PluNet-EraseHardwareAttributes",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "selectedValues",
+        "OutputObjectName": "json",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

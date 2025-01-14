@@ -1,0 +1,199 @@
+[
+    {
+        "FormulaExpression": "ADDMONTH(TODAY(), 3)",
+        "FormulaResultPath": "closeDate",
+        "FormulaSequence": 1,
+        "GlobalKey": "Plusnet-CreateOpportunityCustom4946",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-CreateOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-CreateOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-CreateOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "CONCAT(%accountName%, \" - \", %quoteType%)",
+        "FormulaResultPath": "name",
+        "FormulaSequence": 2,
+        "GlobalKey": "Plusnet-CreateOpportunityCustom158",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-CreateOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-CreateOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-CreateOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FormulaExpression": "\"Qualifikation\"",
+        "FormulaResultPath": "stage",
+        "FormulaSequence": 3,
+        "GlobalKey": "Plusnet-CreateOpportunityCustom2619",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-CreateOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-CreateOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-CreateOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 0,
+        "OutputFieldName": "Formula",
+        "OutputObjectName": "Formula",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-CreateOpportunityCustom0jI9M000000AjS5UAKItem0",
+        "InputFieldName": "priceList",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-CreateOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-CreateOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-CreateOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "%vlocity_namespace%__PriceListId__c",
+        "OutputObjectName": "Opportunity",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-CreateOpportunityCustom0jI9M000000AjS5UAKItem1",
+        "InputFieldName": "ContextId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-CreateOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-CreateOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-CreateOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "Opportunity",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-CreateOpportunityCustom0jI9M000000AjS5UAKItem2",
+        "InputFieldName": "closeDate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-CreateOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-CreateOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-CreateOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "CloseDate",
+        "OutputObjectName": "Opportunity",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "Plusnet-CreateOpportunityCustom0jI9M000000AjS5UAKItem3",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "Plusnet-CreateOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-CreateOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-CreateOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Opportunity",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-CreateOpportunityCustom0jI9M000000AjS5UAKItem4",
+        "InputFieldName": "name",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-CreateOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-CreateOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-CreateOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Name",
+        "OutputObjectName": "Opportunity",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-CreateOpportunityCustom0jI9M000000AjS5UAKItem5",
+        "InputFieldName": "stage",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-CreateOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-CreateOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-CreateOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "StageName",
+        "OutputObjectName": "Opportunity",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "Plusnet-CreateOpportunityCustom2210",
+        "InputFieldName": "subType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "Plusnet-CreateOpportunity",
+        "OmniDataTransformationId": {
+            "Name": "Plusnet-CreateOpportunity",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/Plusnet-CreateOpportunity",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Type",
+        "OutputObjectName": "Opportunity",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]
