@@ -1,5 +1,5 @@
 public with sharing class PlusNet_TriggerHelper {
-
+/* only for fun */
       public static void updateContratLineItemAssetId(List<Asset> oListAssets) {
 
          Map<String,ID> oListToUpdate = new Map<String,ID>();
