@@ -1,9 +1,9 @@
 # Description     :: Production Continous Deployment(CD) workflow
 ## Trigger-action :: Execute on PR closure
 ### Target-Branch :: On merge to main branch
-##### Target-Org  :: To Production environment
+##### Target-Org  :: To Production environment 
 
-name: CD workflow mainBranch-to-Production Deployment
+name: CD workflow mainBranch-to-Production Deployment V2
 run-name: ${{ github.actor }} is testing mainBranch-to-Production Deployment 🚀
 on:
   pull_request:
