@@ -90,6 +90,10 @@ jobs:
               fi   
            
           # Reading TestClassMapper file to prepare list of testclasses to run using RunSpecified test
+             echo "--- ./delta contains ---"
+             ls -LR delta
+             
+           # Reading TestClassMapper file to prepare list of testclasses to run using RunSpecified test
           - name: 'Retrieving the list of test classes to execute'
             if: ${{ env.has_package == 'true' }}
             run: |
