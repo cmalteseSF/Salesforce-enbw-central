@@ -74,8 +74,9 @@ jobs:
              sf sgd:source:delta --to "HEAD" --from "HEAD~1" --output "./delta" --ignore-whitespace -d -i .sgdignore
              echo "--- package.xml generated with added and modified metadata ---"
              cat delta/package/package.xml
-             echo "--- Files created in ./delta directory ---"
-             ls -R delta
+             echo "--- ./delta contains ---"
+             ls -LR delta
+             
            # Reading TestClassMapper file to prepare list of testclasses to run using RunSpecified test
           - name: 'Retrieving the list of test classes to execute'
             run: |
