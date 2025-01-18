@@ -1,5 +1,6 @@
 public with sharing class IPHandlerController {
     @AuraEnabled(cacheable=true)
+    /** test for package.xml  */
     public static List<QuoteLineItem> getQLIRecord(String quoteId,String productCode)
     {
         return [SELECT Id,Product2.Name,Product2.ProductCode, vlocity_cmt__AttributeSelectedValues__c,VoiceSubscriber__c FROM QuoteLineItem WHERE QuoteId  =:quoteId AND Product2.ProductCode =:productCode
