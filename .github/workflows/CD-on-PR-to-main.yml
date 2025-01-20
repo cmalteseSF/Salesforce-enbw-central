@@ -70,9 +70,22 @@ jobs:
              cat delta/package/package.xml
              echo "--- Files created in ./delta directory ---"
              ls -R delta
+          
+          # Check if package.xml have delta components
+          - name: Check if package.xml contains <types>
+            id: check-package
+            run: |
+              if grep -q "<types>" delta/package/package.xml; then
+                echo "Package.xml contains <types> tag. Proceeding with deployment steps."
+                echo "has_package=true" >> $GITHUB_ENV
+              else
+                echo "Package.xml does not contain <types> tag. Skipping deployment steps."
+                echo "has_package=false" >> $GITHUB_ENV
+              fi   
 
         # Reading TestClassMapper file to prepare list of testclasses to run using RunSpecified test
           - name: 'Retrieving the list of test classes to execute'
+            if: ${{ env.has_package == 'true' }}
             run: |
               PR_BODY=$(cat TestClassMapper.txt)
               echo $PR_BODY > ./pr_body.txt
@@ -82,14 +95,14 @@ jobs:
 
         # If TestclassMapper contains entries, then we run specified test entries only and if not we run all localtests in the target org
           - name: 'Deploy Delta changes to Prod - with run specified tests'
-            if: ${{ env.APEX_TESTS != 'all' }}
+            if: ${{ env.has_package == 'true' && env.APEX_TESTS != 'all' }}
             run: |
               echo ${{env.APEX_TESTS}}
               sf project deploy start -x delta/package/package.xml --test-level RunSpecifiedTests --tests ${{env.APEX_TESTS}} --json -o MainProdOrg --verbose
 
         # If the env variable equals all, we run all tests with real deployment to production
           - name: 'Deploy Delta changes to Prod - with run all tests'
-            if: ${{ env.APEX_TESTS == 'all' }}
+            if: ${{ env.has_package == 'true' && env.APEX_TESTS == 'all' }}
             run: |
               sf project deploy start -x delta/package/package.xml --test-level RunLocalTests  --json -o MainProdOrg --verbose
 

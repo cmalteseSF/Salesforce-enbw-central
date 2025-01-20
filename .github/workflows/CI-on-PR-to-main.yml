@@ -37,7 +37,7 @@ jobs:
               fetch-depth: 0
           - name: Install NPM
             run: |
-              npm install
+              npm install --legacy-peer-deps
 
           # Install the SFDX CLI using npm command
           - name: Install the SF CLI
@@ -74,11 +74,24 @@ jobs:
              sf sgd:source:delta --to "HEAD" --from "HEAD~1" --output "./delta" --ignore-whitespace -d -i .sgdignore
              echo "--- package.xml generated with added and modified metadata ---"
              cat delta/package/package.xml
-             echo "--- ./delta contains ---"
-             ls -LR delta
-
-           # Reading TestClassMapper file to prepare list of testclasses to run using RunSpecified test
+             echo "--- Files created in ./delta directory ---"
+             ls -R delta
+            
+          # Check if package.xml have delta components
+          - name: Check if package.xml contains <types>
+            id: check-package
+            run: |
+              if grep -q "<types>" delta/package/package.xml; then
+                echo "Package.xml contains <types> tag. Proceeding with deployment steps."
+                echo "has_package=true" >> $GITHUB_ENV
+              else
+                echo "Package.xml does not contain <types> tag. Skipping deployment steps."
+                echo "has_package=false" >> $GITHUB_ENV
+              fi   
+           
+          # Reading TestClassMapper file to prepare list of testclasses to run using RunSpecified test
           - name: 'Retrieving the list of test classes to execute'
+            if: ${{ env.has_package == 'true' }}
             run: |
               PR_BODY=$(cat TestClassMapper.txt)
               echo $PR_BODY > ./pr_body.txt
@@ -88,14 +101,14 @@ jobs:
 
          # If TestclassMapper contains entries, then we run specified test entries only and if not we run all localtests in the target org
           - name: 'Check-only deploy delta changes - using run specified tests'
-            if: ${{ env.APEX_TESTS != 'all' }}
+            if: ${{ env.has_package == 'true' && env.APEX_TESTS != 'all' }}
             run: |
               echo ${{env.APEX_TESTS}}
               sf project deploy validate -x delta/package/package.xml --test-level RunSpecifiedTests --tests ${{env.APEX_TESTS}} --json -o MainProdOrg --verbose
 
           # If the env variable equals all, meaning the developer has not defined any specified testcasses then we run all tests
           - name: 'Check-only deploy delta changes - run all tests'
-            if: ${{ env.APEX_TESTS == 'all' }}
+            if: ${{ env.has_package == 'true' && env.APEX_TESTS == 'all' }}
             run: |
               sf project deploy validate -x delta/package/package.xml --test-level RunLocalTests  --json -o MainProdOrg --verbose
 

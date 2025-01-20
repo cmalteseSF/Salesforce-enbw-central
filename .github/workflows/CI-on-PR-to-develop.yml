@@ -78,9 +78,22 @@ jobs:
               sf sgd:source:delta --to "HEAD" --from "HEAD~1" --output "./delta" --ignore-whitespace -d -i .sgdignore
               echo "--- package.xml generated with added and modified metadata ---"
               cat delta/package/package.xml
-
+          
+          # Check if package.xml have delta components
+          - name: Check if package.xml contains <types>
+            id: check-package
+            run: |
+              if grep -q "<types>" delta/package/package.xml; then
+                echo "Package.xml contains <types> tag. Proceeding with deployment steps."
+                echo "has_package=true" >> $GITHUB_ENV
+              else
+                echo "Package.xml does not contain <types> tag. Skipping deployment steps."
+                echo "has_package=false" >> $GITHUB_ENV
+              fi   
+           
           # Execute the project deploy command with '--dry-run' for validatation purpose only
           - name: Validate Delta components to Salesforce
+            if: ${{ env.has_package == 'true' }}  
             run: |
               sf project deploy start -x delta/package/package.xml -l NoTestRun --dry-run -o SBXSITOrg --verbose
 
