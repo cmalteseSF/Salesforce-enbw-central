@@ -86,7 +86,7 @@ jobs:
                 echo "has_package=false" >> $GITHUB_ENV
               fi   
            
-          # Reading TestClassMapper file to prepare list of testclasses to run using RunSpecified test
+          # Reading TestClassMapper file to prepare list of testclasses to run using RunSpecified test only
           - name: 'Retrieving the list of test classes to execute'
             if: ${{ env.has_package == 'true' }}  
             run: |
