@@ -1,9 +1,9 @@
 # Description     :: Production Continous Integration(CI) workflow
 ## Trigger-action :: Execute on PR opened
-### Target-Branch :: To main branch
+### Target-Branch :: To hotfix branch
 ##### Target-Org  :: To Production environment
 
-name: CI Workflow release-to-Production Validation
+name: CI Workflow hotfix-to-Production Validation
 run-name: ${{ github.actor }}, is testing release Validation on Production environment before merging into master/main branch 🚀
 # Definition when the workflow should run
 on:
@@ -16,7 +16,7 @@ on:
       # run if the branch name is "main". This way we prevent this workflow
       # from running when PRs are opened on other branches
         branches:
-          - main*
+          - hotfix*
         paths:
           - 'force-app/**'
           - 'vlocity/**'
