@@ -105,6 +105,6 @@ jobs:
             if: ${{ env.has_package == 'true' && env.APEX_TESTS == 'all' }}
             run: |
               sf project deploy validate -x delta/package/package.xml --test-level RunLocalTests  --json -o MainProdOrg --verbose
-
-    workflow_vlocity:
-           uses: ./.github/workflows/CI-on-PR-to-main-VL.yml
+  workflow_vlocity:
+    name: Workflow for Vlocity Components
+    uses: ./.github/workflows/CI-on-PR-to-main-VL.yml # call to vlocity component
