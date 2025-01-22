@@ -101,9 +101,6 @@ jobs:
               sf project deploy start -x delta/package/package.xml --test-level RunLocalTests  --json -o MainProdOrg --verbose
 
         # Trigger Vlocity Workflow call
-          - name: Trigger Vlocity Workflow 
-            run: |
-             curl -X POST -H "Accept: application/vnd.github+json" \
-             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-             https://api.github.com/repos/${{ github.repository }}/actions/workflows/CD-on-PR-to-main-VL.yml/dispatches \
-             -d '{"ref":"main"}'        
+  workflow_vlocity:
+    name: Workflow for Vlocity Components
+    uses: ./.github/workflows/CI-on-PR-to-main-VL.yml # call to vlocity component
