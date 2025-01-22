@@ -46,12 +46,6 @@ jobs:
               sf version
               sf --help
 
-          # Install the Vlocity Build Tool using npm
-          - name: Install the Vlocity Build Tool
-            run: |
-              npm install --global vlocity
-              vlocity help
-
           # Install the sfdx git delta
           - name: Install the sfdx-git-delta plugin
             run: |
