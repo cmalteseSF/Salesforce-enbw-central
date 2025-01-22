@@ -1,0 +1,58 @@
+# Description     :: Production Continous Integration(CI) workflow vlocity
+## Trigger-action :: Execute on PR opened
+### Target-Branch :: To main branch
+##### Target-Org  :: To Production environment
+
+name: CI Workflow release/hotfix-to-Production Validation VL V2
+run-name: ${{ github.actor }}, is testing vlocity release or hotfix Validation on Production environment before merging into master/main branch 🚀
+# Definition when the workflow should run
+on:
+   # Triggered manually or by another workflow
+    workflow_dispatch:
+
+
+# Jobs to be executed when the above conditions are met
+jobs:
+  build:
+        runs-on: ubuntu-latest
+        # This pull the Developer environment from the gihub settings and all defined environment secrets
+        environment: Production
+        steps:
+          # Checkout the Source code from the latest commit
+          # Make sure to specify fetch-depth:0. This allows us to
+          # access previous commits that have been pushed to the repository.
+
+          - uses: actions/checkout@v3
+            with:
+              fetch-depth: 0
+          - name: Install NPM
+            run: |
+              npm install --legacy-peer-deps
+
+          # Install the SFDX CLI using npm command
+          - name: Install the SF CLI
+            run: |
+              npm install  @salesforce/cli --global
+              sf version
+              sf --help
+
+          # Install the Vlocity Build Tool using npm
+          - name: Install the Vlocity Build Tool
+            run: |
+              npm install --global vlocity
+              vlocity help
+
+          # Decrypt the private key for jwt auth
+          - name: Decrypt the server.key.enc file & store inside assets folder
+            run: |
+              openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K ${{ secrets.DECRYPTION_KEY }} -iv ${{ secrets.DECRYPTION_IV }}
+
+          # Authenticate to SF org
+          - name: Authenticate to Salesforce ORG
+            run: |
+              sf login org jwt -i ${{ secrets.ENV_CONSUMER_KEY }} -f ${{ secrets.JWT_KEY_FILE }} --username ${{ secrets.ENV_USER_NAME }} --alias MainProdOrg --instance-url ${{ secrets.ENV_LOGIN_URL }}
+
+          # Execute the VBT validateLocalData command to validate SFI components **locally only
+          - name: Validate SFI Delta components locally
+            run: |
+              vlocity -sfdx.username ${{ secrets.ENV_USER_NAME }} -job deploy.yaml validateLocalData --fixLocalGlobalKeys -gitCheck=true
