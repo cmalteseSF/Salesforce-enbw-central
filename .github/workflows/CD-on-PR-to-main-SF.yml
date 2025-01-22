@@ -103,4 +103,4 @@ jobs:
         # Trigger Vlocity Workflow call
   workflow_vlocity:
     name: Workflow for Vlocity Components
-    uses: ./.github/workflows/CI-on-PR-to-main-VL.yml # call to vlocity component
+    uses: ./.github/workflows/CD-on-PR-to-main-VL.yml # call to vlocity component       
