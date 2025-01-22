@@ -1,5 +1,5 @@
 public with sharing class EncryptionUtil {
-/*test clasees hotfix0008*/
+/*test clasees hotfix0008b*/
     public static String encrypt(final String clearText, final String key) 
     {
         final Blob encrypted = Crypto.encryptWithManagedIV(
