@@ -106,5 +106,5 @@ jobs:
             run: |
               sf project deploy validate -x delta/package/package.xml --test-level RunLocalTests  --json -o MainProdOrg --verbose
 
-  workflow_vlocity:
+    workflow_vlocity:
            uses: ./.github/workflows/CI-on-PR-to-main-VL.yml
