@@ -11,7 +11,7 @@ workflow_dispatch: # Manual trigger
 pull_request:
     types: [closed]
     branches:
-    - develop*
+    - hotfix*
     paths:
     - 'vlocity/**'
 jobs:
