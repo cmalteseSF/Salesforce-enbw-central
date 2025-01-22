@@ -6,7 +6,7 @@
 name: CD workflow mainBranch/hotfix-to-Production Deployment VL V2
 run-name: ${{ github.actor }} is testing mainBranch or hotfix for Vlocity to Production Deployment 🚀
 on:
-  workflow_dispatch: # Manual or API trigger
+  workflow_call: # Manual or API trigger
 jobs:
   build:
         runs-on: ubuntu-latest
