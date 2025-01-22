@@ -8,7 +8,7 @@ run-name: ${{ github.actor }}, is testing vlocity release or hotfix Validation o
 # Definition when the workflow should run
 on:
    # Triggered manually or by another workflow
-    workflow_dispatch:
+     workflow_call:
 
 
 # Jobs to be executed when the above conditions are met
