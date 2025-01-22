@@ -1,0 +1,109 @@
+# Description     :: Production Continous Deployment(CD) workflow main
+## Trigger-action :: Execute on PR closure
+### Target-Branch :: On merge to main branch
+##### Target-Org  :: To Production environment 
+
+name: CD workflow mainBranch/hotfix-to-Production Deployment SF V2
+run-name: ${{ github.actor }} is testing mainBranch or hotfix for Salesforce to Production Deployment 🚀
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+      - master
+    paths:
+      - 'force-app/**'
+      - 'vlocity/**'
+jobs:
+  build:
+        runs-on: ubuntu-latest
+        environment: Production
+        steps:
+          # Checkout the Source code from the latest commit
+          # Make sure to specify fetch-depth:0. This allows us to
+          # access previous commits that have been pushed to the repository.
+          - uses: actions/checkout@v3
+            with:
+              fetch-depth: 0
+          - name: Install NPM
+            run: |
+              npm install --legacy-peer-deps
+
+          # Install the SFDX CLI using npm command
+          - name: Install the SF CLI
+            run: |
+              npm install @salesforce/cli --global
+              sf version
+
+          # Install the sfdx git delta
+          - name: Install the sfdx-git-delta plugin
+            run: |
+              echo 'y' | sf plugins:install sfdx-git-delta
+
+          # Install the npm  puppeteer
+          - name: Install the npm puppeteer plugin
+            run: |
+              npm install puppeteer -g
+
+          # Decrypt the private key for jwt auth
+          - name: Decrypt the server.key.enc file & store inside assets folder
+            run: |
+              openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K ${{ secrets.DECRYPTION_KEY }} -iv ${{ secrets.DECRYPTION_IV }}
+
+          # Authenticate to SF org
+          - name: Authenticate Salesforce ORG
+            run: |
+             sf login org jwt -i ${{ secrets.ENV_CONSUMER_KEY }} -f ${{ secrets.JWT_KEY_FILE }} --username ${{ secrets.ENV_USER_NAME }} --alias MainProdOrg --instance-url ${{ secrets.ENV_LOGIN_URL }}
+
+          # Generate a package.xml for delta components
+          - name: Generate the package.xml for delta files
+            run: |
+             mkdir delta
+             sf sgd:source:delta --to "HEAD" --from "HEAD~1" --output "./delta" --ignore-whitespace -d -i .sgdignore
+             echo "--- package.xml generated with added and modified metadata ---"
+             cat delta/package/package.xml
+             echo "--- Files created in ./delta directory ---"
+             ls -R delta
+          
+          # Check if package.xml have delta components
+          - name: Check if package.xml contains <types>
+            id: check-package
+            run: |
+              if grep -q "<types>" delta/package/package.xml; then
+                echo "Package.xml contains <types> tag. Proceeding with deployment steps."
+                echo "has_package=true" >> $GITHUB_ENV
+              else
+                echo "Package.xml does not contain <types> tag. Skipping deployment steps."
+                echo "has_package=false" >> $GITHUB_ENV
+              fi   
+
+        # Reading TestClassMapper file to prepare list of testclasses to run using RunSpecified test
+          - name: 'Retrieving the list of test classes to execute'
+            if: ${{ env.has_package == 'true' }}
+            run: |
+              PR_BODY=$(cat TestClassMapper.txt)
+              echo $PR_BODY > ./pr_body.txt
+              node ./parsePR.js
+              TESTS=$(cat testsToRun.txt)
+              echo "APEX_TESTS=$TESTS" >> $GITHUB_ENV
+
+        # If TestclassMapper contains entries, then we run specified test entries only and if not we run all localtests in the target org
+          - name: 'Deploy Delta changes to Prod - with run specified tests'
+            if: ${{ env.has_package == 'true' && env.APEX_TESTS != 'all' }}
+            run: |
+              echo ${{env.APEX_TESTS}}
+              sf project deploy start -x delta/package/package.xml --test-level RunSpecifiedTests --tests ${{env.APEX_TESTS}} --json -o MainProdOrg --verbose
+
+        # If the env variable equals all, we run all tests with real deployment to production
+          - name: 'Deploy Delta changes to Prod - with run all tests'
+            if: ${{ env.has_package == 'true' && env.APEX_TESTS == 'all' }}
+            run: |
+              sf project deploy start -x delta/package/package.xml --test-level RunLocalTests  --json -o MainProdOrg --verbose
+
+        # Trigger Vlocity Workflow call
+          - name: Trigger Vlocity Workflow 
+            run: |
+             curl -X POST -H "Accept: application/vnd.github+json" \
+             -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+             https://api.github.com/repos/${{ github.repository }}/actions/workflows/CD-on-PR-to-main-VL.yml/dispatches \
+             -d '{"ref":"main"}'        

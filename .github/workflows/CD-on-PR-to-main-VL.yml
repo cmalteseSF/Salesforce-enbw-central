@@ -1,0 +1,60 @@
+# Description     :: Production Continous Deployment(CD) workflow Vlocity
+## Trigger-action :: Execute on PR closure
+### Target-Branch :: On merge to main branch
+##### Target-Org  :: To Production environment 
+
+name: CD workflow mainBranch/hotfix-to-Production Deployment VL V2
+run-name: ${{ github.actor }} is testing mainBranch or hotfix for Vlocity to Production Deployment 🚀
+on:
+  workflow_dispatch: # Manual or API trigger
+jobs:
+  build:
+        runs-on: ubuntu-latest
+        environment: Production
+        steps:
+          # Checkout the Source code from the latest commit
+          # Make sure to specify fetch-depth:0. This allows us to
+          # access previous commits that have been pushed to the repository.
+          - uses: actions/checkout@v3
+            with:
+              fetch-depth: 0
+          - name: Install NPM
+            run: |
+              npm install --legacy-peer-deps
+
+          # Install the SFDX CLI using npm command
+          - name: Install the SF CLI
+            run: |
+              npm install @salesforce/cli --global
+              sf version
+
+          # Install the Vlocity Build Tool using npm
+          - name: Install the Vlocity Build
+            run: |
+              npm install --global vlocity
+              vlocity help
+
+          # Install the sfdx git delta
+          - name: Install the sfdx-git-delta plugin
+            run: |
+              echo 'y' | sf plugins:install sfdx-git-delta
+
+          # Install the npm  puppeteer
+          - name: Install the npm puppeteer plugin
+            run: |
+              npm install puppeteer -g
+
+          # Decrypt the private key for jwt auth
+          - name: Decrypt the server.key.enc file & store inside assets folder
+            run: |
+              openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K ${{ secrets.DECRYPTION_KEY }} -iv ${{ secrets.DECRYPTION_IV }}
+
+          # Authenticate to SF org
+          - name: Authenticate Salesforce ORG
+            run: |
+             sf login org jwt -i ${{ secrets.ENV_CONSUMER_KEY }} -f ${{ secrets.JWT_KEY_FILE }} --username ${{ secrets.ENV_USER_NAME }} --alias MainProdOrg --instance-url ${{ secrets.ENV_LOGIN_URL }}
+
+         # Execute the VBT packDeploy command to deploy SFI components, use -gitCheck=true for delta components only
+          - name: Deploying SFI Delta components to Salesforce Prod Org
+            run: |
+              vlocity -sfdx.username ${{ secrets.ENV_USER_NAME }} -job deploy.yaml packDeploy -gitCheck=true  --verbose
