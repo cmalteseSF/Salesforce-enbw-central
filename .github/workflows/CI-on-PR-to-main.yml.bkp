@@ -1,0 +1,161 @@
+# Description     :: Production Continous Integration(CI) workflow
+## Trigger-action :: Execute on PR opened
+### Target-Branch :: To main branch
+##### Target-Org  :: To Production environment
+
+name: CI Workflow release/hofix-to-Production Validation V2
+run-name: ${{ github.actor }}, is testing release Validation on Production environment before merging into master/main branch 🚀
+# Definition when the workflow should run
+on:
+  # The workflow will run whenever an event happens on a pull request
+    pull_request:
+      # The events are that a PR is opened, or when a commit is pushed
+      # to a branch that has an existing pull request
+        types: [opened, synchronize]
+      # The branches filter allows to specify that this workflow should only
+      # run if the branch name is "main". This way we prevent this workflow
+      # from running when PRs are opened on other branches
+        branches:
+          - main*
+        paths:
+          - 'force-app/**'
+          - 'vlocity/**'
+
+# Jobs to be executed when the above conditions are met
+jobs:
+  SF:
+        name: SF Job
+        runs-on: ubuntu-latest
+        # This pull the Developer environment from the gihub settings and all defined environment secrets
+        environment: Production
+        steps:
+          # Checkout the Source code from the latest commit
+          # Make sure to specify fetch-depth:0. This allows us to
+          # access previous commits that have been pushed to the repository.
+
+          - uses: actions/checkout@v3
+            with:
+              fetch-depth: 0
+          - name: Install NPM
+            run: |
+              npm install --legacy-peer-deps
+
+          # Install the SFDX CLI using npm command
+          - name: Install the SF CLI
+            run: |
+              npm install  @salesforce/cli --global
+              sf version
+              sf --help
+
+          # Install the Vlocity Build Tool using npm
+          - name: Install the Vlocity Build Tool
+            run: |
+              npm install --global vlocity
+              vlocity help
+
+          # Install the sfdx git delta
+          - name: Install the sfdx-git-delta plugin
+            run: |
+              echo 'y' | sf plugins:install sfdx-git-delta
+
+          # Decrypt the private key for jwt auth
+          - name: Decrypt the server.key.enc file & store inside assets folder
+            run: |
+              openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K ${{ secrets.DECRYPTION_KEY }} -iv ${{ secrets.DECRYPTION_IV }}
+
+          # Authenticate to SF org
+          - name: Authenticate to Salesforce ORG
+            run: |
+              sf login org jwt -i ${{ secrets.ENV_CONSUMER_KEY }} -f ${{ secrets.JWT_KEY_FILE }} --username ${{ secrets.ENV_USER_NAME }} --alias MainProdOrg --instance-url ${{ secrets.ENV_LOGIN_URL }}
+
+          # Generate a package.xml for delta components
+          - name: Generate the package.xml for delta files
+            run: |
+             mkdir delta
+             sf sgd:source:delta --to "HEAD" --from "HEAD~1" --output "./delta" --ignore-whitespace -d -i .sgdignore
+             echo "--- package.xml generated with added and modified metadata ---"
+             cat delta/package/package.xml
+             echo "--- Files created in ./delta directory ---"
+             ls -R delta
+            
+          # Check if package.xml have delta components
+          - name: Check if package.xml contains <types>
+            id: check-package
+            run: |
+              if grep -q "<types>" delta/package/package.xml; then
+                echo "Package.xml contains <types> tag. Proceeding with deployment steps."
+                echo "has_package=true" >> $GITHUB_ENV
+              else
+                echo "Package.xml does not contain <types> tag. Skipping deployment steps."
+                echo "has_package=false" >> $GITHUB_ENV
+              fi   
+           
+          # Reading TestClassMapper file to prepare list of testclasses to run using RunSpecified test
+          - name: 'Retrieving the list of test classes to execute'
+            if: ${{ env.has_package == 'true' }}
+            run: |
+              PR_BODY=$(cat TestClassMapper.txt)
+              echo $PR_BODY > ./pr_body.txt
+              node ./parsePR.js
+              TESTS=$(cat testsToRun.txt)
+              echo "APEX_TESTS=$TESTS" >> $GITHUB_ENV
+
+         # If TestclassMapper contains entries, then we run specified test entries only and if not we run all localtests in the target org
+          - name: 'Check-only deploy delta changes - using run specified tests'
+            if: ${{ env.has_package == 'true' && env.APEX_TESTS != 'all' }}
+            run: |
+              echo ${{env.APEX_TESTS}}
+              sf project deploy validate -x delta/package/package.xml --test-level RunSpecifiedTests --tests ${{env.APEX_TESTS}} --json -o MainProdOrg --verbose
+
+          # If the env variable equals all, meaning the developer has not defined any specified testcasses then we run all tests
+          - name: 'Check-only deploy delta changes - run all tests'
+            if: ${{ env.has_package == 'true' && env.APEX_TESTS == 'all' }}
+            run: |
+              sf project deploy validate -x delta/package/package.xml --test-level RunLocalTests  --json -o MainProdOrg --verbose
+
+  Vlocity:
+        name: Vlocity Job
+        needs: SF
+        runs-on: ubuntu-latest
+        # This pull the Developer environment from the gihub settings and all defined environment secrets
+        environment: Production
+        steps:
+          # Checkout the Source code from the latest commit
+          # Make sure to specify fetch-depth:0. This allows us to
+          # access previous commits that have been pushed to the repository.
+
+          - uses: actions/checkout@v3
+            with:
+              fetch-depth: 0
+          - name: Install NPM
+            run: |
+              npm install --legacy-peer-deps
+
+          # Install the SFDX CLI using npm command
+          - name: Install the SF CLI
+            run: |
+              npm install  @salesforce/cli --global
+              sf version
+              sf --help
+
+          # Install the Vlocity Build Tool using npm
+          - name: Install the Vlocity Build Tool
+            run: |
+              npm install --global vlocity
+              vlocity help
+
+          # Decrypt the private key for jwt auth
+          - name: Decrypt the server.key.enc file & store inside assets folder
+            run: |
+              openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K ${{ secrets.DECRYPTION_KEY }} -iv ${{ secrets.DECRYPTION_IV }}
+
+          # Authenticate to SF org
+          - name: Authenticate to Salesforce ORG
+            run: |
+              sf login org jwt -i ${{ secrets.ENV_CONSUMER_KEY }} -f ${{ secrets.JWT_KEY_FILE }} --username ${{ secrets.ENV_USER_NAME }} --alias MainProdOrg --instance-url ${{ secrets.ENV_LOGIN_URL }}
+
+
+          # Execute the VBT validateLocalData command to validate SFI components **locally only
+          - name: Validate SFI Delta components locally
+            run: |
+              vlocity -sfdx.username ${{ secrets.ENV_USER_NAME }} -job deploy.yaml validateLocalData --fixLocalGlobalKeys -gitCheck=true
