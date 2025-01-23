@@ -1,0 +1,141 @@
+# Description     :: SIT Continous Integration(CI) workflow
+## Trigger-action :: Execute on PR opened or Synchronized(meaning recommit to the same feature branch)
+### Target-Branch :: To develop branch
+##### Target-Org  :: To SIT environment
+
+name: CI Workflow Feature-to-SIT Validation V2
+run-name: ${{ github.actor }} is testing Feature validation on SIT environment before merging into develop branch 🚀
+# Definition when the workflow should run
+on:
+  # The workflow will run whenever an event happens on a pull request
+  pull_request:
+      # The events are that a PR is opened, or when a commit is pushed
+      # to a branch that has an existing pull request
+      types: [opened, reopened, synchronize]
+      # The branches filter allows to specify that this workflow should only
+      # run if the branch name is "develop". This way we prevent this workflow
+      # from running when PRs are opened on other branches
+      branches:
+        - develop*
+      # We only care about changes to the force-app directory and vlocity directory, which is the
+      # root directory of the sfdx project and SFI project respectively. This prevents the job from running
+      # when changing non-salesforce files (like this yml file).
+      paths:
+        - 'force-app/**'
+        - 'vlocity/**'
+
+# Jobs to be executed when the above conditions are met
+jobs:
+  SF:
+        name: SF Job
+        runs-on: ubuntu-latest
+        # This pull the Developer environment from the gihub settings and all defined environment secrets
+        environment: SIT
+        steps:
+          # Checkout the Source code from the latest commit
+          # Make sure to specify fetch-depth:0. This allows us to
+          # access previous commits that have been pushed to the repository.
+
+          # We'll need this later when we try to figure out which metadata has
+          # changed between commits, so that we can only deploy that metadata to the destination org
+          - uses: actions/checkout@v3
+            with:
+              fetch-depth: 0
+          - name: Install NPM
+            run: |
+              npm install --legacy-peer-deps
+
+          # Install the SFDX CLI using npm command
+          - name: Install the SF CLI
+            run: |
+              npm install @salesforce/cli --global
+              sf version
+
+          # Install the sfdx git-delta
+          - name: Install the sfdx-git-delta plugin
+            run: |
+                echo 'y' | sf plugins:install sfdx-git-delta
+
+          # Decrypt the private key for jwt auth
+          - name: Decrypt the server.key.enc file & store inside assets folder
+            run: |
+              openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K ${{ secrets.DECRYPTION_KEY }} -iv ${{ secrets.DECRYPTION_IV }}
+
+          # Authenticate to SF org
+          - name: Authenticate to Salesforce ORG
+            run: |
+              sf login org jwt --username ${{secrets.ENV_USER_NAME }} -f ${{ secrets.JWT_KEY_FILE}} -i ${{ secrets.ENV_CONSUMER_KEY }} --alias SBXSITOrg --set-default --instance-url ${{ secrets.ENV_LOGIN_URL }} --json
+
+          # Generate a package.xml for delta SFDC core components
+          - name: Generate the package.xml for delta files
+            run: |
+              mkdir delta
+              sf sgd:source:delta --to "HEAD" --from "HEAD~1" --output "./delta" --ignore-whitespace -d -i .sgdignore
+              echo "--- package.xml generated with added and modified metadata ---"
+              cat delta/package/package.xml
+          
+          # Check if package.xml have delta components
+          - name: Check if package.xml contains <types>
+            id: check-package
+            run: |
+              if grep -q "<types>" delta/package/package.xml; then
+                echo "Package.xml contains <types> tag. Proceeding with deployment steps."
+                echo "has_package=true" >> $GITHUB_ENV
+              else
+                echo "Package.xml does not contain <types> tag. Skipping deployment steps."
+                echo "has_package=false" >> $GITHUB_ENV
+              fi   
+           
+          # Execute the project deploy command with '--dry-run' for validatation purpose only
+          - name: Validate Delta components to Salesforce
+            if: ${{ env.has_package == 'true' }}  
+            run: |
+              sf project deploy start -x delta/package/package.xml -l NoTestRun --dry-run -o SBXSITOrg --verbose
+
+  Vlocity:
+        name: Vlocity Job
+        needs: SF
+        runs-on: ubuntu-latest
+        # This pull the Developer environment from the gihub settings and all defined environment secrets
+        environment: SIT
+        steps:
+          # Checkout the Source code from the latest commit
+          # Make sure to specify fetch-depth:0. This allows us to
+          # access previous commits that have been pushed to the repository.
+
+          # We'll need this later when we try to figure out which metadata has
+          # changed between commits, so that we can only deploy that metadata to the destination org
+          - uses: actions/checkout@v3
+            with:
+              fetch-depth: 0
+          - name: Install NPM
+            run: |
+              npm install --legacy-peer-deps
+
+          # Install the SFDX CLI using npm command
+          - name: Install the SF CLI
+            run: |
+              npm install @salesforce/cli --global
+              sf version
+
+          # Install the Vlocity Build Tool using npm
+          - name: Install the Vlocity Build
+            run: |
+              npm install --global vlocity
+              vlocity help
+
+          # Decrypt the private key for jwt auth
+          - name: Decrypt the server.key.enc file & store inside assets folder
+            run: |
+              openssl enc -nosalt -aes-256-cbc -d -in assets/server.key.enc -out assets/server.key -base64 -K ${{ secrets.DECRYPTION_KEY }} -iv ${{ secrets.DECRYPTION_IV }}
+
+          # Authenticate to SF org
+          - name: Authenticate to Salesforce ORG
+            run: |
+              sf login org jwt --username ${{secrets.ENV_USER_NAME }} -f ${{ secrets.JWT_KEY_FILE}} -i ${{ secrets.ENV_CONSUMER_KEY }} --alias SBXSITOrg --set-default --instance-url ${{ secrets.ENV_LOGIN_URL }} --json
+
+
+          # Execute the VBT validateLocalData command to validate SFI components **locally
+          - name: Validate SFI Delta components locally
+            run: |
+              vlocity -sfdx.username ${{ secrets.ENV_USER_NAME }} -job deploy.yaml validateLocalData --fixLocalGlobalKeys --gitCheck=true --verbose
