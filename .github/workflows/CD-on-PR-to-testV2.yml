@@ -96,11 +96,6 @@ jobs:
             run: |
               sf project deploy start -x delta/package/package.xml --test-level RunLocalTests  --json -o SBXUATOrg --verbose
 
-         # Execute the VBT packDeploy command to deploy SFI components, use -gitCheck=true for delta components only
-          - name: Deploying SFI Delta components to Salesforce Org
-            run: |
-              vlocity -sfdx.username ${{ secrets.ENV_USER_NAME }} -job deploy.yaml packDeploy -gitCheck=true
-                
   Vlocity:
         name: Vlocity Job
         needs: SF
