@@ -95,7 +95,7 @@ jobs:
             if: ${{ env.has_package == 'true' && env.APEX_TESTS == 'all' }}
             run: |
               sf project deploy start -x delta/package/package.xml --test-level RunLocalTests  --json -o SBXUATOrg --verbose
-               
+
   Vlocity:
         name: Vlocity Job
         needs: SF
