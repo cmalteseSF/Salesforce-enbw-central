@@ -76,11 +76,28 @@ jobs:
                 echo "has_package=false" >> $GITHUB_ENV
               fi   
            
-          # Execute the project deploy command to run real deployment to Salesforce SIT Org with "Notestrun" for SIT
-          - name: Deploy Delta components to to Salesforce Org
+        # Reading TestClassMapper file to prepare list of testclasses to run using RunSpecified test
+          - name: 'Retrieving the list of test classes to execute'
             if: ${{ env.has_package == 'true' }}
             run: |
-              sf project deploy start -x delta/package/package.xml -l NoTestRun -o SBXSITOrg --verbose
+              PR_BODY=$(cat TestClassMapper.txt)
+              echo $PR_BODY > ./pr_body.txt
+              node ./parsePR.js
+              TESTS=$(cat testsToRun.txt)
+              echo "APEX_TESTS=$TESTS" >> $GITHUB_ENV
+
+        # If TestclassMapper contains entries, then we run specified test entries only and if not we run all localtests in the target org
+          - name: 'Deploy Delta changes to Prod - with run specified tests'
+            if: ${{ env.has_package == 'true' && env.APEX_TESTS != 'all' }}
+            run: |
+              echo ${{env.APEX_TESTS}}
+              sf project deploy start -x delta/package/package.xml --test-level RunSpecifiedTests --tests ${{env.APEX_TESTS}} --json -o MainProdOrg --verbose
+
+        # If the env variable equals all, we run all tests with real deployment to production
+          - name: 'Deploy Delta changes to Prod - with run all tests'
+            if: ${{ env.has_package == 'true' && env.APEX_TESTS == 'all' }}
+            run: |
+                  sf project deploy start -x delta/package/package.xml -l NoTestRun -o SBXSITOrg --verbose
 
   Vlocity:
         name: Vlocity Job

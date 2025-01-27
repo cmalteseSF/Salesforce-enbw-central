@@ -90,7 +90,7 @@ jobs:
             if: ${{ env.has_package == 'true' && env.APEX_TESTS != 'all' }}
             run: |
               echo ${{env.APEX_TESTS}}
-              sf project deploy start -x delta/package/package.xml --test-level RunSpecifiedTests --tests ${{env.APEX_TESTS}} --json -o SBXPreProdOrg --verbose
+              sf project deploy start -x delta/package/package.xml --test-level RunLocalTests  --json -o SBXPreProdOrg --verbose
 
   Vlocity:
         name: Vlocity Job
