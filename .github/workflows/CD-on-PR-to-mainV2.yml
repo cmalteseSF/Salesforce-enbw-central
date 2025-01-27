@@ -36,12 +36,6 @@ jobs:
               npm install @salesforce/cli --global
               sf version
 
-          # Install the Vlocity Build Tool using npm
-          - name: Install the Vlocity Build
-            run: |
-              npm install --global vlocity
-              vlocity help
-
           # Install the sfdx git delta
           - name: Install the sfdx-git-delta plugin
             run: |

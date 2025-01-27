@@ -134,11 +134,6 @@ jobs:
               npm install --global vlocity
               vlocity help
 
-         # Install the sfdx git-delta
-          - name: Install the sfdx-git-delta plugin
-            run: |
-              echo 'y' | sf plugins:install sfdx-git-delta
-
           # Decrypt the private key for jwt auth
           - name: Decrypt the server.key.enc file & store inside assets folder
             run: |
